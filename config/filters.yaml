@@ -82,8 +82,10 @@ priority:
     - "SBIR"
     - "STTR"
     - "DOE"
+    - "Department of Energy"
     - "ARPA-E"
     - "NSF"
+    - "National Science Foundation"
     - "EIT RawMaterials"
     - "Breakthrough Energy"
 
