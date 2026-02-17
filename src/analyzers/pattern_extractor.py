@@ -28,6 +28,12 @@ def load_winners() -> list[dict]:
     sources = [
         "data/winners_grants_gov.json",
         "data/winners_sbir.json",
+        "data/winners_sbir_p2.json",
+        "data/winners_nsf.json",
+        "data/winners_doe.json",
+        "data/winners_nih.json",
+        "data/winners_usaspending.json",
+        "data/winners_sam.json",
     ]
 
     for source in sources:
