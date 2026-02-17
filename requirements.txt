@@ -12,6 +12,7 @@ playwright==1.49.1
 # Data Processing
 pandas==2.2.3
 python-dateutil==2.9.0.post0
+tqdm==4.66.1
 
 # Database (SQLite — no external DB needed)
 SQLAlchemy==2.0.36
@@ -19,14 +20,13 @@ SQLAlchemy==2.0.36
 # Local LLM (Ollama client — for Surface ARM)
 ollama==0.4.7
 
+# Cloud LLM fallbacks (free tiers)
+groq==0.15.0
+google-generativeai==0.8.4
+
 # Retry Logic
 tenacity==9.0.0
 
 # Testing
 pytest==8.3.4
 pytest-cov==6.0.0
-
-# Optional: AI API fallbacks (not required for $0 operation)
-# groq==0.15.0
-# google-generativeai==0.8.4
-# python-telegram-bot==21.9

@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Grant Hunter AI - Core Element</title>
+<style>
+/* ===== RESET & BASE ===== */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  background: #0f0f14;
+  color: #e0e0e8;
+  line-height: 1.5;
+  min-height: 100vh;
+}
+a { color: #a78bfa; text-decoration: none; }
+a:hover { color: #c4b5fd; text-decoration: underline; }
+
+/* ===== HEADER ===== */
+.header {
+  background: linear-gradient(135deg, #1a1a2e 0%, #16162a 100%);
+  border-bottom: 1px solid #2d2d44;
+  padding: 16px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header h1 { font-size: 20px; font-weight: 600; }
+.header h1 span { color: #a78bfa; }
+.header-meta { font-size: 13px; color: #888; display: flex; gap: 16px; align-items: center; }
+.btn {
+  background: #a78bfa;
+  color: #0f0f14;
+  border: none;
+  padding: 6px 14px;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background .15s;
+}
+.btn:hover { background: #c4b5fd; }
+.btn-sm { padding: 4px 10px; font-size: 12px; }
+.btn-outline {
+  background: transparent;
+  border: 1px solid #a78bfa;
+  color: #a78bfa;
+}
+.btn-outline:hover { background: rgba(167,139,250,.15); }
+
+/* ===== LAYOUT ===== */
+.container { max-width: 1400px; margin: 0 auto; padding: 20px; }
+.grid-2 { display: grid; grid-template-columns: 1fr 380px; gap: 20px; }
+@media (max-width: 1100px) { .grid-2 { grid-template-columns: 1fr; } }
+
+/* ===== SUMMARY CARDS ===== */
+.cards { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; margin-bottom: 20px; }
+@media (max-width: 900px) { .cards { grid-template-columns: repeat(2, 1fr); } }
+.card {
+  background: #1a1a2e;
+  border: 1px solid #2d2d44;
+  border-radius: 10px;
+  padding: 16px;
+  text-align: center;
+}
+.card .icon { font-size: 28px; margin-bottom: 4px; }
+.card .value { font-size: 28px; font-weight: 700; color: #fff; }
+.card .label { font-size: 12px; color: #888; text-transform: uppercase; letter-spacing: .5px; }
+.card.purple { border-color: #7c3aed; }
+.card.amber { border-color: #f59e0b; }
+.card.green { border-color: #10b981; }
+.card.red { border-color: #ef4444; }
+
+/* ===== PANELS ===== */
+.panel {
+  background: #1a1a2e;
+  border: 1px solid #2d2d44;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+.panel-header {
+  padding: 12px 16px;
+  border-bottom: 1px solid #2d2d44;
+  font-weight: 600;
+  font-size: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.panel-body { padding: 0; }
+
+/* ===== TABLE ===== */
+table { width: 100%; border-collapse: collapse; font-size: 13px; }
+th {
+  text-align: left;
+  padding: 10px 12px;
+  background: #16162a;
+  color: #888;
+  font-weight: 500;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: .5px;
+  position: sticky;
+  top: 0;
+}
+td { padding: 10px 12px; border-top: 1px solid #1f1f34; }
+tr:hover td { background: rgba(167,139,250,.04); }
+.priority-badge {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-size: 11px;
+  font-weight: 600;
+}
+.priority-copy_now { background: rgba(167,139,250,.2); color: #c4b5fd; }
+.priority-test_first { background: rgba(245,158,11,.2); color: #fbbf24; }
+.priority-skip { background: rgba(107,114,128,.2); color: #9ca3af; }
+.deadline-urgent { color: #ef4444; font-weight: 600; }
+.deadline-soon { color: #f59e0b; }
+.deadline-ok { color: #10b981; }
+.actions { display: flex; gap: 6px; }
+
+/* ===== SIDEBAR ===== */
+.sidebar-card {
+  padding: 12px 16px;
+  border-bottom: 1px solid #1f1f34;
+}
+.sidebar-card:last-child { border-bottom: none; }
+.winner-title { font-size: 13px; font-weight: 500; color: #e0e0e8; }
+.winner-meta { font-size: 11px; color: #888; margin-top: 2px; }
+.winner-amount { color: #10b981; font-weight: 600; }
+
+/* ===== PROGRESS BAR ===== */
+.progress-row { display: flex; align-items: center; gap: 10px; padding: 6px 16px; font-size: 13px; }
+.progress-label { width: 140px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.progress-bar-bg {
+  flex: 1;
+  height: 8px;
+  background: #2d2d44;
+  border-radius: 4px;
+  overflow: hidden;
+}
+.progress-bar-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #7c3aed, #a78bfa);
+  border-radius: 4px;
+  transition: width .3s;
+}
+.progress-value { width: 40px; text-align: right; font-size: 12px; color: #888; }
+
+/* ===== TRACKER TABLE ===== */
+.status-badge {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-size: 11px;
+  font-weight: 600;
+}
+.status-Draft { background: rgba(107,114,128,.2); color: #9ca3af; }
+.status-Submitted { background: rgba(59,130,246,.2); color: #60a5fa; }
+.status-Won { background: rgba(16,185,129,.2); color: #34d399; }
+.status-Lost { background: rgba(239,68,68,.2); color: #f87171; }
+
+/* ===== TABS ===== */
+.tabs { display: flex; gap: 4px; }
+.tab {
+  padding: 6px 14px;
+  font-size: 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  color: #888;
+  background: transparent;
+  border: none;
+  font-family: inherit;
+  transition: all .15s;
+}
+.tab.active { background: rgba(167,139,250,.15); color: #a78bfa; }
+.tab:hover { color: #c4b5fd; }
+
+/* ===== EMPTY STATE ===== */
+.empty {
+  padding: 40px 20px;
+  text-align: center;
+  color: #555;
+  font-size: 14px;
+}
+.empty .icon { font-size: 40px; margin-bottom: 8px; }
+
+/* ===== MODAL ===== */
+.modal-bg {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,.6);
+  z-index: 100;
+  justify-content: center;
+  align-items: center;
+}
+.modal-bg.show { display: flex; }
+.modal {
+  background: #1a1a2e;
+  border: 1px solid #2d2d44;
+  border-radius: 12px;
+  width: 600px;
+  max-width: 90vw;
+  max-height: 80vh;
+  overflow-y: auto;
+  padding: 24px;
+}
+.modal h2 { font-size: 18px; margin-bottom: 12px; }
+.modal pre {
+  background: #0f0f14;
+  padding: 12px;
+  border-radius: 6px;
+  font-size: 12px;
+  overflow-x: auto;
+  white-space: pre-wrap;
+}
+.modal-close {
+  float: right;
+  background: none;
+  border: none;
+  color: #888;
+  font-size: 20px;
+  cursor: pointer;
+}
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<div class="header">
+  <h1><span>Grant Hunter AI</span> &mdash; Core Element</h1>
+  <div class="header-meta">
+    <span id="lastUpdate">Last update: loading...</span>
+    <button class="btn" onclick="loadAllData()">Refresh Data</button>
+  </div>
+</div>
+
+<div class="container">
+
+  <!-- SUMMARY CARDS -->
+  <div class="cards">
+    <div class="card purple">
+      <div class="icon">&#127919;</div>
+      <div class="value" id="copyNowCount">-</div>
+      <div class="label">copy_now</div>
+    </div>
+    <div class="card amber">
+      <div class="icon">&#9889;</div>
+      <div class="value" id="testFirstCount">-</div>
+      <div class="label">test_first</div>
+    </div>
+    <div class="card green">
+      <div class="icon">&#128176;</div>
+      <div class="value" id="totalPotential">-</div>
+      <div class="label">Total Potential</div>
+    </div>
+    <div class="card red">
+      <div class="icon">&#128197;</div>
+      <div class="value" id="urgentCount">-</div>
+      <div class="label">Urgent &lt; 7 days</div>
+    </div>
+  </div>
+
+  <div class="grid-2">
+    <div>
+      <!-- PRIORITY GRANTS TABLE -->
+      <div class="panel">
+        <div class="panel-header">
+          <span>Priority Grants</span>
+          <div class="tabs">
+            <button class="tab active" onclick="filterTable('all',this)">All</button>
+            <button class="tab" onclick="filterTable('copy_now',this)">copy_now</button>
+            <button class="tab" onclick="filterTable('test_first',this)">test_first</button>
+          </div>
+        </div>
+        <div class="panel-body" style="overflow-x:auto; max-height:500px; overflow-y:auto;">
+          <table id="grantsTable">
+            <thead>
+              <tr>
+                <th>Priority</th>
+                <th>Title</th>
+                <th>Funder</th>
+                <th>Amount</th>
+                <th>Deadline</th>
+                <th>Win%</th>
+                <th>Match%</th>
+                <th>Actions</th>
+              </tr>
+            </thead>
+            <tbody id="grantsBody"></tbody>
+          </table>
+          <div class="empty" id="grantsEmpty" style="display:none;">
+            <div class="icon">&#128269;</div>
+            <div>No analyzed grants yet.<br>Run <code>python -m src.local.daily_workflow</code></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- APPLICATION TRACKER -->
+      <div class="panel">
+        <div class="panel-header">
+          <span>Applications Tracker</span>
+          <button class="btn btn-sm btn-outline" onclick="addApplication()">+ Add</button>
+        </div>
+        <div class="panel-body" style="overflow-x:auto;">
+          <table id="appsTable">
+            <thead>
+              <tr>
+                <th>Grant</th>
+                <th>Funder</th>
+                <th>Status</th>
+                <th>Potential</th>
+                <th>Won</th>
+              </tr>
+            </thead>
+            <tbody id="appsBody"></tbody>
+          </table>
+          <div class="empty" id="appsEmpty" style="display:none;">
+            <div class="icon">&#128221;</div>
+            <div>No applications tracked yet.</div>
+          </div>
+        </div>
+        <div style="padding:12px 16px; border-top:1px solid #1f1f34; display:flex; gap:20px; font-size:13px;">
+          <span>Win Rate: <strong id="winRate">-</strong></span>
+          <span>Total Won: <strong id="totalWon" style="color:#10b981;">-</strong></span>
+          <span>Potential: <strong id="appPotential">-</strong></span>
+        </div>
+      </div>
+    </div>
+
+    <!-- RIGHT SIDEBAR -->
+    <div>
+      <!-- WINNERS PANEL -->
+      <div class="panel">
+        <div class="panel-header"><span>Recent Winners</span></div>
+        <div class="panel-body" id="winnersPanel" style="max-height:300px; overflow-y:auto;"></div>
+      </div>
+
+      <!-- PATTERNS PANEL -->
+      <div class="panel">
+        <div class="panel-header"><span>Top Keywords</span></div>
+        <div class="panel-body" id="keywordsPanel" style="max-height:260px; overflow-y:auto; padding:8px 0;"></div>
+      </div>
+
+      <div class="panel">
+        <div class="panel-header"><span>Top Funders</span></div>
+        <div class="panel-body" id="fundersPanel" style="max-height:200px; overflow-y:auto; padding:8px 0;"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- DETAIL MODAL -->
+<div class="modal-bg" id="detailModal">
+  <div class="modal">
+    <button class="modal-close" onclick="closeModal()">&times;</button>
+    <h2 id="modalTitle"></h2>
+    <div id="modalContent"></div>
+  </div>
+</div>
+
+<script>
+/* ===== STATE ===== */
+let analyzedGrants = [];
+let winnersData = [];
+let patternsData = {};
+let applications = JSON.parse(localStorage.getItem('grantApps') || '[]');
+let currentFilter = 'all';
+
+/* ===== DATA LOADING ===== */
+
+async function loadJSON(path) {
+  try {
+    const resp = await fetch(path);
+    if (!resp.ok) return null;
+    return await resp.json();
+  } catch { return null; }
+}
+
+async function loadAllData() {
+  // Try multiple paths (for both file:// and localhost serving)
+  const basePaths = ['../data/', './data/', 'data/'];
+  let dataLoaded = false;
+
+  for (const base of basePaths) {
+    const analyzed = await loadJSON(base + 'analyzed.json');
+    if (analyzed) {
+      analyzedGrants = Array.isArray(analyzed) ? analyzed : (analyzed.grants || []);
+      dataLoaded = true;
+
+      // Load patterns
+      const patterns = await loadJSON(base + 'patterns.json');
+      if (patterns) patternsData = patterns;
+
+      // Load winners from multiple sources
+      winnersData = [];
+      const winnerFiles = [
+        'winners_grants_gov.json', 'winners_sbir.json', 'winners_sbir_p2.json',
+        'winners_nsf.json', 'winners_doe.json', 'winners_nih.json',
+        'winners_usaspending.json', 'winners_sam.json'
+      ];
+      for (const wf of winnerFiles) {
+        const w = await loadJSON(base + wf);
+        if (w) {
+          const items = Array.isArray(w) ? w : (w.awards || w.winners || []);
+          winnersData.push(...items);
+        }
+      }
+      break;
+    }
+  }
+
+  if (!dataLoaded) {
+    // Try loading from demo/sample data in localStorage
+    analyzedGrants = [];
+  }
+
+  renderAll();
+}
+
+/* ===== RENDERING ===== */
+
+function renderAll() {
+  renderCards();
+  renderGrantsTable();
+  renderWinners();
+  renderPatterns();
+  renderApps();
+  document.getElementById('lastUpdate').textContent =
+    'Last update: ' + new Date().toLocaleString();
+}
+
+function formatCurrency(val) {
+  if (!val || val === 0) return '-';
+  if (val >= 1e6) return '$' + (val / 1e6).toFixed(1) + 'M';
+  if (val >= 1e3) return '$' + (val / 1e3).toFixed(0) + 'K';
+  return '$' + val.toLocaleString();
+}
+
+function daysUntil(dateStr) {
+  if (!dateStr) return 999;
+  const d = new Date(dateStr);
+  if (isNaN(d)) return 999;
+  return Math.ceil((d - new Date()) / 86400000);
+}
+
+function deadlineClass(days) {
+  if (days < 7) return 'deadline-urgent';
+  if (days < 30) return 'deadline-soon';
+  return 'deadline-ok';
+}
+
+/* ===== CARDS ===== */
+function renderCards() {
+  const copyNow = analyzedGrants.filter(g => g.analysis?.priority === 'copy_now');
+  const testFirst = analyzedGrants.filter(g => g.analysis?.priority === 'test_first');
+  const priority = [...copyNow, ...testFirst];
+  const totalPotential = priority.reduce((s, g) => s + (g.amount_max || 0), 0);
+  const urgent = analyzedGrants.filter(g => {
+    const d = daysUntil(g.deadline);
+    return d >= 0 && d < 7 && g.analysis?.priority !== 'skip';
+  });
+
+  document.getElementById('copyNowCount').textContent = copyNow.length;
+  document.getElementById('testFirstCount').textContent = testFirst.length;
+  document.getElementById('totalPotential').textContent = formatCurrency(totalPotential);
+  document.getElementById('urgentCount').textContent = urgent.length;
+}
+
+/* ===== GRANTS TABLE ===== */
+function renderGrantsTable() {
+  const tbody = document.getElementById('grantsBody');
+  const empty = document.getElementById('grantsEmpty');
+
+  let grants = analyzedGrants.filter(g => g.analysis?.priority !== 'skip');
+  if (currentFilter !== 'all') {
+    grants = grants.filter(g => g.analysis?.priority === currentFilter);
+  }
+  grants.sort((a, b) => (b.analysis?.win_probability || 0) - (a.analysis?.win_probability || 0));
+
+  if (grants.length === 0) {
+    tbody.innerHTML = '';
+    empty.style.display = 'block';
+    return;
+  }
+  empty.style.display = 'none';
+
+  tbody.innerHTML = grants.map(g => {
+    const a = g.analysis || {};
+    const days = daysUntil(g.deadline);
+    const dClass = deadlineClass(days);
+    const dText = days < 0 ? 'Expired' : (days === 0 ? 'Today' : days + 'd');
+    return `<tr data-priority="${a.priority}">
+      <td><span class="priority-badge priority-${a.priority}">${a.priority === 'copy_now' ? '&#127919; copy_now' : '&#9889; test_first'}</span></td>
+      <td title="${esc(g.title || '')}">${esc((g.title || '').slice(0, 45))}</td>
+      <td>${esc(g.funder || '')}</td>
+      <td>${formatCurrency(g.amount_max)}</td>
+      <td class="${dClass}">${g.deadline || 'TBD'} (${dText})</td>
+      <td><strong>${a.win_probability || 0}%</strong></td>
+      <td>${a.pattern_match_score || 0}%</td>
+      <td class="actions">
+        <button class="btn btn-sm btn-outline" onclick="showDetails('${esc(g.id || '')}')">Details</button>
+        ${g.url ? `<a class="btn btn-sm" href="${esc(g.url)}" target="_blank">Apply</a>` : ''}
+      </td>
+    </tr>`;
+  }).join('');
+}
+
+function filterTable(filter, btn) {
+  currentFilter = filter;
+  document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+  btn.classList.add('active');
+  renderGrantsTable();
+}
+
+/* ===== WINNERS ===== */
+function renderWinners() {
+  const panel = document.getElementById('winnersPanel');
+  if (winnersData.length === 0) {
+    panel.innerHTML = '<div class="empty"><div class="icon">&#127942;</div><div>No winner data yet.</div></div>';
+    return;
+  }
+
+  const recent = winnersData.slice(0, 10);
+  panel.innerHTML = recent.map(w => `<div class="sidebar-card">
+    <div class="winner-title">${esc(w.title || w.award_title || 'Untitled')}</div>
+    <div class="winner-meta">
+      ${esc(w.winner || w.recipient || w.pi || '')} | ${esc(w.funder || '')}
+      <span class="winner-amount">${formatCurrency(w.amount || w.award_amount || 0)}</span>
+    </div>
+    ${w.keywords ? `<div class="winner-meta">${esc(Array.isArray(w.keywords) ? w.keywords.join(', ') : w.keywords)}</div>` : ''}
+  </div>`).join('');
+}
+
+/* ===== PATTERNS ===== */
+function renderPatterns() {
+  const kwPanel = document.getElementById('keywordsPanel');
+  const fnPanel = document.getElementById('fundersPanel');
+
+  const keywords = (patternsData.keyword_patterns || []).slice(0, 10);
+  if (keywords.length) {
+    const maxFreq = keywords[0]?.frequency || keywords[0]?.count || 1;
+    kwPanel.innerHTML = keywords.map(kw => {
+      const val = kw.frequency ? (kw.frequency * 100).toFixed(0) + '%' : kw.count;
+      const pct = ((kw.frequency || kw.count / maxFreq) * 100).toFixed(0);
+      return `<div class="progress-row">
+        <div class="progress-label">${esc(kw.keyword)}</div>
+        <div class="progress-bar-bg"><div class="progress-bar-fill" style="width:${pct}%"></div></div>
+        <div class="progress-value">${val}</div>
+      </div>`;
+    }).join('');
+  } else {
+    kwPanel.innerHTML = '<div class="empty" style="padding:20px;">No patterns yet.</div>';
+  }
+
+  const funders = (patternsData.funder_patterns || []).slice(0, 5);
+  if (funders.length) {
+    const maxAwards = funders[0]?.total_awards || 1;
+    fnPanel.innerHTML = funders.map(f => {
+      const pct = ((f.total_awards / maxAwards) * 100).toFixed(0);
+      return `<div class="progress-row">
+        <div class="progress-label">${esc(f.funder)}</div>
+        <div class="progress-bar-bg"><div class="progress-bar-fill" style="width:${pct}%"></div></div>
+        <div class="progress-value">${f.total_awards}</div>
+      </div>`;
+    }).join('');
+  } else {
+    fnPanel.innerHTML = '<div class="empty" style="padding:20px;">No funder data yet.</div>';
+  }
+}
+
+/* ===== APPLICATION TRACKER ===== */
+function renderApps() {
+  const tbody = document.getElementById('appsBody');
+  const empty = document.getElementById('appsEmpty');
+
+  if (applications.length === 0) {
+    tbody.innerHTML = '';
+    empty.style.display = 'block';
+    document.getElementById('winRate').textContent = '-';
+    document.getElementById('totalWon').textContent = '-';
+    document.getElementById('appPotential').textContent = '-';
+    return;
+  }
+  empty.style.display = 'none';
+
+  tbody.innerHTML = applications.map((app, i) => `<tr>
+    <td>${esc(app.title)}</td>
+    <td>${esc(app.funder)}</td>
+    <td>
+      <select class="status-select" onchange="updateAppStatus(${i}, this.value)" style="background:#0f0f14;color:#e0e0e8;border:1px solid #2d2d44;padding:2px 6px;border-radius:4px;font-size:12px;">
+        ${['Draft','Submitted','Won','Lost'].map(s => `<option value="${s}" ${app.status===s?'selected':''}>${s}</option>`).join('')}
+      </select>
+    </td>
+    <td>${formatCurrency(app.potential)}</td>
+    <td>${app.status === 'Won' ? formatCurrency(app.won || app.potential) : '-'}</td>
+  </tr>`).join('');
+
+  const submitted = applications.filter(a => ['Submitted','Won','Lost'].includes(a.status));
+  const won = applications.filter(a => a.status === 'Won');
+  const totalWon = won.reduce((s, a) => s + (a.won || a.potential || 0), 0);
+  const totalPot = applications.reduce((s, a) => s + (a.potential || 0), 0);
+
+  document.getElementById('winRate').textContent = submitted.length ? ((won.length / submitted.length * 100).toFixed(0) + '%') : '-';
+  document.getElementById('totalWon').textContent = formatCurrency(totalWon);
+  document.getElementById('appPotential').textContent = formatCurrency(totalPot);
+}
+
+function addApplication() {
+  const title = prompt('Grant title:');
+  if (!title) return;
+  const funder = prompt('Funder:') || '';
+  const potential = parseInt(prompt('Potential amount ($):') || '0', 10);
+  applications.push({ title, funder, potential, status: 'Draft', won: 0 });
+  localStorage.setItem('grantApps', JSON.stringify(applications));
+  renderApps();
+}
+
+function updateAppStatus(idx, status) {
+  applications[idx].status = status;
+  if (status === 'Won') {
+    const won = prompt('Won amount ($):', applications[idx].potential);
+    if (won) applications[idx].won = parseInt(won, 10);
+  }
+  localStorage.setItem('grantApps', JSON.stringify(applications));
+  renderApps();
+}
+
+/* ===== DETAIL MODAL ===== */
+function showDetails(grantId) {
+  const grant = analyzedGrants.find(g => g.id === grantId);
+  if (!grant) return;
+
+  const a = grant.analysis || {};
+  const sf = a.success_factors || {};
+  const risks = (a.risk_factors || []).map(r => '- ' + r).join('\n');
+  const keywords = (sf.keywords || []).join(', ');
+  const valueProps = (sf.value_props || []).join(', ');
+  const partnerships = (sf.partnerships || []).join(', ');
+
+  document.getElementById('modalTitle').textContent = grant.title || 'Grant Details';
+  document.getElementById('modalContent').innerHTML = `
+    <p><strong>Funder:</strong> ${esc(grant.funder || '')}</p>
+    <p><strong>Amount:</strong> ${formatCurrency(grant.amount_min)} - ${formatCurrency(grant.amount_max)}</p>
+    <p><strong>Deadline:</strong> ${grant.deadline || 'TBD'}</p>
+    ${grant.url ? `<p><strong>URL:</strong> <a href="${esc(grant.url)}" target="_blank">${esc(grant.url)}</a></p>` : ''}
+    <hr style="border-color:#2d2d44; margin:12px 0;">
+    <p><strong>Priority:</strong> <span class="priority-badge priority-${a.priority}">${a.priority}</span></p>
+    <p><strong>Win Probability:</strong> ${a.win_probability || 0}%</p>
+    <p><strong>Pattern Match:</strong> ${a.pattern_match_score || 0}%</p>
+    <p><strong>LLM Source:</strong> ${a.llm_source || '-'}</p>
+    <hr style="border-color:#2d2d44; margin:12px 0;">
+    <p><strong>Success Keywords:</strong> ${esc(keywords)}</p>
+    <p><strong>Value Props:</strong> ${esc(valueProps)}</p>
+    <p><strong>Partnerships:</strong> ${esc(partnerships)}</p>
+    <p><strong>Risk Factors:</strong></p>
+    <pre>${esc(risks || 'None')}</pre>
+    <p><strong>Reasoning:</strong></p>
+    <pre>${esc(a.reasoning || '-')}</pre>
+    <hr style="border-color:#2d2d44; margin:12px 0;">
+    <p style="font-size:12px;color:#888;">Generate draft: <code>python -m src.local.generate --grant-id ${esc(grant.id || '')}</code></p>
+  `;
+  document.getElementById('detailModal').classList.add('show');
+}
+
+function closeModal() {
+  document.getElementById('detailModal').classList.remove('show');
+}
+
+document.getElementById('detailModal').addEventListener('click', e => {
+  if (e.target.classList.contains('modal-bg')) closeModal();
+});
+
+/* ===== HELPERS ===== */
+function esc(str) {
+  const d = document.createElement('div');
+  d.textContent = str;
+  return d.innerHTML;
+}
+
+/* ===== INIT ===== */
+loadAllData();
+</script>
+</body>
+</html>

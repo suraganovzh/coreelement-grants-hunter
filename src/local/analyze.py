@@ -1,15 +1,16 @@
 """Analyze grants using LLM cascade: Ollama -> Groq -> Gemini -> rule-based fallback.
 
-Cascade logic:
-  1. Try Ollama locally (Llama 3.1 8B) — free, deep analysis
-  2. If Ollama unavailable -> try Groq cloud (Llama 3.3 70B) — free tier
-  3. If Groq unavailable -> try Gemini Flash (Google) — free tier
-  4. If all LLMs down -> rule-based scoring — always works
+Uses the centralised LLMCascade from llm_cascade.py.
+Cascade:
+  1. Ollama locally (Llama 3.1 8B) — free, deep analysis
+  2. Groq cloud (Llama 3.1 70B) — free tier
+  3. Gemini Pro (Google) — free tier
+  4. Rule-based scoring — always works
 """
 
 import json
-import os
 
+from src.local.llm_cascade import get_cascade
 from src.utils.logger import setup_logger
 
 logger = setup_logger("analyze")
@@ -98,90 +99,6 @@ def _build_prompt(grant: dict, patterns: dict) -> str:
     )
 
 
-def _try_ollama(prompt: str) -> dict | None:
-    """Level 1: Ollama locally (Llama 3.1 8B). Returns None if unavailable."""
-    try:
-        import ollama
-        response = ollama.chat(
-            model="llama3.1:8b",
-            messages=[{"role": "user", "content": prompt}],
-            format="json",
-            options={"temperature": 0.3},
-        )
-        result = json.loads(response["message"]["content"])
-        logger.debug("Ollama analysis OK")
-        return result
-    except ImportError:
-        logger.debug("Ollama not installed")
-        return None
-    except Exception as e:
-        logger.debug("Ollama unavailable: %s", e)
-        return None
-
-
-def _try_groq(prompt: str) -> dict | None:
-    """Level 2: Groq cloud (free tier). Returns None if unavailable."""
-    api_key = os.getenv("GROQ_API_KEY", "")
-    if not api_key:
-        logger.debug("GROQ_API_KEY not set")
-        return None
-
-    try:
-        from groq import Groq
-        client = Groq(api_key=api_key)
-        response = client.chat.completions.create(
-            model="llama-3.3-70b-versatile",
-            messages=[
-                {"role": "system", "content": "You are a grant success analyst. Return ONLY valid JSON."},
-                {"role": "user", "content": prompt},
-            ],
-            temperature=0.1,
-            max_tokens=1024,
-            response_format={"type": "json_object"},
-        )
-        text = response.choices[0].message.content or ""
-        result = json.loads(text)
-        logger.debug("Groq analysis OK")
-        return result
-    except ImportError:
-        logger.debug("groq package not installed")
-        return None
-    except Exception as e:
-        logger.debug("Groq unavailable: %s", e)
-        return None
-
-
-def _try_gemini(prompt: str) -> dict | None:
-    """Level 3: Google Gemini Flash (free tier). Returns None if unavailable."""
-    api_key = os.getenv("GEMINI_API_KEY", "")
-    if not api_key:
-        logger.debug("GEMINI_API_KEY not set")
-        return None
-
-    try:
-        import google.generativeai as genai
-        genai.configure(api_key=api_key)
-        model = genai.GenerativeModel("gemini-2.0-flash")
-        response = model.generate_content(
-            prompt,
-            generation_config={
-                "temperature": 0.1,
-                "max_output_tokens": 1024,
-                "response_mime_type": "application/json",
-            },
-        )
-        text = response.text or ""
-        result = json.loads(text)
-        logger.debug("Gemini analysis OK")
-        return result
-    except ImportError:
-        logger.debug("google-generativeai not installed")
-        return None
-    except Exception as e:
-        logger.debug("Gemini unavailable: %s", e)
-        return None
-
-
 def analyze_grant_fallback(grant: dict, patterns: dict) -> dict:
     """Level 4: Rule-based fallback — always works, no LLM needed."""
     from src.analyzers.fit_scorer import FitScorer
@@ -229,26 +146,22 @@ def analyze_grant(grant: dict, patterns: dict) -> dict:
     Always returns an analysis dict.
     """
     prompt = _build_prompt(grant, patterns)
+    cascade = get_cascade()
 
-    # Level 1: Local Ollama
-    result = _try_ollama(prompt)
-    if result and "priority" in result:
-        result["llm_source"] = "ollama"
+    result, source = cascade.chat_safe(
+        prompt=prompt,
+        task_type="analyze",
+        system_prompt="You are a grant success analyst. Return ONLY valid JSON.",
+        temperature=0.1,
+        max_tokens=1024,
+        json_mode=True,
+    )
+
+    if result and isinstance(result, dict) and "priority" in result:
+        result["llm_source"] = source
         return result
 
-    # Level 2: Groq cloud (free)
-    result = _try_groq(prompt)
-    if result and "priority" in result:
-        result["llm_source"] = "groq"
-        return result
-
-    # Level 3: Gemini Flash (free)
-    result = _try_gemini(prompt)
-    if result and "priority" in result:
-        result["llm_source"] = "gemini"
-        return result
-
-    # Level 4: Rule-based fallback
+    # All LLMs failed — rule-based fallback
     result = analyze_grant_fallback(grant, patterns)
     result["llm_source"] = "rules"
     return result

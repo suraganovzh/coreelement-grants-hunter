@@ -1,13 +1,12 @@
-name: Daily Grant Scraping & Winner Analysis
+name: Weekly Winner Analysis
 
 on:
   schedule:
-    - cron: '0 9 * * *'       # Daily 9 AM UTC — new grants
-    - cron: '0 10 * * 0'      # Weekly Sunday 10 AM — winners
+    - cron: '0 10 * * 0'      # Every Sunday 10 AM UTC
   workflow_dispatch:            # Allow manual trigger
 
 jobs:
-  scrape-new-grants:
+  scrape-winners:
     runs-on: ubuntu-latest
     timeout-minutes: 20
 
@@ -26,73 +25,6 @@ jobs:
         with:
           path: ~/.cache/pip
           key: ${{ runner.os }}-pip-${{ hashFiles('requirements.txt') }}
-
-      - name: Install dependencies
-        run: pip install -r requirements.txt
-
-      - name: Install Playwright browsers
-        run: playwright install chromium
-
-      - name: Create data directory
-        run: mkdir -p data
-
-      - name: Scrape grants.gov
-        run: python -m src.scrapers.grants_gov --output data/grants_gov_raw.json
-        continue-on-error: true
-
-      - name: Scrape SBIR/STTR
-        run: python -m src.scrapers.sbir_scraper --output data/sbir_raw.json
-        continue-on-error: true
-
-      - name: Scrape EU Horizon
-        run: python -m src.scrapers.eu_horizon --output data/eu_raw.json
-        continue-on-error: true
-
-      - name: Scrape foundations
-        run: python -m src.scrapers.foundation_scraper --output data/foundation_raw.json
-        continue-on-error: true
-
-      - name: Scrape corporate grants
-        run: python -m src.scrapers.corporate_grants --output data/corporate_raw.json
-        continue-on-error: true
-
-      - name: Scrape Kazakhstan sources
-        run: python -m src.scrapers.kazakhstan_scraper --output data/kazakhstan_raw.json
-        continue-on-error: true
-
-      - name: Merge and deduplicate
-        run: python -m src.utils.merge_grants --output data/grants.json
-
-      - name: Commit new grants
-        run: |
-          git config user.name github-actions
-          git config user.email github-actions@github.com
-          git add data/grants.json data/*_raw.json
-          git diff-index --quiet HEAD || git commit -m "Daily grants update $(date +'%Y-%m-%d')"
-          git push
-
-      - name: Upload logs
-        if: always()
-        uses: actions/upload-artifact@v4
-        with:
-          name: scrape-logs-${{ github.run_number }}
-          path: logs/
-          retention-days: 14
-
-  scrape-winners:
-    runs-on: ubuntu-latest
-    timeout-minutes: 20
-    if: github.event.schedule == '0 10 * * 0' || github.event_name == 'workflow_dispatch'
-
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
-
-      - name: Set up Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: '3.11'
-          cache: 'pip'
 
       - name: Install dependencies
         run: pip install -r requirements.txt
