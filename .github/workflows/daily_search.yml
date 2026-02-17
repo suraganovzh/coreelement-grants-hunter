@@ -81,7 +81,7 @@ jobs:
 
   scrape-winners:
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 20
     if: github.event.schedule == '0 10 * * 0' || github.event_name == 'workflow_dispatch'
 
     steps:
@@ -100,10 +100,12 @@ jobs:
       - name: Create data directory
         run: mkdir -p data
 
-      - name: Scrape grants.gov awarded grants (last 30 days)
+      # --- Source 1: Grants.gov awards ---
+      - name: Scrape grants.gov awarded grants
         run: python -m src.scrapers.winners.grants_gov_awards --days 30
         continue-on-error: true
 
+      # --- Source 2: SBIR/STTR awards ---
       - name: Scrape SBIR Phase I awards
         run: python -m src.scrapers.winners.sbir_awards --phase 1 --days 30
         continue-on-error: true
@@ -112,6 +114,34 @@ jobs:
         run: python -m src.scrapers.winners.sbir_awards --phase 2 --days 90 --output data/winners_sbir_p2.json
         continue-on-error: true
 
+      # --- Source 3: NSF awards ---
+      - name: Scrape NSF awards
+        run: python -m src.scrapers.winners.nsf_awards --days 90
+        continue-on-error: true
+
+      # --- Source 4: DOE awards ---
+      - name: Scrape DOE awards
+        run: python -m src.scrapers.winners.doe_awards --days 90
+        continue-on-error: true
+
+      # --- Source 5: NIH RePORTER ---
+      - name: Scrape NIH awards
+        run: python -m src.scrapers.winners.nih_reporter
+        continue-on-error: true
+
+      # --- Source 6: USASpending.gov ---
+      - name: Scrape USASpending awards
+        run: python -m src.scrapers.winners.usaspending --days 90
+        continue-on-error: true
+
+      # --- Source 7: SAM.gov opportunities ---
+      - name: Scrape SAM.gov opportunities
+        run: python -m src.scrapers.winners.sam_gov --days 30
+        continue-on-error: true
+        env:
+          SAM_GOV_API_KEY: ${{ secrets.SAM_GOV_API_KEY }}
+
+      # --- Extract patterns from all winners ---
       - name: Extract patterns from winners
         run: python -m src.analyzers.pattern_extractor
 

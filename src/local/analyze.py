@@ -1,10 +1,14 @@
-"""Analyze grants using Llama 3.1 8B (deep analysis + success prediction).
+"""Analyze grants using LLM cascade: Ollama -> Groq -> Gemini -> rule-based fallback.
 
-Runs locally on Surface ARM via Ollama.
-Takes ~3s per grant for deep analysis.
+Cascade logic:
+  1. Try Ollama locally (Llama 3.1 8B) — free, deep analysis
+  2. If Ollama unavailable -> try Groq cloud (Llama 3.3 70B) — free tier
+  3. If Groq unavailable -> try Gemini Flash (Google) — free tier
+  4. If all LLMs down -> rule-based scoring — always works
 """
 
 import json
+import os
 
 from src.utils.logger import setup_logger
 
@@ -34,38 +38,24 @@ CORE_ELEMENT_PROFILE = {
 }
 
 
-def analyze_grant_ollama(grant: dict, patterns: dict) -> dict:
-    """Deep analysis using Llama 3.1 8B."""
-    try:
-        import ollama
-    except ImportError:
-        logger.warning("Ollama not installed, using fallback analysis")
-        return analyze_grant_fallback(grant, patterns)
-
-    funder = grant.get("funder", "")
-    funder_pattern = next(
-        (p for p in patterns.get("funder_patterns", []) if p["funder"] == funder),
-        None,
-    )
-
-    prompt = f"""You are a grant success analyst. Analyze this grant opportunity for Core Element AI.
+ANALYSIS_PROMPT_TEMPLATE = """You are a grant success analyst. Analyze this grant opportunity for Core Element AI.
 
 COMPANY PROFILE:
-{json.dumps(CORE_ELEMENT_PROFILE, indent=2)}
+{profile}
 
 GRANT OPPORTUNITY:
-Title: {grant.get('title', '')}
+Title: {title}
 Funder: {funder}
-Amount: ${grant.get('amount_min', 0):,} - ${grant.get('amount_max', 0):,}
-Deadline: {grant.get('deadline', 'Not specified')}
-Requirements: {grant.get('requirements', grant.get('eligibility', 'Not specified'))}
-Description: {grant.get('description', '')[:1500]}
+Amount: ${amount_min:,} - ${amount_max:,}
+Deadline: {deadline}
+Requirements: {requirements}
+Description: {description}
 
 HISTORICAL PATTERNS FOR THIS FUNDER:
-{json.dumps(funder_pattern, indent=2) if funder_pattern else 'No historical data'}
+{funder_pattern}
 
 TOP WINNING KEYWORDS:
-{json.dumps(patterns.get('keyword_patterns', [])[:10], indent=2)}
+{top_keywords}
 
 Analyze the match and predict success. Return ONLY valid JSON:
 {{
@@ -86,22 +76,114 @@ Rules:
 - test_first: Win probability 8-15% AND pattern match > 60%
 - skip: Win probability < 8%"""
 
+
+def _build_prompt(grant: dict, patterns: dict) -> str:
+    """Build the analysis prompt for a grant."""
+    funder = grant.get("funder", "")
+    funder_pattern = next(
+        (p for p in patterns.get("funder_patterns", []) if p["funder"] == funder),
+        None,
+    )
+    return ANALYSIS_PROMPT_TEMPLATE.format(
+        profile=json.dumps(CORE_ELEMENT_PROFILE, indent=2),
+        title=grant.get("title", ""),
+        funder=funder,
+        amount_min=grant.get("amount_min", 0),
+        amount_max=grant.get("amount_max", 0),
+        deadline=grant.get("deadline", "Not specified"),
+        requirements=grant.get("requirements", grant.get("eligibility", "Not specified")),
+        description=grant.get("description", "")[:1500],
+        funder_pattern=json.dumps(funder_pattern, indent=2) if funder_pattern else "No historical data",
+        top_keywords=json.dumps(patterns.get("keyword_patterns", [])[:10], indent=2),
+    )
+
+
+def _try_ollama(prompt: str) -> dict | None:
+    """Level 1: Ollama locally (Llama 3.1 8B). Returns None if unavailable."""
     try:
+        import ollama
         response = ollama.chat(
             model="llama3.1:8b",
             messages=[{"role": "user", "content": prompt}],
             format="json",
             options={"temperature": 0.3},
         )
-        analysis = json.loads(response["message"]["content"])
-        return analysis
+        result = json.loads(response["message"]["content"])
+        logger.debug("Ollama analysis OK")
+        return result
+    except ImportError:
+        logger.debug("Ollama not installed")
+        return None
     except Exception as e:
-        logger.warning("Ollama analysis failed: %s — using fallback", e)
-        return analyze_grant_fallback(grant, patterns)
+        logger.debug("Ollama unavailable: %s", e)
+        return None
+
+
+def _try_groq(prompt: str) -> dict | None:
+    """Level 2: Groq cloud (free tier). Returns None if unavailable."""
+    api_key = os.getenv("GROQ_API_KEY", "")
+    if not api_key:
+        logger.debug("GROQ_API_KEY not set")
+        return None
+
+    try:
+        from groq import Groq
+        client = Groq(api_key=api_key)
+        response = client.chat.completions.create(
+            model="llama-3.3-70b-versatile",
+            messages=[
+                {"role": "system", "content": "You are a grant success analyst. Return ONLY valid JSON."},
+                {"role": "user", "content": prompt},
+            ],
+            temperature=0.1,
+            max_tokens=1024,
+            response_format={"type": "json_object"},
+        )
+        text = response.choices[0].message.content or ""
+        result = json.loads(text)
+        logger.debug("Groq analysis OK")
+        return result
+    except ImportError:
+        logger.debug("groq package not installed")
+        return None
+    except Exception as e:
+        logger.debug("Groq unavailable: %s", e)
+        return None
+
+
+def _try_gemini(prompt: str) -> dict | None:
+    """Level 3: Google Gemini Flash (free tier). Returns None if unavailable."""
+    api_key = os.getenv("GEMINI_API_KEY", "")
+    if not api_key:
+        logger.debug("GEMINI_API_KEY not set")
+        return None
+
+    try:
+        import google.generativeai as genai
+        genai.configure(api_key=api_key)
+        model = genai.GenerativeModel("gemini-2.0-flash")
+        response = model.generate_content(
+            prompt,
+            generation_config={
+                "temperature": 0.1,
+                "max_output_tokens": 1024,
+                "response_mime_type": "application/json",
+            },
+        )
+        text = response.text or ""
+        result = json.loads(text)
+        logger.debug("Gemini analysis OK")
+        return result
+    except ImportError:
+        logger.debug("google-generativeai not installed")
+        return None
+    except Exception as e:
+        logger.debug("Gemini unavailable: %s", e)
+        return None
 
 
 def analyze_grant_fallback(grant: dict, patterns: dict) -> dict:
-    """Rule-based fallback analysis when Ollama is unavailable."""
+    """Level 4: Rule-based fallback — always works, no LLM needed."""
     from src.analyzers.fit_scorer import FitScorer
 
     scorer = FitScorer()
@@ -116,9 +198,6 @@ def analyze_grant_fallback(grant: dict, patterns: dict) -> dict:
     )
 
     fit_score = fit["overall"]
-
-    # Win probability estimate from fit score
-    # Base rate ~5%, adjust up for high fit
     win_prob = max(1, min(50, int(fit_score * 0.4)))
 
     if fit_score >= 80 and win_prob >= 15:
@@ -128,7 +207,6 @@ def analyze_grant_fallback(grant: dict, patterns: dict) -> dict:
     else:
         priority = "skip"
 
-    # Extract relevant keywords from patterns
     top_keywords = [p["keyword"] for p in patterns.get("keyword_patterns", [])[:5]]
 
     return {
@@ -140,13 +218,44 @@ def analyze_grant_fallback(grant: dict, patterns: dict) -> dict:
             "value_props": ["$17M+ savings", "79% drilling reduction"],
             "partnerships": ["Colorado School of Mines"],
         },
-        "risk_factors": ["Fallback analysis — Ollama unavailable"],
+        "risk_factors": ["Rule-based analysis (LLM unavailable)"],
         "reasoning": f"Rule-based fit score: {fit_score}%, estimated win: {win_prob}%",
     }
 
 
+def analyze_grant(grant: dict, patterns: dict) -> dict:
+    """Analyze a grant using cascade: Ollama -> Groq -> Gemini -> rules.
+
+    Always returns an analysis dict.
+    """
+    prompt = _build_prompt(grant, patterns)
+
+    # Level 1: Local Ollama
+    result = _try_ollama(prompt)
+    if result and "priority" in result:
+        result["llm_source"] = "ollama"
+        return result
+
+    # Level 2: Groq cloud (free)
+    result = _try_groq(prompt)
+    if result and "priority" in result:
+        result["llm_source"] = "groq"
+        return result
+
+    # Level 3: Gemini Flash (free)
+    result = _try_gemini(prompt)
+    if result and "priority" in result:
+        result["llm_source"] = "gemini"
+        return result
+
+    # Level 4: Rule-based fallback
+    result = analyze_grant_fallback(grant, patterns)
+    result["llm_source"] = "rules"
+    return result
+
+
 def analyze_grants(grants: list[dict], patterns: dict) -> list[dict]:
-    """Analyze all filtered grants.
+    """Analyze all filtered grants using the LLM cascade.
 
     Args:
         grants: Filtered grants to analyze.
@@ -161,15 +270,16 @@ def analyze_grants(grants: list[dict], patterns: dict) -> list[dict]:
         title = grant.get("title", "Unknown")[:60]
         print(f"  [{i}/{len(grants)}] Analyzing: {title}...")
 
-        analysis = analyze_grant_ollama(grant, patterns)
+        analysis = analyze_grant(grant, patterns)
         grant["analysis"] = analysis
         analyzed.append(grant)
 
         priority = analysis.get("priority", "skip")
         win_prob = analysis.get("win_probability", 0)
+        source = analysis.get("llm_source", "?")
 
-        emoji = {"copy_now": "🎯", "test_first": "⚡", "skip": "➖"}.get(priority, "❓")
-        print(f"    {emoji} {priority.upper()} - Win: {win_prob}%")
+        emoji = {"copy_now": ">>", "test_first": "**", "skip": "--"}.get(priority, "??")
+        print(f"    {emoji} {priority.upper()} [{source}] - Win: {win_prob}%")
 
     return analyzed
 

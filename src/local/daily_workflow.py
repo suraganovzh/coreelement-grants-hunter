@@ -1,16 +1,15 @@
 """Main local workflow for Surface ARM.
 
-Runs: git pull → filter → analyze → notify → save → git push
+Runs: git pull -> filter -> analyze -> notify -> save -> git push
 
-Uses Ollama with:
-  - Llama 3.2 3B: Fast eligibility filter
-  - Llama 3.1 8B: Deep analysis & success prediction
-  - Gemma 2 9B: Draft generation (on-demand)
+LLM cascade (automatic fallback):
+  1. Ollama local (Llama 3.2 3B / 3.1 8B) — if computer is on
+  2. Groq cloud free tier (Llama 3.3 70B) — if computer is off / Ollama down
+  3. Rule-based keywords — always works, no API needed
 
 Usage:
     python -m src.local.daily_workflow          # Full daily pipeline
     python -m src.local.daily_workflow --skip-pull   # Skip git pull
-    python -m src.local.daily_workflow --generate    # Also generate drafts
 """
 
 import argparse
@@ -30,7 +29,7 @@ logger = setup_logger("daily_workflow")
 
 def git_pull() -> bool:
     """Pull latest data from GitHub."""
-    print("📥 Pulling latest data from GitHub...")
+    print("Pulling latest data from GitHub...")
     result = subprocess.run(["git", "pull"], capture_output=True, text=True)
     if result.returncode == 0:
         print(f"   {result.stdout.strip()}")
@@ -42,8 +41,8 @@ def git_pull() -> bool:
 
 def git_push(message: str):
     """Commit and push results to GitHub."""
-    print("📤 Pushing results to GitHub...")
-    subprocess.run(["git", "add", "data/", "drafts/"], capture_output=True)
+    print("Pushing results to GitHub...")
+    subprocess.run(["git", "add", "data/"], capture_output=True)
 
     # Check if there are changes to commit
     status = subprocess.run(["git", "diff", "--cached", "--quiet"], capture_output=True)
@@ -91,7 +90,7 @@ def load_data() -> tuple[list[dict], dict, set[str]]:
     # Filter to only unprocessed grants
     new_grants = [g for g in all_grants if g.get("id") not in processed_ids]
 
-    print(f"📊 Loaded {len(new_grants)} new grants (of {len(all_grants)} total)")
+    print(f"Loaded {len(new_grants)} new grants (of {len(all_grants)} total)")
     return new_grants, patterns, processed_ids
 
 
@@ -124,33 +123,32 @@ def save_analyzed(analyzed: list[dict]):
 
 
 def main():
-    parser = argparse.ArgumentParser(description="Grant Hunter AI — Daily Local Workflow")
+    parser = argparse.ArgumentParser(description="Grant Hunter AI - Daily Local Workflow")
     parser.add_argument("--skip-pull", action="store_true", help="Skip git pull")
     parser.add_argument("--skip-push", action="store_true", help="Skip git push")
-    parser.add_argument("--generate", action="store_true", help="Also generate drafts for top grants")
     args = parser.parse_args()
 
-    print("🚀 Starting Grant Hunter AI Daily Workflow")
-    print(f"⏰ {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
+    print("Starting Grant Hunter AI Daily Workflow")
+    print(f"Time: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
     print("=" * 60)
 
     # Step 1: Pull latest data
     if not args.skip_pull:
         if not git_pull():
-            print("⚠️ Git pull failed, continuing with local data...")
+            print("WARNING: Git pull failed, continuing with local data...")
 
     # Step 2: Load data
     new_grants, patterns, processed_ids = load_data()
 
     if not new_grants:
-        print("✅ No new grants to process")
+        print("No new grants to process")
         return
 
-    # Step 3: Filter with Llama 3.2 3B (fast)
-    print(f"\n🔍 STEP 1: Filtering {len(new_grants)} grants (Llama 3.2 3B)")
+    # Step 3: Filter (cascade: Ollama -> Groq -> rules)
+    print(f"\nSTEP 1: Filtering {len(new_grants)} grants")
     print("-" * 60)
     filtered_grants = filter_grants(new_grants)
-    print(f"✅ {len(filtered_grants)} grants passed filter")
+    print(f"Result: {len(filtered_grants)} grants passed filter")
 
     if not filtered_grants:
         for grant in new_grants:
@@ -160,21 +158,21 @@ def main():
             git_push(f"Daily: {len(new_grants)} grants filtered, none qualified")
         return
 
-    # Step 4: Analyze with Llama 3.1 8B (deep)
-    print(f"\n🧠 STEP 2: Analyzing {len(filtered_grants)} grants (Llama 3.1 8B)")
+    # Step 4: Analyze (cascade: Ollama -> Groq -> rules)
+    print(f"\nSTEP 2: Analyzing {len(filtered_grants)} grants")
     print("-" * 60)
     analyzed_grants = analyze_grants(filtered_grants, patterns)
 
     copy_now = [g for g in analyzed_grants if g.get("analysis", {}).get("priority") == "copy_now"]
     test_first = [g for g in analyzed_grants if g.get("analysis", {}).get("priority") == "test_first"]
 
-    print(f"\n✅ Analysis complete:")
-    print(f"   🎯 copy_now:   {len(copy_now)} grants")
-    print(f"   ⚡ test_first: {len(test_first)} grants")
-    print(f"   ➖ skip:       {len(analyzed_grants) - len(copy_now) - len(test_first)} grants")
+    print(f"\nAnalysis complete:")
+    print(f"   >> copy_now:   {len(copy_now)} grants")
+    print(f"   ** test_first: {len(test_first)} grants")
+    print(f"   -- skip:       {len(analyzed_grants) - len(copy_now) - len(test_first)} grants")
 
     # Step 5: Send Telegram notification
-    print(f"\n📱 STEP 3: Sending Telegram summary")
+    print(f"\nSTEP 3: Sending Telegram summary")
     print("-" * 60)
     try:
         from dotenv import load_dotenv
@@ -186,19 +184,8 @@ def main():
     if copy_now:
         send_priority_grants(copy_now[:3])
 
-    # Step 6: Generate drafts (optional)
-    if args.generate and copy_now:
-        print(f"\n✍️ STEP 4: Generating drafts (Gemma 2 9B)")
-        print("-" * 60)
-        from src.local.generate import generate_drafts
-        for grant in copy_now[:2]:
-            try:
-                generate_drafts(grant, patterns)
-            except Exception as e:
-                logger.error("Draft generation failed for %s: %s", grant.get("id"), e)
-
-    # Step 7: Save results
-    print(f"\n💾 Saving results")
+    # Step 6: Save results
+    print(f"\nSaving results")
     print("-" * 60)
     save_analyzed(analyzed_grants)
 
@@ -206,7 +193,7 @@ def main():
         processed_ids.add(grant.get("id", ""))
     save_processed_ids(processed_ids)
 
-    # Step 8: Push to GitHub
+    # Step 7: Push to GitHub
     if not args.skip_push:
         commit_msg = (
             f"Daily workflow: {len(copy_now)} copy_now, "
@@ -217,15 +204,15 @@ def main():
 
     # Summary
     print(f"\n{'=' * 60}")
-    print(f"✅ Workflow complete!")
-    print(f"   📋 Processed: {len(new_grants)} grants")
-    print(f"   🔍 Qualified: {len(filtered_grants)} grants")
-    print(f"   🎯 High priority: {len(copy_now)} grants")
-    print(f"   ⚡ Medium priority: {len(test_first)} grants")
+    print(f"Workflow complete!")
+    print(f"   Processed: {len(new_grants)} grants")
+    print(f"   Qualified: {len(filtered_grants)} grants")
+    print(f"   High priority: {len(copy_now)} grants")
+    print(f"   Medium priority: {len(test_first)} grants")
 
     total_potential = sum(g.get("amount_max", 0) for g in copy_now + test_first)
     if total_potential > 0:
-        print(f"   💰 Total potential: ${total_potential:,}")
+        print(f"   Total potential: ${total_potential:,}")
 
 
 if __name__ == "__main__":
