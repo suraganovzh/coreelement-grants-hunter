@@ -1,204 +1,231 @@
 # Grant Hunter AI
 
-AI-powered grant discovery and application management system for **Core Element AI** — a company developing probabilistic AI modeling for geological mineral exploration.
+Success-driven grant discovery system for **Core Element AI** — $0/month hybrid architecture using GitHub Actions (cloud scraping) + local ARM models (AI analysis).
 
-## Overview
+## Core Principle
 
-Grant Hunter AI automatically:
-- **Searches** 30+ grant sources daily (federal, private, international)
-- **Analyzes** eligibility requirements against Core Element AI's profile
-- **Scores** grants by fit (0-100%) and application complexity (1-10)
-- **Notifies** via Telegram bot with daily digests and deadline reminders
-- **Generates** application drafts (executive summary, technical approach, budget, impact)
-- **Tracks** applications through the full lifecycle
+We don't just find grants — we **win** them. The system learns from awarded grants to predict which new opportunities have the highest win probability, then generates tailored applications.
+
+**Metric that matters: $ won, not # applied.**
 
 ## Architecture
 
 ```
-src/
-├── scrapers/          # Grant source scrapers (7 sources)
-│   ├── grants_gov.py  # US Federal grants (Grants.gov API)
-│   ├── sbir_scraper.py # SBIR/STTR programs
-│   ├── foundation_scraper.py # Private foundations (Google, Microsoft, etc.)
-│   ├── eu_horizon.py  # EU Horizon Europe + EIT RawMaterials
-│   ├── world_bank.py  # World Bank, IFC, GCF, GEF, ADB, EBRD
-│   ├── corporate_grants.py # Mining industry + corporate grants
-│   └── kazakhstan_scraper.py # Kazakhstan-specific sources
-├── analyzers/         # Grant analysis pipeline
-│   ├── eligibility_checker.py # Rule-based + AI eligibility check
-│   ├── fit_scorer.py  # Weighted fit scoring (0-100%)
-│   ├── complexity_scorer.py # Application complexity (1-10)
-│   ├── requirements_parser.py # Extract structured requirements
-│   └── similar_finder.py # Find similar grants
-├── generators/        # AI-powered content generation
-│   ├── executive_summary.py # Gemini-powered summary generation
-│   ├── technical_approach.py # Technical approach section
-│   ├── budget_justification.py # Budget justification
-│   └── impact_statement.py # Impact statement
-├── bot/               # Telegram bot
-│   ├── telegram_bot.py # Bot initialization
-│   ├── handlers.py    # Command handlers
-│   ├── keyboards.py   # Inline keyboards
-│   ├── notifications.py # Daily digest & reminders
-│   └── conversation.py # Multi-step conversations
-├── database/          # SQLAlchemy models + queries
-└── utils/             # API clients, rate limiting, text processing
+┌─────────────────────────────────────────┐
+│ 1. GitHub Actions (Cloud, Free)         │
+│    - Daily scraping (9 AM UTC)          │
+│    - Weekly winner analysis (Sundays)   │
+│    - Commits data to repo as JSON       │
+└────────────────┬────────────────────────┘
+                 │ git commit/push
+┌────────────────▼────────────────────────┐
+│ 2. GitHub Repo (Storage, Free)          │
+│    - data/grants.json (new grants)      │
+│    - data/winners*.json (awarded grants)│
+│    - data/patterns.json (success data)  │
+│    - data/analyzed.json (scored grants) │
+│    - drafts/*.md (applications)         │
+└────────────────┬────────────────────────┘
+                 │ git pull
+┌────────────────▼────────────────────────┐
+│ 3. Surface ARM (Local, Free)            │
+│    - Llama 3.2 3B: Filter grants (~0.5s)│
+│    - Llama 3.1 8B: Analyze + predict    │
+│    - Gemma 2 9B: Generate drafts        │
+│    - Telegram push notifications        │
+└─────────────────────────────────────────┘
 ```
+
+## Cost Breakdown
+
+| Component | Cost |
+|-----------|------|
+| GitHub Actions | $0 (2,000 min/month free) |
+| GitHub Repo | $0 (free private repo) |
+| Ollama Models | $0 (local) |
+| Telegram Bot | $0 |
+| Surface compute | $0 (your hardware) |
+| **TOTAL** | **$0/month** |
 
 ## Quick Start
 
-### 1. Clone and Setup
+### 1. Prerequisites (Surface ARM)
+
+```bash
+# Install Ollama (Windows ARM)
+winget install Ollama.Ollama
+
+# Pull models
+ollama pull llama3.2:3b      # Fast filter
+ollama pull llama3.1:8b      # Deep analysis
+ollama pull gemma2:9b        # Draft generation
+```
+
+### 2. Clone and Install
 
 ```bash
 git clone <repo-url>
 cd grant-hunter-ai
-python -m venv venv
-source venv/bin/activate
 pip install -r requirements.txt
 ```
 
-### 2. Configure Environment
+### 3. Configure Telegram
 
 ```bash
 cp .env.example .env
-# Edit .env with your API keys:
-# - GROQ_API_KEY (from console.groq.com)
-# - GEMINI_API_KEY (from makersuite.google.com)
-# - TELEGRAM_BOT_TOKEN (from @BotFather)
-# - TELEGRAM_CHAT_ID (your chat ID)
+# Edit .env with Telegram credentials
+
+# Setup:
+# 1. Telegram → @BotFather → /newbot → "Core Element Grant Hunter"
+# 2. Copy bot token to .env
+# 3. Send /start to your bot
+# 4. Get chat_id: https://api.telegram.org/bot<TOKEN>/getUpdates
+# 5. Copy chat.id to .env
 ```
 
-### 3. Initialize Database
+### 4. Enable GitHub Actions
+
+1. Go to repo Settings → Actions → Enable workflows
+2. Optionally add secrets: `TELEGRAM_BOT_TOKEN`, `TELEGRAM_CHAT_ID`
+3. Manually trigger: Actions → Daily Grant Scraping → Run workflow
+
+### 5. Daily Usage (Surface)
 
 ```bash
-python -m src.database.migrations.init_db
-# Optional: load sample data
-python -m src.database.seed_data
+# Pull latest scraped data, filter, analyze, notify
+python -m src.local.daily_workflow
+
+# Generate drafts for a specific grant
+python -m src.local.generate --grant-id <id>
+
+# View high-priority grants
+cat data/analyzed.json | python -c "
+import json,sys
+for g in json.load(sys.stdin):
+  if g.get('analysis',{}).get('priority')=='copy_now':
+    print(f\"  {g['title'][:60]} | Win: {g['analysis']['win_probability']}%\")
+"
 ```
 
-### 4. Run
+## Local AI Models
 
-```bash
-# Full pipeline: scrape -> analyze -> notify
-python -m src.main --mode=full
+| Model | Task | Speed | Use |
+|-------|------|-------|-----|
+| **Llama 3.2 3B** | Eligibility filter | ~0.5s/grant | Quick pass/fail check |
+| **Llama 3.1 8B** | Deep analysis | ~3s/grant | Pattern match, win prediction |
+| **Gemma 2 9B** | Draft generation | ~30s/section | Executive summary, tech approach |
 
-# Individual modes:
-python -m src.main --mode=scrape    # Run scrapers only
-python -m src.main --mode=analyze   # Analyze found grants
-python -m src.main --mode=notify    # Send Telegram notifications
-python -m src.main --mode=bot       # Start Telegram bot (polling)
+All models run via Ollama on Snapdragon X Elite (ARM). With graceful fallback to rule-based analysis if Ollama is unavailable.
+
+## Pipeline Flow
+
+```
+GitHub Actions (daily):
+  Scrape 30+ sources → data/grants.json
+  Scrape winners (weekly) → data/winners*.json → data/patterns.json
+
+Surface ARM (on-demand):
+  git pull
+  → Llama 3.2 3B: Filter 50 grants → 12 qualified (~25s)
+  → Llama 3.1 8B: Analyze 12 grants → 3 copy_now, 5 test_first (~36s)
+  → Telegram: Send summary + priority grants
+  → Gemma 2 9B (optional): Generate drafts for top 2-3 (~90s)
+  → git push results
 ```
 
-### 5. Run Tests
+## Project Structure
 
-```bash
-pytest tests/ -v
 ```
-
-## Docker Deployment
-
-```bash
-# Production deployment with PostgreSQL
-docker-compose up -d
-
-# Services:
-# - bot:       Telegram bot (always running)
-# - scheduler: Daily search cron job
-# - db:        PostgreSQL database
-# - backup:    Daily database backups
+grant-hunter-ai/
+├── .github/workflows/        # GitHub Actions (cloud scraping)
+│   ├── daily_search.yml      # Daily scrape + weekly winners
+│   └── deadline_reminders.yml # Telegram deadline alerts
+├── src/
+│   ├── scrapers/             # Grant source scrapers (7 sources)
+│   │   ├── grants_gov.py     # US Federal grants
+│   │   ├── sbir_scraper.py   # SBIR/STTR
+│   │   ├── eu_horizon.py     # EU Horizon Europe
+│   │   ├── foundation_scraper.py
+│   │   ├── corporate_grants.py
+│   │   ├── world_bank.py
+│   │   ├── kazakhstan_scraper.py
+│   │   └── winners/          # Awarded grant scrapers
+│   │       ├── grants_gov_awards.py
+│   │       └── sbir_awards.py
+│   ├── analyzers/            # Analysis pipeline
+│   │   ├── pattern_extractor.py  # Learn from winners
+│   │   ├── eligibility_checker.py
+│   │   ├── fit_scorer.py
+│   │   ├── complexity_scorer.py
+│   │   └── similar_finder.py
+│   ├── local/                # ARM processing (Surface)
+│   │   ├── daily_workflow.py # Main daily pipeline
+│   │   ├── filter.py        # Llama 3.2 3B filter
+│   │   ├── analyze.py       # Llama 3.1 8B analysis
+│   │   ├── generate.py      # Gemma 2 9B drafts
+│   │   └── telegram_notify.py
+│   ├── generators/           # Content generation
+│   ├── bot/                  # Telegram bot (full version)
+│   ├── database/             # SQLAlchemy models
+│   └── utils/                # Shared utilities
+├── config/                   # YAML configuration
+├── templates/                # Grant application templates
+├── data/                     # Git-tracked scraped data
+├── drafts/                   # Generated application drafts
+└── tests/                    # Test suite
 ```
-
-## Telegram Bot Commands
-
-| Command | Description |
-|---------|-------------|
-| `/start` | Welcome message |
-| `/status` | Current pipeline overview |
-| `/urgent` | Grants with <7 day deadlines |
-| `/pipeline` | Full pipeline by urgency |
-| `/search <keyword>` | Search grants by keyword |
-| `/details <id>` | Full grant details |
-| `/fit <id>` | Detailed fit analysis |
-| `/similar <id>` | Find similar grants |
-| `/draft <id>` | Generate application draft |
-| `/stats` | Overall statistics |
-| `/settings` | Notification settings |
 
 ## Grant Sources
 
 **US Federal:** Grants.gov, SBIR/STTR, NSF, DOE, ARPA-E, USGS
 
-**Private Foundations:** Google AI, Microsoft, Amazon, Intel, BHP, Rio Tinto, Anglo American
+**Private:** Google AI, Microsoft, Amazon, BHP, Rio Tinto, Anglo American, Breakthrough Energy
 
 **International:** EU Horizon Europe, EIT RawMaterials, World Bank, IFC, ADB, EBRD, Green Climate Fund
 
-**Green Tech:** Breakthrough Energy, Global Environment Facility, ARPA-E
-
 **Kazakhstan:** Astana Hub, QazInnovations/NATD, Ministry of Digital Development
 
-## Configuration
+## Success-Driven Features
 
-All configuration is in `config/`:
+**Winner Analysis** — Weekly scraping of awarded grants from grants.gov and sbir.gov to build a database of winning patterns.
 
-- `sources.yaml` — Grant sources, URLs, API endpoints, rate limits
-- `keywords.yaml` — Search keywords by category
-- `filters.yaml` — Filtering criteria, scoring weights, notification settings
-- `core_element_profile.yaml` — Company profile for matching and generation
+**Pattern Extraction** — Identifies top keywords, funder preferences, typical amounts, and repeat winners to predict success probability.
 
-## AI Integration
-
-**Groq (LPU)** — Fast analysis tasks:
-- Eligibility checking
-- Grant classification
-- Quick scoring
-- Requirement extraction
-
-**Gemini Pro** — Long-form generation:
-- Executive summary writing
-- Technical approach generation
-- Budget justification
-- Impact statement creation
-- Deep grant analysis
-
-## Pipeline Flow
-
-```
-New Grant Found
-    → Groq: Quick eligibility check & scoring
-    → If fit > 70%:
-        → Gemini: Deep analysis & requirements extraction
-        → Gemini: Draft outline generation
-    → Store in DB
-    → Send Telegram notification (if notable)
-```
+**Priority Classification:**
+- `copy_now` — Win probability >15%, pattern match >80%, apply immediately
+- `test_first` — Win probability 8-15%, worth investigating
+- `skip` — Win probability <8%, don't waste time
 
 ## GitHub Actions
 
 | Workflow | Schedule | Description |
 |----------|----------|-------------|
-| `daily_search.yml` | 9:00 AM UTC daily | Full pipeline |
-| `deadline_reminders.yml` | 3x daily | Deadline alerts |
-| `deploy.yml` | On push to main | Deploy to VPS |
+| `daily_search.yml` | 9 AM UTC daily | Scrape new grants |
+| `daily_search.yml` | 10 AM UTC Sunday | Scrape winners + extract patterns |
+| `deadline_reminders.yml` | 9 AM UTC daily | Telegram deadline alerts |
 
-## Required Secrets
+## Secrets (Optional)
 
-Set these in GitHub repository settings or `.env`:
+Only needed for Telegram notifications from GitHub Actions:
 
 | Secret | Description |
 |--------|-------------|
-| `GROQ_API_KEY` | Groq API key |
-| `GEMINI_API_KEY` | Google Gemini API key |
-| `TELEGRAM_BOT_TOKEN` | Telegram bot token from @BotFather |
-| `TELEGRAM_CHAT_ID` | Target Telegram chat ID |
-| `DATABASE_URL` | PostgreSQL connection string |
-| `VPS_HOST` | VPS IP address (for deployment) |
-| `VPS_USER` | VPS SSH username |
-| `VPS_SSH_KEY` | VPS SSH private key |
+| `TELEGRAM_BOT_TOKEN` | Telegram bot token |
+| `TELEGRAM_CHAT_ID` | Target chat ID |
+
+## Performance
+
+Daily processing on Surface ARM (Snapdragon X Elite):
+- Scrape 50-100 grants: ~5 min (GitHub Actions, cloud)
+- Filter 50 grants: ~25s (Llama 3.2 3B, local)
+- Analyze 12 qualified: ~36s (Llama 3.1 8B, local)
+- Generate 3 drafts: ~90s (Gemma 2 9B, local)
+- **Total local time: ~3 minutes**
 
 ## Company Profile
 
-Core Element AI specializes in probabilistic AI modeling for geological mineral exploration:
-- **Focus minerals:** Lithium, Copper, Cobalt, Aluminum, Iron Ore
-- **Key metric:** 79% reduction in unsuccessful drilling, $17M+ proven savings
+Core Element AI — Probabilistic AI modeling for geological mineral exploration:
+- **Focus:** Li, Cu, Co, Al, Fe for green energy transition
+- **Results:** 79% drilling reduction, $17M+ savings, ±15m accuracy
+- **Team:** PhD Stanford/MIT, NASA/Berkeley, 30+ years mining
 - **Markets:** Kazakhstan, USA, Mexico (expanding globally)
-- **Technology:** TRL 7, ±15m prediction accuracy

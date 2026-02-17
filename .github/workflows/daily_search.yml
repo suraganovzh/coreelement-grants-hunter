@@ -1,21 +1,88 @@
-name: Daily Grant Search
+name: Daily Grant Scraping & Winner Analysis
 
 on:
   schedule:
-    - cron: '0 9 * * *'  # Every day at 9:00 AM UTC
-  workflow_dispatch:       # Allow manual trigger
-
-env:
-  GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
-  GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-  TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
-  TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
-  DATABASE_URL: ${{ secrets.DATABASE_URL }}
+    - cron: '0 9 * * *'       # Daily 9 AM UTC — new grants
+    - cron: '0 10 * * 0'      # Weekly Sunday 10 AM — winners
+  workflow_dispatch:            # Allow manual trigger
 
 jobs:
-  search-and-analyze:
+  scrape-new-grants:
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    timeout-minutes: 20
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: Cache dependencies
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/pip
+          key: ${{ runner.os }}-pip-${{ hashFiles('requirements.txt') }}
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Install Playwright browsers
+        run: playwright install chromium
+
+      - name: Create data directory
+        run: mkdir -p data
+
+      - name: Scrape grants.gov
+        run: python -m src.scrapers.grants_gov --output data/grants_gov_raw.json
+        continue-on-error: true
+
+      - name: Scrape SBIR/STTR
+        run: python -m src.scrapers.sbir_scraper --output data/sbir_raw.json
+        continue-on-error: true
+
+      - name: Scrape EU Horizon
+        run: python -m src.scrapers.eu_horizon --output data/eu_raw.json
+        continue-on-error: true
+
+      - name: Scrape foundations
+        run: python -m src.scrapers.foundation_scraper --output data/foundation_raw.json
+        continue-on-error: true
+
+      - name: Scrape corporate grants
+        run: python -m src.scrapers.corporate_grants --output data/corporate_raw.json
+        continue-on-error: true
+
+      - name: Scrape Kazakhstan sources
+        run: python -m src.scrapers.kazakhstan_scraper --output data/kazakhstan_raw.json
+        continue-on-error: true
+
+      - name: Merge and deduplicate
+        run: python -m src.utils.merge_grants --output data/grants.json
+
+      - name: Commit new grants
+        run: |
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          git add data/grants.json data/*_raw.json
+          git diff-index --quiet HEAD || git commit -m "Daily grants update $(date +'%Y-%m-%d')"
+          git push
+
+      - name: Upload logs
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: scrape-logs-${{ github.run_number }}
+          path: logs/
+          retention-days: 14
+
+  scrape-winners:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    if: github.event.schedule == '0 10 * * 0' || github.event_name == 'workflow_dispatch'
 
     steps:
       - name: Checkout code
@@ -30,19 +97,28 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
 
-      - name: Install Playwright browsers
-        run: playwright install chromium
+      - name: Create data directory
+        run: mkdir -p data
 
-      - name: Initialize database
-        run: python -m src.database.migrations.init_db
+      - name: Scrape grants.gov awarded grants (last 30 days)
+        run: python -m src.scrapers.winners.grants_gov_awards --days 30
+        continue-on-error: true
 
-      - name: Run full pipeline (scrape + analyze + notify)
-        run: python -m src.main --mode=full
+      - name: Scrape SBIR Phase I awards
+        run: python -m src.scrapers.winners.sbir_awards --phase 1 --days 30
+        continue-on-error: true
 
-      - name: Upload logs
-        if: always()
-        uses: actions/upload-artifact@v4
-        with:
-          name: search-logs-${{ github.run_number }}
-          path: logs/
-          retention-days: 30
+      - name: Scrape SBIR Phase II awards
+        run: python -m src.scrapers.winners.sbir_awards --phase 2 --days 90 --output data/winners_sbir_p2.json
+        continue-on-error: true
+
+      - name: Extract patterns from winners
+        run: python -m src.analyzers.pattern_extractor
+
+      - name: Commit winners and patterns
+        run: |
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          git add data/winners*.json data/patterns.json
+          git diff-index --quiet HEAD || git commit -m "Winners & patterns update $(date +'%Y-%m-%d')"
+          git push

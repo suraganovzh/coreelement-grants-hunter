@@ -184,3 +184,36 @@ class GrantsGovScraper(BaseScraper):
         except Exception as e:
             logger.error("[grants_gov] Failed to get details for %s: %s", opp_id, e)
             return {}
+
+
+def main():
+    """CLI entry point for GitHub Actions."""
+    import argparse
+    import json
+    from pathlib import Path
+    from dataclasses import asdict
+
+    parser = argparse.ArgumentParser(description="Scrape grants.gov")
+    parser.add_argument("--output", default="data/grants_gov_raw.json")
+    parser.add_argument("--test", action="store_true")
+    args = parser.parse_args()
+
+    scraper = GrantsGovScraper()
+    results = scraper.search()
+    scraper.close()
+
+    output = [asdict(r) for r in results]
+    # Convert date objects to strings
+    for item in output:
+        if item.get("deadline"):
+            item["deadline"] = str(item["deadline"])
+
+    Path(args.output).parent.mkdir(parents=True, exist_ok=True)
+    with open(args.output, "w") as f:
+        json.dump(output, f, indent=2)
+
+    print(f"grants.gov: {len(output)} grants saved to {args.output}")
+
+
+if __name__ == "__main__":
+    main()

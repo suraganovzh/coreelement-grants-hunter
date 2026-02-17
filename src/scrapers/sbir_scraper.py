@@ -154,3 +154,34 @@ class SBIRScraper(BaseScraper):
         if "iii" in phase_lower:
             return 1000000, 5000000  # Phase III
         return 50000, 1500000  # Unknown phase
+
+
+def main():
+    """CLI entry point for GitHub Actions."""
+    import argparse
+    import json
+    from pathlib import Path
+    from dataclasses import asdict
+
+    parser = argparse.ArgumentParser(description="Scrape SBIR/STTR")
+    parser.add_argument("--output", default="data/sbir_raw.json")
+    args = parser.parse_args()
+
+    scraper = SBIRScraper()
+    results = scraper.search()
+    scraper.close()
+
+    output = [asdict(r) for r in results]
+    for item in output:
+        if item.get("deadline"):
+            item["deadline"] = str(item["deadline"])
+
+    Path(args.output).parent.mkdir(parents=True, exist_ok=True)
+    with open(args.output, "w") as f:
+        json.dump(output, f, indent=2)
+
+    print(f"SBIR/STTR: {len(output)} grants saved to {args.output}")
+
+
+if __name__ == "__main__":
+    main()

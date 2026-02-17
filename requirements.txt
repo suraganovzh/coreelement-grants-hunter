@@ -1,23 +1,8 @@
 # Core
 python-dotenv==1.0.1
 PyYAML==6.0.2
-pydantic==2.10.4
 
-# AI APIs
-groq==0.15.0
-google-generativeai==0.8.4
-
-# Telegram Bot
-python-telegram-bot==21.9
-
-# Database
-SQLAlchemy==2.0.36
-alembic==1.14.1
-
-# Scheduling
-APScheduler==3.11.0
-
-# Web Scraping
+# Web Scraping (used by GitHub Actions)
 beautifulsoup4==4.12.3
 requests==2.32.3
 lxml==5.3.0
@@ -26,16 +11,22 @@ playwright==1.49.1
 
 # Data Processing
 pandas==2.2.3
+python-dateutil==2.9.0.post0
+
+# Database (SQLite — no external DB needed)
+SQLAlchemy==2.0.36
+
+# Local LLM (Ollama client — for Surface ARM)
+ollama==0.4.7
 
 # Retry Logic
 tenacity==9.0.0
 
 # Testing
 pytest==8.3.4
-pytest-asyncio==0.25.0
 pytest-cov==6.0.0
-aioresponses==0.7.7
 
-# Utilities
-aiohttp==3.11.11
-python-dateutil==2.9.0.post0
+# Optional: AI API fallbacks (not required for $0 operation)
+# groq==0.15.0
+# google-generativeai==0.8.4
+# python-telegram-bot==21.9
