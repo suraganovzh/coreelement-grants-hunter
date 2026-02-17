@@ -1,0 +1,48 @@
+name: Daily Grant Search
+
+on:
+  schedule:
+    - cron: '0 9 * * *'  # Every day at 9:00 AM UTC
+  workflow_dispatch:       # Allow manual trigger
+
+env:
+  GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+  GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+  TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+  TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+  DATABASE_URL: ${{ secrets.DATABASE_URL }}
+
+jobs:
+  search-and-analyze:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Install Playwright browsers
+        run: playwright install chromium
+
+      - name: Initialize database
+        run: python -m src.database.migrations.init_db
+
+      - name: Run full pipeline (scrape + analyze + notify)
+        run: python -m src.main --mode=full
+
+      - name: Upload logs
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: search-logs-${{ github.run_number }}
+          path: logs/
+          retention-days: 30

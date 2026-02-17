@@ -1,0 +1,90 @@
+# ===========================================
+# Search Keywords Configuration
+# ===========================================
+
+primary:
+  ai_geology:
+    - "AI geology"
+    - "artificial intelligence geology"
+    - "machine learning geology"
+    - "deep learning geological"
+    - "AI mineral exploration"
+    - "geological AI modeling"
+    - "probabilistic geological modeling"
+
+  mineral_exploration:
+    - "mineral exploration technology"
+    - "critical minerals exploration"
+    - "subsurface prediction"
+    - "geological prospecting AI"
+    - "exploration drilling optimization"
+    - "mineral deposit prediction"
+
+  critical_minerals:
+    - "critical minerals"
+    - "lithium exploration"
+    - "copper discovery"
+    - "cobalt mining"
+    - "aluminum resources"
+    - "iron ore exploration"
+    - "battery metals"
+    - "rare earth elements"
+    - "strategic minerals"
+
+  geospatial:
+    - "geospatial analysis"
+    - "geospatial AI"
+    - "remote sensing mining"
+    - "satellite geological survey"
+    - "GIS mineral exploration"
+
+secondary:
+  green_transition:
+    - "green transition minerals"
+    - "sustainable mining technology"
+    - "clean energy minerals"
+    - "energy transition technology"
+    - "decarbonization mining"
+    - "ESG mining"
+    - "responsible exploration"
+
+  technology:
+    - "probabilistic modeling"
+    - "subsurface mapping"
+    - "geological data science"
+    - "mining innovation"
+    - "exploration technology"
+    - "drilling optimization"
+
+  industry:
+    - "mining technology grant"
+    - "mineral resources innovation"
+    - "geological survey funding"
+    - "exploration R&D"
+    - "mining AI startup"
+    - "cleantech mining"
+
+  sbir_specific:
+    - "small business innovation research mining"
+    - "SBIR critical minerals"
+    - "STTR geological"
+    - "DOE critical minerals"
+    - "NSF geosciences"
+
+combination_queries:
+  - "AI AND mining AND grant"
+  - "critical minerals AND technology AND funding"
+  - "geological exploration AND artificial intelligence"
+  - "mineral exploration AND innovation AND award"
+  - "mining technology AND small business"
+  - "subsurface AND prediction AND deep learning"
+  - "lithium AND exploration AND funding"
+  - "clean energy AND minerals AND innovation"
+
+excluded_terms:
+  - "coal mining"
+  - "oil and gas"
+  - "petroleum"
+  - "fracking"
+  - "cryptocurrency mining"
+  - "data mining only"

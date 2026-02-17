@@ -1,0 +1,102 @@
+# ===========================================
+# Grant Filtering Criteria
+# ===========================================
+
+eligibility:
+  legal_structures_accepted:
+    - "S-Corp"
+    - "S Corporation"
+    - "C-Corp"
+    - "C Corporation"
+    - "LLC"
+    - "For-Profit"
+    - "Small Business"
+    - "Any"
+    - "All"
+
+  legal_structures_excluded:
+    - "Non-profit only"
+    - "501(c)(3) only"
+    - "Tribal only"
+    - "Government agency only"
+    - "University only"
+    - "Academic institution only"
+
+  geographic:
+    primary:
+      - "United States"
+      - "USA"
+      - "US"
+      - "Delaware"
+      - "International"
+      - "Global"
+      - "Worldwide"
+    secondary:
+      - "Kazakhstan"
+      - "Mexico"
+      - "Chile"
+      - "Canada"
+      - "Australia"
+      - "European Union"
+      - "United Kingdom"
+      - "South Africa"
+
+amount:
+  min_usd: 10000
+  max_usd: 10000000
+  preferred_min_usd: 25000
+  preferred_max_usd: 2000000
+
+deadline:
+  min_days: 3         # Minimum days to deadline (skip if less)
+  max_days: 365       # Maximum days to deadline
+  urgent_threshold: 7
+  important_threshold: 30
+
+technology_readiness:
+  min_trl: 3
+  max_trl: 8
+  preferred_trl: [4, 5, 6, 7]
+
+equity:
+  max_equity_percent: 5   # Reject if requires more than 5% equity
+  prefer_no_equity: true
+
+scoring:
+  weights:
+    keyword_match: 0.25
+    industry_match: 0.20
+    eligibility_match: 0.20
+    amount_range: 0.10
+    deadline_feasibility: 0.10
+    complexity_inverse: 0.10
+    geographic_match: 0.05
+
+  thresholds:
+    minimum_fit: 40       # Don't show grants below 40% fit
+    auto_qualify: 80      # Auto-qualify grants above 80% fit
+    highlight: 90         # Highlight grants above 90% fit
+
+priority:
+  high_priority_sources:
+    - "SBIR"
+    - "STTR"
+    - "DOE"
+    - "ARPA-E"
+    - "NSF"
+    - "EIT RawMaterials"
+    - "Breakthrough Energy"
+
+  high_priority_keywords:
+    - "critical minerals"
+    - "mineral exploration"
+    - "AI mining"
+    - "clean energy minerals"
+    - "battery metals"
+
+notifications:
+  daily_digest_time: "09:00"  # UTC
+  timezone: "UTC"
+  urgent_immediate: true
+  max_grants_per_digest: 20
+  reminder_days: [14, 7, 3, 1]

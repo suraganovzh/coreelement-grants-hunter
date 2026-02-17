@@ -1,0 +1,269 @@
+# ===========================================
+# Grant Sources Configuration
+# ===========================================
+
+federal:
+  grants_gov:
+    name: "Grants.gov"
+    url: "https://www.grants.gov"
+    api_url: "https://api.grants.gov/v1/api/search"
+    enabled: true
+    frequency: daily
+    requires_api_key: true
+    rate_limit:
+      calls: 100
+      period: 3600  # per hour
+    keywords:
+      - "artificial intelligence"
+      - "mining technology"
+      - "critical minerals"
+      - "mineral exploration"
+      - "geological survey"
+      - "clean energy minerals"
+    funding_instruments:
+      - "G"   # Grant
+      - "CA"  # Cooperative Agreement
+    eligible_categories:
+      - "21"  # Small Business
+      - "25"  # For-Profit Organization
+
+  sbir_sttr:
+    name: "SBIR/STTR"
+    url: "https://www.sbir.gov"
+    api_url: "https://www.sbir.gov/api/solicitations.json"
+    enabled: true
+    frequency: daily
+    requires_api_key: false
+    rate_limit:
+      calls: 60
+      period: 60
+    target_agencies:
+      - "DOE"   # Department of Energy
+      - "NSF"   # National Science Foundation
+      - "DOD"   # Department of Defense
+      - "DOI"   # Department of Interior (USGS)
+      - "EPA"   # Environmental Protection Agency
+    phases:
+      - "Phase I"
+      - "Phase II"
+
+  nsf:
+    name: "National Science Foundation"
+    url: "https://www.nsf.gov/funding/"
+    enabled: true
+    frequency: weekly
+    requires_api_key: false
+    rate_limit:
+      calls: 30
+      period: 60
+    directorates:
+      - "GEO"  # Geosciences
+      - "CISE"  # Computer and Information Science
+      - "ENG"  # Engineering
+      - "TIP"  # Technology, Innovation and Partnerships
+
+  doe:
+    name: "Department of Energy"
+    url: "https://www.energy.gov/eere/funding"
+    enabled: true
+    frequency: weekly
+    requires_api_key: false
+    rate_limit:
+      calls: 30
+      period: 60
+    offices:
+      - "EERE"   # Energy Efficiency & Renewable Energy
+      - "FE"     # Fossil Energy
+      - "ARPA-E" # Advanced Research Projects Agency
+      - "CMI"    # Critical Materials Institute
+
+  arpa_e:
+    name: "ARPA-E"
+    url: "https://arpa-e.energy.gov/technologies/open-funding-opportunities"
+    enabled: true
+    frequency: weekly
+    requires_api_key: false
+
+  usgs:
+    name: "US Geological Survey"
+    url: "https://www.usgs.gov/programs/mineral-resources-program"
+    enabled: true
+    frequency: weekly
+
+private_foundations:
+  foundation_directory:
+    name: "Foundation Directory Online"
+    url: "https://fconline.foundationcenter.org"
+    enabled: false  # Requires paid subscription
+    frequency: weekly
+
+  google_ai:
+    name: "Google AI Research Grants"
+    url: "https://research.google/outreach/"
+    enabled: true
+    frequency: weekly
+
+  microsoft_ai:
+    name: "Microsoft AI for Earth"
+    url: "https://www.microsoft.com/en-us/ai/ai-for-earth-grants"
+    enabled: true
+    frequency: weekly
+
+  amazon_sustainability:
+    name: "Amazon Sustainability"
+    url: "https://sustainability.aboutamazon.com/"
+    enabled: true
+    frequency: weekly
+
+mining_industry:
+  anglo_american:
+    name: "Anglo American Foundation"
+    url: "https://www.angloamerican.com/sustainability"
+    enabled: true
+    frequency: monthly
+
+  rio_tinto:
+    name: "Rio Tinto Innovation"
+    url: "https://www.riotinto.com/sustainability"
+    enabled: true
+    frequency: monthly
+
+  bhp_foundation:
+    name: "BHP Foundation"
+    url: "https://www.bhp.com/community/bhp-foundation"
+    enabled: true
+    frequency: monthly
+
+international:
+  eu_horizon:
+    name: "EU Horizon Europe"
+    url: "https://ec.europa.eu/info/funding-tenders/opportunities/portal"
+    api_url: "https://api.tech.ec.europa.eu/search-api/prod/rest/search"
+    enabled: true
+    frequency: weekly
+    requires_api_key: false
+    topics:
+      - "HORIZON-CL4"   # Digital, Industry and Space
+      - "HORIZON-CL5"   # Climate, Energy and Mobility
+    keywords:
+      - "raw materials"
+      - "critical minerals"
+      - "AI for mining"
+      - "geological exploration"
+
+  eit_raw_materials:
+    name: "EIT RawMaterials"
+    url: "https://eitrawmaterials.eu/calls/"
+    enabled: true
+    frequency: weekly
+
+  eic_accelerator:
+    name: "EIC Accelerator"
+    url: "https://eic.ec.europa.eu/eic-funding-opportunities_en"
+    enabled: true
+    frequency: monthly
+
+  innovate_uk:
+    name: "Innovate UK"
+    url: "https://apply-for-innovation-funding.service.gov.uk/competition/search"
+    enabled: true
+    frequency: weekly
+
+  world_bank:
+    name: "World Bank Innovation Labs"
+    url: "https://www.worldbank.org/en/topic/innovation"
+    enabled: true
+    frequency: weekly
+
+  ifc:
+    name: "IFC - International Finance Corporation"
+    url: "https://www.ifc.org/en/what-we-do/sector-expertise/manufacturing"
+    enabled: true
+    frequency: monthly
+
+  adb:
+    name: "Asian Development Bank"
+    url: "https://www.adb.org/what-we-do/funds"
+    enabled: true
+    frequency: monthly
+
+  ebrd:
+    name: "European Bank for Reconstruction and Development"
+    url: "https://www.ebrd.com/what-we-do/get-support"
+    enabled: true
+    frequency: monthly
+
+green_climate:
+  gef:
+    name: "Global Environment Facility"
+    url: "https://www.thegef.org/how-we-work/funding"
+    enabled: true
+    frequency: monthly
+
+  green_climate_fund:
+    name: "Green Climate Fund"
+    url: "https://www.greenclimate.fund/about/resource-mobilisation"
+    enabled: true
+    frequency: monthly
+
+  breakthrough_energy:
+    name: "Breakthrough Energy"
+    url: "https://www.breakthroughenergy.org/scaling-the-solution/fellows/"
+    enabled: true
+    frequency: monthly
+
+  arpa_e_climate:
+    name: "ARPA-E Climate Programs"
+    url: "https://arpa-e.energy.gov/"
+    enabled: true
+    frequency: weekly
+
+kazakhstan:
+  ministry_digital:
+    name: "Kazakhstan Ministry of Digital Development"
+    url: "https://www.gov.kz/memleket/entities/mdai"
+    enabled: true
+    frequency: weekly
+
+  astana_hub:
+    name: "Astana Hub"
+    url: "https://astanahub.com/en/grants"
+    enabled: true
+    frequency: weekly
+
+  natd:
+    name: "NATD - National Agency for Technological Development"
+    url: "https://www.natd.gov.kz"
+    enabled: true
+    frequency: weekly
+
+  kbtu:
+    name: "Kazakh-British Technical University Innovation"
+    url: "https://www.kbtu.kz"
+    enabled: true
+    frequency: monthly
+
+resources_specific:
+  nrcan:
+    name: "Natural Resources Canada"
+    url: "https://natural-resources.canada.ca/science-and-data/funding-partnerships"
+    enabled: true
+    frequency: weekly
+
+  australia_mining:
+    name: "Australian Government Mining Technology"
+    url: "https://www.industry.gov.au/science-technology-and-innovation"
+    enabled: true
+    frequency: monthly
+
+  chile_corfo:
+    name: "Chile CORFO Innovation"
+    url: "https://www.corfo.cl/sites/cpp/programas"
+    enabled: true
+    frequency: monthly
+
+  south_africa_minerals:
+    name: "South Africa Department of Mineral Resources"
+    url: "https://www.dmr.gov.za/"
+    enabled: true
+    frequency: monthly

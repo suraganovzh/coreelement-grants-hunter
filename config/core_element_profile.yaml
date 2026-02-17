@@ -1,0 +1,212 @@
+# ===========================================
+# Core Element AI - Company Profile
+# Used for grant matching and application generation
+# ===========================================
+
+company:
+  name: "Core Element AI"
+  legal_name: "Core Element AI Inc."
+  legal_structure: "S Corporation"
+  incorporation_state: "Delaware"
+  ein: "XX-XXXXXXX"  # Fill in actual EIN
+  duns: "XXXXXXXXX"   # Fill in actual DUNS
+  sam_uei: "XXXXXXXXXXXX"  # Fill in SAM.gov UEI
+  cage_code: "XXXXX"  # Fill in CAGE code
+  naics_codes:
+    - "541715"  # R&D in Physical, Engineering, and Life Sciences
+    - "541380"  # Testing Laboratories
+    - "518210"  # Computing Infrastructure
+    - "541512"  # Computer Systems Design
+  sic_codes:
+    - "8711"  # Engineering Services
+    - "1081"  # Metal Mining Services
+    - "7372"  # Prepackaged Software
+
+  industries:
+    - "Artificial Intelligence"
+    - "Mining Technology"
+    - "Geological Exploration"
+    - "Clean Technology"
+    - "Critical Minerals"
+    - "Geospatial Analytics"
+
+  size:
+    employees: "1-10"
+    small_business: true
+    revenue_stage: "Early revenue"
+    woman_owned: false
+    minority_owned: false
+    veteran_owned: false
+    hubzone: false
+
+technology:
+  name: "Probabilistic AI Modeling for Geological Exploration"
+  type: "Probabilistic AI Modeling"
+  application: "Subsurface mineral deposit prediction and exploration optimization"
+  trl_level: 7
+  patent_status: "Patents pending"
+  ip_description: "Proprietary probabilistic AI algorithms for 1:10,000 scale subsurface prediction"
+
+  capabilities:
+    - "Subsurface prediction at 1:10,000 scale"
+    - "Probabilistic modeling of mineral deposits"
+    - "Multi-source geological data integration"
+    - "Drilling optimization and target identification"
+    - "Risk reduction for exploration campaigns"
+    - "Real-time geological model updating"
+
+focus_minerals:
+  primary:
+    - name: "Lithium"
+      symbol: "Li"
+      relevance: "Battery technology, electric vehicles"
+    - name: "Copper"
+      symbol: "Cu"
+      relevance: "Electrical infrastructure, renewable energy"
+    - name: "Cobalt"
+      symbol: "Co"
+      relevance: "Battery cathodes, superalloys"
+  secondary:
+    - name: "Aluminum"
+      symbol: "Al"
+      relevance: "Lightweight structures, packaging"
+    - name: "Iron Ore"
+      symbol: "Fe"
+      relevance: "Steel production, infrastructure"
+
+keywords_for_matching:
+  primary:
+    - "AI geology"
+    - "mineral exploration"
+    - "critical minerals"
+    - "geological modeling"
+    - "exploration technology"
+    - "probabilistic modeling"
+    - "subsurface prediction"
+    - "mining AI"
+    - "geological AI"
+  secondary:
+    - "green transition"
+    - "battery metals"
+    - "sustainable mining"
+    - "geospatial AI"
+    - "deep learning geology"
+    - "remote sensing mining"
+    - "ESG mining"
+    - "responsible exploration"
+    - "clean energy minerals"
+
+value_propositions:
+  headline: "AI-powered mineral exploration that reduces discovery time from years to weeks"
+  key_metrics:
+    - metric: "Exploration time reduction"
+      value: "7-8 years to weeks"
+      description: "Reduces exploration timeline from 7-8 years to weeks using probabilistic AI"
+    - metric: "Unsuccessful drilling reduction"
+      value: "79%"
+      description: "79% reduction in dry/unsuccessful drill holes"
+    - metric: "Cost savings per project"
+      value: "$1M+"
+      description: "Over $1M savings per exploration project"
+    - metric: "Total proven savings"
+      value: "$17M+"
+      description: "Over $17M in total demonstrated savings across projects"
+    - metric: "Prediction accuracy"
+      value: "±15 meters"
+      description: "Subsurface prediction accuracy within ±15 meters (US projects)"
+    - metric: "Success rate improvement"
+      value: "0.5% to 75%"
+      description: "Mexico project: improved discovery probability from 0.5% to 75%"
+    - metric: "Drilling depth reduction"
+      value: "200 meters"
+      description: "Mexico project: reduced required drilling depth by 200 meters"
+    - metric: "Consecutive successes"
+      value: "7 projects"
+      description: "7 successful projects in a row"
+
+  differentiators:
+    - "Objective data-driven modeling vs. subjective human interpretation"
+    - "Works at 1:10,000 scale for subsurface prediction"
+    - "Integrates multiple data sources (geological, geophysical, geochemical)"
+    - "Probabilistic framework quantifies uncertainty"
+    - "Dramatically reduces exploration risk and cost"
+
+funding:
+  current_round: "Series A"
+  total_ask: 7500000
+  currency: "USD"
+  breakdown:
+    - purpose: "Core AI Development"
+      amount: 2500000
+    - purpose: "Modeling Stage Operations"
+      amount: 5000000
+  use_of_funds:
+    - "Team Expansion (AI/ML engineers, geologists)"
+    - "Cloud Compute Infrastructure (GPU clusters)"
+    - "Geological Data Acquisition"
+    - "Patent Portfolio Development"
+    - "Market Expansion"
+
+team:
+  highlights:
+    - role: "CEO/Co-Founder"
+      background: "Stanford AI, Serial Entrepreneur"
+      expertise: "AI strategy, business development, fundraising"
+    - role: "CTO/Co-Founder"
+      background: "MIT PhD, Berkeley Professor, NASA researcher"
+      expertise: "AI/ML, probabilistic modeling, geological AI"
+    - role: "Chief Geologist"
+      background: "30+ years mining exploration experience"
+      expertise: "Mineral exploration, geological mapping, project evaluation"
+
+  academic_affiliations:
+    - "Stanford University"
+    - "Massachusetts Institute of Technology"
+    - "UC Berkeley"
+    - "NASA"
+    - "Colorado School of Mines"
+    - "Lawrence Berkeley National Laboratory"
+
+markets:
+  primary:
+    - country: "Kazakhstan"
+      details: "4M primary geological reports, 66K secondary reports available"
+    - country: "United States"
+      details: "Critical minerals initiative, proven ±15m accuracy"
+    - country: "Mexico"
+      details: "Successful pilot with 0.5%→75% probability improvement"
+  expanding:
+    - "Chile"
+    - "Australia"
+    - "Canada"
+    - "South Africa"
+    - "Peru"
+    - "Democratic Republic of Congo"
+
+partnerships:
+  strategic:
+    - name: "Global ARTbuild 2030"
+      type: "Strategic partnership"
+    - name: "ERG (Eurasian Resources Group)"
+      type: "Industry partner"
+  academic:
+    - name: "Colorado School of Mines"
+      type: "Research collaboration"
+    - name: "Lawrence Berkeley National Laboratory"
+      type: "Research collaboration"
+    - name: "Stanford Mineral-X"
+      type: "Innovation program"
+
+eligibility_preferences:
+  accepted_structures:
+    - "S-Corp"
+    - "C-Corp"
+    - "LLC"
+    - "For-Profit"
+    - "Small Business"
+  excluded_requirements:
+    - "Non-profit only"
+    - "501(c)(3) required"
+    - "Government agency"
+  max_equity_give_up: 5  # percent
+  prefer_non_dilutive: true
