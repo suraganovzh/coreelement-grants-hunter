@@ -1,0 +1,26 @@
+name: Wake Bot Signal
+
+on:
+  repository_dispatch:
+    types: [wake_bot]
+
+  workflow_dispatch:
+
+jobs:
+  wake:
+    runs-on: ubuntu-latest
+    timeout-minutes: 2
+    steps:
+      - name: Send wake notification
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: |
+          curl -s -X POST \
+            "https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage" \
+            -H "Content-Type: application/json" \
+            -d "{
+              \"chat_id\": \"${TELEGRAM_CHAT_ID}\",
+              \"text\": \"🟢 *BOT WAKE SIGNAL*\n\nInteractive bot available for commands.\n\n*To start on Surface:*\n\`\`\`\npython -m src.main --mode=bot\n\`\`\`\n\n*Available commands:*\n• /status - Pipeline overview\n• /generate <grant_id> - Generate draft\n• /urgent - Show urgent grants\n• /help - Full command list\",
+              \"parse_mode\": \"Markdown\"
+            }"

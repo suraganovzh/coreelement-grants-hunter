@@ -1,0 +1,40 @@
+name: Telegram Notifications
+
+on:
+  # Runs after daily_scrape completes
+  workflow_run:
+    workflows: ["Daily Grant Scraping"]
+    types:
+      - completed
+
+  # Daily digest at 9 AM UTC
+  schedule:
+    - cron: '0 9 * * *'
+
+  # Manual trigger
+  workflow_dispatch:
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    if: ${{ github.event.workflow_run.conclusion == 'success' || github.event_name == 'schedule' || github.event_name == 'workflow_dispatch' }}
+    timeout-minutes: 5
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install requests python-dateutil
+
+      - name: Send notifications
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          DASHBOARD_URL: https://suraganovzh.github.io/coreelement-grants-hunter
+          GITHUB_EVENT_NAME: ${{ github.event_name }}
+        run: python scripts/send_telegram_notifications.py
