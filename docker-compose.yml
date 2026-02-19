@@ -34,10 +34,15 @@ services:
       - ./data:/app/data
       - ./config:/app/config
     command: >
-      sh -c "
-        echo '0 9 * * * cd /app && python -m src.main --mode=full >> /app/logs/cron.log 2>&1' > /etc/crontab &&
-        crontab /etc/crontab &&
-        crond -f
+      python -c "
+        import time, subprocess, datetime;
+        print('Scheduler started');
+        while True:
+            now = datetime.datetime.utcnow();
+            if now.hour == 9 and now.minute == 0:
+                print(f'Running daily workflow at {now}');
+                subprocess.run(['python', '-m', 'src.main', '--mode=full']);
+            time.sleep(60)
       "
 
   # PostgreSQL database
