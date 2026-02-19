@@ -3,6 +3,7 @@
 import pytest
 from src.analyzers.fit_scorer import FitScorer
 from src.analyzers.complexity_scorer import ComplexityScorer
+from src.analyzers.winner_matcher import find_similar_winners, extract_year
 
 
 class TestFitScorer:
@@ -82,3 +83,86 @@ class TestComplexityScorer:
         assert "Simple" in ComplexityScorer._classify(2)
         assert "Medium" in ComplexityScorer._classify(5)
         assert "Complex" in ComplexityScorer._classify(9)
+
+
+class TestWinnerMatcher:
+    def setup_method(self):
+        self.grant = {
+            "title": "AI for Critical Mineral Exploration",
+            "funder": "Department of Energy",
+            "description": "Machine learning for lithium deposit prediction",
+            "amount_max": 250000,
+            "industry_tags": ["AI", "mining", "critical minerals"],
+        }
+        self.winners = [
+            {
+                "title": "AI-Driven Subsurface Mineral Prediction",
+                "funder": "Department of Energy",
+                "winner": "GeoTech AI Inc",
+                "amount": 200000,
+                "award_date": "2024-06-15",
+                "keywords": ["AI", "mining", "geological"],
+                "abstract": "Using machine learning to predict mineral deposits.",
+            },
+            {
+                "title": "Urban Garden Automation",
+                "funder": "USDA",
+                "winner": "FarmBot LLC",
+                "amount": 50000,
+                "award_date": "2023-01-10",
+                "keywords": ["agriculture", "automation"],
+                "abstract": "Automating urban garden management.",
+            },
+            {
+                "title": "Critical Minerals Supply Chain Analysis",
+                "funder": "Department of Energy",
+                "winner": "MineralChain Corp",
+                "amount": 300000,
+                "award_date": "2024-03-01",
+                "keywords": ["critical minerals", "supply chain"],
+                "abstract": "Analyzing critical minerals supply chain risks.",
+            },
+        ]
+
+    def test_finds_similar_winners(self):
+        results = find_similar_winners(self.grant, self.winners)
+        assert len(results) >= 1
+        # GeoTech AI should be the top match (same funder + keyword overlap)
+        assert results[0]["company"] == "GeoTech AI Inc"
+
+    def test_same_funder_ranks_higher(self):
+        results = find_similar_winners(self.grant, self.winners)
+        companies = [r["company"] for r in results]
+        # DOE-funded winners should appear before USDA
+        assert "FarmBot LLC" not in companies or companies.index("GeoTech AI Inc") < companies.index("FarmBot LLC")
+
+    def test_returns_max_5(self):
+        # Create many winners
+        many_winners = self.winners * 10
+        results = find_similar_winners(self.grant, many_winners)
+        assert len(results) <= 5
+
+    def test_empty_winners(self):
+        results = find_similar_winners(self.grant, [])
+        assert results == []
+
+    def test_result_structure(self):
+        results = find_similar_winners(self.grant, self.winners)
+        if results:
+            r = results[0]
+            assert "company" in r
+            assert "similarity_score" in r
+            assert "match_reasons" in r
+            assert isinstance(r["similarity_score"], int)
+            assert isinstance(r["match_reasons"], list)
+
+    def test_extract_year(self):
+        assert extract_year("2024-06-15") == 2024
+        assert extract_year("March 15, 2023") == 2023
+        assert extract_year("") == 0
+        assert extract_year(None) == 0
+
+    def test_similarity_score_range(self):
+        results = find_similar_winners(self.grant, self.winners)
+        for r in results:
+            assert r["similarity_score"] >= 25  # Minimum threshold

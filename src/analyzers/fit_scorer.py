@@ -78,22 +78,23 @@ class FitScorer:
         }
 
     def _keyword_score(self, text: str) -> float:
-        """Score based on keyword matches."""
-        all_keywords = []
-        for category in self.keywords_config.get("primary", {}).values():
-            all_keywords.extend(category)
-        for category in self.keywords_config.get("secondary", {}).values():
-            all_keywords.extend(category)
-
+        """Score based on keyword matches using flexible word-level matching."""
         primary_kws = []
         for category in self.keywords_config.get("primary", {}).values():
             primary_kws.extend(category)
 
-        # Primary keywords have more weight
-        primary_score = TextProcessor.keyword_match_score(text, primary_kws)
-        all_score = TextProcessor.keyword_match_score(text, all_keywords)
+        secondary_kws = []
+        for category in self.keywords_config.get("secondary", {}).values():
+            secondary_kws.extend(category)
 
-        return primary_score * 0.7 + all_score * 0.3
+        primary_matches = self._count_matches(text, primary_kws)
+        secondary_matches = self._count_matches(text, secondary_kws)
+
+        # Threshold-based: matching a handful of keywords is a strong signal
+        primary_score = min(1.0, primary_matches / 5)
+        secondary_score = min(1.0, secondary_matches / 3)
+
+        return primary_score * 0.7 + secondary_score * 0.3
 
     def _industry_score(self, text: str) -> float:
         """Score based on industry alignment."""
@@ -102,7 +103,41 @@ class FitScorer:
         minerals += [m["name"] for m in self.profile.get("focus_minerals", {}).get("secondary", [])]
 
         all_terms = industries + minerals
-        return TextProcessor.keyword_match_score(text, all_terms)
+        matches = self._count_matches(text, all_terms)
+        return min(1.0, matches / 3)
+
+    @staticmethod
+    def _count_matches(text: str, keywords: list[str]) -> float:
+        """Count keyword matches using flexible word-level matching.
+
+        Exact phrase match counts as 1.0, all-words-present match counts as 0.75.
+        """
+        if not keywords:
+            return 0.0
+        lower = text.lower()
+        total = 0.0
+        for kw in keywords:
+            kw_lower = kw.lower()
+            if kw_lower in lower:
+                total += 1.0
+            else:
+                words = [w for w in kw_lower.split() if len(w) > 2]
+                if words and all(FitScorer._word_in_text(w, lower) for w in words):
+                    total += 0.75
+        return total
+
+    @staticmethod
+    def _word_in_text(word: str, text: str) -> bool:
+        """Check if word appears in text, with basic singular/plural handling."""
+        if word in text:
+            return True
+        # Try basic depluralization (remove trailing 's')
+        if word.endswith('s') and len(word) > 3 and word[:-1] in text:
+            return True
+        # Try basic pluralization (add 's')
+        if (word + 's') in text:
+            return True
+        return False
 
     def _eligibility_score(self, eligibility_text: str) -> float:
         """Score eligibility match."""

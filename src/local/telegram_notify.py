@@ -2,6 +2,8 @@
 
 Lightweight notification system that sends grant summaries
 to a Telegram chat. No polling, no always-on process.
+
+Enhanced with winner analysis data and dashboard links.
 """
 
 import os
@@ -12,6 +14,11 @@ from src.utils.logger import setup_logger
 from src.utils.text_processor import TextProcessor
 
 logger = setup_logger("telegram_notify")
+
+DASHBOARD_URL = os.getenv(
+    "DASHBOARD_URL",
+    "https://suraganovzh.github.io/coreelement-grants-hunter",
+)
 
 
 def get_credentials() -> tuple[str, str]:
@@ -43,6 +50,7 @@ def send_message(text: str, parse_mode: str = "Markdown") -> bool:
         "chat_id": chat_id,
         "text": text,
         "parse_mode": parse_mode,
+        "disable_web_page_preview": True,
     }
 
     try:
@@ -59,15 +67,21 @@ def send_message(text: str, parse_mode: str = "Markdown") -> bool:
 
 
 def send_summary(copy_now: list[dict], test_first: list[dict]):
-    """Send daily workflow summary."""
+    """Send daily workflow summary with dashboard link."""
     total_potential = sum(g.get("amount_max", 0) for g in copy_now + test_first)
     potential_str = TextProcessor.format_currency(total_potential)
+
+    total_winners = sum(
+        len(g.get("analysis", {}).get("similar_winners", []))
+        for g in copy_now + test_first
+    )
 
     message = f"""📊 *Grant Hunter AI Daily Report*
 
 🎯 *HIGH PRIORITY (copy\\_now):* {len(copy_now)}
 ⚡ *MEDIUM PRIORITY (test\\_first):* {len(test_first)}
 💰 *Total Potential:* {potential_str}
+🏆 *Similar Winners Found:* {total_winners}
 
 {"─" * 30}
 """
@@ -78,9 +92,11 @@ def send_summary(copy_now: list[dict], test_first: list[dict]):
             analysis = g.get("analysis", {})
             win_prob = analysis.get("win_probability", 0)
             amount = TextProcessor.format_currency(g.get("amount_max"))
+            winners = analysis.get("similar_winners", [])
+            winner_text = f" | 🏆 {len(winners)} winners" if winners else ""
             message += f"\n• *{g.get('title', '')[:50]}*"
             message += f"\n  {g.get('funder', '')} | {amount}"
-            message += f"\n  Win: {win_prob}% | Deadline: {g.get('deadline', 'TBD')}\n"
+            message += f"\n  Win: {win_prob}% | Deadline: {g.get('deadline', 'TBD')}{winner_text}\n"
 
     if test_first:
         message += "\n*⚡ MEDIUM PRIORITY:*\n"
@@ -90,20 +106,24 @@ def send_summary(copy_now: list[dict], test_first: list[dict]):
             message += f"\n• {g.get('title', '')[:50]}"
             message += f"\n  Win: {win_prob}% | {g.get('funder', '')}\n"
 
+    message += f"\n[Open Dashboard]({DASHBOARD_URL})"
+
     send_message(message)
 
 
 def send_priority_grants(grants: list[dict]):
-    """Send detailed notification for each high-priority grant."""
+    """Send detailed notification for each high-priority grant with winners."""
     for grant in grants:
         analysis = grant.get("analysis", {})
         success_factors = analysis.get("success_factors", {})
         risk_factors = analysis.get("risk_factors", [])
+        winners = analysis.get("similar_winners", [])
 
         keywords = ", ".join(success_factors.get("keywords", []))
         risks = "\n".join(f"• {r}" for r in risk_factors[:3])
         amount_min = grant.get("amount_min", 0)
         amount_max = grant.get("amount_max", 0)
+        grant_id = grant.get("id", "")
 
         message = f"""🎯 *HIGH-PRIORITY GRANT*
 
@@ -118,13 +138,27 @@ def send_priority_grants(grants: list[dict]):
 ✅ Pattern Match: {analysis.get('pattern_match_score', 0)}%
 
 🔑 *Success Keywords:* {keywords}
+"""
 
-⚠️ *Risk Factors:*
-{risks}
+        if winners:
+            message += f"\n🏆 *{len(winners)} SIMILAR WINNERS:*\n"
+            for i, w in enumerate(winners[:3], 1):
+                amt = TextProcessor.format_currency(w.get("amount"))
+                year = w.get("year", "")
+                year_str = f" ({year})" if year else ""
+                reasons = ", ".join(w.get("match_reasons", [])[:2])
+                message += f"\n{i}. *{w.get('company', 'Unknown')[:40]}*"
+                message += f"\n   {w.get('funder', '')} | {amt}{year_str}"
+                message += f"\n   Match: {reasons}\n"
 
-{"─" * 30}
+        if risks:
+            message += f"\n⚠️ *Risk Factors:*\n{risks}\n"
 
-💡 _Run: python src/local/generate.py --grant-id {grant.get('id', '')} to create draft_"""
+        message += f"\n{"─" * 30}\n"
+
+        if winners:
+            message += f"[View Winners]({DASHBOARD_URL}/winners.html?grant={grant_id}) | "
+        message += f"[View Details]({DASHBOARD_URL}/grant.html?id={grant_id})"
 
         send_message(message)
 
@@ -144,7 +178,7 @@ def send_new_grants_alert(count: int, top_grant: dict | None = None):
 
 """
 
-    message += "_Run daily\\_workflow.py to process_"
+    message += f"[Open Dashboard]({DASHBOARD_URL})"
     send_message(message)
 
 
