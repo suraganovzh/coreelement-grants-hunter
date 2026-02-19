@@ -22,6 +22,7 @@ from pathlib import Path
 from src.local.filter import filter_grants
 from src.local.analyze import analyze_grants
 from src.local.telegram_notify import send_summary, send_priority_grants
+from src.analyzers.winner_matcher import load_all_winners
 from src.utils.logger import setup_logger
 
 logger = setup_logger("daily_workflow")
@@ -158,10 +159,15 @@ def main():
             git_push(f"Daily: {len(new_grants)} grants filtered, none qualified")
         return
 
-    # Step 4: Analyze (cascade: Ollama -> Groq -> rules)
+    # Step 3.5: Load winners for matching
+    all_winners = load_all_winners()
+    if all_winners:
+        print(f"Loaded {len(all_winners)} historical winners for matching")
+
+    # Step 4: Analyze (cascade: Ollama -> Groq -> rules) + winner matching
     print(f"\nSTEP 2: Analyzing {len(filtered_grants)} grants")
     print("-" * 60)
-    analyzed_grants = analyze_grants(filtered_grants, patterns)
+    analyzed_grants = analyze_grants(filtered_grants, patterns, all_winners)
 
     copy_now = [g for g in analyzed_grants if g.get("analysis", {}).get("priority") == "copy_now"]
     test_first = [g for g in analyzed_grants if g.get("analysis", {}).get("priority") == "test_first"]

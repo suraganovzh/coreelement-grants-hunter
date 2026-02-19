@@ -167,16 +167,26 @@ def analyze_grant(grant: dict, patterns: dict) -> dict:
     return result
 
 
-def analyze_grants(grants: list[dict], patterns: dict) -> list[dict]:
-    """Analyze all filtered grants using the LLM cascade.
+def analyze_grants(
+    grants: list[dict],
+    patterns: dict,
+    all_winners: list[dict] | None = None,
+) -> list[dict]:
+    """Analyze all filtered grants using the LLM cascade + winner matching.
 
     Args:
         grants: Filtered grants to analyze.
         patterns: Success patterns from winners.
+        all_winners: Historical winner data for similarity matching.
 
     Returns:
         Grants with analysis results added.
     """
+    from src.analyzers.winner_matcher import find_similar_winners
+
+    if all_winners is None:
+        all_winners = []
+
     analyzed: list[dict] = []
 
     for i, grant in enumerate(grants, 1):
@@ -184,6 +194,32 @@ def analyze_grants(grants: list[dict], patterns: dict) -> list[dict]:
         print(f"  [{i}/{len(grants)}] Analyzing: {title}...")
 
         analysis = analyze_grant(grant, patterns)
+
+        # Winner matching
+        if all_winners:
+            similar = find_similar_winners(grant, all_winners, patterns)
+            analysis["similar_winners"] = [
+                {
+                    "company": w["company"],
+                    "funder": w["funder"],
+                    "amount": w["amount"],
+                    "year": w["year"],
+                    "title": w["title"],
+                    "abstract": w["abstract"],
+                    "keywords": w["keywords"],
+                    "similarity_score": w["similarity_score"],
+                    "match_reasons": w["match_reasons"],
+                }
+                for w in similar
+            ]
+            if similar:
+                boost = min(5, len(similar))
+                analysis["win_probability"] = min(100, analysis.get("win_probability", 0) + boost)
+                analysis["confidence"] = "high" if len(similar) >= 3 else "medium"
+                print(f"    +{boost}% boost from {len(similar)} similar winners")
+        else:
+            analysis["similar_winners"] = []
+
         grant["analysis"] = analysis
         analyzed.append(grant)
 

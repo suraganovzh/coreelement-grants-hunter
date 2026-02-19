@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Grant Hunter AI - Dashboard</title>
+<link rel="stylesheet" href="assets/styles.css">
+<style>
+  /* Dashboard-specific overrides */
+  .kanban-col .grant-card:last-child { margin-bottom: 0; }
+
+  .win-prob {
+    display: inline-block;
+    padding: 2px 7px;
+    border-radius: 4px;
+    font-size: 11px;
+    font-weight: 700;
+  }
+  .win-prob.high { background: rgba(16,185,129,.2); color: #34d399; }
+  .win-prob.medium { background: rgba(245,158,11,.2); color: #fbbf24; }
+  .win-prob.low { background: rgba(100,116,139,.2); color: #94a3b8; }
+
+  .grant-card .card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 8px;
+    padding-top: 8px;
+    border-top: 1px solid var(--border);
+  }
+
+  .footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 12px;
+    color: var(--text-muted);
+    border-top: 1px solid var(--border);
+    margin-top: 12px;
+  }
+
+  .status-select {
+    background: var(--bg-primary);
+    color: var(--text-primary);
+    border: 1px solid var(--border);
+    padding: 3px 8px;
+    border-radius: 6px;
+    font-size: 11px;
+    font-family: inherit;
+    cursor: pointer;
+  }
+  .status-select:focus {
+    outline: none;
+    border-color: var(--accent-purple);
+  }
+
+  .kanban-col-empty {
+    text-align: center;
+    padding: 30px 12px;
+    color: var(--text-muted);
+    font-size: 12px;
+  }
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<div class="container">
+  <div class="header">
+    <div>
+      <h1>Grant Hunter AI</h1>
+      <span class="header-sub">Core Element &mdash; Kanban Dashboard</span>
+    </div>
+    <div class="header-actions">
+      <button class="btn btn-primary" id="refreshBtn" onclick="refreshData()">Refresh</button>
+    </div>
+  </div>
+
+  <!-- NAVIGATION -->
+  <nav>
+    <a href="index.html" class="active">Dashboard</a>
+    <a href="winners.html">Winners Library</a>
+    <a href="grant.html">Grant Detail</a>
+  </nav>
+
+  <!-- LOADING INDICATOR -->
+  <div class="loading" id="loadingIndicator">
+    <div class="spinner"></div>
+    <div>Loading grant data...</div>
+  </div>
+
+  <!-- MAIN CONTENT (hidden until loaded) -->
+  <div id="mainContent" style="display:none;">
+
+    <!-- STAT CARDS -->
+    <div class="stats">
+      <div class="stat-card">
+        <div class="stat-value" id="statHighPriority">0</div>
+        <div class="stat-label">High Priority</div>
+      </div>
+      <div class="stat-card warning">
+        <div class="stat-value" id="statMedPriority">0</div>
+        <div class="stat-label">Medium Priority</div>
+      </div>
+      <div class="stat-card success">
+        <div class="stat-value" id="statTotalPotential">$0</div>
+        <div class="stat-label">Total Potential $$</div>
+      </div>
+      <div class="stat-card danger">
+        <div class="stat-value" id="statUrgent">0</div>
+        <div class="stat-label">Urgent (&lt;7 days)</div>
+      </div>
+    </div>
+
+    <!-- KANBAN BOARD -->
+    <div class="kanban">
+      <div class="kanban-col" id="colInbox">
+        <div class="kanban-col-header">
+          <span>Inbox</span>
+          <span class="count" id="countInbox">0</span>
+        </div>
+        <div id="cardsInbox"></div>
+      </div>
+      <div class="kanban-col" id="colDrafting">
+        <div class="kanban-col-header">
+          <span>Drafting</span>
+          <span class="count" id="countDrafting">0</span>
+        </div>
+        <div id="cardsDrafting"></div>
+      </div>
+      <div class="kanban-col" id="colReview">
+        <div class="kanban-col-header">
+          <span>Review</span>
+          <span class="count" id="countReview">0</span>
+        </div>
+        <div id="cardsReview"></div>
+      </div>
+      <div class="kanban-col" id="colSubmitted">
+        <div class="kanban-col-header">
+          <span>Submitted</span>
+          <span class="count" id="countSubmitted">0</span>
+        </div>
+        <div id="cardsSubmitted"></div>
+      </div>
+    </div>
+
+  </div><!-- /mainContent -->
+
+  <!-- FOOTER -->
+  <div class="footer" id="pageFooter">
+    Last updated: &mdash;
+  </div>
+</div>
+
+<script src="assets/api.js"></script>
+<script>
+/* =========================================================================
+   Grant Hunter AI - Kanban Dashboard
+   ========================================================================= */
+
+const LOCAL_STATE_KEY = 'grantHunterState';
+
+// In-memory state
+let grants = [];
+let teamState = {};
+
+/* ---- localStorage state management ---- */
+
+function getLocalState() {
+  try {
+    const raw = localStorage.getItem(LOCAL_STATE_KEY);
+    if (raw) return JSON.parse(raw);
+  } catch { /* ignore corrupt data */ }
+  return { grants: {}, activity_feed: [] };
+}
+
+function saveLocalState(state) {
+  try {
+    localStorage.setItem(LOCAL_STATE_KEY, JSON.stringify(state));
+  } catch { /* storage full or unavailable */ }
+}
+
+function getGrantStatus(grantId) {
+  const local = getLocalState();
+  // Local state overrides remote team state
+  if (local.grants && local.grants[grantId] && local.grants[grantId].status) {
+    return local.grants[grantId].status;
+  }
+  if (teamState.grants && teamState.grants[grantId] && teamState.grants[grantId].status) {
+    return teamState.grants[grantId].status;
+  }
+  return null;
+}
+
+function setGrantStatus(grantId, status) {
+  const local = getLocalState();
+  if (!local.grants) local.grants = {};
+  if (!local.grants[grantId]) local.grants[grantId] = {};
+  local.grants[grantId].status = status;
+  local.grants[grantId].updated_at = new Date().toISOString();
+  saveLocalState(local);
+}
+
+/* ---- Data loading ---- */
+
+async function loadData() {
+  document.getElementById('loadingIndicator').style.display = 'block';
+  document.getElementById('mainContent').style.display = 'none';
+
+  const [analyzed, ts] = await Promise.all([
+    loadAnalyzed(),
+    loadTeamState()
+  ]);
+
+  grants = analyzed;
+  teamState = ts || { grants: {}, activity_feed: [] };
+
+  document.getElementById('loadingIndicator').style.display = 'none';
+  document.getElementById('mainContent').style.display = 'block';
+
+  renderDashboard();
+  updateFooter();
+}
+
+function refreshData() {
+  const btn = document.getElementById('refreshBtn');
+  btn.textContent = 'Loading...';
+  btn.disabled = true;
+  loadData().finally(() => {
+    btn.textContent = 'Refresh';
+    btn.disabled = false;
+  });
+}
+
+/* ---- Computed helpers ---- */
+
+function getGrantPriority(grant) {
+  const analysis = grant.analysis || {};
+  return analysis.priority || 'skip';
+}
+
+function getWinProbability(grant) {
+  const analysis = grant.analysis || {};
+  return analysis.win_probability || 0;
+}
+
+function getSimilarWinners(grant) {
+  const analysis = grant.analysis || {};
+  return analysis.similar_winners || [];
+}
+
+function getAmountRange(grant) {
+  const min = grant.amount_min || 0;
+  const max = grant.amount_max || 0;
+  if (min && max && min !== max) {
+    return formatMoney(min) + ' - ' + formatMoney(max);
+  }
+  if (max) return formatMoney(max);
+  if (min) return formatMoney(min);
+  return '-';
+}
+
+function winProbClass(prob) {
+  if (prob >= 60) return 'high';
+  if (prob >= 30) return 'medium';
+  return 'low';
+}
+
+/* ---- Stat card computation ---- */
+
+function computeStats() {
+  let highCount = 0;
+  let medCount = 0;
+  let totalPotential = 0;
+  let urgentCount = 0;
+
+  for (const g of grants) {
+    const priority = getGrantPriority(g);
+    const days = daysUntil(g.deadline);
+
+    if (priority === 'copy_now') {
+      highCount++;
+    } else if (priority === 'test_first') {
+      medCount++;
+    }
+
+    // Sum potential from all non-skip grants
+    if (priority !== 'skip') {
+      totalPotential += (g.amount_max || 0);
+    }
+
+    // Urgent: deadline within 7 days and not expired, non-skip
+    if (days >= 0 && days < 7 && priority !== 'skip') {
+      urgentCount++;
+    }
+  }
+
+  return { highCount, medCount, totalPotential, urgentCount };
+}
+
+/* ---- Card HTML rendering ---- */
+
+function renderGrantCard(grant) {
+  const grantId = grant.id || '';
+  const days = daysUntil(grant.deadline);
+  const dlText = deadlineText(days);
+  const dlClass = deadlineClass(days);
+  const prob = getWinProbability(grant);
+  const similarWinners = getSimilarWinners(grant);
+  const isUrgent = days >= 0 && days <= 7;
+
+  let winnersHtml = '';
+  if (similarWinners.length > 0) {
+    const badgeId = 'wb-' + grantId.replace(/[^a-zA-Z0-9]/g, '_');
+    const previewId = 'wp-' + grantId.replace(/[^a-zA-Z0-9]/g, '_');
+
+    let previewItems = '';
+    for (const w of similarWinners.slice(0, 3)) {
+      const name = w.winner || w.recipient || w.company || w.pi || 'Unknown';
+      const amt = w.amount || w.award_amount || 0;
+      previewItems += '<div class="winner-item">'
+        + '<div class="company">' + esc(name) + '</div>'
+        + '<div class="detail">'
+        + esc(w.title || w.award_title || '') + (amt ? ' &mdash; ' + formatMoney(amt) : '')
+        + '</div></div>';
+    }
+
+    winnersHtml = '<span class="winners-badge" id="' + badgeId
+      + '" onclick="event.stopPropagation(); toggleWinners(\'' + previewId + '\')">'
+      + similarWinners.length + ' similar winner' + (similarWinners.length > 1 ? 's' : '')
+      + '</span>'
+      + '<div class="winners-preview" id="' + previewId + '">'
+      + previewItems
+      + '</div>';
+  }
+
+  const cardClass = 'grant-card' + (isUrgent ? ' urgent' : '');
+
+  return '<div class="' + cardClass + '" onclick="navigateToGrant(\'' + esc(grantId) + '\')">'
+    + '<div class="title">' + esc(grant.title || 'Untitled Grant') + '</div>'
+    + '<div class="funder-line">' + esc(grant.funder || 'Unknown Funder') + '</div>'
+    + '<div class="meta">'
+    +   '<span class="amount">' + getAmountRange(grant) + '</span>'
+    +   '<span class="deadline' + (isUrgent ? ' urgent' : '') + '">'
+    +     '<span class="badge ' + dlClass + '">' + dlText + '</span>'
+    +   '</span>'
+    + '</div>'
+    + '<div class="card-footer">'
+    +   '<span class="win-prob ' + winProbClass(prob) + '">' + prob + '% win</span>'
+    +   winnersHtml
+    + '</div>'
+    + '</div>';
+}
+
+/* ---- Kanban board rendering ---- */
+
+function renderKanban() {
+  // Bucket grants by status
+  const columns = {
+    inbox: [],
+    drafting: [],
+    review: [],
+    submitted: []
+  };
+
+  for (const g of grants) {
+    const status = getGrantStatus(g.id);
+    if (status === 'drafting') {
+      columns.drafting.push(g);
+    } else if (status === 'review') {
+      columns.review.push(g);
+    } else if (status === 'submitted') {
+      columns.submitted.push(g);
+    } else {
+      // No status or unrecognized status goes to Inbox
+      columns.inbox.push(g);
+    }
+  }
+
+  // Sort Inbox by win_probability descending
+  columns.inbox.sort((a, b) => getWinProbability(b) - getWinProbability(a));
+
+  // Render each column
+  renderColumn('Inbox', 'cardsInbox', 'countInbox', columns.inbox, 'inbox');
+  renderColumn('Drafting', 'cardsDrafting', 'countDrafting', columns.drafting, 'drafting');
+  renderColumn('Review', 'cardsReview', 'countReview', columns.review, 'review');
+  renderColumn('Submitted', 'cardsSubmitted', 'countSubmitted', columns.submitted, 'submitted');
+}
+
+function renderColumn(title, containerId, countId, grantsList, columnKey) {
+  const container = document.getElementById(containerId);
+  const countEl = document.getElementById(countId);
+
+  countEl.textContent = grantsList.length;
+
+  if (grantsList.length === 0) {
+    container.innerHTML = '<div class="kanban-col-empty">No grants in ' + esc(title) + '</div>';
+    return;
+  }
+
+  let html = '';
+  for (const g of grantsList) {
+    html += renderGrantCard(g);
+    // Add a status selector below each card so users can move it between columns
+    html += renderStatusSelector(g.id, columnKey);
+  }
+  container.innerHTML = html;
+}
+
+function renderStatusSelector(grantId, currentStatus) {
+  const safeId = esc(grantId);
+  const options = [
+    { value: 'inbox', label: 'Inbox' },
+    { value: 'drafting', label: 'Drafting' },
+    { value: 'review', label: 'Review' },
+    { value: 'submitted', label: 'Submitted' }
+  ];
+
+  let html = '<div style="text-align:right; margin-bottom:10px; margin-top:-6px; padding:0 2px;">';
+  html += '<select class="status-select" onchange="changeStatus(\'' + safeId + '\', this.value)" onclick="event.stopPropagation()">';
+  for (const opt of options) {
+    const selected = opt.value === currentStatus ? ' selected' : '';
+    html += '<option value="' + opt.value + '"' + selected + '>' + esc(opt.label) + '</option>';
+  }
+  html += '</select></div>';
+  return html;
+}
+
+/* ---- Dashboard rendering orchestration ---- */
+
+function renderDashboard() {
+  // Stat cards
+  const stats = computeStats();
+  document.getElementById('statHighPriority').textContent = stats.highCount;
+  document.getElementById('statMedPriority').textContent = stats.medCount;
+  document.getElementById('statTotalPotential').textContent = formatMoney(stats.totalPotential);
+  document.getElementById('statUrgent').textContent = stats.urgentCount;
+
+  // Kanban board
+  renderKanban();
+}
+
+/* ---- Interactions ---- */
+
+function navigateToGrant(grantId) {
+  if (!grantId) return;
+  window.location.href = 'grant.html?id=' + encodeURIComponent(grantId);
+}
+
+function toggleWinners(previewId) {
+  const el = document.getElementById(previewId);
+  if (!el) return;
+  el.classList.toggle('show');
+}
+
+function changeStatus(grantId, newStatus) {
+  if (newStatus === 'inbox') {
+    // Remove status to revert to inbox (no status)
+    const local = getLocalState();
+    if (local.grants && local.grants[grantId]) {
+      delete local.grants[grantId].status;
+      // Clean up empty entries
+      if (Object.keys(local.grants[grantId]).length === 0) {
+        delete local.grants[grantId];
+      }
+    }
+    saveLocalState(local);
+  } else {
+    setGrantStatus(grantId, newStatus);
+  }
+  renderKanban();
+}
+
+/* ---- Footer ---- */
+
+function updateFooter() {
+  const now = new Date();
+  const formatted = now.toLocaleDateString('en-US', {
+    year: 'numeric',
+    month: 'short',
+    day: 'numeric'
+  }) + ' at ' + now.toLocaleTimeString('en-US', {
+    hour: '2-digit',
+    minute: '2-digit'
+  });
+
+  document.getElementById('pageFooter').textContent = 'Last updated: ' + formatted;
+}
+
+/* ---- Init ---- */
+
+loadData();
+</script>
+</body>
+</html>

@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Grant Detail - Grant Hunter AI</title>
+<link rel="stylesheet" href="assets/styles.css">
+<style>
+/* Grant detail page extras */
+.back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  color: var(--text-secondary);
+  margin-bottom: 16px;
+  transition: color .15s;
+}
+.back-link:hover { color: var(--accent-purple); }
+
+.grant-title {
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1.3;
+  margin-bottom: 20px;
+}
+
+/* Analysis section */
+.analysis-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 12px;
+  margin-bottom: 20px;
+}
+.analysis-item {
+  background: var(--bg-card);
+  padding: 14px;
+  border-radius: 8px;
+  text-align: center;
+}
+.analysis-item .label {
+  font-size: 11px;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: .5px;
+  margin-bottom: 4px;
+}
+.analysis-item .value {
+  font-size: 22px;
+  font-weight: 700;
+}
+.analysis-item .value.high { color: var(--success); }
+.analysis-item .value.medium { color: var(--warning); }
+.analysis-item .value.low { color: var(--danger); }
+
+/* Factor lists */
+.factor-section { margin-bottom: 20px; }
+.factor-section h3 {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  letter-spacing: .5px;
+}
+.factor-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 8px;
+}
+.factor-tag {
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 500;
+  background: var(--accent-purple-dim);
+  color: #c4b5fd;
+}
+.factor-tag.risk {
+  background: rgba(239, 68, 68, .15);
+  color: #f87171;
+}
+.factor-tag.value-prop {
+  background: rgba(16, 185, 129, .15);
+  color: #34d399;
+}
+.factor-tag.partnership {
+  background: rgba(6, 182, 212, .15);
+  color: #22d3ee;
+}
+.reasoning-text {
+  font-size: 14px;
+  line-height: 1.7;
+  color: var(--text-secondary);
+  background: var(--bg-card);
+  padding: 16px;
+  border-radius: 8px;
+  border-left: 3px solid var(--accent-purple);
+}
+
+/* Sidebar winner cards */
+.winner-card {
+  background: var(--bg-card);
+  border-radius: 8px;
+  padding: 14px;
+  margin-bottom: 10px;
+  border-left: 3px solid var(--success);
+}
+.winner-card .company {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--accent-cyan);
+  margin-bottom: 4px;
+}
+.winner-card .winner-meta-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  color: var(--text-secondary);
+  margin-bottom: 4px;
+}
+.winner-card .match-score {
+  font-weight: 700;
+  color: var(--accent-purple);
+}
+.winner-card .match-reasons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  margin-top: 6px;
+}
+.winner-card .reason-tag {
+  font-size: 10px;
+  padding: 2px 6px;
+  border-radius: 4px;
+  background: var(--accent-purple-dim);
+  color: #c4b5fd;
+}
+.winner-card .abstract-preview {
+  font-size: 11px;
+  color: var(--text-muted);
+  margin-top: 6px;
+  line-height: 1.5;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* Team section */
+.team-field {
+  margin-bottom: 14px;
+}
+.team-field label {
+  display: block;
+  font-size: 11px;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: .5px;
+  margin-bottom: 4px;
+}
+.team-field select,
+.team-field textarea,
+.team-field input {
+  width: 100%;
+  padding: 8px 12px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  color: var(--text-primary);
+  font-size: 13px;
+  font-family: inherit;
+}
+.team-field select:focus,
+.team-field textarea:focus,
+.team-field input:focus {
+  outline: none;
+  border-color: var(--accent-purple);
+}
+.team-field textarea {
+  min-height: 80px;
+  resize: vertical;
+}
+
+.apply-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 24px;
+  background: var(--accent-purple);
+  color: #fff;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 600;
+  transition: all .15s;
+  margin-top: 8px;
+}
+.apply-btn:hover {
+  background: #7c3aed;
+  color: #fff;
+  transform: translateY(-1px);
+}
+
+.no-winners {
+  text-align: center;
+  padding: 24px 16px;
+  color: var(--text-muted);
+  font-size: 13px;
+}
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<div class="container">
+  <div class="header">
+    <h1>Grant Hunter AI</h1>
+    <span class="header-sub">Core Element</span>
+  </div>
+
+  <!-- NAVIGATION -->
+  <nav>
+    <a href="index.html">Dashboard</a>
+    <a href="winners.html">Winners Library</a>
+    <a href="grant.html" class="active">Grant Detail</a>
+  </nav>
+
+  <!-- BACK BUTTON -->
+  <a href="index.html" class="back-link">&larr; Back to Dashboard</a>
+
+  <!-- LOADING STATE -->
+  <div id="loadingState" class="loading">
+    <div class="spinner"></div>
+    Loading grant details...
+  </div>
+
+  <!-- ERROR STATE -->
+  <div id="errorState" class="empty" style="display:none;">
+    <div class="icon">&#128269;</div>
+    <div>Grant not found. <a href="index.html">Return to Dashboard</a></div>
+  </div>
+
+  <!-- MAIN CONTENT (hidden until loaded) -->
+  <div id="grantContent" style="display:none;">
+
+    <!-- GRANT TITLE -->
+    <h1 class="grant-title" id="grantTitle"></h1>
+
+    <div class="detail-grid">
+
+      <!-- LEFT COLUMN: Main Content -->
+      <div>
+
+        <!-- METADATA GRID -->
+        <div class="detail-meta" id="metaGrid"></div>
+
+        <!-- ANALYSIS SECTION -->
+        <div class="panel">
+          <div class="panel-header">Analysis</div>
+          <div class="panel-body">
+            <div class="analysis-grid" id="analysisGrid"></div>
+          </div>
+        </div>
+
+        <!-- SUCCESS FACTORS -->
+        <div class="panel">
+          <div class="panel-header">Success Factors</div>
+          <div class="panel-body">
+            <div id="successFactors"></div>
+          </div>
+        </div>
+
+        <!-- RISK FACTORS -->
+        <div class="panel">
+          <div class="panel-header">Risk Factors</div>
+          <div class="panel-body">
+            <div id="riskFactors"></div>
+          </div>
+        </div>
+
+        <!-- REASONING -->
+        <div class="panel">
+          <div class="panel-header">Reasoning</div>
+          <div class="panel-body">
+            <div id="reasoning"></div>
+          </div>
+        </div>
+
+        <!-- APPLY BUTTON -->
+        <div id="applySection" style="display:none; margin-bottom: 24px;"></div>
+
+      </div>
+
+      <!-- RIGHT COLUMN: Sidebar -->
+      <div>
+
+        <!-- SIMILAR WINNERS -->
+        <div class="panel">
+          <div class="panel-header">Similar Winners</div>
+          <div class="panel-body" id="similarWinners"></div>
+        </div>
+
+        <!-- TEAM SECTION -->
+        <div class="panel">
+          <div class="panel-header">Team</div>
+          <div class="panel-body">
+            <div id="teamSection"></div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<script src="assets/api.js"></script>
+<script>
+/* ===== STATE ===== */
+const TEAM_STORAGE_KEY = 'grantHunterState';
+let grant = null;
+let teamState = {};
+
+/* ===== Read grant ID from URL ===== */
+function getGrantId() {
+  const params = new URLSearchParams(window.location.search);
+  return params.get('id');
+}
+
+/* ===== Load team state from localStorage ===== */
+function getTeamState() {
+  try {
+    return JSON.parse(localStorage.getItem(TEAM_STORAGE_KEY) || '{}');
+  } catch {
+    return {};
+  }
+}
+
+function saveTeamState() {
+  localStorage.setItem(TEAM_STORAGE_KEY, JSON.stringify(teamState));
+}
+
+/* ===== Probability class helper ===== */
+function probClass(val) {
+  if (val >= 20) return 'high';
+  if (val >= 10) return 'medium';
+  return 'low';
+}
+
+/* ===== INIT ===== */
+async function init() {
+  const grantId = getGrantId();
+  if (!grantId) {
+    document.getElementById('loadingState').style.display = 'none';
+    document.getElementById('errorState').style.display = 'block';
+    return;
+  }
+
+  const grants = await loadAnalyzed();
+  grant = grants.find(g => g.id === grantId);
+
+  if (!grant) {
+    document.getElementById('loadingState').style.display = 'none';
+    document.getElementById('errorState').style.display = 'block';
+    return;
+  }
+
+  teamState = getTeamState();
+  document.getElementById('loadingState').style.display = 'none';
+  document.getElementById('grantContent').style.display = 'block';
+
+  renderGrant();
+}
+
+/* ===== RENDER ===== */
+function renderGrant() {
+  const a = grant.analysis || {};
+  const sf = a.success_factors || {};
+
+  // Title
+  document.getElementById('grantTitle').textContent = grant.title || 'Untitled Grant';
+
+  // Update page title
+  document.title = (grant.title || 'Grant Detail') + ' - Grant Hunter AI';
+
+  // Metadata grid
+  renderMetadata();
+
+  // Analysis
+  renderAnalysis(a);
+
+  // Success factors
+  renderSuccessFactors(sf);
+
+  // Risk factors
+  renderRiskFactors(a.risk_factors || []);
+
+  // Reasoning
+  renderReasoning(a.reasoning || '');
+
+  // Apply button
+  renderApplyButton();
+
+  // Sidebar: Similar winners
+  renderSimilarWinners(a.similar_winners || []);
+
+  // Sidebar: Team section
+  renderTeamSection();
+}
+
+/* ===== METADATA ===== */
+function renderMetadata() {
+  const days = daysUntil(grant.deadline);
+  const dlText = grant.deadline
+    ? esc(grant.deadline) + ' (' + deadlineText(days) + ')'
+    : 'TBD';
+  const dlCls = grant.deadline ? deadlineClass(days) : '';
+
+  const amountMin = grant.amount_min || 0;
+  const amountMax = grant.amount_max || 0;
+  let amountStr = '-';
+  if (amountMin && amountMax) {
+    amountStr = formatMoney(amountMin) + ' - ' + formatMoney(amountMax);
+  } else if (amountMax) {
+    amountStr = 'Up to ' + formatMoney(amountMax);
+  } else if (amountMin) {
+    amountStr = 'From ' + formatMoney(amountMin);
+  }
+
+  document.getElementById('metaGrid').innerHTML = `
+    <div class="detail-meta-item">
+      <div class="label">Funder</div>
+      <div class="value">${esc(grant.funder || '-')}</div>
+    </div>
+    <div class="detail-meta-item">
+      <div class="label">Amount Range</div>
+      <div class="value" style="color: var(--success);">${amountStr}</div>
+    </div>
+    <div class="detail-meta-item">
+      <div class="label">Deadline</div>
+      <div class="value"><span class="badge ${dlCls}">${dlText}</span></div>
+    </div>
+    <div class="detail-meta-item">
+      <div class="label">Grant Type</div>
+      <div class="value">${esc(grant.grant_type || grant.type || '-')}</div>
+    </div>
+    <div class="detail-meta-item">
+      <div class="label">Source</div>
+      <div class="value">${esc(grant.source || '-')}</div>
+    </div>
+  `;
+}
+
+/* ===== ANALYSIS ===== */
+function renderAnalysis(a) {
+  const winProb = a.win_probability || 0;
+  const matchScore = a.pattern_match_score || 0;
+  const confidence = a.confidence || 'low';
+
+  document.getElementById('analysisGrid').innerHTML = `
+    <div class="analysis-item">
+      <div class="label">Win Probability</div>
+      <div class="value ${probClass(winProb)}">${winProb}%</div>
+    </div>
+    <div class="analysis-item">
+      <div class="label">Pattern Match</div>
+      <div class="value ${probClass(matchScore)}">${matchScore}%</div>
+    </div>
+    <div class="analysis-item">
+      <div class="label">Priority</div>
+      <div class="value">${priorityBadge(a.priority)}</div>
+    </div>
+    <div class="analysis-item">
+      <div class="label">LLM Source</div>
+      <div class="value" style="font-size:14px; color: var(--text-secondary);">${esc(a.llm_source || '-')}</div>
+    </div>
+    <div class="analysis-item">
+      <div class="label">Confidence</div>
+      <div class="value ${confidence === 'high' ? 'high' : confidence === 'medium' ? 'medium' : 'low'}" style="font-size:16px; text-transform:capitalize;">${esc(confidence)}</div>
+    </div>
+  `;
+}
+
+/* ===== SUCCESS FACTORS ===== */
+function renderSuccessFactors(sf) {
+  const container = document.getElementById('successFactors');
+  let html = '';
+
+  // Keywords
+  const keywords = sf.keywords || [];
+  if (keywords.length) {
+    html += `<div class="factor-section">
+      <h3>Keywords</h3>
+      <div class="factor-tags">
+        ${keywords.map(k => `<span class="factor-tag">${esc(k)}</span>`).join('')}
+      </div>
+    </div>`;
+  }
+
+  // Value Props
+  const valueProps = sf.value_props || [];
+  if (valueProps.length) {
+    html += `<div class="factor-section">
+      <h3>Value Propositions</h3>
+      <div class="factor-tags">
+        ${valueProps.map(v => `<span class="factor-tag value-prop">${esc(v)}</span>`).join('')}
+      </div>
+    </div>`;
+  }
+
+  // Partnerships
+  const partnerships = sf.partnerships || [];
+  if (partnerships.length) {
+    html += `<div class="factor-section">
+      <h3>Partnerships</h3>
+      <div class="factor-tags">
+        ${partnerships.map(p => `<span class="factor-tag partnership">${esc(p)}</span>`).join('')}
+      </div>
+    </div>`;
+  }
+
+  if (!html) {
+    html = '<div style="color: var(--text-muted); font-size: 13px;">No success factors identified.</div>';
+  }
+
+  container.innerHTML = html;
+}
+
+/* ===== RISK FACTORS ===== */
+function renderRiskFactors(risks) {
+  const container = document.getElementById('riskFactors');
+  if (!risks.length) {
+    container.innerHTML = '<div style="color: var(--text-muted); font-size: 13px;">No risk factors identified.</div>';
+    return;
+  }
+
+  container.innerHTML = `
+    <div class="factor-tags">
+      ${risks.map(r => `<span class="factor-tag risk">${esc(r)}</span>`).join('')}
+    </div>
+  `;
+}
+
+/* ===== REASONING ===== */
+function renderReasoning(text) {
+  const container = document.getElementById('reasoning');
+  if (!text) {
+    container.innerHTML = '<div style="color: var(--text-muted); font-size: 13px;">No reasoning provided.</div>';
+    return;
+  }
+  container.innerHTML = `<div class="reasoning-text">${esc(text)}</div>`;
+}
+
+/* ===== APPLY BUTTON ===== */
+function renderApplyButton() {
+  const section = document.getElementById('applySection');
+  if (grant.url) {
+    section.style.display = 'block';
+    section.innerHTML = `<a href="${esc(grant.url)}" target="_blank" rel="noopener" class="apply-btn">&#10145; Apply</a>`;
+  }
+}
+
+/* ===== SIMILAR WINNERS ===== */
+function renderSimilarWinners(winners) {
+  const container = document.getElementById('similarWinners');
+
+  if (!winners || winners.length === 0) {
+    container.innerHTML = '<div class="no-winners">No similar winners found.</div>';
+    return;
+  }
+
+  container.innerHTML = winners.map(w => {
+    const reasons = w.match_reasons || [];
+    const abstract = w.abstract || '';
+    const amount = w.amount || 0;
+    const year = w.year || '';
+    const score = w.similarity_score || 0;
+
+    return `<div class="winner-card">
+      <div class="company">${esc(w.company || 'Unknown')}</div>
+      <div class="winner-meta-row">
+        <span>${esc(w.funder || '')}</span>
+        <span class="match-score">${score}% match</span>
+      </div>
+      <div class="winner-meta-row">
+        <span style="color: var(--success); font-weight:600;">${formatMoney(amount)}</span>
+        <span>${year ? esc(String(year)) : ''}</span>
+      </div>
+      ${reasons.length ? `<div class="match-reasons">
+        ${reasons.map(r => `<span class="reason-tag">${esc(r)}</span>`).join('')}
+      </div>` : ''}
+      ${abstract ? `<div class="abstract-preview">${esc(abstract.slice(0, 200))}${abstract.length > 200 ? '...' : ''}</div>` : ''}
+    </div>`;
+  }).join('');
+}
+
+/* ===== TEAM SECTION ===== */
+function renderTeamSection() {
+  const grantId = grant.id || '';
+  const grantState = (teamState.grants && teamState.grants[grantId]) || {};
+  const status = grantState.status || 'Inbox';
+  const assignedTo = grantState.assignedTo || '';
+  const comments = grantState.comments || '';
+
+  const statusOptions = ['Inbox', 'Drafting', 'Review', 'Submitted'];
+  const memberOptions = ['', 'Zhambyl', 'Unassigned'];
+
+  const container = document.getElementById('teamSection');
+  container.innerHTML = `
+    <div class="team-field">
+      <label>Status</label>
+      <select id="teamStatus" onchange="onTeamChange()">
+        ${statusOptions.map(s => `<option value="${esc(s)}" ${s === status ? 'selected' : ''}>${esc(s)}</option>`).join('')}
+      </select>
+    </div>
+    <div class="team-field">
+      <label>Assigned To</label>
+      <select id="teamAssigned" onchange="onTeamChange()">
+        ${memberOptions.map(m => `<option value="${esc(m)}" ${m === assignedTo ? 'selected' : ''}>${m || '-- Select --'}</option>`).join('')}
+      </select>
+    </div>
+    <div class="team-field">
+      <label>Comments</label>
+      <textarea id="teamComments" placeholder="Add notes about this grant..." onchange="onTeamChange()">${esc(comments)}</textarea>
+    </div>
+  `;
+}
+
+function onTeamChange() {
+  const grantId = grant.id || '';
+  if (!grantId) return;
+
+  if (!teamState.grants) teamState.grants = {};
+
+  teamState.grants[grantId] = {
+    status: document.getElementById('teamStatus').value,
+    assignedTo: document.getElementById('teamAssigned').value,
+    comments: document.getElementById('teamComments').value,
+  };
+
+  saveTeamState();
+}
+
+/* ===== START ===== */
+init();
+</script>
+</body>
+</html>

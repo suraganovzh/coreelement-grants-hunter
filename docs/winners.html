@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Winners Library - Grant Hunter AI</title>
+<link rel="stylesheet" href="assets/styles.css">
+<script src="assets/api.js"></script>
+<style>
+  /* ===== Winners-specific layout ===== */
+  .page-grid {
+    display: grid;
+    grid-template-columns: 1fr 340px;
+    gap: 24px;
+  }
+  @media (max-width: 1000px) {
+    .page-grid { grid-template-columns: 1fr; }
+  }
+
+  /* ===== Winners table ===== */
+  .winners-table-wrap {
+    overflow-x: auto;
+    max-height: 70vh;
+    overflow-y: auto;
+  }
+  .winners-table td,
+  .winners-table th { white-space: nowrap; }
+  .winners-table .col-title { white-space: normal; min-width: 200px; max-width: 340px; }
+  .winners-table .col-company { white-space: normal; min-width: 140px; max-width: 220px; }
+
+  /* ===== Keyword badges in table rows ===== */
+  .kw-badges { display: flex; gap: 4px; flex-wrap: wrap; }
+  .kw-badge {
+    display: inline-block;
+    padding: 1px 7px;
+    border-radius: 10px;
+    font-size: 10px;
+    font-weight: 500;
+    background: var(--accent-purple-dim);
+    color: #c4b5fd;
+    white-space: nowrap;
+  }
+
+  /* ===== Highlighted rows (matched winners) ===== */
+  tr.highlight td {
+    background: rgba(139, 92, 246, 0.08);
+    border-left: 3px solid var(--accent-purple);
+  }
+  tr.highlight:first-child td { border-top: none; }
+
+  /* ===== Grant match banner ===== */
+  .match-banner {
+    background: var(--accent-purple-dim);
+    border: 1px solid var(--accent-purple);
+    border-radius: var(--radius);
+    padding: 14px 18px;
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 13px;
+  }
+  .match-banner strong { color: var(--accent-purple); }
+  .match-banner .close-banner {
+    margin-left: auto;
+    background: none;
+    border: none;
+    color: var(--text-muted);
+    font-size: 18px;
+    cursor: pointer;
+  }
+
+  /* ===== Side panel sections ===== */
+  .side-section { margin-bottom: 20px; }
+  .side-section:last-child { margin-bottom: 0; }
+  .side-section .panel-body { padding: 10px 16px; }
+
+  /* ===== Stat row at top ===== */
+  .winner-stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 12px;
+    margin-bottom: 20px;
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+
+  <!-- HEADER -->
+  <div class="header">
+    <div>
+      <h1>Grant Hunter AI</h1>
+      <div class="header-sub">Core Element &mdash; Winners Library</div>
+    </div>
+    <div class="header-actions">
+      <span id="winnerCount" style="font-size:13px;color:var(--text-secondary);">0 winners loaded</span>
+      <button class="btn btn-primary" onclick="refreshData()">Refresh</button>
+    </div>
+  </div>
+
+  <!-- NAVIGATION -->
+  <nav>
+    <a href="index.html">Dashboard</a>
+    <a href="winners.html" class="active">Winners Library</a>
+    <a href="grant.html">Grant Detail</a>
+  </nav>
+
+  <!-- MATCH BANNER (shown only when ?grant= is set) -->
+  <div id="matchBanner" class="match-banner" style="display:none;">
+    <span>&#127942;</span>
+    <span>Showing similar winners for: <strong id="matchGrantTitle">-</strong></span>
+    <button class="close-banner" onclick="clearGrantFilter()">&times;</button>
+  </div>
+
+  <!-- SEARCH & FILTERS -->
+  <input type="text" class="search-bar" id="searchInput" placeholder="Search winners by title, company, funder, keywords..." oninput="applyFilters()">
+
+  <div class="filter-chips" id="filterChips">
+    <button class="chip active" data-filter="all" onclick="setFilter('all', this)">All</button>
+    <button class="chip" data-filter="funder" onclick="setFilter('funder', this)">By Funder</button>
+    <button class="chip" data-filter="amount" onclick="setFilter('amount', this)">By Amount</button>
+    <button class="chip" data-filter="recent" onclick="setFilter('recent', this)">Recent (2024+)</button>
+  </div>
+
+  <!-- STATS ROW -->
+  <div class="winner-stats">
+    <div class="stat-card">
+      <div class="stat-value" id="statTotal">-</div>
+      <div class="stat-label">Total Winners</div>
+    </div>
+    <div class="stat-card success">
+      <div class="stat-value" id="statAmount">-</div>
+      <div class="stat-label">Total Awarded</div>
+    </div>
+    <div class="stat-card warning">
+      <div class="stat-value" id="statFunders">-</div>
+      <div class="stat-label">Unique Funders</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-value" id="statRecent">-</div>
+      <div class="stat-label">Since 2024</div>
+    </div>
+  </div>
+
+  <!-- MAIN GRID -->
+  <div class="page-grid">
+
+    <!-- LEFT: Winners Table -->
+    <div>
+      <div class="panel">
+        <div class="panel-header">
+          <span id="tableTitle">All Winners</span>
+          <span style="font-size:12px;color:var(--text-muted);" id="shownCount">-</span>
+        </div>
+        <div class="winners-table-wrap">
+          <table class="winners-table" id="winnersTable">
+            <thead>
+              <tr>
+                <th>Title</th>
+                <th>Company / PI</th>
+                <th>Funder</th>
+                <th>Amount</th>
+                <th>Date</th>
+                <th>Keywords</th>
+              </tr>
+            </thead>
+            <tbody id="winnersBody"></tbody>
+          </table>
+          <div class="empty" id="emptyState" style="display:none;">
+            <div class="icon">&#127942;</div>
+            <div>No winners found matching your criteria.</div>
+          </div>
+        </div>
+      </div>
+      <div class="loading" id="loadingState">
+        <div class="spinner"></div>
+        <div>Loading winners data...</div>
+      </div>
+    </div>
+
+    <!-- RIGHT: Side Panel -->
+    <div>
+      <!-- Top Keywords -->
+      <div class="panel side-section">
+        <div class="panel-header"><span>Top Keywords</span></div>
+        <div class="panel-body" id="keywordsPanel">
+          <div class="loading" style="padding:12px;">Loading...</div>
+        </div>
+      </div>
+
+      <!-- Top Funders -->
+      <div class="panel side-section">
+        <div class="panel-header"><span>Top Funders</span></div>
+        <div class="panel-body" id="fundersPanel">
+          <div class="loading" style="padding:12px;">Loading...</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+/* ===== STATE ===== */
+let allWinners = [];
+let filteredWinners = [];
+let patternsData = {};
+let analyzedGrants = [];
+let currentFilter = 'all';
+let currentSearch = '';
+let grantParam = null;
+let similarWinnerIds = [];
+
+/* ===== INITIALIZATION ===== */
+(async function init() {
+  // Check for ?grant= parameter
+  const params = new URLSearchParams(window.location.search);
+  grantParam = params.get('grant');
+
+  // Load data in parallel
+  const [winners, patterns, analyzed] = await Promise.all([
+    loadWinners(),
+    loadPatterns(),
+    grantParam ? loadAnalyzed() : Promise.resolve([])
+  ]);
+
+  allWinners = winners;
+  patternsData = patterns;
+  analyzedGrants = analyzed;
+
+  // If grant param, find matching similar_winners
+  if (grantParam && analyzedGrants.length) {
+    const grant = analyzedGrants.find(g =>
+      g.id === grantParam || g.grant_id === grantParam
+    );
+    if (grant) {
+      const sw = grant.similar_winners || grant.analysis?.similar_winners || [];
+      similarWinnerIds = sw.map(w => w.id || w.winner_id || w.title || '');
+      document.getElementById('matchBanner').style.display = 'flex';
+      document.getElementById('matchGrantTitle').textContent =
+        grant.title || grant.id || grantParam;
+    }
+  }
+
+  document.getElementById('loadingState').style.display = 'none';
+
+  renderStats();
+  renderPatterns();
+  applyFilters();
+})();
+
+/* ===== REFRESH ===== */
+async function refreshData() {
+  document.getElementById('loadingState').style.display = 'block';
+  const [winners, patterns] = await Promise.all([loadWinners(), loadPatterns()]);
+  allWinners = winners;
+  patternsData = patterns;
+  document.getElementById('loadingState').style.display = 'none';
+  renderStats();
+  renderPatterns();
+  applyFilters();
+}
+
+/* ===== STATS ===== */
+function renderStats() {
+  document.getElementById('statTotal').textContent = allWinners.length;
+
+  const totalAmt = allWinners.reduce((s, w) => s + (w.amount || w.award_amount || 0), 0);
+  document.getElementById('statAmount').textContent = formatMoney(totalAmt);
+
+  const funders = new Set(allWinners.map(w => w.funder).filter(Boolean));
+  document.getElementById('statFunders').textContent = funders.size;
+
+  const recent = allWinners.filter(w => {
+    const d = w.award_date || w.date || '';
+    return d >= '2024';
+  });
+  document.getElementById('statRecent').textContent = recent.length;
+
+  document.getElementById('winnerCount').textContent =
+    allWinners.length + ' winners loaded';
+}
+
+/* ===== FILTERING & SEARCH ===== */
+function setFilter(filter, btn) {
+  currentFilter = filter;
+  document.querySelectorAll('.chip').forEach(c => c.classList.remove('active'));
+  btn.classList.add('active');
+  applyFilters();
+}
+
+function applyFilters() {
+  currentSearch = (document.getElementById('searchInput').value || '').toLowerCase().trim();
+  let results = [...allWinners];
+
+  // Text search
+  if (currentSearch) {
+    results = results.filter(w => {
+      const haystack = [
+        w.title, w.award_title,
+        w.winner, w.recipient, w.pi, w.company,
+        w.funder,
+        Array.isArray(w.keywords) ? w.keywords.join(' ') : (w.keywords || '')
+      ].join(' ').toLowerCase();
+      return haystack.includes(currentSearch);
+    });
+  }
+
+  // Chip filters
+  if (currentFilter === 'recent') {
+    results = results.filter(w => {
+      const d = w.award_date || w.date || '';
+      return d >= '2024';
+    });
+  }
+
+  // Sort
+  if (currentFilter === 'funder') {
+    results.sort((a, b) => (a.funder || '').localeCompare(b.funder || ''));
+  } else if (currentFilter === 'amount') {
+    results.sort((a, b) =>
+      (b.amount || b.award_amount || 0) - (a.amount || a.award_amount || 0)
+    );
+  } else {
+    // Default sort: date descending, then by title
+    results.sort((a, b) => {
+      const da = a.award_date || a.date || '';
+      const db = b.award_date || b.date || '';
+      if (db !== da) return db.localeCompare(da);
+      return (a.title || '').localeCompare(b.title || '');
+    });
+  }
+
+  // If grant param set, put similar winners at the top
+  if (similarWinnerIds.length > 0) {
+    const matched = [];
+    const rest = [];
+    for (const w of results) {
+      const wId = w.id || w.award_id || w.title || '';
+      const wTitle = (w.title || w.award_title || '').toLowerCase();
+      const isMatch = similarWinnerIds.some(sid => {
+        const sidLower = (sid || '').toLowerCase();
+        return sid === wId || sidLower === wTitle || wId === sid;
+      });
+      if (isMatch) {
+        w._matched = true;
+        matched.push(w);
+      } else {
+        w._matched = false;
+        rest.push(w);
+      }
+    }
+    results = [...matched, ...rest];
+  }
+
+  filteredWinners = results;
+  renderTable();
+}
+
+/* ===== RENDER TABLE ===== */
+function renderTable() {
+  const tbody = document.getElementById('winnersBody');
+  const emptyEl = document.getElementById('emptyState');
+  const shownEl = document.getElementById('shownCount');
+  const titleEl = document.getElementById('tableTitle');
+
+  // Update header text
+  const filterLabels = {
+    all: 'All Winners',
+    funder: 'Winners by Funder',
+    amount: 'Winners by Amount',
+    recent: 'Recent Winners (2024+)'
+  };
+  titleEl.textContent = filterLabels[currentFilter] || 'All Winners';
+
+  if (filteredWinners.length === 0) {
+    tbody.innerHTML = '';
+    emptyEl.style.display = 'block';
+    shownEl.textContent = '0 shown';
+    return;
+  }
+  emptyEl.style.display = 'none';
+  shownEl.textContent = filteredWinners.length + ' shown';
+
+  // Render up to 500 for performance
+  const display = filteredWinners.slice(0, 500);
+
+  tbody.innerHTML = display.map(w => {
+    const title = w.title || w.award_title || 'Untitled';
+    const company = w.winner || w.recipient || w.pi || w.company || '-';
+    const funder = w.funder || '-';
+    const amount = w.amount || w.award_amount || 0;
+    const date = w.award_date || w.date || '-';
+    const keywords = Array.isArray(w.keywords)
+      ? w.keywords
+      : (w.keywords ? w.keywords.split(',').map(k => k.trim()) : []);
+    const rowClass = w._matched ? ' class="highlight"' : '';
+
+    const kwHtml = keywords.length > 0
+      ? `<div class="kw-badges">${keywords.slice(0, 5).map(k =>
+          `<span class="kw-badge">${esc(k)}</span>`).join('')}${keywords.length > 5
+          ? `<span class="kw-badge">+${keywords.length - 5}</span>` : ''}</div>`
+      : '<span style="color:var(--text-muted);font-size:11px;">-</span>';
+
+    return `<tr${rowClass}>
+      <td class="col-title">${esc(title)}</td>
+      <td class="col-company">${esc(company)}</td>
+      <td>${esc(funder)}</td>
+      <td style="color:var(--success);font-weight:600;">${formatMoney(amount)}</td>
+      <td>${esc(date)}</td>
+      <td>${kwHtml}</td>
+    </tr>`;
+  }).join('');
+
+  if (filteredWinners.length > 500) {
+    tbody.innerHTML += `<tr><td colspan="6" style="text-align:center;color:var(--text-muted);padding:16px;">
+      Showing 500 of ${filteredWinners.length} results. Use the search bar to narrow down.
+    </td></tr>`;
+  }
+}
+
+/* ===== RENDER PATTERNS (Side Panel) ===== */
+function renderPatterns() {
+  // Top Keywords
+  const kwPanel = document.getElementById('keywordsPanel');
+  const keywords = (patternsData.keyword_patterns || []).slice(0, 12);
+
+  if (keywords.length) {
+    const maxVal = keywords[0]?.frequency || keywords[0]?.count || 1;
+    kwPanel.innerHTML = keywords.map(kw => {
+      const freq = kw.frequency || (kw.count ? kw.count / maxVal : 0);
+      const pct = (freq * 100).toFixed(0);
+      const label = kw.frequency
+        ? (kw.frequency * 100).toFixed(0) + '%'
+        : String(kw.count || 0);
+      return `<div class="progress-row">
+        <div class="progress-label" title="${esc(kw.keyword)}">${esc(kw.keyword)}</div>
+        <div class="progress-bg"><div class="progress-fill" style="width:${pct}%"></div></div>
+        <div class="progress-val">${label}</div>
+      </div>`;
+    }).join('');
+  } else {
+    kwPanel.innerHTML = '<div class="empty" style="padding:20px;"><div class="icon">&#128269;</div>No keyword patterns yet.</div>';
+  }
+
+  // Top Funders
+  const fnPanel = document.getElementById('fundersPanel');
+  const funders = (patternsData.funder_patterns || []).slice(0, 8);
+
+  if (funders.length) {
+    const maxAwards = funders[0]?.total_awards || 1;
+    fnPanel.innerHTML = funders.map(f => {
+      const pct = ((f.total_awards / maxAwards) * 100).toFixed(0);
+      return `<div class="progress-row">
+        <div class="progress-label" title="${esc(f.funder)}">${esc(f.funder)}</div>
+        <div class="progress-bg"><div class="progress-fill" style="width:${pct}%"></div></div>
+        <div class="progress-val">${f.total_awards}</div>
+      </div>`;
+    }).join('');
+  } else {
+    fnPanel.innerHTML = '<div class="empty" style="padding:20px;"><div class="icon">&#127970;</div>No funder data yet.</div>';
+  }
+}
+
+/* ===== GRANT FILTER HELPERS ===== */
+function clearGrantFilter() {
+  grantParam = null;
+  similarWinnerIds = [];
+  document.getElementById('matchBanner').style.display = 'none';
+  // Remove ?grant= from URL without reload
+  const url = new URL(window.location);
+  url.searchParams.delete('grant');
+  window.history.replaceState({}, '', url);
+  applyFilters();
+}
+</script>
+
+</body>
+</html>
