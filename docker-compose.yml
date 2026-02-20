@@ -1,55 +1,14 @@
+# Docker Compose — LOCAL DEVELOPMENT ONLY
+# Production uses: GitHub Actions (scraping) + GitHub Pages (dashboard) + local ARM (analysis)
+# No VPS needed.
+
 version: '3.8'
 
 services:
-  # Main application — Telegram bot (always running)
-  bot:
-    build: .
-    container_name: grant-hunter-bot
-    restart: unless-stopped
-    env_file: .env
-    environment:
-      - DATABASE_URL=postgresql://grant_hunter:${DB_PASSWORD:-changeme}@db:5432/grant_hunter
-    depends_on:
-      db:
-        condition: service_healthy
-    volumes:
-      - ./logs:/app/logs
-      - ./data:/app/data
-      - ./config:/app/config
-    command: python -m src.main --mode=bot
-
-  # Scheduled scraper (runs daily via cron inside container)
-  scheduler:
-    build: .
-    container_name: grant-hunter-scheduler
-    restart: unless-stopped
-    env_file: .env
-    environment:
-      - DATABASE_URL=postgresql://grant_hunter:${DB_PASSWORD:-changeme}@db:5432/grant_hunter
-    depends_on:
-      db:
-        condition: service_healthy
-    volumes:
-      - ./logs:/app/logs
-      - ./data:/app/data
-      - ./config:/app/config
-    command: >
-      python -c "
-        import time, subprocess, datetime;
-        print('Scheduler started');
-        while True:
-            now = datetime.datetime.utcnow();
-            if now.hour == 9 and now.minute == 0:
-                print(f'Running daily workflow at {now}');
-                subprocess.run(['python', '-m', 'src.main', '--mode=full']);
-            time.sleep(60)
-      "
-
-  # PostgreSQL database
+  # PostgreSQL for local development/testing
   db:
     image: postgres:16-alpine
     container_name: grant-hunter-db
-    restart: unless-stopped
     environment:
       POSTGRES_DB: grant_hunter
       POSTGRES_USER: grant_hunter
@@ -63,30 +22,6 @@ services:
       interval: 10s
       timeout: 5s
       retries: 5
-
-  # Database backup service
-  backup:
-    image: postgres:16-alpine
-    container_name: grant-hunter-backup
-    restart: unless-stopped
-    environment:
-      PGPASSWORD: ${DB_PASSWORD:-changeme}
-    depends_on:
-      db:
-        condition: service_healthy
-    volumes:
-      - ./data/backups:/backups
-    entrypoint: >
-      sh -c "
-        while true; do
-          TIMESTAMP=$$(date +%Y%m%d_%H%M%S)
-          pg_dump -h db -U grant_hunter grant_hunter > /backups/backup_$$TIMESTAMP.sql
-          echo \"Backup completed: backup_$$TIMESTAMP.sql\"
-          # Keep only last 7 backups
-          ls -t /backups/backup_*.sql | tail -n +8 | xargs rm -f 2>/dev/null
-          sleep 86400
-        done
-      "
 
 volumes:
   pgdata:

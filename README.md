@@ -140,7 +140,9 @@ Dark theme, no external dependencies, works with `file://` or localhost.
 ├── .github/workflows/
 │   ├── daily_scrape.yml          # Daily grant scraping (9 AM UTC)
 │   ├── weekly_winners.yml        # Weekly winner analysis (Sunday 10 AM UTC)
-│   └── deadline_reminders.yml    # Telegram deadline alerts
+│   ├── telegram_notify.yml       # Push notifications (digest, alerts, deadlines)
+│   ├── deploy_pages.yml          # GitHub Pages dashboard deployment
+│   └── wake_bot.yml              # Wake bot signal via Telegram
 ├── src/
 │   ├── scrapers/                 # Grant source scrapers (7+ sources)
 │   │   ├── grants_gov.py         # US Federal grants
@@ -185,6 +187,11 @@ Dark theme, no external dependencies, works with `file://` or localhost.
 ├── templates/                    # Grant application templates
 ├── data/                         # Git-tracked scraped data
 ├── drafts/                       # Generated application drafts
+├── scripts/
+│   ├── send_telegram_notifications.py  # GitHub Actions notification sender
+│   ├── test_notifications.py           # Local test for Telegram
+│   ├── wake_bot.sh                     # Wake bot (Linux/Mac)
+│   └── wake_bot.bat                    # Wake bot (Windows)
 ├── tests/                        # Test suite
 ├── requirements.txt
 ├── .env.example
@@ -270,7 +277,44 @@ Surface ARM (on-demand):
 |----------|----------|-------------|
 | `daily_scrape.yml` | 9 AM UTC daily | Scrape new grants |
 | `weekly_winners.yml` | 10 AM UTC Sunday | Scrape winners + extract patterns |
-| `deadline_reminders.yml` | 9 AM UTC daily | Telegram deadline alerts |
+| `telegram_notify.yml` | 9 AM UTC + after scrape | Daily digest, new grants, deadline alerts |
+| `deploy_pages.yml` | on push to main | Deploy dashboard to GitHub Pages |
+| `wake_bot.yml` | manual / dispatch | Send bot wake signal to Telegram |
+
+## Telegram Notifications
+
+### Push Notifications (24/7)
+
+GitHub Actions automatically sends:
+- ☀️ Daily digest (9 AM UTC)
+- 🎯 New high-priority grants (with similar winners)
+- ⏰ Deadline reminders (7, 3, 1 day before)
+
+**No bot process required!** Notifications work even when Surface is off.
+
+### Interactive Bot (Optional)
+
+For commands like `/status`, `/generate`, start the bot locally:
+```bash
+python -m src.main --mode=bot
+```
+
+The bot only needs to run when you want to interact with it.
+
+### Wake Bot Feature
+
+Need to start the bot? Get a reminder:
+
+**Option 1: GitHub Actions UI**
+1. Go to Actions → Wake Bot Signal
+2. Click "Run workflow"
+3. Check Telegram for instructions
+
+**Option 2: Via Script**
+```bash
+export GITHUB_TOKEN=your_github_token
+./scripts/wake_bot.sh
+```
 
 ## GitHub Secrets
 
