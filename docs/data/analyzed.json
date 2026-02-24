@@ -1,0 +1,91 @@
+{
+  "grants": [
+    {
+      "id": "DEMO-001",
+      "title": "Advanced Materials Research for Clean Energy",
+      "funder": "Department of Energy",
+      "source": "grants_gov",
+      "source_type": "federal",
+      "amount_min": 150000,
+      "amount_max": 500000,
+      "deadline": "2026-03-15",
+      "description": "Research into advanced materials for next-generation clean energy systems.",
+      "analysis": {
+        "priority": "copy_now",
+        "win_probability": 72,
+        "similar_winners": [
+          {"winner": "CleanTech Labs Inc.", "title": "Perovskite Solar Materials", "amount": 450000},
+          {"winner": "GreenMat Solutions", "title": "Thermoelectric Materials", "amount": 380000}
+        ]
+      }
+    },
+    {
+      "id": "DEMO-002",
+      "title": "SBIR Phase I — AI-Driven Environmental Monitoring",
+      "funder": "NSF",
+      "source": "sbir_sttr",
+      "source_type": "federal",
+      "amount_min": 256000,
+      "amount_max": 256000,
+      "deadline": "2026-04-01",
+      "description": "Development of AI-powered environmental monitoring systems for early warning.",
+      "analysis": {
+        "priority": "copy_now",
+        "win_probability": 65,
+        "similar_winners": [
+          {"winner": "EnviroAI Corp", "title": "ML-based Air Quality Prediction", "amount": 256000}
+        ]
+      }
+    },
+    {
+      "id": "DEMO-003",
+      "title": "Community Health Innovation Grant",
+      "funder": "Sloan Foundation",
+      "source": "foundation",
+      "source_type": "private_foundation",
+      "amount_min": 50000,
+      "amount_max": 200000,
+      "deadline": "2026-03-01",
+      "description": "Innovation grants for community health technology solutions.",
+      "analysis": {
+        "priority": "test_first",
+        "win_probability": 45,
+        "similar_winners": []
+      }
+    },
+    {
+      "id": "DEMO-004",
+      "title": "Horizon Europe — Digital Twins for Industry",
+      "funder": "European Commission",
+      "source": "eu_horizon",
+      "source_type": "eu",
+      "amount_min": 500000,
+      "amount_max": 2000000,
+      "deadline": "2026-06-30",
+      "description": "Development of digital twin technology for manufacturing optimization.",
+      "analysis": {
+        "priority": "test_first",
+        "win_probability": 38,
+        "similar_winners": []
+      }
+    },
+    {
+      "id": "DEMO-005",
+      "title": "State Innovation Technology Fund",
+      "funder": "Texas Governor's Office",
+      "source": "state_grants",
+      "source_type": "state",
+      "amount_min": 25000,
+      "amount_max": 100000,
+      "deadline": "2026-03-10",
+      "description": "Funding for technology startups in the state of Texas.",
+      "analysis": {
+        "priority": "copy_now",
+        "win_probability": 58,
+        "similar_winners": [
+          {"winner": "Austin Robotics LLC", "title": "Warehouse Automation", "amount": 85000}
+        ]
+      }
+    }
+  ]
+}

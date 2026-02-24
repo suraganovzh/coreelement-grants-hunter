@@ -1,0 +1,8 @@
+{
+  "overall_status": "ACTIVE",
+  "last_checked": "2026-02-24T09:00:00Z",
+  "programs": {
+    "SBIR": {"status": "ACTIVE", "note": "Accepting applications"},
+    "STTR": {"status": "ACTIVE", "note": "Accepting applications"}
+  }
+}

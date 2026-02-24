@@ -1,0 +1,18 @@
+{
+  "grants": [
+    {
+      "title": "Climate Resilience Infrastructure Program",
+      "funder": "FEMA",
+      "amount_max": 5000000,
+      "expected_release": "2026-Q2",
+      "status": "ANTICIPATED"
+    },
+    {
+      "title": "Rural Broadband Expansion Phase III",
+      "funder": "NTIA",
+      "amount_max": 10000000,
+      "expected_release": "2026-03",
+      "status": "FORECASTED"
+    }
+  ]
+}
