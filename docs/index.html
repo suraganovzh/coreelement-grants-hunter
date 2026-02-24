@@ -111,6 +111,26 @@
       </div>
     </div>
 
+    <!-- SOURCE BREAKDOWN -->
+    <div id="sourceBreakdown" style="display:none; margin-bottom:16px;">
+      <div style="display:flex; gap:8px; flex-wrap:wrap; font-size:11px;">
+        <span class="badge badge-purple" id="srcFederal" title="Federal">Federal: 0</span>
+        <span class="badge badge-amber" id="srcState" title="State">State: 0</span>
+        <span class="badge badge-green" id="srcFoundation" title="Foundation">Foundation: 0</span>
+        <span class="badge badge-blue" id="srcEU" style="background:rgba(59,130,246,.2);color:#60a5fa;" title="EU">EU: 0</span>
+        <span class="badge badge-gray" id="srcNOFO" title="NOFO Pipeline">NOFO Pipeline: 0</span>
+        <span id="sbirStatusBadge" class="badge badge-red" style="display:none;" title="SBIR/STTR Status"></span>
+      </div>
+    </div>
+
+    <!-- NOFO PIPELINE SECTION -->
+    <div id="nofoPipelineSection" style="display:none; margin-bottom:16px;">
+      <div style="border:1px solid var(--border); border-radius:8px; padding:12px; background:rgba(245,158,11,.05);">
+        <div style="font-weight:700; font-size:13px; margin-bottom:8px;">NOFO Pipeline &mdash; Prepare Now</div>
+        <div id="nofoPipelineCards"></div>
+      </div>
+    </div>
+
     <!-- KANBAN BOARD -->
     <div class="kanban">
       <div class="kanban-col" id="colInbox">
@@ -162,6 +182,8 @@ const LOCAL_STATE_KEY = 'grantHunterState';
 // In-memory state
 let grants = [];
 let teamState = {};
+let sbirStatus = {};
+let nofoPipeline = [];
 
 /* ---- localStorage state management ---- */
 
@@ -206,13 +228,18 @@ async function loadData() {
   document.getElementById('loadingIndicator').style.display = 'block';
   document.getElementById('mainContent').style.display = 'none';
 
-  const [analyzed, ts] = await Promise.all([
+  const [analyzed, ts, sbir, nofo] = await Promise.all([
     loadAnalyzed(),
-    loadTeamState()
+    loadTeamState(),
+    fetchJSON('sbir_status.json'),
+    fetchJSON('nofo_pipeline.json')
   ]);
 
   grants = analyzed;
   teamState = ts || { grants: {}, activity_feed: [] };
+  sbirStatus = sbir || {};
+  const nofoData = nofo || {};
+  nofoPipeline = Array.isArray(nofoData) ? nofoData : (nofoData.grants || []);
 
   document.getElementById('loadingIndicator').style.display = 'none';
   document.getElementById('mainContent').style.display = 'block';
@@ -335,8 +362,16 @@ function renderGrantCard(grant) {
 
   const cardClass = 'grant-card' + (isUrgent ? ' urgent' : '');
 
+  // Source type badge
+  const sourceType = grant.source_type || grant.source || '';
+  let sourceBadge = '';
+  if (sourceType.includes('state')) sourceBadge = '<span class="badge badge-amber" style="font-size:9px;margin-left:4px;">STATE</span>';
+  else if (sourceType.includes('foundation')) sourceBadge = '<span class="badge badge-green" style="font-size:9px;margin-left:4px;">FOUNDATION</span>';
+  else if (sourceType.includes('eu')) sourceBadge = '<span class="badge" style="font-size:9px;margin-left:4px;background:rgba(59,130,246,.2);color:#60a5fa;">EU</span>';
+  else if (sourceType.includes('nofo') || sourceType.includes('pipeline')) sourceBadge = '<span class="badge badge-gray" style="font-size:9px;margin-left:4px;">NOFO</span>';
+
   return '<div class="' + cardClass + '" onclick="navigateToGrant(\'' + esc(grantId) + '\')">'
-    + '<div class="title">' + esc(grant.title || 'Untitled Grant') + '</div>'
+    + '<div class="title">' + esc(grant.title || 'Untitled Grant') + sourceBadge + '</div>'
     + '<div class="funder-line">' + esc(grant.funder || 'Unknown Funder') + '</div>'
     + '<div class="meta">'
     +   '<span class="amount">' + getAmountRange(grant) + '</span>'
@@ -435,8 +470,89 @@ function renderDashboard() {
   document.getElementById('statTotalPotential').textContent = formatMoney(stats.totalPotential);
   document.getElementById('statUrgent').textContent = stats.urgentCount;
 
+  // Source breakdown
+  renderSourceBreakdown();
+
+  // SBIR status badge
+  renderSBIRStatus();
+
+  // NOFO pipeline
+  renderNOFOPipeline();
+
   // Kanban board
   renderKanban();
+}
+
+/* ---- Source breakdown ---- */
+
+function renderSourceBreakdown() {
+  const counts = { federal: 0, state: 0, private_foundation: 0, eu: 0, nofo_pipeline: 0, other: 0 };
+  for (const g of grants) {
+    const st = g.source_type || g.source || 'other';
+    if (st === 'federal' || st === 'grants_gov' || st === 'sbir_sttr') counts.federal++;
+    else if (st === 'state' || st.includes('state')) counts.state++;
+    else if (st === 'private_foundation' || st.includes('foundation') || st.includes('eqt') || st.includes('sloan')) counts.private_foundation++;
+    else if (st === 'eu' || st.includes('horizon') || st.includes('eu')) counts.eu++;
+    else if (st === 'nofo_pipeline') counts.nofo_pipeline++;
+    else counts.other++;
+  }
+
+  document.getElementById('srcFederal').textContent = 'Federal: ' + counts.federal;
+  document.getElementById('srcState').textContent = 'State: ' + counts.state;
+  document.getElementById('srcFoundation').textContent = 'Foundation: ' + counts.private_foundation;
+  document.getElementById('srcEU').textContent = 'EU: ' + counts.eu;
+  document.getElementById('srcNOFO').textContent = 'NOFO Pipeline: ' + counts.nofo_pipeline;
+  document.getElementById('sourceBreakdown').style.display = 'block';
+}
+
+/* ---- SBIR status ---- */
+
+function renderSBIRStatus() {
+  const badge = document.getElementById('sbirStatusBadge');
+  const overall = sbirStatus.overall_status || sbirStatus.status;
+  if (!overall) { badge.style.display = 'none'; return; }
+
+  badge.style.display = 'inline-block';
+  if (overall === 'REAUTHORIZED' || overall === 'ACTIVE') {
+    badge.style.background = 'rgba(16,185,129,.2)';
+    badge.style.color = '#34d399';
+    badge.textContent = 'SBIR: ACTIVE';
+  } else if (overall === 'SUSPENDED') {
+    badge.style.background = 'rgba(239,68,68,.2)';
+    badge.style.color = '#f87171';
+    badge.textContent = 'SBIR: SUSPENDED';
+  } else {
+    badge.style.background = 'rgba(245,158,11,.2)';
+    badge.style.color = '#fbbf24';
+    badge.textContent = 'SBIR: ' + overall;
+  }
+}
+
+/* ---- NOFO Pipeline ---- */
+
+function renderNOFOPipeline() {
+  const section = document.getElementById('nofoPipelineSection');
+  const container = document.getElementById('nofoPipelineCards');
+
+  if (!nofoPipeline || nofoPipeline.length === 0) {
+    section.style.display = 'none';
+    return;
+  }
+
+  section.style.display = 'block';
+  let html = '';
+  for (const g of nofoPipeline.slice(0, 5)) {
+    const amount = formatMoney(g.amount_max || 0);
+    const expected = g.expected_release || 'TBD';
+    const status = g.status || 'ANTICIPATED';
+    html += '<div style="padding:6px 0; border-bottom:1px solid var(--border); font-size:12px;">'
+      + '<div style="font-weight:600;">' + esc(g.title || '') + '</div>'
+      + '<div style="color:var(--text-muted); margin-top:2px;">'
+      + esc(g.funder || '') + ' &mdash; ' + amount + ' &mdash; Expected: ' + esc(expected)
+      + ' <span class="badge badge-amber" style="margin-left:4px;">' + esc(status) + '</span>'
+      + '</div></div>';
+  }
+  container.innerHTML = html;
 }
 
 /* ---- Interactions ---- */

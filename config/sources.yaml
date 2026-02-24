@@ -97,6 +97,30 @@ private_foundations:
     enabled: false  # Requires paid subscription
     frequency: weekly
 
+  eqt_foundation:
+    name: "EQT Foundation Science Grants"
+    url: "https://eqtgroup.com/eqt-foundation/"
+    grants_url: "https://eqtgroup.com/eqt-foundation/grant-submission"
+    enabled: true
+    frequency: daily
+    priority: high
+    focus_areas:
+      - "critical minerals"
+      - "climate tech"
+      - "deeptech"
+      - "green transition"
+    notes: "Direct alignment with Core Element AI. Partnership via CSM/Stanford."
+
+  sloan_foundation:
+    name: "Alfred P. Sloan Foundation"
+    url: "https://sloan.org/programs/energy-and-environment"
+    enabled: true
+    frequency: weekly
+    focus_areas:
+      - "energy"
+      - "environment"
+      - "clean energy"
+
   google_ai:
     name: "Google AI Research Grants"
     url: "https://research.google/outreach/"
@@ -114,6 +138,86 @@ private_foundations:
     url: "https://sustainability.aboutamazon.com/"
     enabled: true
     frequency: weekly
+
+# --- STATE GRANTS (NEW) ---
+state_grants:
+  colorado_oedit:
+    name: "Colorado OEDIT Advanced Industries"
+    url: "https://oedit.colorado.gov/advance-industries-accelerator-programs"
+    backup_url: "https://choosecolorado.com/programs-initiatives/advanced-industries/"
+    enabled: true
+    frequency: daily
+    priority: high
+    relevance: "CSM partnership, Advanced Industries POC grant"
+    programs:
+      - "Proof of Concept Grant"
+      - "Early Stage Capital & Retention Grant"
+
+  delaware_dsb:
+    name: "Delaware Division of Small Business"
+    url: "https://business.delaware.gov/edge-grants/"
+    enabled: true
+    frequency: daily
+    priority: high
+    relevance: "HQ incorporation state, EDGE STEM grants"
+
+  arizona_commerce:
+    name: "Arizona Commerce Authority"
+    url: "https://www.azcommerce.com/incentives/"
+    enabled: true
+    frequency: weekly
+    relevance: "Major mining hub, copper and lithium deposits"
+
+  nevada_goed:
+    name: "Nevada GOED"
+    url: "https://goed.nv.gov/programs-incentives/"
+    enabled: true
+    frequency: weekly
+    relevance: "Critical minerals hub, lithium deposits"
+
+  california_gobiz:
+    name: "California GO-Biz"
+    url: "https://business.ca.gov/advantages/opportunity-zones/"
+    enabled: true
+    frequency: weekly
+    relevance: "Tech ecosystem, Stanford connection"
+
+  wyoming_wbc:
+    name: "Wyoming Business Council"
+    url: "https://www.wyomingbusiness.org/programs"
+    enabled: true
+    frequency: weekly
+    relevance: "Rare earth elements, mining innovation"
+
+  alaska_ded:
+    name: "Alaska Division of Economic Development"
+    url: "https://www.commerce.alaska.gov/web/ded/"
+    enabled: true
+    frequency: weekly
+    relevance: "Mineral resources, critical minerals exploration"
+
+# --- MONITORS (NEW) ---
+monitors:
+  sbir_sttr_status:
+    name: "SBIR/STTR Authorization Status"
+    url: "https://www.sbir.gov/"
+    enabled: true
+    frequency: every_6_hours
+    priority: critical
+    check_urls:
+      - "https://www.sbir.gov/"
+      - "https://seedfund.nsf.gov/"
+      - "https://science.osti.gov/sbir"
+    notes: "Programs expired Sept 30, 2025. Monitor for reauthorization."
+
+  nofo_pipeline:
+    name: "NOFO Pipeline Tracker"
+    enabled: true
+    frequency: daily
+    sources:
+      - "https://www.energy.gov/eere/funding/funding-opportunities"
+      - "https://arpa-e-foa.energy.gov/"
+    notes: "Track NOIs for upcoming NOFOs — prepare now opportunities."
 
 mining_industry:
   anglo_american:

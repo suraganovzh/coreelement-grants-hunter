@@ -1,15 +1,15 @@
-name: Daily Grant Scraping
+name: Daily State & Foundation Scraping
 
 on:
   schedule:
-    - cron: '0 9 * * *'       # Daily 9 AM UTC
-  workflow_dispatch:            # Allow manual trigger
+    - cron: '0 10 * * *'  # 10 AM UTC daily (more frequent than federal)
+  workflow_dispatch:
 
 permissions:
   contents: write
 
 jobs:
-  scrape-new-grants:
+  scrape-state-foundation:
     runs-on: ubuntu-latest
     timeout-minutes: 20
 
@@ -35,31 +35,7 @@ jobs:
       - name: Create data directory
         run: mkdir -p data
 
-      - name: Scrape grants.gov
-        run: python -m src.scrapers.grants_gov --output data/grants_gov_raw.json
-        continue-on-error: true
-
-      - name: Scrape SBIR/STTR
-        run: python -m src.scrapers.sbir_scraper --output data/sbir_raw.json
-        continue-on-error: true
-
-      - name: Scrape EU Horizon
-        run: python -m src.scrapers.eu_horizon --output data/eu_raw.json
-        continue-on-error: true
-
-      - name: Scrape foundations
-        run: python -m src.scrapers.foundation_scraper --output data/foundation_raw.json
-        continue-on-error: true
-
-      - name: Scrape corporate grants
-        run: python -m src.scrapers.corporate_grants --output data/corporate_raw.json
-        continue-on-error: true
-
-      - name: Scrape Kazakhstan sources
-        run: python -m src.scrapers.kazakhstan_scraper --output data/kazakhstan_raw.json
-        continue-on-error: true
-
-      - name: Scrape State Grants
+      - name: Scrape State Grants (all states)
         run: python -m src.scrapers.state_grants.multi_state --output data/state_grants_raw.json
         continue-on-error: true
 
@@ -75,14 +51,11 @@ jobs:
         run: python -m src.scrapers.nofo_tracker --output data/nofo_pipeline.json
         continue-on-error: true
 
-      - name: Check SBIR Status
-        run: python -m src.monitors.sbir_status --output data/sbir_status.json
+      - name: Scrape Winners (state + foundation)
+        run: python -m src.scrapers.winners.expanded_winners
         continue-on-error: true
 
-      - name: Merge federal grants
-        run: python -m src.utils.merge_grants --output data/grants.json
-
-      - name: Consolidate all sources
+      - name: Consolidate All Grants
         run: python -m src.data.consolidate --output data/analyzed.json
 
       - name: Run Quality Check
@@ -95,13 +68,14 @@ jobs:
           cp data/analyzed.json docs/data/ 2>/dev/null || true
           cp data/nofo_pipeline.json docs/data/ 2>/dev/null || true
           cp data/sbir_status.json docs/data/ 2>/dev/null || true
+          cp data/quality_report.json docs/data/ 2>/dev/null || true
 
-      - name: Commit new grants
+      - name: Commit data updates
         run: |
           git config user.name github-actions
           git config user.email github-actions@github.com
           git add data/ docs/data/
-          git diff-index --quiet HEAD || git commit -m "Daily grants update $(date +'%Y-%m-%d')"
+          git diff-index --quiet HEAD || git commit -m "Daily state & foundation grants update $(date +'%Y-%m-%d')"
           git push
 
       - name: Send Telegram notification
@@ -111,13 +85,13 @@ jobs:
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
         run: python -c "
           from src.local.telegram_notify import send_message;
-          send_message('📊 *Daily scrape complete* — all sources updated.')
+          send_message('📊 *State & Foundation scrape complete*\nCheck dashboard for updates.')
           " || true
 
       - name: Upload logs
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: scrape-logs-${{ github.run_number }}
+          name: state-scrape-logs-${{ github.run_number }}
           path: logs/
           retention-days: 14
