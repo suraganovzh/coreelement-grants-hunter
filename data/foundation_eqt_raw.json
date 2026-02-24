@@ -1,0 +1,128 @@
+[
+  {
+    "title": "EQT Foundation: EQT Foundation is an independent charitable foundation, founded during EQT's 2019 stock exchange listing.",
+    "funder": "EQT Foundation",
+    "description": "EQT Foundation is a catalytic investor and grant maker",
+    "amount_min": null,
+    "amount_max": null,
+    "currency": "USD",
+    "deadline": "",
+    "url": "https://eqtgroup.com/about/people?business-line=eqt-foundation",
+    "source": "eqt_foundation",
+    "grant_type": "private_foundation",
+    "industry_tags": [
+      "deeptech",
+      "climate",
+      "science"
+    ],
+    "eligibility_text": "",
+    "focus_areas": [
+      "deeptech",
+      "climate",
+      "science"
+    ],
+    "scraped_at": "2026-02-24T06:12:34.454231"
+  },
+  {
+    "title": "EQT Foundation: Are you a scientist developing breakthrough materials and technologies that reduce our dependence on critical minerals for the net-zero transition?",
+    "funder": "EQT Foundation",
+    "description": "Open call for applications: Critical Mineral Substitutes for the Green Transition",
+    "amount_min": 25000,
+    "amount_max": 100000,
+    "currency": "EUR",
+    "deadline": "",
+    "url": "https://eqtgroup.com/eqt-foundation/grant-submission",
+    "source": "eqt_foundation",
+    "grant_type": "private_foundation",
+    "industry_tags": [
+      "deeptech",
+      "climate",
+      "science"
+    ],
+    "eligibility_text": "",
+    "focus_areas": [
+      "deeptech",
+      "climate",
+      "science"
+    ],
+    "scraped_at": "2026-02-24T06:12:34.454242"
+  },
+  {
+    "title": "EQT Foundation: Supporting Progress Around the Globe",
+    "funder": "EQT Foundation",
+    "description": "Grants",
+    "amount_min": null,
+    "amount_max": null,
+    "currency": "USD",
+    "deadline": "",
+    "url": "https://eqtgroup.com/eqt-foundation/",
+    "source": "eqt_foundation",
+    "grant_type": "private_foundation",
+    "industry_tags": [
+      "deeptech",
+      "climate",
+      "science"
+    ],
+    "eligibility_text": "",
+    "focus_areas": [
+      "deeptech",
+      "climate",
+      "science"
+    ],
+    "scraped_at": "2026-02-24T06:12:34.454246"
+  },
+  {
+    "title": "EQT Foundation: Press Releases",
+    "funder": "EQT Foundation",
+    "description": "",
+    "amount_min": null,
+    "amount_max": null,
+    "currency": "USD",
+    "deadline": "",
+    "url": "https://eqtgroup.com/news/eqt-foundation-announces-rare-disease-science-grant-recipients",
+    "source": "eqt_foundation",
+    "grant_type": "private_foundation",
+    "industry_tags": [
+      "deeptech",
+      "climate",
+      "science"
+    ],
+    "eligibility_text": "",
+    "focus_areas": [
+      "deeptech",
+      "climate",
+      "science"
+    ],
+    "scraped_at": "2026-02-24T06:12:34.454250"
+  },
+  {
+    "title": "EQT Foundation - Critical Minerals Science Grants",
+    "funder": "EQT Foundation",
+    "description": "EQT Foundation science grants for researchers working on critical minerals, climate technology, and green transition. Supports scientists affiliated with accredited nonprofit institutions. Focus areas include deeptech, sustainability, and decarbonization.",
+    "amount_min": 25000,
+    "amount_max": 100000,
+    "currency": "EUR",
+    "deadline": "",
+    "url": "https://eqtgroup.com/eqt-foundation/grant-submission",
+    "source": "eqt_foundation",
+    "grant_type": "private_foundation",
+    "industry_tags": [
+      "critical minerals",
+      "climate tech",
+      "deeptech",
+      "green transition",
+      "science",
+      "sustainability"
+    ],
+    "eligibility_text": "Scientists affiliated with accredited nonprofit institutions. Partnership pathway: Core Element AI can apply via Colorado School of Mines or Stanford Mineral-X affiliation.",
+    "focus_areas": [
+      "critical minerals",
+      "climate tech",
+      "deeptech",
+      "green transition",
+      "science",
+      "sustainability"
+    ],
+    "scraped_at": "2026-02-24T06:12:34.454253"
+  }
+]

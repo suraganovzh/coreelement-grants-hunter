@@ -1,0 +1,159 @@
+{
+  "total": 20,
+  "valid": 20,
+  "invalid": 0,
+  "quality_score": 100.0,
+  "issues": [
+    {
+      "grant_id": "f9b7a4248ddd",
+      "title": "EQT Foundation: EQT Foundation is an independent charitable ",
+      "issues": [
+        "Missing recommended field: deadline",
+        "Missing recommended field: amount_max"
+      ]
+    },
+    {
+      "grant_id": "a6e8465b27c6",
+      "title": "EQT Foundation: Are you a scientist developing breakthrough ",
+      "issues": [
+        "Missing recommended field: deadline"
+      ]
+    },
+    {
+      "grant_id": "edfef7a96741",
+      "title": "EQT Foundation: Supporting Progress Around the Globe",
+      "issues": [
+        "Missing recommended field: deadline",
+        "Missing recommended field: amount_max"
+      ]
+    },
+    {
+      "grant_id": "b29862b2c047",
+      "title": "EQT Foundation: Press Releases",
+      "issues": [
+        "Missing recommended field: deadline",
+        "Missing recommended field: amount_max"
+      ]
+    },
+    {
+      "grant_id": "f21a99a7d175",
+      "title": "EQT Foundation - Critical Minerals Science Grants",
+      "issues": [
+        "Missing recommended field: deadline"
+      ]
+    },
+    {
+      "grant_id": "f38c0e3b1960",
+      "title": "Sloan Foundation - Energy & Environment Research Grants",
+      "issues": [
+        "Missing recommended field: deadline"
+      ]
+    },
+    {
+      "grant_id": "34c73c6a76ca",
+      "title": "Colorado Advanced Industries Proof of Concept Grant",
+      "issues": [
+        "Missing recommended field: deadline"
+      ]
+    },
+    {
+      "grant_id": "be170c03c29e",
+      "title": "Delaware EDGE Grant - STEM Track",
+      "issues": [
+        "Missing recommended field: deadline"
+      ]
+    },
+    {
+      "grant_id": "db175860a997",
+      "title": "Arizona: Small Business Opportunities",
+      "issues": [
+        "Missing recommended field: deadline"
+      ]
+    },
+    {
+      "grant_id": "6b5763f35006",
+      "title": "Arizona: Innovation & Entrepreneurship Opportunities",
+      "issues": [
+        "Missing recommended field: deadline"
+      ]
+    },
+    {
+      "grant_id": "6f2466e2c5d2",
+      "title": "Arizona: Rural Economic Development Opportunities",
+      "issues": [
+        "Missing recommended field: deadline",
+        "Missing recommended field: amount_max"
+      ]
+    },
+    {
+      "grant_id": "300eaeff2d26",
+      "title": "Arizona: Talent and Training Opportunities",
+      "issues": [
+        "Missing recommended field: deadline",
+        "Missing recommended field: amount_max"
+      ]
+    },
+    {
+      "grant_id": "c0467c671368",
+      "title": "Alaska: Quick Links",
+      "issues": [
+        "Missing recommended field: deadline",
+        "Missing recommended field: amount_max"
+      ]
+    },
+    {
+      "grant_id": "c46b1c5de5f4",
+      "title": "DOE Battery Materials Processing NOFO",
+      "issues": [
+        "Missing recommended field: deadline"
+      ]
+    },
+    {
+      "grant_id": "1054feef8fb6",
+      "title": "ARPA-E Critical Minerals Discovery Program",
+      "issues": [
+        "Missing recommended field: deadline"
+      ]
+    },
+    {
+      "grant_id": "45b07b75cf02",
+      "title": "[UPCOMING] Funding Opportunity eXCHANGE.",
+      "issues": [
+        "Missing recommended field: deadline",
+        "Missing recommended field: amount_max"
+      ]
+    },
+    {
+      "grant_id": "c61cb39babe1",
+      "title": "[UPCOMING] Requests for Information",
+      "issues": [
+        "Missing recommended field: deadline",
+        "Missing recommended field: amount_max"
+      ]
+    },
+    {
+      "grant_id": "8eb0f9bda2ea",
+      "title": "[UPCOMING] Advanced Materials & Manufacturing",
+      "issues": [
+        "Missing recommended field: deadline",
+        "Missing recommended field: amount_max"
+      ]
+    },
+    {
+      "grant_id": "7e5f95dc15b4",
+      "title": "[UPCOMING] Hydrogen and Fuel Cells",
+      "issues": [
+        "Missing recommended field: deadline",
+        "Missing recommended field: amount_max"
+      ]
+    },
+    {
+      "grant_id": "daec9fba9bbb",
+      "title": "[UPCOMING] Announcement NumberAnnouncement TitleAnnouncement",
+      "issues": [
+        "Missing recommended field: deadline"
+      ]
+    }
+  ],
+  "checked_at": "2026-02-24T06:14:57.595342"
+}
