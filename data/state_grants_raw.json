@@ -1,0 +1,137 @@
+[
+  {
+    "title": "Colorado Advanced Industries Proof of Concept Grant",
+    "funder": "Colorado OEDIT",
+    "description": "Provides early-stage capital to advance the development of a commercially viable product or process in one of Colorado's Advanced Industries: aerospace, advanced manufacturing, bioscience, electronics, energy and natural resources, infrastructure engineering, and technology and information.",
+    "amount_min": 50000,
+    "amount_max": 150000,
+    "currency": "USD",
+    "deadline": "",
+    "url": "https://oedit.colorado.gov/advance-industries-accelerator-programs",
+    "source": "colorado_state",
+    "grant_type": "state",
+    "industry_tags": [
+      "cleantech",
+      "AI",
+      "advanced manufacturing",
+      "energy",
+      "natural resources",
+      "technology"
+    ],
+    "eligibility_text": "Must be a Colorado-based company or partnered with a Colorado research institution. Small businesses encouraged. Core Element AI qualifies via Colorado School of Mines partnership.",
+    "scraped_at": "2026-02-24T10:41:40.659761"
+  },
+  {
+    "title": "Delaware EDGE Grant - STEM Track",
+    "funder": "Delaware Division of Small Business",
+    "description": "Encouraging Development, Growth, and Expansion (EDGE) Grants for STEM-focused businesses. Supports technology companies incorporated in Delaware with growth capital.",
+    "amount_min": 5000,
+    "amount_max": 100000,
+    "currency": "USD",
+    "deadline": "",
+    "url": "https://business.delaware.gov/edge-grants/",
+    "source": "delaware_state",
+    "grant_type": "state",
+    "industry_tags": [
+      "STEM",
+      "technology",
+      "innovation"
+    ],
+    "eligibility_text": "Must be incorporated in Delaware. Small business. Core Element AI qualifies as Delaware S-Corp.",
+    "scraped_at": "2026-02-24T10:42:45.095530"
+  },
+  {
+    "title": "Arizona: Small Business Opportunities",
+    "funder": "Arizona Commerce Authority",
+    "description": "Arizona\u2019s Small Business Academy equips small businesses across the state with the knowledge to scale their business.",
+    "amount_min": 2000000,
+    "amount_max": 2000000,
+    "currency": "USD",
+    "deadline": "",
+    "url": "https://www.azcommerce.com/small-business/small-business-academy/",
+    "source": "arizona_state",
+    "grant_type": "state",
+    "industry_tags": [
+      "mining",
+      "cleantech",
+      "innovation",
+      "technology"
+    ],
+    "scraped_at": "2026-02-24T10:45:17.717682"
+  },
+  {
+    "title": "Arizona: Innovation & Entrepreneurship Opportunities",
+    "funder": "Arizona Commerce Authority",
+    "description": "Arizona'slargest business plan competition in the country designed to advance innovation and technology commercialization opportunities in Arizona by assisting early-stage ventures to scale.",
+    "amount_min": 7000000,
+    "amount_max": 7000000,
+    "currency": "USD",
+    "deadline": "",
+    "url": "https://www.azcommerce.com/start-up/arizona-innovation-challenge/",
+    "source": "arizona_state",
+    "grant_type": "state",
+    "industry_tags": [
+      "mining",
+      "cleantech",
+      "innovation",
+      "technology"
+    ],
+    "scraped_at": "2026-02-24T10:45:17.717690"
+  },
+  {
+    "title": "Arizona: Rural Economic Development Opportunities",
+    "funder": "Arizona Commerce Authority",
+    "description": "Opportunities to expand the state's digital infrastructure statewide to improve the\u00a0economyand quality of life of today\u2019s Arizonans.",
+    "amount_min": null,
+    "amount_max": null,
+    "currency": "USD",
+    "deadline": "",
+    "url": "https://www.azcommerce.com/broadband/",
+    "source": "arizona_state",
+    "grant_type": "state",
+    "industry_tags": [
+      "mining",
+      "cleantech",
+      "innovation",
+      "technology"
+    ],
+    "scraped_at": "2026-02-24T10:45:17.717693"
+  },
+  {
+    "title": "Arizona: Talent and Training Opportunities",
+    "funder": "Arizona Commerce Authority",
+    "description": "Four Arizona community colleges partnered together to develop a first-of-its-kind, unified, industry-recognized curriculum to\u00a0prepare students for manufacturing jobs of the future.",
+    "amount_min": null,
+    "amount_max": null,
+    "currency": "USD",
+    "deadline": "",
+    "url": "https://www.azcommerce.com/programs/arizona-advanced-technology-network/",
+    "source": "arizona_state",
+    "grant_type": "state",
+    "industry_tags": [
+      "mining",
+      "cleantech",
+      "innovation",
+      "technology"
+    ],
+    "scraped_at": "2026-02-24T10:45:17.717701"
+  },
+  {
+    "title": "Alaska: Quick Links",
+    "funder": "Alaska Division of Economic Development",
+    "description": "",
+    "amount_min": null,
+    "amount_max": null,
+    "currency": "USD",
+    "deadline": "",
+    "url": "https://www.commerce.alaska.gov/web/inv/LoanPrograms",
+    "source": "alaska_state",
+    "grant_type": "state",
+    "industry_tags": [
+      "mining",
+      "mineral exploration",
+      "natural resources"
+    ],
+    "scraped_at": "2026-02-24T10:45:17.717704"
+  }
+]

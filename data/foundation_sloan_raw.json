@@ -1,0 +1,23 @@
+[
+  {
+    "title": "Sloan Foundation - Energy & Environment Research Grants",
+    "funder": "Alfred P. Sloan Foundation",
+    "description": "The Sloan Foundation's Energy & Environment program supports research on energy systems, environmental science, and the transition to sustainable energy. Relevant to critical minerals research and clean technology.",
+    "amount_min": 50000,
+    "amount_max": 500000,
+    "currency": "USD",
+    "deadline": "",
+    "url": "https://sloan.org/programs/energy-and-environment",
+    "source": "sloan_foundation",
+    "grant_type": "private_foundation",
+    "industry_tags": [
+      "energy",
+      "environment",
+      "clean energy",
+      "sustainability",
+      "research"
+    ],
+    "eligibility_text": "Primarily funds academic researchers. Partnership pathway through university affiliations (CSM, Stanford, Berkeley).",
+    "scraped_at": "2026-02-24T10:46:31.759006"
+  }
+]

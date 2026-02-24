@@ -1,0 +1,330 @@
+{
+  "metadata": {
+    "updated_at": "2026-02-24T10:07:26.344425",
+    "total_grants": 13,
+    "new_grants": 0
+  },
+  "grants": [
+    {
+      "id": "f9b7a4248ddd",
+      "title": "EQT Foundation: EQT Foundation is an independent charitable foundation, founded during EQT's 2019 stock exchange listing.",
+      "funder": "EQT Foundation",
+      "description": "EQT Foundation is a catalytic investor and grant maker",
+      "amount_min": 0,
+      "amount_max": 0,
+      "currency": "USD",
+      "deadline": "",
+      "url": "https://eqtgroup.com/about/people?business-line=eqt-foundation",
+      "source": "eqt_foundation",
+      "grant_type": "private_foundation",
+      "industry_tags": [
+        "deeptech",
+        "climate",
+        "science"
+      ],
+      "eligibility": "",
+      "requirements": "",
+      "focus_areas": [
+        "deeptech",
+        "climate",
+        "science"
+      ],
+      "scraped_at": "2026-02-24T06:12:34.454231"
+    },
+    {
+      "id": "a6e8465b27c6",
+      "title": "EQT Foundation: Are you a scientist developing breakthrough materials and technologies that reduce our dependence on critical minerals for the net-zero transition?",
+      "funder": "EQT Foundation",
+      "description": "Open call for applications: Critical Mineral Substitutes for the Green Transition",
+      "amount_min": 25000,
+      "amount_max": 100000,
+      "currency": "EUR",
+      "deadline": "",
+      "url": "https://eqtgroup.com/eqt-foundation/grant-submission",
+      "source": "eqt_foundation",
+      "grant_type": "private_foundation",
+      "industry_tags": [
+        "deeptech",
+        "climate",
+        "science"
+      ],
+      "eligibility": "",
+      "requirements": "",
+      "focus_areas": [
+        "deeptech",
+        "climate",
+        "science"
+      ],
+      "scraped_at": "2026-02-24T06:12:34.454242"
+    },
+    {
+      "id": "edfef7a96741",
+      "title": "EQT Foundation: Supporting Progress Around the Globe",
+      "funder": "EQT Foundation",
+      "description": "Grants",
+      "amount_min": 0,
+      "amount_max": 0,
+      "currency": "USD",
+      "deadline": "",
+      "url": "https://eqtgroup.com/eqt-foundation/",
+      "source": "eqt_foundation",
+      "grant_type": "private_foundation",
+      "industry_tags": [
+        "deeptech",
+        "climate",
+        "science"
+      ],
+      "eligibility": "",
+      "requirements": "",
+      "focus_areas": [
+        "deeptech",
+        "climate",
+        "science"
+      ],
+      "scraped_at": "2026-02-24T06:12:34.454246"
+    },
+    {
+      "id": "b29862b2c047",
+      "title": "EQT Foundation: Press Releases",
+      "funder": "EQT Foundation",
+      "description": "",
+      "amount_min": 0,
+      "amount_max": 0,
+      "currency": "USD",
+      "deadline": "",
+      "url": "https://eqtgroup.com/news/eqt-foundation-announces-rare-disease-science-grant-recipients",
+      "source": "eqt_foundation",
+      "grant_type": "private_foundation",
+      "industry_tags": [
+        "deeptech",
+        "climate",
+        "science"
+      ],
+      "eligibility": "",
+      "requirements": "",
+      "focus_areas": [
+        "deeptech",
+        "climate",
+        "science"
+      ],
+      "scraped_at": "2026-02-24T06:12:34.454250"
+    },
+    {
+      "id": "f21a99a7d175",
+      "title": "EQT Foundation - Critical Minerals Science Grants",
+      "funder": "EQT Foundation",
+      "description": "EQT Foundation science grants for researchers working on critical minerals, climate technology, and green transition. Supports scientists affiliated with accredited nonprofit institutions. Focus areas include deeptech, sustainability, and decarbonization.",
+      "amount_min": 25000,
+      "amount_max": 100000,
+      "currency": "EUR",
+      "deadline": "",
+      "url": "https://eqtgroup.com/eqt-foundation/grant-submission",
+      "source": "eqt_foundation",
+      "grant_type": "private_foundation",
+      "industry_tags": [
+        "critical minerals",
+        "climate tech",
+        "deeptech",
+        "green transition",
+        "science",
+        "sustainability"
+      ],
+      "eligibility": "Scientists affiliated with accredited nonprofit institutions. Partnership pathway: Core Element AI can apply via Colorado School of Mines or Stanford Mineral-X affiliation.",
+      "requirements": "",
+      "focus_areas": [
+        "critical minerals",
+        "climate tech",
+        "deeptech",
+        "green transition",
+        "science",
+        "sustainability"
+      ],
+      "scraped_at": "2026-02-24T06:12:34.454253"
+    },
+    {
+      "id": "f38c0e3b1960",
+      "title": "Sloan Foundation - Energy & Environment Research Grants",
+      "funder": "Alfred P. Sloan Foundation",
+      "description": "The Sloan Foundation's Energy & Environment program supports research on energy systems, environmental science, and the transition to sustainable energy. Relevant to critical minerals research and clean technology.",
+      "amount_min": 50000,
+      "amount_max": 500000,
+      "currency": "USD",
+      "deadline": "",
+      "url": "https://sloan.org/programs/energy-and-environment",
+      "source": "sloan_foundation",
+      "grant_type": "private_foundation",
+      "industry_tags": [
+        "energy",
+        "environment",
+        "clean energy",
+        "sustainability",
+        "research"
+      ],
+      "eligibility": "Primarily funds academic researchers. Partnership pathway through university affiliations (CSM, Stanford, Berkeley).",
+      "requirements": "",
+      "focus_areas": [],
+      "scraped_at": "2026-02-24T06:13:46.997970"
+    },
+    {
+      "id": "34c73c6a76ca",
+      "title": "Colorado Advanced Industries Proof of Concept Grant",
+      "funder": "Colorado OEDIT",
+      "description": "Provides early-stage capital to advance the development of a commercially viable product or process in one of Colorado's Advanced Industries: aerospace, advanced manufacturing, bioscience, electronics, energy and natural resources, infrastructure engineering, and technology and information.",
+      "amount_min": 50000,
+      "amount_max": 150000,
+      "currency": "USD",
+      "deadline": "",
+      "url": "https://oedit.colorado.gov/advance-industries-accelerator-programs",
+      "source": "colorado_state",
+      "grant_type": "state",
+      "industry_tags": [
+        "cleantech",
+        "AI",
+        "advanced manufacturing",
+        "energy",
+        "natural resources",
+        "technology"
+      ],
+      "eligibility": "Must be a Colorado-based company or partnered with a Colorado research institution. Small businesses encouraged. Core Element AI qualifies via Colorado School of Mines partnership.",
+      "requirements": "",
+      "focus_areas": [],
+      "scraped_at": "2026-02-24T06:07:27.781288"
+    },
+    {
+      "id": "be170c03c29e",
+      "title": "Delaware EDGE Grant - STEM Track",
+      "funder": "Delaware Division of Small Business",
+      "description": "Encouraging Development, Growth, and Expansion (EDGE) Grants for STEM-focused businesses. Supports technology companies incorporated in Delaware with growth capital.",
+      "amount_min": 5000,
+      "amount_max": 100000,
+      "currency": "USD",
+      "deadline": "",
+      "url": "https://business.delaware.gov/edge-grants/",
+      "source": "delaware_state",
+      "grant_type": "state",
+      "industry_tags": [
+        "STEM",
+        "technology",
+        "innovation"
+      ],
+      "eligibility": "Must be incorporated in Delaware. Small business. Core Element AI qualifies as Delaware S-Corp.",
+      "requirements": "",
+      "focus_areas": [],
+      "scraped_at": "2026-02-24T06:08:32.221467"
+    },
+    {
+      "id": "db175860a997",
+      "title": "Arizona: Small Business Opportunities",
+      "funder": "Arizona Commerce Authority",
+      "description": "Arizona\u2019s Small Business Academy equips small businesses across the state with the knowledge to scale their business.",
+      "amount_min": 2000000,
+      "amount_max": 2000000,
+      "currency": "USD",
+      "deadline": "",
+      "url": "https://www.azcommerce.com/small-business/small-business-academy/",
+      "source": "arizona_state",
+      "grant_type": "state",
+      "industry_tags": [
+        "mining",
+        "cleantech",
+        "innovation",
+        "technology"
+      ],
+      "eligibility": "",
+      "requirements": "",
+      "focus_areas": [],
+      "scraped_at": "2026-02-24T06:12:32.680956"
+    },
+    {
+      "id": "6b5763f35006",
+      "title": "Arizona: Innovation & Entrepreneurship Opportunities",
+      "funder": "Arizona Commerce Authority",
+      "description": "Arizona'slargest business plan competition in the country designed to advance innovation and technology commercialization opportunities in Arizona by assisting early-stage ventures to scale.",
+      "amount_min": 7000000,
+      "amount_max": 7000000,
+      "currency": "USD",
+      "deadline": "",
+      "url": "https://www.azcommerce.com/start-up/arizona-innovation-challenge/",
+      "source": "arizona_state",
+      "grant_type": "state",
+      "industry_tags": [
+        "mining",
+        "cleantech",
+        "innovation",
+        "technology"
+      ],
+      "eligibility": "",
+      "requirements": "",
+      "focus_areas": [],
+      "scraped_at": "2026-02-24T06:12:32.680967"
+    },
+    {
+      "id": "6f2466e2c5d2",
+      "title": "Arizona: Rural Economic Development Opportunities",
+      "funder": "Arizona Commerce Authority",
+      "description": "Opportunities to expand the state's digital infrastructure statewide to improve the\u00a0economyand quality of life of today\u2019s Arizonans.",
+      "amount_min": 0,
+      "amount_max": 0,
+      "currency": "USD",
+      "deadline": "",
+      "url": "https://www.azcommerce.com/broadband/",
+      "source": "arizona_state",
+      "grant_type": "state",
+      "industry_tags": [
+        "mining",
+        "cleantech",
+        "innovation",
+        "technology"
+      ],
+      "eligibility": "",
+      "requirements": "",
+      "focus_areas": [],
+      "scraped_at": "2026-02-24T06:12:32.680971"
+    },
+    {
+      "id": "300eaeff2d26",
+      "title": "Arizona: Talent and Training Opportunities",
+      "funder": "Arizona Commerce Authority",
+      "description": "Four Arizona community colleges partnered together to develop a first-of-its-kind, unified, industry-recognized curriculum to\u00a0prepare students for manufacturing jobs of the future.",
+      "amount_min": 0,
+      "amount_max": 0,
+      "currency": "USD",
+      "deadline": "",
+      "url": "https://www.azcommerce.com/programs/arizona-advanced-technology-network/",
+      "source": "arizona_state",
+      "grant_type": "state",
+      "industry_tags": [
+        "mining",
+        "cleantech",
+        "innovation",
+        "technology"
+      ],
+      "eligibility": "",
+      "requirements": "",
+      "focus_areas": [],
+      "scraped_at": "2026-02-24T06:12:32.680986"
+    },
+    {
+      "id": "c0467c671368",
+      "title": "Alaska: Quick Links",
+      "funder": "Alaska Division of Economic Development",
+      "description": "",
+      "amount_min": 0,
+      "amount_max": 0,
+      "currency": "USD",
+      "deadline": "",
+      "url": "https://www.commerce.alaska.gov/web/inv/LoanPrograms",
+      "source": "alaska_state",
+      "grant_type": "state",
+      "industry_tags": [
+        "mining",
+        "mineral exploration",
+        "natural resources"
+      ],
+      "eligibility": "",
+      "requirements": "",
+      "focus_areas": [],
+      "scraped_at": "2026-02-24T06:12:32.680989"
+    }
+  ]
+}
