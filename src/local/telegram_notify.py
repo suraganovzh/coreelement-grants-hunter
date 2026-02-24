@@ -182,6 +182,175 @@ def send_new_grants_alert(count: int, top_grant: dict | None = None):
     send_message(message)
 
 
+def send_urgent_grant_alert(grant: dict):
+    """Send URGENT alert for grants with <7 day deadlines."""
+    from src.utils.date_utils import DateUtils
+
+    deadline = grant.get("deadline", "")
+    days_left = DateUtils.days_until(deadline)
+    if days_left is None:
+        days_left = "?"
+
+    currency = grant.get("currency", "USD")
+    amount_min = grant.get("amount_min", 0)
+    amount_max = grant.get("amount_max", 0)
+    amount_str = TextProcessor.format_currency(amount_max or amount_min, currency)
+
+    message = f"""🚨 *URGENT GRANT — {days_left} DAYS LEFT!*
+
+*{grant.get('title', '')}*
+
+💰 Amount: {amount_str}
+📅 Deadline: *{deadline}*
+🏛 Funder: {grant.get('funder', '')}
+📂 Source: {grant.get('source_type', grant.get('source', 'unknown'))}
+"""
+
+    # Partnership info
+    pathway = grant.get("eligibility_pathway", {})
+    if pathway.get("partnership_path"):
+        message += f"""
+⚠️ *Partnership Required:*
+Pathway: {pathway['partnership_path']}
+Contact: {pathway.get('recommended_partner', 'TBD')}
+"""
+
+    urgency = grant.get("urgency", {})
+    action = urgency.get("action_required", "immediate")
+    message += f"""
+⚡ *Action:* {action}
+
+[Apply Now]({grant.get('url', '')})
+[View Details]({DASHBOARD_URL})"""
+
+    send_message(message)
+
+
+def send_imminent_nofo_alert(grant: dict):
+    """Alert for upcoming NOFOs (prepare now)."""
+    currency = grant.get("currency", "USD")
+    amount_max = grant.get("amount_max", 0)
+    amount_str = TextProcessor.format_currency(amount_max, currency)
+    expected = grant.get("expected_release", "TBD")
+
+    message = f"""📢 *PREPARE NOW — NOFO Expected {expected}*
+
+*{grant.get('title', '')}*
+
+💰 Amount: Up to {amount_str}
+📋 Status: {grant.get('status', 'Notice of Intent released')}
+⏰ Expected: {expected}
+"""
+
+    steps = grant.get("preparation_steps", [])
+    if steps:
+        message += "\n*Start preparing:*\n"
+        for i, step in enumerate(steps[:5], 1):
+            message += f"{i}. {step}\n"
+
+    message += f"\n[More Info]({grant.get('url', '')})"
+
+    send_message(message)
+
+
+def send_sbir_status_alert(status: dict):
+    """Send SBIR/STTR status summary."""
+    overall = status.get("overall_status", "UNKNOWN")
+
+    if overall == "REAUTHORIZED":
+        emoji = "🟢"
+        action = "Programs reopened! Check for new solicitations."
+    elif overall == "SUSPENDED":
+        emoji = "🔴"
+        action = "Programs suspended. Monitor for reauthorization."
+    else:
+        emoji = "🟡"
+        action = "Status unclear. Check sbir.gov for updates."
+
+    message = f"""{emoji} *SBIR/STTR Status: {overall}*
+
+"""
+    programs = status.get("programs", {})
+    for key, prog in programs.items():
+        accepting = "✅" if prog.get("accepting_apps") else "❌"
+        message += f"{accepting} {key}: {prog.get('status', 'UNKNOWN')}\n"
+
+    message += f"\n*Action:* {action}"
+    message += f"\n\n[Open Dashboard]({DASHBOARD_URL})"
+
+    send_message(message)
+
+
+def send_daily_enhanced_report(grants: list[dict], sbir_status: dict | None = None):
+    """Send enhanced daily report with all source types."""
+    from src.utils.date_utils import DateUtils
+
+    # Categorize grants
+    urgent: list[dict] = []
+    high_priority: list[dict] = []
+    state_grants: list[dict] = []
+    foundation_grants: list[dict] = []
+    nofo_pipeline: list[dict] = []
+
+    for g in grants:
+        source_type = g.get("source_type", g.get("source", ""))
+        urgency = g.get("urgency", {})
+        priority = g.get("analysis", {}).get("priority", "")
+
+        days = DateUtils.days_until(g.get("deadline", ""))
+        if days is not None and 0 <= days <= 7:
+            urgent.append(g)
+
+        if priority == "copy_now":
+            high_priority.append(g)
+        if source_type == "state":
+            state_grants.append(g)
+        if source_type == "private_foundation":
+            foundation_grants.append(g)
+        if source_type == "nofo_pipeline":
+            nofo_pipeline.append(g)
+
+    total_potential = sum(g.get("amount_max", 0) for g in grants)
+    potential_str = TextProcessor.format_currency(total_potential)
+
+    message = f"""📊 *Grant Hunter AI — Enhanced Daily Report*
+
+🎯 High Priority: {len(high_priority)}
+🚨 Urgent (<7 days): {len(urgent)}
+🏛 State Grants: {len(state_grants)}
+🏦 Foundation Grants: {len(foundation_grants)}
+📋 NOFO Pipeline: {len(nofo_pipeline)}
+💰 Total Potential: {potential_str}
+"""
+
+    if sbir_status:
+        overall = sbir_status.get("overall_status", "UNKNOWN")
+        message += f"📌 SBIR/STTR: {overall}\n"
+
+    message += f"\n{'─' * 30}\n"
+
+    # Urgent grants
+    if urgent:
+        message += "\n🚨 *URGENT — ACT NOW:*\n"
+        for g in urgent[:5]:
+            days = DateUtils.days_until(g.get("deadline", ""))
+            amount = TextProcessor.format_currency(g.get("amount_max"))
+            message += f"\n• *{g.get('title', '')[:45]}*"
+            message += f"\n  {g.get('funder', '')} | {amount} | {days}d left\n"
+
+    # NOFO pipeline
+    if nofo_pipeline:
+        message += "\n📋 *PREPARE NOW — Upcoming NOFOs:*\n"
+        for g in nofo_pipeline[:3]:
+            amount = TextProcessor.format_currency(g.get("amount_max"))
+            message += f"\n• {g.get('title', '')[:45]}"
+            message += f"\n  {amount} | Expected: {g.get('expected_release', 'TBD')}\n"
+
+    message += f"\n[Open Dashboard]({DASHBOARD_URL})"
+
+    send_message(message)
+
+
 if __name__ == "__main__":
     # Test notification
     from dotenv import load_dotenv

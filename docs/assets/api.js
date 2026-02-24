@@ -39,6 +39,7 @@ async function loadWinners() {
     'winners_grants_gov.json', 'winners_sbir.json', 'winners_sbir_p2.json',
     'winners_nsf.json', 'winners_doe.json', 'winners_nih.json',
     'winners_usaspending.json', 'winners_sam.json',
+    'winners_state.json', 'winners_foundation.json',
   ];
   const all = [];
   const results = await Promise.allSettled(files.map(f => fetchJSON(f)));
@@ -49,6 +50,15 @@ async function loadWinners() {
     }
   }
   return all;
+}
+
+async function loadSBIRStatus() {
+  return (await fetchJSON('sbir_status.json')) || {};
+}
+
+async function loadNOFOPipeline() {
+  const data = (await fetchJSON('nofo_pipeline.json')) || {};
+  return Array.isArray(data) ? data : (data.grants || []);
 }
 
 async function loadTeamState() {
