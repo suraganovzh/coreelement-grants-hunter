@@ -20,6 +20,17 @@
   .win-prob.medium { background: rgba(245,158,11,.2); color: #fbbf24; }
   .win-prob.low { background: rgba(100,116,139,.2); color: #94a3b8; }
 
+  .match-score {
+    display: inline-block;
+    padding: 2px 7px;
+    border-radius: 4px;
+    font-size: 11px;
+    font-weight: 700;
+    background: rgba(139,92,246,.15);
+    color: #a78bfa;
+    margin-left: 4px;
+  }
+
   .grant-card .card-footer {
     display: flex;
     justify-content: space-between;
@@ -27,6 +38,30 @@
     margin-top: 8px;
     padding-top: 8px;
     border-top: 1px solid var(--border);
+  }
+
+  .grant-card .card-scores {
+    display: flex;
+    gap: 4px;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .grant-card .card-deadline-full {
+    font-size: 10px;
+    color: var(--text-muted);
+    margin-top: 2px;
+  }
+
+  .grant-card .apply-link {
+    display: inline-block;
+    margin-top: 6px;
+    font-size: 11px;
+    color: #60a5fa;
+    text-decoration: none;
+  }
+  .grant-card .apply-link:hover {
+    text-decoration: underline;
   }
 
   .footer {
@@ -58,6 +93,47 @@
     padding: 30px 12px;
     color: var(--text-muted);
     font-size: 12px;
+  }
+
+  /* Validation banner */
+  .validation-banner {
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 12px 16px;
+    margin-bottom: 16px;
+    background: rgba(139,92,246,.08);
+  }
+  .validation-banner.success {
+    background: rgba(16,185,129,.08);
+    border-color: rgba(16,185,129,.3);
+  }
+  .validation-banner.warning {
+    background: rgba(245,158,11,.08);
+    border-color: rgba(245,158,11,.3);
+  }
+  .validation-banner h3 {
+    margin: 0 0 4px 0;
+    font-size: 14px;
+    font-weight: 700;
+  }
+  .validation-banner .validation-details {
+    font-size: 12px;
+    color: var(--text-muted);
+  }
+  .validation-banner .validation-details ul {
+    margin: 4px 0 0 16px;
+    padding: 0;
+  }
+
+  /* Currency badge */
+  .currency-badge {
+    font-size: 9px;
+    padding: 1px 4px;
+    border-radius: 3px;
+    background: rgba(100,116,139,.15);
+    color: #94a3b8;
+    margin-left: 3px;
+    vertical-align: middle;
   }
 </style>
 </head>
@@ -91,6 +167,12 @@
   <!-- MAIN CONTENT (hidden until loaded) -->
   <div id="mainContent" style="display:none;">
 
+    <!-- VALIDATION BANNER -->
+    <div class="validation-banner" id="validationBanner">
+      <h3>Discovery Validation: <span id="validationScore">--/10</span> Checklist Grants Found</h3>
+      <div class="validation-details" id="validationDetails"></div>
+    </div>
+
     <!-- STAT CARDS -->
     <div class="stats">
       <div class="stat-card">
@@ -118,7 +200,7 @@
         <span class="badge badge-amber" id="srcState" title="State">State: 0</span>
         <span class="badge badge-green" id="srcFoundation" title="Foundation">Foundation: 0</span>
         <span class="badge badge-blue" id="srcEU" style="background:rgba(59,130,246,.2);color:#60a5fa;" title="EU">EU: 0</span>
-        <span class="badge badge-gray" id="srcNOFO" title="NOFO Pipeline">NOFO Pipeline: 0</span>
+        <span class="badge badge-gray" id="srcCorporate" title="Corporate">Corporate: 0</span>
         <span id="sbirStatusBadge" class="badge badge-red" style="display:none;" title="SBIR/STTR Status"></span>
       </div>
     </div>
@@ -184,6 +266,7 @@ let grants = [];
 let teamState = {};
 let sbirStatus = {};
 let nofoPipeline = [];
+let validationData = null;
 
 /* ---- localStorage state management ---- */
 
@@ -203,7 +286,6 @@ function saveLocalState(state) {
 
 function getGrantStatus(grantId) {
   const local = getLocalState();
-  // Local state overrides remote team state
   if (local.grants && local.grants[grantId] && local.grants[grantId].status) {
     return local.grants[grantId].status;
   }
@@ -228,11 +310,12 @@ async function loadData() {
   document.getElementById('loadingIndicator').style.display = 'block';
   document.getElementById('mainContent').style.display = 'none';
 
-  const [analyzed, ts, sbir, nofo] = await Promise.all([
+  const [analyzed, ts, sbir, nofo, validation] = await Promise.all([
     loadAnalyzed(),
     loadTeamState(),
     fetchJSON('sbir_status.json'),
-    fetchJSON('nofo_pipeline.json')
+    fetchJSON('nofo_pipeline.json'),
+    fetchJSON('validation_results.json')
   ]);
 
   grants = analyzed;
@@ -240,6 +323,7 @@ async function loadData() {
   sbirStatus = sbir || {};
   const nofoData = nofo || {};
   nofoPipeline = Array.isArray(nofoData) ? nofoData : (nofoData.grants || []);
+  validationData = validation;
 
   document.getElementById('loadingIndicator').style.display = 'none';
   document.getElementById('mainContent').style.display = 'block';
@@ -270,6 +354,11 @@ function getWinProbability(grant) {
   return analysis.win_probability || 0;
 }
 
+function getFitScore(grant) {
+  const analysis = grant.analysis || {};
+  return analysis.fit_score || analysis.pattern_match_score || 0;
+}
+
 function getSimilarWinners(grant) {
   const analysis = grant.analysis || {};
   return analysis.similar_winners || [];
@@ -278,18 +367,61 @@ function getSimilarWinners(grant) {
 function getAmountRange(grant) {
   const min = grant.amount_min || 0;
   const max = grant.amount_max || 0;
+  const currency = grant.currency || 'USD';
+  const symbol = currency === 'EUR' ? '\u20ac' : currency === 'CAD' ? 'C$' : '$';
+
+  let text = '';
   if (min && max && min !== max) {
-    return formatMoney(min) + ' - ' + formatMoney(max);
+    text = symbol + formatNum(min) + ' - ' + symbol + formatNum(max);
+  } else if (max) {
+    text = symbol + formatNum(max);
+  } else if (min) {
+    text = symbol + formatNum(min);
+  } else {
+    return '-';
   }
-  if (max) return formatMoney(max);
-  if (min) return formatMoney(min);
-  return '-';
+
+  if (currency !== 'USD') {
+    text += ' <span class="currency-badge">' + currency + '</span>';
+  }
+  return text;
+}
+
+function formatNum(n) {
+  if (n >= 1e9) return (n / 1e9).toFixed(1) + 'B';
+  if (n >= 1e6) return (n / 1e6).toFixed(1) + 'M';
+  if (n >= 1e3) return (n / 1e3).toFixed(0) + 'K';
+  return n.toLocaleString();
 }
 
 function winProbClass(prob) {
-  if (prob >= 60) return 'high';
-  if (prob >= 30) return 'medium';
+  if (prob >= 40) return 'high';
+  if (prob >= 20) return 'medium';
   return 'low';
+}
+
+function formatDeadlineFull(deadline) {
+  if (!deadline) return '';
+  if (deadline === 'rolling') return 'Rolling deadline';
+  if (deadline === 'pending') return 'NOFO pending';
+
+  try {
+    const d = new Date(deadline);
+    if (isNaN(d)) return '';
+    return d.toLocaleDateString('en-US', {
+      weekday: 'short', year: 'numeric', month: 'short', day: 'numeric',
+      hour: '2-digit', minute: '2-digit', timeZoneName: 'short'
+    });
+  } catch { return ''; }
+}
+
+function getDeadlineStatus(grant) {
+  const dl = grant.deadline || '';
+  if (dl === 'rolling') return { text: 'ROLLING', cssClass: 'badge-green' };
+  if (dl === 'pending') return { text: grant.deadline_status || 'PENDING', cssClass: 'badge-amber' };
+
+  const days = daysUntil(dl);
+  return { text: deadlineText(days), cssClass: deadlineClass(days) };
 }
 
 /* ---- Stat card computation ---- */
@@ -310,12 +442,10 @@ function computeStats() {
       medCount++;
     }
 
-    // Sum potential from all non-skip grants
     if (priority !== 'skip') {
       totalPotential += (g.amount_max || 0);
     }
 
-    // Urgent: deadline within 7 days and not expired, non-skip
     if (days >= 0 && days < 7 && priority !== 'skip') {
       urgentCount++;
     }
@@ -329,11 +459,12 @@ function computeStats() {
 function renderGrantCard(grant) {
   const grantId = grant.id || '';
   const days = daysUntil(grant.deadline);
-  const dlText = deadlineText(days);
-  const dlClass = deadlineClass(days);
+  const dlStatus = getDeadlineStatus(grant);
   const prob = getWinProbability(grant);
+  const fitScore = getFitScore(grant);
   const similarWinners = getSimilarWinners(grant);
-  const isUrgent = days >= 0 && days <= 7;
+  const isUrgent = days >= 0 && days <= 7 && grant.deadline !== 'rolling' && grant.deadline !== 'pending';
+  const deadlineFull = formatDeadlineFull(grant.deadline);
 
   let winnersHtml = '';
   if (similarWinners.length > 0) {
@@ -363,12 +494,20 @@ function renderGrantCard(grant) {
   const cardClass = 'grant-card' + (isUrgent ? ' urgent' : '');
 
   // Source type badge
-  const sourceType = grant.source_type || grant.source || '';
+  const sourceType = grant.source_type || grant.grant_type || grant.source || '';
   let sourceBadge = '';
   if (sourceType.includes('state')) sourceBadge = '<span class="badge badge-amber" style="font-size:9px;margin-left:4px;">STATE</span>';
   else if (sourceType.includes('foundation')) sourceBadge = '<span class="badge badge-green" style="font-size:9px;margin-left:4px;">FOUNDATION</span>';
   else if (sourceType.includes('eu')) sourceBadge = '<span class="badge" style="font-size:9px;margin-left:4px;background:rgba(59,130,246,.2);color:#60a5fa;">EU</span>';
-  else if (sourceType.includes('nofo') || sourceType.includes('pipeline')) sourceBadge = '<span class="badge badge-gray" style="font-size:9px;margin-left:4px;">NOFO</span>';
+  else if (sourceType.includes('corporate')) sourceBadge = '<span class="badge" style="font-size:9px;margin-left:4px;background:rgba(245,158,11,.15);color:#fbbf24;">CORPORATE</span>';
+  else if (sourceType.includes('federal')) sourceBadge = '<span class="badge badge-purple" style="font-size:9px;margin-left:4px;">FEDERAL</span>';
+
+  // Apply link
+  const applyUrl = grant.url || '';
+  let applyHtml = '';
+  if (applyUrl) {
+    applyHtml = '<a class="apply-link" href="' + esc(applyUrl) + '" target="_blank" rel="noopener" onclick="event.stopPropagation()">Apply &rarr;</a>';
+  }
 
   return '<div class="' + cardClass + '" onclick="navigateToGrant(\'' + esc(grantId) + '\')">'
     + '<div class="title">' + esc(grant.title || 'Untitled Grant') + sourceBadge + '</div>'
@@ -376,20 +515,24 @@ function renderGrantCard(grant) {
     + '<div class="meta">'
     +   '<span class="amount">' + getAmountRange(grant) + '</span>'
     +   '<span class="deadline' + (isUrgent ? ' urgent' : '') + '">'
-    +     '<span class="badge ' + dlClass + '">' + dlText + '</span>'
+    +     '<span class="badge ' + dlStatus.cssClass + '">' + dlStatus.text + '</span>'
     +   '</span>'
     + '</div>'
+    + (deadlineFull ? '<div class="card-deadline-full">' + deadlineFull + '</div>' : '')
     + '<div class="card-footer">'
-    +   '<span class="win-prob ' + winProbClass(prob) + '">' + prob + '% win</span>'
+    +   '<div class="card-scores">'
+    +     '<span class="win-prob ' + winProbClass(prob) + '">' + prob + '% win</span>'
+    +     '<span class="match-score">' + fitScore + '% match</span>'
+    +   '</div>'
     +   winnersHtml
     + '</div>'
+    + applyHtml
     + '</div>';
 }
 
 /* ---- Kanban board rendering ---- */
 
 function renderKanban() {
-  // Bucket grants by status
   const columns = {
     inbox: [],
     drafting: [],
@@ -406,15 +549,12 @@ function renderKanban() {
     } else if (status === 'submitted') {
       columns.submitted.push(g);
     } else {
-      // No status or unrecognized status goes to Inbox
       columns.inbox.push(g);
     }
   }
 
-  // Sort Inbox by win_probability descending
   columns.inbox.sort((a, b) => getWinProbability(b) - getWinProbability(a));
 
-  // Render each column
   renderColumn('Inbox', 'cardsInbox', 'countInbox', columns.inbox, 'inbox');
   renderColumn('Drafting', 'cardsDrafting', 'countDrafting', columns.drafting, 'drafting');
   renderColumn('Review', 'cardsReview', 'countReview', columns.review, 'review');
@@ -435,7 +575,6 @@ function renderColumn(title, containerId, countId, grantsList, columnKey) {
   let html = '';
   for (const g of grantsList) {
     html += renderGrantCard(g);
-    // Add a status selector below each card so users can move it between columns
     html += renderStatusSelector(g.id, columnKey);
   }
   container.innerHTML = html;
@@ -463,6 +602,9 @@ function renderStatusSelector(grantId, currentStatus) {
 /* ---- Dashboard rendering orchestration ---- */
 
 function renderDashboard() {
+  // Validation banner
+  renderValidationBanner();
+
   // Stat cards
   const stats = computeStats();
   document.getElementById('statHighPriority').textContent = stats.highCount;
@@ -483,17 +625,48 @@ function renderDashboard() {
   renderKanban();
 }
 
+/* ---- Validation banner ---- */
+
+function renderValidationBanner() {
+  const banner = document.getElementById('validationBanner');
+  const scoreEl = document.getElementById('validationScore');
+  const detailsEl = document.getElementById('validationDetails');
+
+  if (validationData && validationData.found_count !== undefined) {
+    const count = validationData.found_count;
+    const total = validationData.total || 10;
+    scoreEl.textContent = count + '/' + total;
+
+    if (count >= total) {
+      banner.className = 'validation-banner success';
+      detailsEl.innerHTML = '<span style="color:#34d399;">All checklist grants discovered and validated.</span>';
+    } else {
+      banner.className = 'validation-banner warning';
+      let html = '<p style="margin:0;">Missing grants:</p><ul>';
+      for (const m of (validationData.missing || [])) {
+        html += '<li>' + esc(m) + '</li>';
+      }
+      html += '</ul>';
+      detailsEl.innerHTML = html;
+    }
+  } else {
+    // Fallback: count grants and show count
+    scoreEl.textContent = grants.length + ' grants loaded';
+    detailsEl.innerHTML = '<span style="color:var(--text-muted);">Run validation script to verify checklist coverage.</span>';
+  }
+}
+
 /* ---- Source breakdown ---- */
 
 function renderSourceBreakdown() {
-  const counts = { federal: 0, state: 0, private_foundation: 0, eu: 0, nofo_pipeline: 0, other: 0 };
+  const counts = { federal: 0, state: 0, private_foundation: 0, eu: 0, corporate: 0, other: 0 };
   for (const g of grants) {
-    const st = g.source_type || g.source || 'other';
+    const st = g.source_type || g.grant_type || g.source || 'other';
     if (st === 'federal' || st === 'grants_gov' || st === 'sbir_sttr') counts.federal++;
     else if (st === 'state' || st.includes('state')) counts.state++;
     else if (st === 'private_foundation' || st.includes('foundation') || st.includes('eqt') || st.includes('sloan')) counts.private_foundation++;
     else if (st === 'eu' || st.includes('horizon') || st.includes('eu')) counts.eu++;
-    else if (st === 'nofo_pipeline') counts.nofo_pipeline++;
+    else if (st === 'corporate') counts.corporate++;
     else counts.other++;
   }
 
@@ -501,7 +674,7 @@ function renderSourceBreakdown() {
   document.getElementById('srcState').textContent = 'State: ' + counts.state;
   document.getElementById('srcFoundation').textContent = 'Foundation: ' + counts.private_foundation;
   document.getElementById('srcEU').textContent = 'EU: ' + counts.eu;
-  document.getElementById('srcNOFO').textContent = 'NOFO Pipeline: ' + counts.nofo_pipeline;
+  document.getElementById('srcCorporate').textContent = 'Corporate: ' + counts.corporate;
   document.getElementById('sourceBreakdown').style.display = 'block';
 }
 
@@ -534,16 +707,26 @@ function renderNOFOPipeline() {
   const section = document.getElementById('nofoPipelineSection');
   const container = document.getElementById('nofoPipelineCards');
 
-  if (!nofoPipeline || nofoPipeline.length === 0) {
+  // Also show pending grants from main list as NOFO candidates
+  const pendingGrants = grants.filter(g => g.deadline === 'pending' || g.deadline_status);
+
+  const allNofo = [...nofoPipeline];
+  for (const pg of pendingGrants) {
+    if (!allNofo.find(n => n.id === pg.id)) {
+      allNofo.push(pg);
+    }
+  }
+
+  if (!allNofo || allNofo.length === 0) {
     section.style.display = 'none';
     return;
   }
 
   section.style.display = 'block';
   let html = '';
-  for (const g of nofoPipeline.slice(0, 5)) {
+  for (const g of allNofo.slice(0, 5)) {
     const amount = formatMoney(g.amount_max || 0);
-    const expected = g.expected_release || 'TBD';
+    const expected = g.deadline_status || g.expected_release || 'TBD';
     const status = g.status || 'ANTICIPATED';
     html += '<div style="padding:6px 0; border-bottom:1px solid var(--border); font-size:12px;">'
       + '<div style="font-weight:600;">' + esc(g.title || '') + '</div>'
@@ -570,11 +753,9 @@ function toggleWinners(previewId) {
 
 function changeStatus(grantId, newStatus) {
   if (newStatus === 'inbox') {
-    // Remove status to revert to inbox (no status)
     const local = getLocalState();
     if (local.grants && local.grants[grantId]) {
       delete local.grants[grantId].status;
-      // Clean up empty entries
       if (Object.keys(local.grants[grantId]).length === 0) {
         delete local.grants[grantId];
       }
