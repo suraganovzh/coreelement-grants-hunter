@@ -50,6 +50,13 @@ def run_scrapers() -> list[dict]:
                     if result.url and db.grant_exists(result.url):
                         continue
 
+                    # Skip expired grants (deadline already passed)
+                    if result.deadline:
+                        days = DateUtils.days_until(result.deadline)
+                        if days is not None and days < 0:
+                            logger.debug("Skipping expired grant: %s (deadline: %s)", result.title, result.deadline)
+                            continue
+
                     grant = db.add_grant(
                         title=result.title,
                         funder=result.funder,

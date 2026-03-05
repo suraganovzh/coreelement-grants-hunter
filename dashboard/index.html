@@ -476,7 +476,13 @@ function renderGrantsTable() {
   const tbody = document.getElementById('grantsBody');
   const empty = document.getElementById('grantsEmpty');
 
-  let grants = analyzedGrants.filter(g => g.analysis?.priority !== 'skip');
+  let grants = analyzedGrants.filter(g => {
+    if (g.analysis?.priority === 'skip') return false;
+    // Hide expired grants (deadline already passed)
+    const days = daysUntil(g.deadline);
+    if (days < 0) return false;
+    return true;
+  });
   if (currentFilter !== 'all') {
     grants = grants.filter(g => g.analysis?.priority === currentFilter);
   }
