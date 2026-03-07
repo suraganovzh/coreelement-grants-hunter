@@ -183,11 +183,20 @@ def consolidate_all_grants(data_dir: str = "data") -> list[dict]:
     # Enrich each grant
     enriched = [enrich_grant(g) for g in unique]
 
+    # Filter out expired grants
+    active = [
+        g for g in enriched
+        if g.get("urgency", {}).get("priority_level") != "EXPIRED"
+    ]
+    expired_count = len(enriched) - len(active)
+    if expired_count:
+        logger.info("Filtered out %d expired grants", expired_count)
+
     logger.info(
-        "Consolidated: %d unique grants from %d total",
-        len(enriched), len(all_grants),
+        "Consolidated: %d active grants from %d total (%d expired removed)",
+        len(active), len(all_grants), expired_count,
     )
-    return enriched
+    return active
 
 
 def main():
