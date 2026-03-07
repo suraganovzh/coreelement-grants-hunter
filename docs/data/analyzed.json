@@ -1,377 +1,786 @@
-[
-  {
-    "id": "horizon-cl4-mat-prod-11-2026",
-    "title": "Horizon Europe MAT-PROD-11: Innovative Technologies for Exploration & Data Modelling of Raw Materials",
-    "funder": "European Commission - Horizon Europe",
-    "description": "Research and innovation action for advanced exploration techniques and data-driven modelling to discover new deposits of critical raw materials in Europe. Supports AI/ML approaches, geophysical methods, and probabilistic geological modelling. Single-stage call under HORIZON-CL4-2026-01.",
-    "amount_min": 5000000,
-    "amount_max": 7000000,
-    "currency": "EUR",
-    "deadline": "2026-04-21T17:00:00+02:00",
-    "url": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/topic-details/horizon-cl4-2026-resilience-01-mat-prod-11",
-    "source": "search_discovery",
-    "source_type": "eu",
-    "grant_type": "eu",
-    "industry_tags": ["critical raw materials", "exploration", "AI", "data modelling", "geophysics", "Horizon Europe"],
-    "eligibility": "EU-based consortia (minimum 3 entities from 3 EU member states). Non-EU partners can participate as associated partners. Core Element AI can join via EU consortium.",
-    "requirements": "Consortium formation, technical proposal, work packages, budget, impact assessment, exploitation plan",
-    "focus_areas": ["CRM exploration", "data-driven modelling", "subsurface prediction"],
-    "scraped_at": "2026-03-04T12:00:00.000000",
-    "analysis": {
-      "priority": "copy_now",
-      "win_probability": 30,
-      "fit_score": 74,
-      "pattern_match_score": 84,
-      "success_factors": {
-        "keywords": ["critical raw materials", "exploration", "AI", "data modelling", "geophysics"],
-        "value_props": ["Probabilistic AI subsurface prediction", "79% reduction in unsuccessful drilling", "TRL 7 - field validated technology"],
-        "partnerships": ["EU Consortium Partner"]
-      },
-      "risk_factors": ["Requires consortium formation"],
-      "similar_winners": [
-        {"winner": "EURARE Consortium", "title": "European Rare Earth Element Resource Mapping", "amount": 6500000, "award_date": "2024-05-01", "funder": "Horizon Europe"},
-        {"winner": "AI4EO / GFZ Potsdam", "title": "AI for Earth Observation in Mineral Exploration", "amount": 4200000, "award_date": "2024-02-28", "funder": "Horizon Europe"}
+{
+  "metadata": {
+    "updated_at": "2026-03-07T12:00:00.000000",
+    "total_grants": 14,
+    "source_breakdown": {
+      "eu": 4,
+      "fellowship": 2,
+      "federal": 3,
+      "private_foundation": 2,
+      "government": 1,
+      "state": 2
+    },
+    "urgent_grants": 0,
+    "sbir_status": "SUSPENDED"
+  },
+  "grants": [
+    {
+      "id": "horizon-cl4-mat-prod-11-2026",
+      "title": "Horizon Europe MAT-PROD-11: Innovative Technologies for Exploration & Data Modelling of Raw Materials",
+      "funder": "European Commission - Horizon Europe",
+      "description": "Research and innovation action for advanced exploration techniques and data-driven modelling to discover new deposits of critical raw materials in Europe. Supports AI/ML approaches, geophysical methods, and probabilistic geological modelling. Single-stage call under HORIZON-CL4-2026-01.",
+      "amount_min": 5000000,
+      "amount_max": 7000000,
+      "currency": "EUR",
+      "deadline": "2026-04-21T17:00:00+02:00",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/topic-details/horizon-cl4-2026-resilience-01-mat-prod-11",
+      "source": "search_discovery",
+      "source_type": "eu",
+      "grant_type": "eu",
+      "industry_tags": [
+        "critical raw materials",
+        "exploration",
+        "AI",
+        "data modelling",
+        "geophysics",
+        "Horizon Europe"
       ],
-      "reasoning": "Direct match: AI + exploration + CRM data modelling. Core Element AI's probabilistic subsurface prediction technology is precisely what this call seeks.",
-      "llm_source": "rule_based"
-    }
-  },
-  {
-    "id": "horizon-cl4-mat-prod-12-2026",
-    "title": "Horizon Europe MAT-PROD-12: Technologies for Innovative Extraction of Critical Raw Materials",
-    "funder": "European Commission - Horizon Europe",
-    "description": "Research and innovation action for sustainable and efficient extraction technologies for critical raw materials. Covers mining optimization, AI-driven process control, environmental impact reduction. Single-stage call, TRL 3-5, Lump Sum funding.",
-    "amount_min": 5000000,
-    "amount_max": 7000000,
-    "currency": "EUR",
-    "deadline": "2026-04-21T17:00:00+02:00",
-    "url": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/topic-details/horizon-cl4-2026-resilience-01-mat-prod-12",
-    "source": "search_discovery",
-    "source_type": "eu",
-    "grant_type": "eu",
-    "industry_tags": ["critical raw materials", "extraction", "sustainable mining", "AI", "process optimization", "Horizon Europe"],
-    "eligibility": "EU-based consortia (minimum 3 entities from 3 EU member states). Non-EU partners welcome. Core Element AI can join via EU consortium partner.",
-    "requirements": "Consortium formation, technical proposal, work packages, budget, sustainability assessment",
-    "focus_areas": ["CRM extraction", "sustainable mining", "process optimization"],
-    "scraped_at": "2026-03-04T12:00:00.000000",
-    "analysis": {
-      "priority": "copy_now",
-      "win_probability": 28,
-      "fit_score": 68,
-      "pattern_match_score": 78,
-      "success_factors": {
-        "keywords": ["critical raw materials", "extraction", "sustainable mining", "AI", "process optimization"],
-        "value_props": ["Probabilistic AI subsurface prediction", "79% reduction in unsuccessful drilling", "TRL 7 - field validated technology"],
-        "partnerships": ["EU Consortium Partner"]
-      },
-      "risk_factors": ["Requires consortium formation"],
-      "similar_winners": [
-        {"winner": "SCRREEN3 Consortium", "title": "Critical Raw Materials Screening and Assessment", "amount": 5800000, "award_date": "2024-07-15", "funder": "Horizon Europe"}
+      "eligibility": "EU-based consortia (minimum 3 entities from 3 EU member states). Non-EU partners can participate as associated partners. Core Element AI can join via EU consortium.",
+      "requirements": "Consortium formation, technical proposal, work packages, budget, impact assessment, exploitation plan",
+      "focus_areas": [
+        "CRM exploration",
+        "data-driven modelling",
+        "subsurface prediction"
       ],
-      "reasoning": "Strong match for extraction optimization via AI. Less direct than MAT-PROD-11 but still highly relevant.",
-      "llm_source": "rule_based"
-    }
-  },
-  {
-    "id": "eic-accelerator-2026",
-    "title": "EIC Accelerator 2026 - Open & Challenges",
-    "funder": "European Innovation Council (EIC)",
-    "description": "Europe's most competitive deep-tech funding. Up to EUR 2.5M grant + EUR 10M equity. 2026 has 6 batching dates. Step 1 (short proposal) rolling with 4-week evaluation. Challenge: 'Strengthening European critical raw materials supply chain' (EUR 50M).",
-    "amount_min": 500000,
-    "amount_max": 2500000,
-    "currency": "EUR",
-    "deadline": "rolling",
-    "url": "https://eic.ec.europa.eu/eic-funding-opportunities/eic-accelerator_en",
-    "source": "web_search",
-    "source_type": "eu",
-    "grant_type": "eu",
-    "industry_tags": ["deep tech", "AI", "critical raw materials", "climate tech", "innovation", "EIC"],
-    "eligibility": "EU-incorporated SMEs/startups. Non-EU companies must establish EU entity. Challenge: 'Strengthening European critical raw materials supply chain' (EUR 50M) highly relevant.",
-    "requirements": "Step 1: short proposal (rolling). Step 2: full proposal 20 pages (batched). Step 3: interview.",
-    "focus_areas": ["deep tech commercialization", "critical raw materials", "climate adaptation"],
-    "scraped_at": "2026-03-04T12:00:00.000000",
-    "analysis": {
-      "priority": "copy_now",
-      "win_probability": 25,
-      "fit_score": 82,
-      "pattern_match_score": 88,
-      "success_factors": {
-        "keywords": ["deep tech", "AI", "critical raw materials", "climate tech"],
-        "value_props": ["Probabilistic AI subsurface prediction", "B2B SaaS platform", "TRL 7 - field validated"],
-        "partnerships": ["EU entity establishment needed"]
-      },
-      "risk_factors": ["Requires EU entity", "Highly competitive (5-8% success rate)"],
-      "similar_winners": [
-        {"winner": "Plotlogic", "title": "AI-Powered Orebody Knowledge", "amount": 2500000, "award_date": "2024-03-01", "funder": "EIC"}
+      "scraped_at": "2026-03-04T12:00:00.000000",
+      "analysis": {
+        "priority": "copy_now",
+        "win_probability": 30,
+        "fit_score": 74,
+        "pattern_match_score": 84,
+        "success_factors": {
+          "keywords": [
+            "critical raw materials",
+            "exploration",
+            "AI",
+            "data modelling",
+            "geophysics"
+          ],
+          "value_props": [
+            "Probabilistic AI subsurface prediction",
+            "79% reduction in unsuccessful drilling",
+            "TRL 7 - field validated technology"
+          ],
+          "partnerships": [
+            "EU Consortium Partner"
+          ]
+        },
+        "risk_factors": [
+          "Requires consortium formation"
+        ],
+        "similar_winners": [
+          {
+            "winner": "EURARE Consortium",
+            "title": "European Rare Earth Element Resource Mapping",
+            "amount": 6500000,
+            "award_date": "2024-05-01",
+            "funder": "Horizon Europe"
+          },
+          {
+            "winner": "AI4EO / GFZ Potsdam",
+            "title": "AI for Earth Observation in Mineral Exploration",
+            "amount": 4200000,
+            "award_date": "2024-02-28",
+            "funder": "Horizon Europe"
+          }
+        ],
+        "reasoning": "Direct match: AI + exploration + CRM data modelling. Core Element AI's probabilistic subsurface prediction technology is precisely what this call seeks.",
+        "llm_source": "rule_based"
+      }
+    },
+    {
+      "id": "horizon-cl4-mat-prod-12-2026",
+      "title": "Horizon Europe MAT-PROD-12: Technologies for Innovative Extraction of Critical Raw Materials",
+      "funder": "European Commission - Horizon Europe",
+      "description": "Research and innovation action for sustainable and efficient extraction technologies for critical raw materials. Covers mining optimization, AI-driven process control, environmental impact reduction. Single-stage call, TRL 3-5, Lump Sum funding.",
+      "amount_min": 5000000,
+      "amount_max": 7000000,
+      "currency": "EUR",
+      "deadline": "2026-04-21T17:00:00+02:00",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/topic-details/horizon-cl4-2026-resilience-01-mat-prod-12",
+      "source": "search_discovery",
+      "source_type": "eu",
+      "grant_type": "eu",
+      "industry_tags": [
+        "critical raw materials",
+        "extraction",
+        "sustainable mining",
+        "AI",
+        "process optimization",
+        "Horizon Europe"
       ],
-      "reasoning": "Perfect deep-tech fit. CRM supply chain challenge (EUR 50M) directly targets Core Element AI's domain. Requires EU entity setup.",
-      "llm_source": "rule_based"
-    }
-  },
-  {
-    "id": "oshaughnessy-fellowship-2026",
-    "title": "O'Shaughnessy Fellowships & Grants 2026",
-    "funder": "O'Shaughnessy Ventures",
-    "description": "Equity-free funding for builders, researchers, and creatives working on ambitious, world-changing ideas. 10 Fellowships of $100K + up to 20 Grants of $10K+. Fully remote, open worldwide.",
-    "amount_min": 10000,
-    "amount_max": 100000,
-    "currency": "USD",
-    "deadline": "2026-04-30T23:59:00-05:00",
-    "url": "https://www.osv.llc/oshaughnessy-fellowships",
-    "source": "web_search",
-    "source_type": "private_foundation",
-    "grant_type": "fellowship",
-    "industry_tags": ["deep tech", "AI", "innovation", "research", "technology"],
-    "eligibility": "Adults worldwide. No credentials required. Rolling review within 30 days.",
-    "requirements": "Application via forms.osv.llc/fellowships2026.",
-    "focus_areas": ["ambitious innovation", "world-changing ideas", "technical innovation"],
-    "scraped_at": "2026-03-04T12:00:00.000000",
-    "analysis": {
-      "priority": "copy_now",
-      "win_probability": 20,
-      "fit_score": 65,
-      "pattern_match_score": 70,
-      "success_factors": {
-        "keywords": ["deep tech", "AI", "innovation", "technology"],
-        "value_props": ["Ambitious world-changing AI platform for geological discovery", "Founder-led deep tech venture"],
-        "partnerships": ["Direct application"]
+      "eligibility": "EU-based consortia (minimum 3 entities from 3 EU member states). Non-EU partners welcome. Core Element AI can join via EU consortium partner.",
+      "requirements": "Consortium formation, technical proposal, work packages, budget, sustainability assessment",
+      "focus_areas": [
+        "CRM extraction",
+        "sustainable mining",
+        "process optimization"
+      ],
+      "scraped_at": "2026-03-04T12:00:00.000000",
+      "analysis": {
+        "priority": "copy_now",
+        "win_probability": 28,
+        "fit_score": 68,
+        "pattern_match_score": 78,
+        "success_factors": {
+          "keywords": [
+            "critical raw materials",
+            "extraction",
+            "sustainable mining",
+            "AI",
+            "process optimization"
+          ],
+          "value_props": [
+            "Probabilistic AI subsurface prediction",
+            "79% reduction in unsuccessful drilling",
+            "TRL 7 - field validated technology"
+          ],
+          "partnerships": [
+            "EU Consortium Partner"
+          ]
+        },
+        "risk_factors": [
+          "Requires consortium formation"
+        ],
+        "similar_winners": [
+          {
+            "winner": "SCRREEN3 Consortium",
+            "title": "Critical Raw Materials Screening and Assessment",
+            "amount": 5800000,
+            "award_date": "2024-07-15",
+            "funder": "Horizon Europe"
+          }
+        ],
+        "reasoning": "Strong match for extraction optimization via AI. Less direct than MAT-PROD-11 but still highly relevant.",
+        "llm_source": "rule_based"
+      }
+    },
+    {
+      "id": "eic-accelerator-2026",
+      "title": "EIC Accelerator 2026 - Open & Challenges",
+      "funder": "European Innovation Council (EIC)",
+      "description": "Europe's most competitive deep-tech funding. Up to EUR 2.5M grant + EUR 10M equity. 2026 has 6 batching dates. Step 1 (short proposal) rolling with 4-week evaluation. Challenge: 'Strengthening European critical raw materials supply chain' (EUR 50M).",
+      "amount_min": 500000,
+      "amount_max": 2500000,
+      "currency": "EUR",
+      "deadline": "rolling",
+      "url": "https://eic.ec.europa.eu/eic-funding-opportunities/eic-accelerator_en",
+      "source": "web_search",
+      "source_type": "eu",
+      "grant_type": "eu",
+      "industry_tags": [
+        "deep tech",
+        "AI",
+        "critical raw materials",
+        "climate tech",
+        "innovation",
+        "EIC"
+      ],
+      "eligibility": "EU-incorporated SMEs/startups. Non-EU companies must establish EU entity. Challenge: 'Strengthening European critical raw materials supply chain' (EUR 50M) highly relevant.",
+      "requirements": "Step 1: short proposal (rolling). Step 2: full proposal 20 pages (batched). Step 3: interview.",
+      "focus_areas": [
+        "deep tech commercialization",
+        "critical raw materials",
+        "climate adaptation"
+      ],
+      "scraped_at": "2026-03-04T12:00:00.000000",
+      "analysis": {
+        "priority": "copy_now",
+        "win_probability": 25,
+        "fit_score": 82,
+        "pattern_match_score": 88,
+        "success_factors": {
+          "keywords": [
+            "deep tech",
+            "AI",
+            "critical raw materials",
+            "climate tech"
+          ],
+          "value_props": [
+            "Probabilistic AI subsurface prediction",
+            "B2B SaaS platform",
+            "TRL 7 - field validated"
+          ],
+          "partnerships": [
+            "EU entity establishment needed"
+          ]
+        },
+        "risk_factors": [
+          "Requires EU entity",
+          "Highly competitive (5-8% success rate)"
+        ],
+        "similar_winners": [
+          {
+            "winner": "Plotlogic",
+            "title": "AI-Powered Orebody Knowledge",
+            "amount": 2500000,
+            "award_date": "2024-03-01",
+            "funder": "EIC"
+          }
+        ],
+        "reasoning": "Perfect deep-tech fit. CRM supply chain challenge (EUR 50M) directly targets Core Element AI's domain. Requires EU entity setup.",
+        "llm_source": "rule_based"
+      }
+    },
+    {
+      "id": "oshaughnessy-fellowship-2026",
+      "title": "O'Shaughnessy Fellowships & Grants 2026",
+      "funder": "O'Shaughnessy Ventures",
+      "description": "Equity-free funding for builders, researchers, and creatives working on ambitious, world-changing ideas. 10 Fellowships of $100K + up to 20 Grants of $10K+. Fully remote, open worldwide.",
+      "amount_min": 10000,
+      "amount_max": 100000,
+      "currency": "USD",
+      "deadline": "2026-04-30T23:59:00-05:00",
+      "url": "https://www.osv.llc/oshaughnessy-fellowships",
+      "source": "web_search",
+      "source_type": "private_foundation",
+      "grant_type": "fellowship",
+      "industry_tags": [
+        "deep tech",
+        "AI",
+        "innovation",
+        "research",
+        "technology"
+      ],
+      "eligibility": "Adults worldwide. No credentials required. Rolling review within 30 days.",
+      "requirements": "Application via forms.osv.llc/fellowships2026.",
+      "focus_areas": [
+        "ambitious innovation",
+        "world-changing ideas",
+        "technical innovation"
+      ],
+      "scraped_at": "2026-03-04T12:00:00.000000",
+      "analysis": {
+        "priority": "copy_now",
+        "win_probability": 20,
+        "fit_score": 65,
+        "pattern_match_score": 70,
+        "success_factors": {
+          "keywords": [
+            "deep tech",
+            "AI",
+            "innovation",
+            "technology"
+          ],
+          "value_props": [
+            "Ambitious world-changing AI platform for geological discovery",
+            "Founder-led deep tech venture"
+          ],
+          "partnerships": [
+            "Direct application"
+          ]
+        },
+        "risk_factors": [
+          "Broad competition across all domains",
+          "Smaller amount for company-stage"
+        ],
+        "reasoning": "Good fit for founder fellowship. Core Element AI's mission to transform mineral exploration aligns with 'ambitious world-changing ideas'.",
+        "llm_source": "rule_based"
+      }
+    },
+    {
+      "id": "darpa-i2o-baa-2026",
+      "title": "DARPA I2O Office-Wide BAA (HR001126S0001)",
+      "funder": "DARPA Information Innovation Office",
+      "description": "DARPA's broadest entry point for AI researchers. The I2O focuses on AI, cybersecurity, autonomy, and information science. Related: CriticalMAAS program transitioning to operational phase in FY2026.",
+      "amount_min": 500000,
+      "amount_max": 5000000,
+      "currency": "USD",
+      "deadline": "2026-11-30T17:00:00-05:00",
+      "url": "https://www.darpa.mil/research/opportunities/baa",
+      "source": "web_search",
+      "source_type": "federal",
+      "grant_type": "federal",
+      "industry_tags": [
+        "AI",
+        "DARPA",
+        "critical minerals",
+        "machine learning",
+        "geoscience",
+        "autonomy"
+      ],
+      "eligibility": "US entities. Abstracts required before full proposals. Individual awards $500K-$5M.",
+      "requirements": "Abstract submission, full technical proposal, budget, team qualifications",
+      "focus_areas": [
+        "AI research",
+        "critical mineral assessment",
+        "information innovation"
+      ],
+      "scraped_at": "2026-03-04T12:00:00.000000",
+      "analysis": {
+        "priority": "test_first",
+        "win_probability": 22,
+        "fit_score": 76,
+        "pattern_match_score": 82,
+        "success_factors": {
+          "keywords": [
+            "AI",
+            "critical minerals",
+            "machine learning",
+            "geoscience"
+          ],
+          "value_props": [
+            "Probabilistic AI subsurface prediction",
+            "CriticalMAAS synergy",
+            "Novel AI approach to geological data"
+          ],
+          "partnerships": [
+            "Direct application as US entity"
+          ]
+        },
+        "risk_factors": [
+          "DARPA requires breakthrough novelty",
+          "Long review cycle"
+        ],
+        "reasoning": "Strong AI + geoscience alignment. CriticalMAAS program validates DARPA interest in AI for mineral assessment. Long deadline allows careful proposal preparation.",
+        "llm_source": "rule_based"
+      }
+    },
+    {
+      "id": "eit-rawmaterials-kava-13-2026",
+      "title": "EIT RawMaterials KAVA Call 13 - Upscaling",
+      "funder": "EIT RawMaterials",
+      "description": "Accelerates launch of promising technologies in raw materials industry. Targets validated technologies needing testing, demonstration, PoC, and scaling before market. Covers mining, materials, and recycling.",
+      "amount_min": 500000,
+      "amount_max": 2500000,
+      "currency": "EUR",
+      "deadline": "2026-04-30T23:59:00+02:00",
+      "url": "https://eitrawmaterials.eu/kava-call-13",
+      "source": "web_search",
+      "source_type": "eu",
+      "grant_type": "eu",
+      "industry_tags": [
+        "raw materials",
+        "mining",
+        "critical minerals",
+        "upscaling",
+        "technology",
+        "EIT"
+      ],
+      "eligibility": "Consortia of 2+ partners from different Horizon Europe eligible countries. 30% co-funding minimum.",
+      "requirements": "Consortium, proposal, budget, TRL validation evidence",
+      "focus_areas": [
+        "technology upscaling",
+        "raw materials innovation",
+        "mining technology"
+      ],
+      "scraped_at": "2026-03-04T12:00:00.000000",
+      "analysis": {
+        "priority": "copy_now",
+        "win_probability": 32,
+        "fit_score": 80,
+        "pattern_match_score": 88,
+        "success_factors": {
+          "keywords": [
+            "raw materials",
+            "mining",
+            "critical minerals",
+            "upscaling",
+            "technology"
+          ],
+          "value_props": [
+            "TRL 7 validated technology ready for upscaling",
+            "AI platform for mineral exploration",
+            "Strong industry relevance"
+          ],
+          "partnerships": [
+            "EU Consortium Partner needed"
+          ]
+        },
+        "risk_factors": [
+          "Requires EU consortium partner",
+          "30% co-funding"
+        ],
+        "reasoning": "Excellent fit: KAVA 13 specifically targets validated tech needing upscaling \u2014 matches Core Element AI's TRL 7 status perfectly. Mining/exploration focus is direct.",
+        "llm_source": "rule_based"
+      }
+    },
+    {
+      "id": "emergent-ventures-rolling",
+      "title": "Emergent Ventures Fellowship & Grants",
+      "funder": "Mercatus Center (George Mason University)",
+      "description": "Low-overhead fellowship and grant program by Tyler Cowen supporting entrepreneurs with 'zero to one' moonshot ideas. Non-dilutive grants $1K-$50K. Rolling review with guaranteed response within 2-3 weeks.",
+      "amount_min": 1000,
+      "amount_max": 50000,
+      "currency": "USD",
+      "deadline": "rolling",
+      "url": "https://www.mercatus.org/emergent-ventures",
+      "source": "web_search",
+      "source_type": "private_foundation",
+      "grant_type": "fellowship",
+      "industry_tags": [
+        "deep tech",
+        "innovation",
+        "moonshot",
+        "AI",
+        "technology"
+      ],
+      "eligibility": "Open globally. Age 13+. No credentials required.",
+      "requirements": "Application via mercatus.tfaforms.net/5099527.",
+      "focus_areas": [
+        "moonshot ideas",
+        "prosperity",
+        "technology innovation"
+      ],
+      "scraped_at": "2026-03-04T12:00:00.000000",
+      "analysis": {
+        "priority": "test_first",
+        "win_probability": 15,
+        "fit_score": 55,
+        "pattern_match_score": 60,
+        "success_factors": {
+          "keywords": [
+            "deep tech",
+            "innovation",
+            "moonshot",
+            "AI"
+          ],
+          "value_props": [
+            "Zero-to-one innovation in geological AI",
+            "Global impact potential"
+          ],
+          "partnerships": [
+            "Direct application"
+          ]
+        },
+        "risk_factors": [
+          "Small grant amount ($1K-$50K)",
+          "Broad competition"
+        ],
+        "reasoning": "Quick rolling grant, easy application. Small amount but fast turnaround. Good for supplementary funding or validation.",
+        "llm_source": "rule_based"
+      }
+    },
+    {
+      "id": "foresight-ai-safety-science-2026",
+      "title": "Foresight Institute AI for Safety & Science Nodes 2026",
+      "funder": "Foresight Institute",
+      "description": "~$3M total annual funding for AI applied to scientific frontiers. Grants typically $10K-$100K. Physical hubs in San Francisco and Berlin.",
+      "amount_min": 10000,
+      "amount_max": 100000,
+      "currency": "USD",
+      "deadline": "rolling",
+      "url": "https://foresight.org",
+      "source": "web_search",
+      "source_type": "private_foundation",
+      "grant_type": "private_foundation",
+      "industry_tags": [
+        "AI",
+        "nanotechnology",
+        "deep tech",
+        "science",
+        "simulation",
+        "materials"
+      ],
+      "eligibility": "Researchers and innovators working on AI + scientific frontiers.",
+      "requirements": "Application via Foresight website.",
+      "focus_areas": [
+        "AI for science",
+        "molecular nanotechnology",
+        "simulation"
+      ],
+      "scraped_at": "2026-03-04T12:00:00.000000",
+      "analysis": {
+        "priority": "test_first",
+        "win_probability": 18,
+        "fit_score": 50,
+        "pattern_match_score": 55,
+        "success_factors": {
+          "keywords": [
+            "AI",
+            "deep tech",
+            "science",
+            "simulation"
+          ],
+          "value_props": [
+            "AI applied to geological science frontiers",
+            "Novel subsurface prediction methods"
+          ],
+          "partnerships": [
+            "Direct application"
+          ]
+        },
+        "risk_factors": [
+          "Primary focus is nanotechnology, not geology",
+          "Smaller amount"
+        ],
+        "reasoning": "Tangential fit \u2014 AI for science is relevant but primary focus is nanotech. Worth exploring if geological AI can be framed as scientific frontier.",
+        "llm_source": "rule_based"
+      }
+    },
+    {
+      "id": "innovate-uk-sovereign-ai-poc-2026",
+      "title": "Innovate UK Sovereign AI - Proof of Concept",
+      "funder": "Innovate UK (UKRI)",
+      "description": "Development of Proof of Concept demonstrators of AI technologies with state-of-the-art performance in areas of strategic importance to UK. Grants GBP 50K-120K.",
+      "amount_min": 50000,
+      "amount_max": 120000,
+      "currency": "GBP",
+      "deadline": "2026-03-31T12:00:00+00:00",
+      "url": "https://apply-for-innovation-funding.service.gov.uk/competition/2259/overview/9061ddb2-fa12-45c9-8691-d36649c96e9c",
+      "source": "web_search",
+      "source_type": "uk_government",
+      "grant_type": "government",
+      "industry_tags": [
+        "AI",
+        "deep tech",
+        "sovereign AI",
+        "proof of concept",
+        "UK"
+      ],
+      "eligibility": "UK registered businesses. May require UK entity establishment.",
+      "requirements": "Application via Innovation Funding Service. PoC demonstrator plan.",
+      "focus_areas": [
+        "sovereign AI",
+        "proof of concept",
+        "frontier AI"
+      ],
+      "scraped_at": "2026-03-04T12:00:00.000000",
+      "analysis": {
+        "priority": "test_first",
+        "win_probability": 20,
+        "fit_score": 58,
+        "pattern_match_score": 62,
+        "success_factors": {
+          "keywords": [
+            "AI",
+            "deep tech",
+            "proof of concept"
+          ],
+          "value_props": [
+            "State-of-the-art AI for geological prediction",
+            "Novel probabilistic approach"
+          ],
+          "partnerships": [
+            "Requires UK entity"
+          ]
+        },
+        "risk_factors": [
+          "Requires UK registered business",
+          "Short deadline"
+        ],
+        "reasoning": "Good AI PoC fit but requires UK entity. Sovereign AI framing could work for geological AI with UK mining sector relevance.",
+        "llm_source": "rule_based"
+      }
+    },
+    {
+      "id": "doe-battery-materials-nofo-2026",
+      "title": "DOE Battery Materials Processing and Manufacturing NOFO",
+      "funder": "Department of Energy (DOE)",
+      "description": "Notice of Funding Opportunity for battery materials processing and domestic manufacturing. Part of ~$1B in planned DOE critical minerals NOFOs.",
+      "amount_min": 50000000,
+      "amount_max": 200000000,
+      "currency": "USD",
+      "deadline": "pending",
+      "deadline_status": "NOFO pending Q2 2026",
+      "url": "https://www.energy.gov/cmm/critical-minerals-and-materials-program",
+      "source": "search_discovery",
+      "source_type": "federal",
+      "grant_type": "federal",
+      "industry_tags": [
+        "battery materials",
+        "critical minerals",
+        "manufacturing",
+        "lithium",
+        "cobalt",
+        "supply chain"
+      ],
+      "eligibility": "US entities: companies, universities, national labs, consortia.",
+      "requirements": "Full NOFO application when released.",
+      "focus_areas": [
+        "battery materials",
+        "domestic supply chain",
+        "critical mineral processing"
+      ],
+      "scraped_at": "2026-03-04T12:00:00.000000",
+      "analysis": {
+        "priority": "test_first",
+        "win_probability": 26,
+        "fit_score": 82,
+        "pattern_match_score": 92,
+        "success_factors": {
+          "keywords": [
+            "battery materials",
+            "critical minerals",
+            "manufacturing",
+            "lithium",
+            "cobalt"
+          ],
+          "value_props": [
+            "Probabilistic AI subsurface prediction",
+            "79% reduction in unsuccessful drilling",
+            "TRL 7 - field validated technology"
+          ],
+          "partnerships": [
+            "Direct application as Core Element AI"
+          ]
+        },
+        "risk_factors": [
+          "High competition due to large award size",
+          "NOFO not yet released"
+        ],
+        "reasoning": "Massive DOE funding for critical minerals. Watch for NOFO release in Q2 2026. Core Element AI can target exploration/characterization subtopics.",
+        "llm_source": "rule_based"
+      }
+    },
+    {
+      "id": "arpa-e-recover-2026",
+      "title": "ARPA-E RECOVER - Rare Earth and Critical Mineral Recovery",
+      "funder": "ARPA-E",
+      "description": "Program to develop transformative technologies for recovery of rare earth elements and critical minerals from unconventional sources.",
+      "amount_min": 1000000,
+      "amount_max": 5000000,
+      "currency": "USD",
+      "deadline": "pending",
+      "deadline_status": "Pending Q2 2026",
+      "url": "https://arpa-e.energy.gov/technologies/programs/recover",
+      "source": "search_discovery",
+      "source_type": "federal",
+      "grant_type": "federal",
+      "industry_tags": [
+        "rare earth",
+        "critical minerals",
+        "recovery",
+        "AI",
+        "mine tailings",
+        "circular economy"
+      ],
+      "eligibility": "US entities including small businesses, universities, national labs.",
+      "requirements": "Concept paper (when FOA opens), full technical proposal, budget, team",
+      "focus_areas": [
+        "critical mineral recovery",
+        "unconventional sources",
+        "AI characterization"
+      ],
+      "scraped_at": "2026-03-04T12:00:00.000000",
+      "analysis": {
+        "priority": "test_first",
+        "win_probability": 33,
+        "fit_score": 80,
+        "pattern_match_score": 90,
+        "success_factors": {
+          "keywords": [
+            "rare earth",
+            "critical minerals",
+            "recovery",
+            "AI",
+            "mine tailings"
+          ],
+          "value_props": [
+            "Probabilistic AI subsurface prediction",
+            "AI-driven characterization technology"
+          ],
+          "partnerships": [
+            "Direct application as Core Element AI"
+          ]
+        },
+        "risk_factors": [
+          "FOA not yet released"
+        ],
+        "reasoning": "Strong fit for AI characterization of mineral deposits. Watch for FOA release in Q2 2026.",
+        "llm_source": "rule_based"
+      }
+    },
+    {
+      "id": "f38c0e3b1960",
+      "title": "Sloan Foundation - Energy & Environment Research Grants",
+      "funder": "Alfred P. Sloan Foundation",
+      "description": "The Sloan Foundation's Energy & Environment program supports research on energy systems, environmental science, and the transition to sustainable energy.",
+      "amount_min": 50000,
+      "amount_max": 500000,
+      "currency": "USD",
+      "deadline": "",
+      "url": "https://sloan.org/programs/energy-and-environment",
+      "source": "sloan_foundation",
+      "grant_type": "private_foundation",
+      "industry_tags": [
+        "energy",
+        "environment",
+        "clean energy",
+        "sustainability",
+        "research"
+      ],
+      "eligibility": "Primarily funds academic researchers. Partnership pathway through university affiliations.",
+      "requirements": "",
+      "focus_areas": [
+        "energy systems",
+        "environmental science",
+        "sustainable energy"
+      ],
+      "scraped_at": "2026-02-24T06:13:46.997970",
+      "urgency": {
+        "days_until_deadline": null,
+        "priority_level": "PLANNING",
+        "action_required": "monitor"
       },
-      "risk_factors": ["Broad competition across all domains", "Smaller amount for company-stage"],
-      "reasoning": "Good fit for founder fellowship. Core Element AI's mission to transform mineral exploration aligns with 'ambitious world-changing ideas'.",
-      "llm_source": "rule_based"
-    }
-  },
-  {
-    "id": "darpa-i2o-baa-2026",
-    "title": "DARPA I2O Office-Wide BAA (HR001126S0001)",
-    "funder": "DARPA Information Innovation Office",
-    "description": "DARPA's broadest entry point for AI researchers. The I2O focuses on AI, cybersecurity, autonomy, and information science. Related: CriticalMAAS program transitioning to operational phase in FY2026.",
-    "amount_min": 500000,
-    "amount_max": 5000000,
-    "currency": "USD",
-    "deadline": "2026-11-30T17:00:00-05:00",
-    "url": "https://www.darpa.mil/research/opportunities/baa",
-    "source": "web_search",
-    "source_type": "federal",
-    "grant_type": "federal",
-    "industry_tags": ["AI", "DARPA", "critical minerals", "machine learning", "geoscience", "autonomy"],
-    "eligibility": "US entities. Abstracts required before full proposals. Individual awards $500K-$5M.",
-    "requirements": "Abstract submission, full technical proposal, budget, team qualifications",
-    "focus_areas": ["AI research", "critical mineral assessment", "information innovation"],
-    "scraped_at": "2026-03-04T12:00:00.000000",
-    "analysis": {
-      "priority": "test_first",
-      "win_probability": 22,
-      "fit_score": 76,
-      "pattern_match_score": 82,
-      "success_factors": {
-        "keywords": ["AI", "critical minerals", "machine learning", "geoscience"],
-        "value_props": ["Probabilistic AI subsurface prediction", "CriticalMAAS synergy", "Novel AI approach to geological data"],
-        "partnerships": ["Direct application as US entity"]
+      "source_type": "private_foundation",
+      "last_verified": "2026-02-24T06:13:46.997970"
+    },
+    {
+      "id": "be170c03c29e",
+      "title": "Delaware EDGE Grant - STEM Track",
+      "funder": "Delaware Division of Small Business",
+      "description": "EDGE Grants for STEM-focused businesses. Supports technology companies incorporated in Delaware with growth capital.",
+      "amount_min": 5000,
+      "amount_max": 100000,
+      "currency": "USD",
+      "deadline": "",
+      "url": "https://business.delaware.gov/edge-grants/",
+      "source": "delaware_state",
+      "grant_type": "state",
+      "industry_tags": [
+        "STEM",
+        "technology",
+        "innovation"
+      ],
+      "eligibility": "Must be incorporated in Delaware. Small business. Core Element AI qualifies as Delaware S-Corp.",
+      "requirements": "",
+      "focus_areas": [
+        "STEM business growth",
+        "technology commercialization"
+      ],
+      "scraped_at": "2026-02-24T06:08:32.221467",
+      "urgency": {
+        "days_until_deadline": null,
+        "priority_level": "PLANNING",
+        "action_required": "monitor"
       },
-      "risk_factors": ["DARPA requires breakthrough novelty", "Long review cycle"],
-      "reasoning": "Strong AI + geoscience alignment. CriticalMAAS program validates DARPA interest in AI for mineral assessment. Long deadline allows careful proposal preparation.",
-      "llm_source": "rule_based"
-    }
-  },
-  {
-    "id": "eit-rawmaterials-kava-13-2026",
-    "title": "EIT RawMaterials KAVA Call 13 - Upscaling",
-    "funder": "EIT RawMaterials",
-    "description": "Accelerates launch of promising technologies in raw materials industry. Targets validated technologies needing testing, demonstration, PoC, and scaling before market. Covers mining, materials, and recycling.",
-    "amount_min": 500000,
-    "amount_max": 2500000,
-    "currency": "EUR",
-    "deadline": "2026-04-30T23:59:00+02:00",
-    "url": "https://eitrawmaterials.eu/kava-call-13",
-    "source": "web_search",
-    "source_type": "eu",
-    "grant_type": "eu",
-    "industry_tags": ["raw materials", "mining", "critical minerals", "upscaling", "technology", "EIT"],
-    "eligibility": "Consortia of 2+ partners from different Horizon Europe eligible countries. 30% co-funding minimum.",
-    "requirements": "Consortium, proposal, budget, TRL validation evidence",
-    "focus_areas": ["technology upscaling", "raw materials innovation", "mining technology"],
-    "scraped_at": "2026-03-04T12:00:00.000000",
-    "analysis": {
-      "priority": "copy_now",
-      "win_probability": 32,
-      "fit_score": 80,
-      "pattern_match_score": 88,
-      "success_factors": {
-        "keywords": ["raw materials", "mining", "critical minerals", "upscaling", "technology"],
-        "value_props": ["TRL 7 validated technology ready for upscaling", "AI platform for mineral exploration", "Strong industry relevance"],
-        "partnerships": ["EU Consortium Partner needed"]
+      "source_type": "state",
+      "last_verified": "2026-02-24T06:08:32.221467"
+    },
+    {
+      "id": "34c73c6a76ca",
+      "title": "Colorado Advanced Industries Proof of Concept Grant",
+      "funder": "Colorado OEDIT",
+      "description": "Early-stage capital to advance commercially viable products in Colorado's Advanced Industries.",
+      "amount_min": 50000,
+      "amount_max": 150000,
+      "currency": "USD",
+      "deadline": "",
+      "url": "https://oedit.colorado.gov/advance-industries-accelerator-programs",
+      "source": "colorado_state",
+      "grant_type": "state",
+      "industry_tags": [
+        "cleantech",
+        "AI",
+        "advanced manufacturing",
+        "energy",
+        "natural resources"
+      ],
+      "eligibility": "Colorado-based company or partnered with Colorado research institution. Core Element AI qualifies via Colorado School of Mines partnership.",
+      "requirements": "",
+      "focus_areas": [
+        "proof of concept",
+        "technology commercialization"
+      ],
+      "scraped_at": "2026-02-24T06:07:27.781288",
+      "urgency": {
+        "days_until_deadline": null,
+        "priority_level": "PLANNING",
+        "action_required": "monitor"
       },
-      "risk_factors": ["Requires EU consortium partner", "30% co-funding"],
-      "reasoning": "Excellent fit: KAVA 13 specifically targets validated tech needing upscaling — matches Core Element AI's TRL 7 status perfectly. Mining/exploration focus is direct.",
-      "llm_source": "rule_based"
+      "source_type": "state",
+      "last_verified": "2026-02-24T06:07:27.781288"
     }
-  },
-  {
-    "id": "emergent-ventures-rolling",
-    "title": "Emergent Ventures Fellowship & Grants",
-    "funder": "Mercatus Center (George Mason University)",
-    "description": "Low-overhead fellowship and grant program by Tyler Cowen supporting entrepreneurs with 'zero to one' moonshot ideas. Non-dilutive grants $1K-$50K. Rolling review with guaranteed response within 2-3 weeks.",
-    "amount_min": 1000,
-    "amount_max": 50000,
-    "currency": "USD",
-    "deadline": "rolling",
-    "url": "https://www.mercatus.org/emergent-ventures",
-    "source": "web_search",
-    "source_type": "private_foundation",
-    "grant_type": "fellowship",
-    "industry_tags": ["deep tech", "innovation", "moonshot", "AI", "technology"],
-    "eligibility": "Open globally. Age 13+. No credentials required.",
-    "requirements": "Application via mercatus.tfaforms.net/5099527.",
-    "focus_areas": ["moonshot ideas", "prosperity", "technology innovation"],
-    "scraped_at": "2026-03-04T12:00:00.000000",
-    "analysis": {
-      "priority": "test_first",
-      "win_probability": 15,
-      "fit_score": 55,
-      "pattern_match_score": 60,
-      "success_factors": {
-        "keywords": ["deep tech", "innovation", "moonshot", "AI"],
-        "value_props": ["Zero-to-one innovation in geological AI", "Global impact potential"],
-        "partnerships": ["Direct application"]
-      },
-      "risk_factors": ["Small grant amount ($1K-$50K)", "Broad competition"],
-      "reasoning": "Quick rolling grant, easy application. Small amount but fast turnaround. Good for supplementary funding or validation.",
-      "llm_source": "rule_based"
-    }
-  },
-  {
-    "id": "foresight-ai-safety-science-2026",
-    "title": "Foresight Institute AI for Safety & Science Nodes 2026",
-    "funder": "Foresight Institute",
-    "description": "~$3M total annual funding for AI applied to scientific frontiers. Grants typically $10K-$100K. Physical hubs in San Francisco and Berlin.",
-    "amount_min": 10000,
-    "amount_max": 100000,
-    "currency": "USD",
-    "deadline": "rolling",
-    "url": "https://foresight.org",
-    "source": "web_search",
-    "source_type": "private_foundation",
-    "grant_type": "private_foundation",
-    "industry_tags": ["AI", "nanotechnology", "deep tech", "science", "simulation", "materials"],
-    "eligibility": "Researchers and innovators working on AI + scientific frontiers.",
-    "requirements": "Application via Foresight website.",
-    "focus_areas": ["AI for science", "molecular nanotechnology", "simulation"],
-    "scraped_at": "2026-03-04T12:00:00.000000",
-    "analysis": {
-      "priority": "test_first",
-      "win_probability": 18,
-      "fit_score": 50,
-      "pattern_match_score": 55,
-      "success_factors": {
-        "keywords": ["AI", "deep tech", "science", "simulation"],
-        "value_props": ["AI applied to geological science frontiers", "Novel subsurface prediction methods"],
-        "partnerships": ["Direct application"]
-      },
-      "risk_factors": ["Primary focus is nanotechnology, not geology", "Smaller amount"],
-      "reasoning": "Tangential fit — AI for science is relevant but primary focus is nanotech. Worth exploring if geological AI can be framed as scientific frontier.",
-      "llm_source": "rule_based"
-    }
-  },
-  {
-    "id": "innovate-uk-sovereign-ai-poc-2026",
-    "title": "Innovate UK Sovereign AI - Proof of Concept",
-    "funder": "Innovate UK (UKRI)",
-    "description": "Development of Proof of Concept demonstrators of AI technologies with state-of-the-art performance in areas of strategic importance to UK. Grants GBP 50K-120K.",
-    "amount_min": 50000,
-    "amount_max": 120000,
-    "currency": "GBP",
-    "deadline": "2026-03-31T12:00:00+00:00",
-    "url": "https://apply-for-innovation-funding.service.gov.uk/competition/2259/overview/9061ddb2-fa12-45c9-8691-d36649c96e9c",
-    "source": "web_search",
-    "source_type": "uk_government",
-    "grant_type": "government",
-    "industry_tags": ["AI", "deep tech", "sovereign AI", "proof of concept", "UK"],
-    "eligibility": "UK registered businesses. May require UK entity establishment.",
-    "requirements": "Application via Innovation Funding Service. PoC demonstrator plan.",
-    "focus_areas": ["sovereign AI", "proof of concept", "frontier AI"],
-    "scraped_at": "2026-03-04T12:00:00.000000",
-    "analysis": {
-      "priority": "test_first",
-      "win_probability": 20,
-      "fit_score": 58,
-      "pattern_match_score": 62,
-      "success_factors": {
-        "keywords": ["AI", "deep tech", "proof of concept"],
-        "value_props": ["State-of-the-art AI for geological prediction", "Novel probabilistic approach"],
-        "partnerships": ["Requires UK entity"]
-      },
-      "risk_factors": ["Requires UK registered business", "Short deadline"],
-      "reasoning": "Good AI PoC fit but requires UK entity. Sovereign AI framing could work for geological AI with UK mining sector relevance.",
-      "llm_source": "rule_based"
-    }
-  },
-  {
-    "id": "doe-battery-materials-nofo-2026",
-    "title": "DOE Battery Materials Processing and Manufacturing NOFO",
-    "funder": "Department of Energy (DOE)",
-    "description": "Notice of Funding Opportunity for battery materials processing and domestic manufacturing. Part of ~$1B in planned DOE critical minerals NOFOs.",
-    "amount_min": 50000000,
-    "amount_max": 200000000,
-    "currency": "USD",
-    "deadline": "pending",
-    "deadline_status": "NOFO pending Q2 2026",
-    "url": "https://www.energy.gov/cmm/critical-minerals-and-materials-program",
-    "source": "search_discovery",
-    "source_type": "federal",
-    "grant_type": "federal",
-    "industry_tags": ["battery materials", "critical minerals", "manufacturing", "lithium", "cobalt", "supply chain"],
-    "eligibility": "US entities: companies, universities, national labs, consortia.",
-    "requirements": "Full NOFO application when released.",
-    "focus_areas": ["battery materials", "domestic supply chain", "critical mineral processing"],
-    "scraped_at": "2026-03-04T12:00:00.000000",
-    "analysis": {
-      "priority": "test_first",
-      "win_probability": 26,
-      "fit_score": 82,
-      "pattern_match_score": 92,
-      "success_factors": {
-        "keywords": ["battery materials", "critical minerals", "manufacturing", "lithium", "cobalt"],
-        "value_props": ["Probabilistic AI subsurface prediction", "79% reduction in unsuccessful drilling", "TRL 7 - field validated technology"],
-        "partnerships": ["Direct application as Core Element AI"]
-      },
-      "risk_factors": ["High competition due to large award size", "NOFO not yet released"],
-      "reasoning": "Massive DOE funding for critical minerals. Watch for NOFO release in Q2 2026. Core Element AI can target exploration/characterization subtopics.",
-      "llm_source": "rule_based"
-    }
-  },
-  {
-    "id": "arpa-e-recover-2026",
-    "title": "ARPA-E RECOVER - Rare Earth and Critical Mineral Recovery",
-    "funder": "ARPA-E",
-    "description": "Program to develop transformative technologies for recovery of rare earth elements and critical minerals from unconventional sources.",
-    "amount_min": 1000000,
-    "amount_max": 5000000,
-    "currency": "USD",
-    "deadline": "pending",
-    "deadline_status": "Pending Q2 2026",
-    "url": "https://arpa-e.energy.gov/technologies/programs/recover",
-    "source": "search_discovery",
-    "source_type": "federal",
-    "grant_type": "federal",
-    "industry_tags": ["rare earth", "critical minerals", "recovery", "AI", "mine tailings", "circular economy"],
-    "eligibility": "US entities including small businesses, universities, national labs.",
-    "requirements": "Concept paper (when FOA opens), full technical proposal, budget, team",
-    "focus_areas": ["critical mineral recovery", "unconventional sources", "AI characterization"],
-    "scraped_at": "2026-03-04T12:00:00.000000",
-    "analysis": {
-      "priority": "test_first",
-      "win_probability": 33,
-      "fit_score": 80,
-      "pattern_match_score": 90,
-      "success_factors": {
-        "keywords": ["rare earth", "critical minerals", "recovery", "AI", "mine tailings"],
-        "value_props": ["Probabilistic AI subsurface prediction", "AI-driven characterization technology"],
-        "partnerships": ["Direct application as Core Element AI"]
-      },
-      "risk_factors": ["FOA not yet released"],
-      "reasoning": "Strong fit for AI characterization of mineral deposits. Watch for FOA release in Q2 2026.",
-      "llm_source": "rule_based"
-    }
-  }
-]
+  ]
+}

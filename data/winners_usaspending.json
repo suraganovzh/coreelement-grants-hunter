@@ -18,7 +18,7 @@
       "lithium"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-02-22T10:33:16.720546"
+    "scraped_at": "2026-03-01T10:32:18.003685"
   },
   {
     "id": "usa-DEFE0032488",
@@ -39,7 +39,7 @@
       "rare earth"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-02-22T10:33:16.720565"
+    "scraped_at": "2026-03-01T10:32:18.003711"
   },
   {
     "id": "usa-26K75IL000024",
@@ -59,7 +59,7 @@
       "critical minerals"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-02-22T10:33:16.720614"
+    "scraped_at": "2026-03-01T10:32:18.003762"
   },
   {
     "id": "usa-26K75IL000023",
@@ -81,7 +81,7 @@
       "cobalt"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-02-22T10:33:16.720657"
+    "scraped_at": "2026-03-01T10:32:18.003807"
   },
   {
     "id": "usa-26K75IL000025",
@@ -103,7 +103,7 @@
       "cobalt"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-02-22T10:33:16.720701"
+    "scraped_at": "2026-03-01T10:32:18.003855"
   },
   {
     "id": "usa-DEAR0001702",
@@ -123,7 +123,48 @@
       "cobalt"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-02-22T10:33:16.720722"
+    "scraped_at": "2026-03-01T10:32:18.003874"
+  },
+  {
+    "id": "usa-DEAR0002099",
+    "title": "PHOENIX TAILINGS, INC. NEW AWARD\nDE-FOA-0003510 \u2013 REALIZE ENERGY-RICH COMPOUND OPPORTUNITIES VALORIZING EXTRACTION FROM REFUSE WATERS (RECOVER)\nPROJECT TITLE: ''SELECT: SELECTIVE EXTRACTION VIA LIGAND",
+    "funder": "Department of Energy",
+    "funder_sub": "Department of Energy",
+    "amount": 1600000,
+    "winner": "PHOENIX TAILINGS INC",
+    "winner_location": "None, None",
+    "award_date": "2026-02-18",
+    "end_date": "2028-02-17",
+    "award_type": "COOPERATIVE AGREEMENT (B)",
+    "naics_code": null,
+    "naics_desc": null,
+    "keywords": [
+      "mineral",
+      "critical minerals",
+      "rare earth"
+    ],
+    "source": "usaspending.gov",
+    "scraped_at": "2026-03-01T10:32:18.003898"
+  },
+  {
+    "id": "usa-2341956",
+    "title": "R/V KILO MOANA BOEM RESEARCH CRUISE -OCEANOGRAPHIC AND GEOLOGIC CRITERIA INDICATE THAT ABYSSAL MANGANESE NODULES MAY OCCUR IN THE ABYSSAL REGIONS OF THE SOUTHEASTERN PORTION OF THE EXCLUSIVE ECONOMIC ",
+    "funder": "National Science Foundation",
+    "funder_sub": "National Science Foundation",
+    "amount": 1575675,
+    "winner": "UNIVERSITY OF HAWAII",
+    "winner_location": "None, None",
+    "award_date": "2024-01-01",
+    "end_date": "2025-12-31",
+    "award_type": "COOPERATIVE AGREEMENT (B)",
+    "naics_code": null,
+    "naics_desc": null,
+    "keywords": [
+      "mineral",
+      "geological"
+    ],
+    "source": "usaspending.gov",
+    "scraped_at": "2026-03-01T10:32:18.003925"
   },
   {
     "id": "usa-G23AC00093",
@@ -145,7 +186,7 @@
       "geological"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-02-22T10:33:16.720748"
+    "scraped_at": "2026-03-01T10:32:18.003953"
   },
   {
     "id": "usa-2320162",
@@ -166,7 +207,7 @@
       "critical minerals"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-02-22T10:33:16.720796"
+    "scraped_at": "2026-03-01T10:32:18.003999"
   },
   {
     "id": "usa-G26AC00007",
@@ -189,7 +230,7 @@
       "geological"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-02-22T10:33:16.720837"
+    "scraped_at": "2026-03-01T10:32:18.004061"
   },
   {
     "id": "usa-G26AC00008",
@@ -212,7 +253,7 @@
       "geological"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-02-22T10:33:16.720874"
+    "scraped_at": "2026-03-01T10:32:18.004112"
   },
   {
     "id": "usa-G26AC00003",
@@ -236,7 +277,7 @@
       "drilling"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-02-22T10:33:16.720908"
+    "scraped_at": "2026-03-01T10:32:18.004148"
   },
   {
     "id": "usa-G26AC00006",
@@ -256,7 +297,7 @@
       "geological"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-02-22T10:33:16.720941"
+    "scraped_at": "2026-03-01T10:32:18.004186"
   },
   {
     "id": "usa-G25AP00363",
@@ -284,7 +325,7 @@
       "clean energy"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-02-22T10:33:16.720978"
+    "scraped_at": "2026-03-01T10:32:18.004226"
   },
   {
     "id": "usa-G26AC00009",
@@ -304,7 +345,7 @@
       "exploration"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-02-22T10:33:16.721016"
+    "scraped_at": "2026-03-01T10:32:18.004266"
   },
   {
     "id": "usa-G26AC00041",
@@ -326,7 +367,7 @@
       "geological"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-02-22T10:33:16.721030"
+    "scraped_at": "2026-03-01T10:32:18.004281"
   },
   {
     "id": "usa-G25AC00423",
@@ -349,7 +390,7 @@
       "geological"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-02-22T10:33:16.721073"
+    "scraped_at": "2026-03-01T10:32:18.004323"
   },
   {
     "id": "usa-G25AC00424",
@@ -374,7 +415,7 @@
       "subsurface"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-02-22T10:33:16.721107"
+    "scraped_at": "2026-03-01T10:32:18.004361"
   },
   {
     "id": "usa-G26AC00034",
@@ -396,7 +437,7 @@
       "geological"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-02-22T10:33:16.721146"
+    "scraped_at": "2026-03-01T10:32:18.004404"
   },
   {
     "id": "usa-G26AC00033",
@@ -418,7 +459,7 @@
       "geological"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-02-22T10:33:16.721168"
+    "scraped_at": "2026-03-01T10:32:18.004424"
   },
   {
     "id": "usa-G26AC00038",
@@ -443,7 +484,7 @@
       "geological"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-02-22T10:33:16.721209"
+    "scraped_at": "2026-03-01T10:32:18.004468"
   },
   {
     "id": "usa-G26AC00036",
@@ -465,7 +506,7 @@
       "critical minerals"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-02-22T10:33:16.721244"
+    "scraped_at": "2026-03-01T10:32:18.004505"
   },
   {
     "id": "usa-G23AC00090",
@@ -486,7 +527,7 @@
       "geological"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-02-22T10:33:16.721280"
+    "scraped_at": "2026-03-01T10:32:18.004545"
   },
   {
     "id": "usa-G23AC00088",
@@ -507,7 +548,7 @@
       "geological"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-02-22T10:33:16.721321"
+    "scraped_at": "2026-03-01T10:32:18.004561"
   },
   {
     "id": "usa-D25AP00314",
@@ -528,7 +569,7 @@
       "critical minerals"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-02-22T10:33:16.721367"
+    "scraped_at": "2026-03-01T10:32:18.004602"
   },
   {
     "id": "usa-D25AP00273",
@@ -549,7 +590,7 @@
       "critical minerals"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-02-22T10:33:16.721398"
+    "scraped_at": "2026-03-01T10:32:18.004644"
   },
   {
     "id": "usa-D25AP00272",
@@ -570,7 +611,7 @@
       "critical minerals"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-02-22T10:33:16.721429"
+    "scraped_at": "2026-03-01T10:32:18.004681"
   },
   {
     "id": "usa-D25AP00265",
@@ -591,7 +632,7 @@
       "critical minerals"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-02-22T10:33:16.721456"
+    "scraped_at": "2026-03-01T10:32:18.004717"
   },
   {
     "id": "usa-D25AP00264",
@@ -614,7 +655,7 @@
       "remote sensing"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-02-22T10:33:16.721483"
+    "scraped_at": "2026-03-01T10:32:18.004755"
   },
   {
     "id": "usa-D25AP00263",
@@ -635,7 +676,7 @@
       "critical minerals"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-02-22T10:33:16.721505"
+    "scraped_at": "2026-03-01T10:32:18.004790"
   },
   {
     "id": "usa-D25AP00254",
@@ -656,7 +697,7 @@
       "critical minerals"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-02-22T10:33:16.721527"
+    "scraped_at": "2026-03-01T10:32:18.004825"
   },
   {
     "id": "usa-D25AP00251",
@@ -677,7 +718,7 @@
       "critical minerals"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-02-22T10:33:16.721548"
+    "scraped_at": "2026-03-01T10:32:18.004859"
   },
   {
     "id": "usa-D25AP00310",
@@ -698,7 +739,7 @@
       "critical minerals"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-02-22T10:33:16.721571"
+    "scraped_at": "2026-03-01T10:32:18.004895"
   },
   {
     "id": "usa-D25AP00269",
@@ -719,7 +760,7 @@
       "critical minerals"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-02-22T10:33:16.721601"
+    "scraped_at": "2026-03-01T10:32:18.004932"
   },
   {
     "id": "usa-G24AP00258",
@@ -742,7 +783,7 @@
       "geological"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-02-22T10:33:16.721633"
+    "scraped_at": "2026-03-01T10:32:18.004967"
   },
   {
     "id": "usa-G22AP00224",
@@ -765,7 +806,7 @@
       "drilling"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-02-22T10:33:16.721665"
+    "scraped_at": "2026-03-01T10:32:18.004999"
   },
   {
     "id": "usa-G23AC00443",
@@ -789,7 +830,7 @@
       "geological"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-02-22T10:33:16.721708"
+    "scraped_at": "2026-03-01T10:32:18.005048"
   },
   {
     "id": "usa-G22AC00509",
@@ -810,7 +851,7 @@
       "critical minerals"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-02-22T10:33:16.721742"
+    "scraped_at": "2026-03-01T10:32:18.005084"
   },
   {
     "id": "usa-G23AP00161",
@@ -831,7 +872,7 @@
       "critical minerals"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-02-22T10:33:16.721781"
+    "scraped_at": "2026-03-01T10:32:18.005127"
   },
   {
     "id": "usa-D25AP00302",
@@ -852,7 +893,7 @@
       "critical minerals"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-02-22T10:33:16.721812"
+    "scraped_at": "2026-03-01T10:32:18.005170"
   },
   {
     "id": "usa-G23AC00423",
@@ -874,7 +915,7 @@
       "geological"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-02-22T10:33:16.721833"
+    "scraped_at": "2026-03-01T10:32:18.005193"
   },
   {
     "id": "usa-G26AC00018",
@@ -894,7 +935,7 @@
       "mineral"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-02-22T10:33:16.721850"
+    "scraped_at": "2026-03-01T10:32:18.005212"
   },
   {
     "id": "usa-G26AC00020",
@@ -919,7 +960,7 @@
       "geological"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-02-22T10:33:16.721885"
+    "scraped_at": "2026-03-01T10:32:18.005251"
   },
   {
     "id": "usa-G25AP00256",
@@ -942,7 +983,7 @@
       "geological"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-02-22T10:33:16.721902"
+    "scraped_at": "2026-03-01T10:32:18.005270"
   },
   {
     "id": "usa-G23AC00432",
@@ -962,7 +1003,7 @@
       "critical minerals"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-02-22T10:33:16.721914"
+    "scraped_at": "2026-03-01T10:32:18.005281"
   },
   {
     "id": "usa-G23AC00469",
@@ -986,7 +1027,7 @@
       "geological"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-02-22T10:33:16.721938"
+    "scraped_at": "2026-03-01T10:32:18.005307"
   },
   {
     "id": "usa-G23AC00470",
@@ -1014,7 +1055,7 @@
       "remote sensing"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-02-22T10:33:16.721967"
+    "scraped_at": "2026-03-01T10:32:18.005338"
   },
   {
     "id": "usa-D25AP00313",
@@ -1035,7 +1076,7 @@
       "critical minerals"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-02-22T10:33:16.721996"
+    "scraped_at": "2026-03-01T10:32:18.005375"
   },
   {
     "id": "usa-D25AP00312",
@@ -1056,7 +1097,7 @@
       "critical minerals"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-02-22T10:33:16.722018"
+    "scraped_at": "2026-03-01T10:32:18.005407"
   },
   {
     "id": "usa-D25AP00311",
@@ -1077,7 +1118,7 @@
       "critical minerals"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-02-22T10:33:16.722037"
+    "scraped_at": "2026-03-01T10:32:18.005438"
   },
   {
     "id": "usa-D25AP00304",
@@ -1099,7 +1140,7 @@
       "geological"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-02-22T10:33:16.722063"
+    "scraped_at": "2026-03-01T10:32:18.005472"
   },
   {
     "id": "usa-D25AP00303",
@@ -1120,7 +1161,7 @@
       "critical minerals"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-02-22T10:33:16.722091"
+    "scraped_at": "2026-03-01T10:32:18.005506"
   },
   {
     "id": "usa-D25AP00270",
@@ -1141,7 +1182,7 @@
       "critical minerals"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-02-22T10:33:16.722113"
+    "scraped_at": "2026-03-01T10:32:18.005535"
   },
   {
     "id": "usa-D25AP00301",
@@ -1162,7 +1203,7 @@
       "critical minerals"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-02-22T10:33:16.722134"
+    "scraped_at": "2026-03-01T10:32:18.005564"
   },
   {
     "id": "usa-G25AC00337",
@@ -1183,7 +1224,7 @@
       "geological"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-02-22T10:33:16.722157"
+    "scraped_at": "2026-03-01T10:32:18.005588"
   },
   {
     "id": "usa-G25AC00413",
@@ -1206,7 +1247,7 @@
       "geological"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-02-22T10:33:16.722178"
+    "scraped_at": "2026-03-01T10:32:18.005611"
   },
   {
     "id": "usa-G25AC00333",
@@ -1227,7 +1268,7 @@
       "geological"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-02-22T10:33:16.722195"
+    "scraped_at": "2026-03-01T10:32:18.005627"
   },
   {
     "id": "usa-G25AC00336",
@@ -1247,7 +1288,7 @@
       "geological"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-02-22T10:33:16.722207"
+    "scraped_at": "2026-03-01T10:32:18.005640"
   },
   {
     "id": "usa-G25AC00338",
@@ -1269,7 +1310,7 @@
       "geological"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-02-22T10:33:16.722231"
+    "scraped_at": "2026-03-01T10:32:18.005665"
   },
   {
     "id": "usa-G25AC00403",
@@ -1290,7 +1331,7 @@
       "exploration"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-02-22T10:33:16.722244"
+    "scraped_at": "2026-03-01T10:32:18.005679"
   },
   {
     "id": "usa-G25AC00348",
@@ -1312,7 +1353,7 @@
       "geological"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-02-22T10:33:16.722261"
+    "scraped_at": "2026-03-01T10:32:18.005695"
   },
   {
     "id": "usa-G26AC00004",
@@ -1333,7 +1374,7 @@
       "subsurface"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-02-22T10:33:18.747392"
+    "scraped_at": "2026-03-01T10:32:20.253493"
   },
   {
     "id": "usa-2521631",
@@ -1352,6 +1393,6 @@
       "geospatial"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-02-22T10:33:19.146255"
+    "scraped_at": "2026-03-01T10:32:20.662507"
   }
 ]
