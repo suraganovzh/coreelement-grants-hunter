@@ -1,1 +1,78 @@
-[]
+[
+  {
+    "id": "sam-916ae9e6e68a4d3bae25581631ad879d",
+    "title": "61--BATTERY,STORAGE",
+    "funder": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.DLA LAND.DLA LAND COLUMBUS.DLA LAND AND MARITIME",
+    "funder_sub": "",
+    "amount": 0,
+    "type": "Combined Synopsis/Solicitation",
+    "set_aside": "Total Small Business Set-Aside (FAR 19.5)",
+    "naics_code": "213114",
+    "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=916ae9e6e68a4d3bae25581631ad879d",
+    "posted_date": "2026-03-08",
+    "response_deadline": "2026-03-19",
+    "url": "https://sam.gov/workspace/contract/opp/916ae9e6e68a4d3bae25581631ad879d/view",
+    "keywords": [
+      "battery"
+    ],
+    "source": "sam.gov",
+    "scraped_at": "2026-03-08T10:32:38.015207"
+  },
+  {
+    "id": "sam-916ae9e6e68a4d3bae25581631ad879d",
+    "title": "61--BATTERY,STORAGE",
+    "funder": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.DLA LAND.DLA LAND COLUMBUS.DLA LAND AND MARITIME",
+    "funder_sub": "",
+    "amount": 0,
+    "type": "Combined Synopsis/Solicitation",
+    "set_aside": "Total Small Business Set-Aside (FAR 19.5)",
+    "naics_code": "541715",
+    "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=916ae9e6e68a4d3bae25581631ad879d",
+    "posted_date": "2026-03-08",
+    "response_deadline": "2026-03-19",
+    "url": "https://sam.gov/workspace/contract/opp/916ae9e6e68a4d3bae25581631ad879d/view",
+    "keywords": [
+      "battery"
+    ],
+    "source": "sam.gov",
+    "scraped_at": "2026-03-08T10:32:38.242611"
+  },
+  {
+    "id": "sam-916ae9e6e68a4d3bae25581631ad879d",
+    "title": "61--BATTERY,STORAGE",
+    "funder": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.DLA LAND.DLA LAND COLUMBUS.DLA LAND AND MARITIME",
+    "funder_sub": "",
+    "amount": 0,
+    "type": "Combined Synopsis/Solicitation",
+    "set_aside": "Total Small Business Set-Aside (FAR 19.5)",
+    "naics_code": "541512",
+    "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=916ae9e6e68a4d3bae25581631ad879d",
+    "posted_date": "2026-03-08",
+    "response_deadline": "2026-03-19",
+    "url": "https://sam.gov/workspace/contract/opp/916ae9e6e68a4d3bae25581631ad879d/view",
+    "keywords": [
+      "battery"
+    ],
+    "source": "sam.gov",
+    "scraped_at": "2026-03-08T10:32:38.466306"
+  },
+  {
+    "id": "sam-916ae9e6e68a4d3bae25581631ad879d",
+    "title": "61--BATTERY,STORAGE",
+    "funder": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.DLA LAND.DLA LAND COLUMBUS.DLA LAND AND MARITIME",
+    "funder_sub": "",
+    "amount": 0,
+    "type": "Combined Synopsis/Solicitation",
+    "set_aside": "Total Small Business Set-Aside (FAR 19.5)",
+    "naics_code": "541380",
+    "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=916ae9e6e68a4d3bae25581631ad879d",
+    "posted_date": "2026-03-08",
+    "response_deadline": "2026-03-19",
+    "url": "https://sam.gov/workspace/contract/opp/916ae9e6e68a4d3bae25581631ad879d/view",
+    "keywords": [
+      "battery"
+    ],
+    "source": "sam.gov",
+    "scraped_at": "2026-03-08T10:32:38.673797"
+  }
+]

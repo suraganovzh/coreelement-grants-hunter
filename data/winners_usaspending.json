@@ -18,7 +18,7 @@
       "lithium"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-03-01T10:32:18.003685"
+    "scraped_at": "2026-03-08T10:32:34.017016"
   },
   {
     "id": "usa-DEFE0032488",
@@ -39,7 +39,7 @@
       "rare earth"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-03-01T10:32:18.003711"
+    "scraped_at": "2026-03-08T10:32:34.017042"
   },
   {
     "id": "usa-26K75IL000024",
@@ -59,7 +59,7 @@
       "critical minerals"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-03-01T10:32:18.003762"
+    "scraped_at": "2026-03-08T10:32:34.017091"
   },
   {
     "id": "usa-26K75IL000023",
@@ -81,7 +81,7 @@
       "cobalt"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-03-01T10:32:18.003807"
+    "scraped_at": "2026-03-08T10:32:34.017134"
   },
   {
     "id": "usa-26K75IL000025",
@@ -103,7 +103,7 @@
       "cobalt"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-03-01T10:32:18.003855"
+    "scraped_at": "2026-03-08T10:32:34.017179"
   },
   {
     "id": "usa-DEAR0001702",
@@ -123,7 +123,7 @@
       "cobalt"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-03-01T10:32:18.003874"
+    "scraped_at": "2026-03-08T10:32:34.017197"
   },
   {
     "id": "usa-DEAR0002099",
@@ -144,7 +144,7 @@
       "rare earth"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-03-01T10:32:18.003898"
+    "scraped_at": "2026-03-08T10:32:34.017222"
   },
   {
     "id": "usa-2341956",
@@ -164,7 +164,33 @@
       "geological"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-03-01T10:32:18.003925"
+    "scraped_at": "2026-03-08T10:32:34.017250"
+  },
+  {
+    "id": "usa-G26AC00029",
+    "title": "PROJECT TITLE: TOLOVANA GEOLOGIC MAPPING PROJECTPROJECT PERIOD: 03 01 2026 - 02 28 2029PURPOSETHIS PROJECT BUILDS UNDERSTANDING OF THE UNITED STATES POTENTIAL TO HOST YET-TO-BE-DISCOVEREDDEPOSITS OF C",
+    "funder": "Department of the Interior",
+    "funder_sub": "U.S. Geological Survey",
+    "amount": 1575000,
+    "winner": "ALASKA DEPARTMENT OF NATURAL RESOURCES",
+    "winner_location": "None, None",
+    "award_date": "2026-03-01",
+    "end_date": "2029-02-28",
+    "award_type": "COOPERATIVE AGREEMENT (B)",
+    "naics_code": null,
+    "naics_desc": null,
+    "keywords": [
+      "mining",
+      "mineral",
+      "geology",
+      "exploration",
+      "critical minerals",
+      "copper",
+      "cobalt",
+      "geological"
+    ],
+    "source": "usaspending.gov",
+    "scraped_at": "2026-03-08T10:32:34.017283"
   },
   {
     "id": "usa-G23AC00093",
@@ -186,7 +212,7 @@
       "geological"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-03-01T10:32:18.003953"
+    "scraped_at": "2026-03-08T10:32:34.017315"
   },
   {
     "id": "usa-2320162",
@@ -207,77 +233,7 @@
       "critical minerals"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-03-01T10:32:18.003999"
-  },
-  {
-    "id": "usa-G26AC00007",
-    "title": "PROJECT TITLE: NEW MEXICO STATEMAP ? GEOLOGIC MAPPING IN NM\nPROJECT PERIOD - OCTOBER 1, 2025 - SEPTEMBER 30, 2027\nPURPOSE\nGEOLOGIC MAPPING AND RESEARCH BY THE NEW MEXICO STATEMAP PROGRAM ADDRESSES SOM",
-    "funder": "Department of the Interior",
-    "funder_sub": "U.S. Geological Survey",
-    "amount": 698426,
-    "winner": "NEW MEXICO INSTITUTE OF MINING AND TECHNOLOGY",
-    "winner_location": "None, None",
-    "award_date": "2025-12-08",
-    "end_date": "2027-12-07",
-    "award_type": "COOPERATIVE AGREEMENT (B)",
-    "naics_code": null,
-    "naics_desc": null,
-    "keywords": [
-      "mineral",
-      "geology",
-      "exploration",
-      "subsurface",
-      "geological"
-    ],
-    "source": "usaspending.gov",
-    "scraped_at": "2026-03-01T10:32:18.004061"
-  },
-  {
-    "id": "usa-G26AC00008",
-    "title": "PROJECT TITLE: OREGON DOGAMI FY25 STATEMAP\nPROJECT DATE: 12/15/2025 THROUGH 12/14/2027\nPURPOSE OF AWARD\nTHE OREGON DEPARTMENT OF GEOLOGY AND MINERAL INDUSTRIES (DOGAMI) CONDUCTS GEOLOGIC \nMAPPING, CRE",
-    "funder": "Department of the Interior",
-    "funder_sub": "U.S. Geological Survey",
-    "amount": 669385,
-    "winner": "DEPARTMENT OF GEOLOGY AND MINERAL INDUSTRIES",
-    "winner_location": "None, None",
-    "award_date": "2025-12-15",
-    "end_date": "2027-12-14",
-    "award_type": "COOPERATIVE AGREEMENT (B)",
-    "naics_code": null,
-    "naics_desc": null,
-    "keywords": [
-      "mineral",
-      "geology",
-      "exploration",
-      "critical minerals",
-      "geological"
-    ],
-    "source": "usaspending.gov",
-    "scraped_at": "2026-03-01T10:32:18.004112"
-  },
-  {
-    "id": "usa-G26AC00003",
-    "title": "PROPOSAL TITLE: ILLINOIS STATEMAP PROPOSAL (FY 2025)\nPROJECT PERIOD: 12/15/2025 ? 12/14/2026\nPURPOSE\nFOR FY2025, THE ILLINOIS STATE GEOLOGICAL SURVEY AND THE ILLINOIS GEOLOGIC MAPPING ADVISORY\nCOMMITT",
-    "funder": "Department of the Interior",
-    "funder_sub": "U.S. Geological Survey",
-    "amount": 669164,
-    "winner": "UNIVERSITY OF ILLINOIS",
-    "winner_location": "None, None",
-    "award_date": "2025-12-15",
-    "end_date": "2026-12-14",
-    "award_type": "COOPERATIVE AGREEMENT (B)",
-    "naics_code": null,
-    "naics_desc": null,
-    "keywords": [
-      "mineral",
-      "geology",
-      "critical minerals",
-      "subsurface",
-      "geological",
-      "drilling"
-    ],
-    "source": "usaspending.gov",
-    "scraped_at": "2026-03-01T10:32:18.004148"
+    "scraped_at": "2026-03-08T10:32:34.017359"
   },
   {
     "id": "usa-G26AC00006",
@@ -297,35 +253,29 @@
       "geological"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-03-01T10:32:18.004186"
+    "scraped_at": "2026-03-08T10:32:34.017392"
   },
   {
-    "id": "usa-G25AP00363",
-    "title": "PROJECT TITLE: NEVADA GEOSCIENCE DATA PRESERVATION AND DIGITIZATION ACTIVITIES, NGGDPP 2025PROJECT PERIOD: 9 1 2025 THROUGH 8 31 2028PROJECT PURPOSE AND ACTIVITIES TO BE PERFORMED:PRIORITY 1 PROJECTS ",
-    "funder": "Department of the Interior",
-    "funder_sub": "U.S. Geological Survey",
-    "amount": 444133,
-    "winner": "BOARD OF REGENTS OF NEVADA SYSTEM OF HIGHER EDUCATION",
+    "id": "usa-2543343",
+    "title": "CAREER: ATOMISTIC-SCALE INVESTIGATION OF HOW CHEMICAL AND PHYSICAL HETEROGENEITIES GOVERN ION-SELECTIVE TRANSPORT IN METAL-ORGANIC FRAMEWORK MEMBRANES -MODERN TECHNOLOGIES LIKE LITHIUM-ION BATTERIES, ",
+    "funder": "National Science Foundation",
+    "funder_sub": "National Science Foundation",
+    "amount": 548900,
+    "winner": "NORTH CAROLINA STATE UNIVERSITY",
     "winner_location": "None, None",
-    "award_date": "2025-09-01",
-    "end_date": "2028-08-31",
+    "award_date": "2026-09-01",
+    "end_date": "2031-08-31",
     "award_type": "PROJECT GRANT (B)",
     "naics_code": null,
     "naics_desc": null,
     "keywords": [
-      "mining",
       "mineral",
-      "geology",
       "exploration",
-      "geospatial",
       "critical minerals",
-      "lithium",
-      "subsurface",
-      "geological",
-      "clean energy"
+      "lithium"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-03-01T10:32:18.004226"
+    "scraped_at": "2026-03-08T10:32:34.017427"
   },
   {
     "id": "usa-G26AC00009",
@@ -345,7 +295,7 @@
       "exploration"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-03-01T10:32:18.004266"
+    "scraped_at": "2026-03-08T10:32:34.017464"
   },
   {
     "id": "usa-G26AC00041",
@@ -367,7 +317,7 @@
       "geological"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-03-01T10:32:18.004281"
+    "scraped_at": "2026-03-08T10:32:34.017479"
   },
   {
     "id": "usa-G25AC00423",
@@ -390,7 +340,7 @@
       "geological"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-03-01T10:32:18.004323"
+    "scraped_at": "2026-03-08T10:32:34.017520"
   },
   {
     "id": "usa-G25AC00424",
@@ -415,7 +365,50 @@
       "subsurface"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-03-01T10:32:18.004361"
+    "scraped_at": "2026-03-08T10:32:34.017555"
+  },
+  {
+    "id": "usa-G26AC00047",
+    "title": "PROJECT TITLE: GEOLOGIC MAPPING OF RESOURCES IN THE EAGLE MOUNTAINS FLUORITE DISTRICT OF TRANS-PECOS, TEXASPROJECT PERIOD: 03 01 2026 - 02 28 2029PROJECT ABSTRACT SUMMARY: THE BUREAU OF ECONOMIC GEOLO",
+    "funder": "Department of the Interior",
+    "funder_sub": "U.S. Geological Survey",
+    "amount": 330867,
+    "winner": "UNIVERSITY OF TEXAS AT AUSTIN",
+    "winner_location": "None, None",
+    "award_date": "2026-03-01",
+    "end_date": "2029-02-28",
+    "award_type": "COOPERATIVE AGREEMENT (B)",
+    "naics_code": null,
+    "naics_desc": null,
+    "keywords": [
+      "mineral",
+      "geology",
+      "exploration",
+      "critical minerals"
+    ],
+    "source": "usaspending.gov",
+    "scraped_at": "2026-03-08T10:32:34.017587"
+  },
+  {
+    "id": "usa-G26AC00039",
+    "title": "PROJECT TITLE: GEOLOGIC MAPPING OF THE CORNUCOPIA AND DEADMAN POINT 7.5 QUADRANGLE,CORNUCOPIA MINING DISTRICT, NE OREGON.PROJECT PERIOD: JULY 1ST, 2026, TO JUNE 30TH, 2029PURPOSE: TO COLLABORATE WITH ",
+    "funder": "Department of the Interior",
+    "funder_sub": "U.S. Geological Survey",
+    "amount": 330000,
+    "winner": "DEPARTMENT OF GEOLOGY AND MINERAL INDUSTRIES",
+    "winner_location": "None, None",
+    "award_date": "2026-07-01",
+    "end_date": "2029-06-30",
+    "award_type": "COOPERATIVE AGREEMENT (B)",
+    "naics_code": null,
+    "naics_desc": null,
+    "keywords": [
+      "mining",
+      "mineral",
+      "subsurface"
+    ],
+    "source": "usaspending.gov",
+    "scraped_at": "2026-03-08T10:32:34.017617"
   },
   {
     "id": "usa-G26AC00034",
@@ -437,7 +430,7 @@
       "geological"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-03-01T10:32:18.004404"
+    "scraped_at": "2026-03-08T10:32:34.017659"
   },
   {
     "id": "usa-G26AC00033",
@@ -459,7 +452,30 @@
       "geological"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-03-01T10:32:18.004424"
+    "scraped_at": "2026-03-08T10:32:34.017702"
+  },
+  {
+    "id": "usa-G26AC00046",
+    "title": "PROPOSAL TITLE: EVAPORITES IN WESTERN OKLAHOMAPROJECT PERIOD: 03 01 2026  02 28 2029AWARD PURPOSE:THE OKLAHOMA GEOLOGICAL SURVEY (OGS) PROPOSES AN EARTHMRI-FUNDED GEOCHEMICAL SURVEY OF THE EVAPORITE D",
+    "funder": "Department of the Interior",
+    "funder_sub": "U.S. Geological Survey",
+    "amount": 329996,
+    "winner": "UNIVERSITY OF OKLAHOMA",
+    "winner_location": "None, None",
+    "award_date": "2026-03-01",
+    "end_date": "2029-02-28",
+    "award_type": "COOPERATIVE AGREEMENT (B)",
+    "naics_code": null,
+    "naics_desc": null,
+    "keywords": [
+      "mineral",
+      "geospatial",
+      "critical minerals",
+      "lithium",
+      "geological"
+    ],
+    "source": "usaspending.gov",
+    "scraped_at": "2026-03-08T10:32:34.017744"
   },
   {
     "id": "usa-G26AC00038",
@@ -484,7 +500,7 @@
       "geological"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-03-01T10:32:18.004468"
+    "scraped_at": "2026-03-08T10:32:34.017786"
   },
   {
     "id": "usa-G26AC00036",
@@ -506,7 +522,32 @@
       "critical minerals"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-03-01T10:32:18.004505"
+    "scraped_at": "2026-03-08T10:32:34.017822"
+  },
+  {
+    "id": "usa-G26AC00045",
+    "title": "PROJECT TITLE: GEOLOGIC MAPPING, GEOCHEMISTRY, AND GEOCHRONOLOGY IN THE QUETICO SUBPROVINCE ANDADJACENT BOUNDARY ZONESPROJECT PERIOD: 03 01 2026 - 02 28 2029PURPOSE: THE MINNESOTA GEOLOGICAL SURVEY (M",
+    "funder": "Department of the Interior",
+    "funder_sub": "U.S. Geological Survey",
+    "amount": 318464,
+    "winner": "REGENTS OF THE UNIVERSITY OF MINNESOTA",
+    "winner_location": "None, None",
+    "award_date": "2026-03-01",
+    "end_date": "2029-02-28",
+    "award_type": "COOPERATIVE AGREEMENT (B)",
+    "naics_code": null,
+    "naics_desc": null,
+    "keywords": [
+      "mineral",
+      "exploration",
+      "critical minerals",
+      "lithium",
+      "copper",
+      "rare earth",
+      "geological"
+    ],
+    "source": "usaspending.gov",
+    "scraped_at": "2026-03-08T10:32:34.017853"
   },
   {
     "id": "usa-G23AC00090",
@@ -527,7 +568,7 @@
       "geological"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-03-01T10:32:18.004545"
+    "scraped_at": "2026-03-08T10:32:34.017890"
   },
   {
     "id": "usa-G23AC00088",
@@ -548,219 +589,7 @@
       "geological"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-03-01T10:32:18.004561"
-  },
-  {
-    "id": "usa-D25AP00314",
-    "title": "PROGRAM:  ABANDONED HARDROCK MINE RECLAMATION (AHMR) PROGRAMAWARD PURPOSE:  THE ABANDONED HARDROCK MINE RECLAMATION (AHMR) PROGRAM WILL PROVIDE FUNDING TO STATES AND U.S. TERRITORIES TO INVENTORY, ASS",
-    "funder": "Department of the Interior",
-    "funder_sub": "Departmental Offices",
-    "amount": 250000,
-    "winner": "LABOR AND WORKFORCE DEVELOPMENT, NEW JERSEY DEPARTMENT OF",
-    "winner_location": "None, None",
-    "award_date": "2025-08-01",
-    "end_date": "2030-07-31",
-    "award_type": "PROJECT GRANT (B)",
-    "naics_code": null,
-    "naics_desc": null,
-    "keywords": [
-      "mining",
-      "mineral",
-      "critical minerals"
-    ],
-    "source": "usaspending.gov",
-    "scraped_at": "2026-03-01T10:32:18.004602"
-  },
-  {
-    "id": "usa-D25AP00273",
-    "title": "PROGRAM:  ABANDONED HARDROCK MINE RECLAMATION (AHMR) PROGRAMAWARD PURPOSE:  THE ABANDONED HARDROCK MINE RECLAMATION (AHMR) PROGRAM WILL PROVIDE FUNDING TO STATES AND U.S. TERRITORIES TO INVENTORY, ASS",
-    "funder": "Department of the Interior",
-    "funder_sub": "Departmental Offices",
-    "amount": 250000,
-    "winner": "ARIZONA DEPARTMENT OF ENVIRONMENTAL QUALITY DBA: ADEQ",
-    "winner_location": "None, None",
-    "award_date": "2025-10-01",
-    "end_date": "2030-09-30",
-    "award_type": "PROJECT GRANT (B)",
-    "naics_code": null,
-    "naics_desc": null,
-    "keywords": [
-      "mining",
-      "mineral",
-      "critical minerals"
-    ],
-    "source": "usaspending.gov",
-    "scraped_at": "2026-03-01T10:32:18.004644"
-  },
-  {
-    "id": "usa-D25AP00272",
-    "title": "PROGRAM:  ABANDONED HARDROCK MINE RECLAMATION (AHMR) PROGRAMAWARD PURPOSE:  THE ABANDONED HARDROCK MINE RECLAMATION (AHMR) PROGRAM WILL PROVIDE FUNDING TO STATES AND U.S. TERRITORIES TO INVENTORY, ASS",
-    "funder": "Department of the Interior",
-    "funder_sub": "Departmental Offices",
-    "amount": 250000,
-    "winner": "ENERGY MINERALS & NATURAL RESOURCES DEPARTMENT",
-    "winner_location": "None, None",
-    "award_date": "2025-08-01",
-    "end_date": "2030-07-31",
-    "award_type": "PROJECT GRANT (B)",
-    "naics_code": null,
-    "naics_desc": null,
-    "keywords": [
-      "mining",
-      "mineral",
-      "critical minerals"
-    ],
-    "source": "usaspending.gov",
-    "scraped_at": "2026-03-01T10:32:18.004681"
-  },
-  {
-    "id": "usa-D25AP00265",
-    "title": "PROGRAM:  ABANDONED HARDROCK MINE RECLAMATION (AHMR) PROGRAMAWARD PURPOSE:  THE ABANDONED HARDROCK MINE RECLAMATION (AHMR) PROGRAM WILL PROVIDE FUNDING TO STATES AND U.S. TERRITORIES TO INVENTORY, ASS",
-    "funder": "Department of the Interior",
-    "funder_sub": "Departmental Offices",
-    "amount": 250000,
-    "winner": "DEPARTMENT OF NATURAL RESOURCES ILLINOIS",
-    "winner_location": "None, None",
-    "award_date": "2025-09-01",
-    "end_date": "2030-08-31",
-    "award_type": "PROJECT GRANT (B)",
-    "naics_code": null,
-    "naics_desc": null,
-    "keywords": [
-      "mining",
-      "mineral",
-      "critical minerals"
-    ],
-    "source": "usaspending.gov",
-    "scraped_at": "2026-03-01T10:32:18.004717"
-  },
-  {
-    "id": "usa-D25AP00264",
-    "title": "PROGRAM:  ABANDONED HARDROCK MINE RECLAMATION (AHMR) PROGRAMAWARD PURPOSE:  THE ABANDONED HARDROCK MINE RECLAMATION (AHMR) PROGRAM WILL PROVIDE FUNDING TO STATES AND U.S. TERRITORIES TO INVENTORY, ASS",
-    "funder": "Department of the Interior",
-    "funder_sub": "Departmental Offices",
-    "amount": 250000,
-    "winner": "WYOMING DEPARTMENT OF ENVIRONMENTAL QUALITY",
-    "winner_location": "None, None",
-    "award_date": "2025-08-01",
-    "end_date": "2030-07-31",
-    "award_type": "PROJECT GRANT (B)",
-    "naics_code": null,
-    "naics_desc": null,
-    "keywords": [
-      "artificial intelligence",
-      "mining",
-      "mineral",
-      "critical minerals",
-      "remote sensing"
-    ],
-    "source": "usaspending.gov",
-    "scraped_at": "2026-03-01T10:32:18.004755"
-  },
-  {
-    "id": "usa-D25AP00263",
-    "title": "PROGRAM:  ABANDONED HARDROCK MINE RECLAMATION (AHMR) PROGRAMAWARD PURPOSE:  THE ABANDONED HARDROCK MINE RECLAMATION (AHMR) PROGRAM WILL PROVIDE FUNDING TO STATES AND U.S. TERRITORIES TO INVENTORY, ASS",
-    "funder": "Department of the Interior",
-    "funder_sub": "Departmental Offices",
-    "amount": 250000,
-    "winner": "PENNSYLVANIA DEPARTMENT OF ENVIRONMENTAL PROTECTION",
-    "winner_location": "None, None",
-    "award_date": "2025-08-01",
-    "end_date": "2030-07-31",
-    "award_type": "PROJECT GRANT (B)",
-    "naics_code": null,
-    "naics_desc": null,
-    "keywords": [
-      "mining",
-      "mineral",
-      "critical minerals"
-    ],
-    "source": "usaspending.gov",
-    "scraped_at": "2026-03-01T10:32:18.004790"
-  },
-  {
-    "id": "usa-D25AP00254",
-    "title": "PROGRAM:  ABANDONED HARDROCK MINE RECLAMATION (AHMR) PROGRAMAWARD PURPOSE:  THE ABANDONED HARDROCK MINE RECLAMATION (AHMR) PROGRAM WILL PROVIDE FUNDING TO STATES AND U.S. TERRITORIES TO INVENTORY, ASS",
-    "funder": "Department of the Interior",
-    "funder_sub": "Departmental Offices",
-    "amount": 250000,
-    "winner": "UTAH OIL GAS & MINING DIVISION",
-    "winner_location": "None, None",
-    "award_date": "2025-07-01",
-    "end_date": "2030-06-30",
-    "award_type": "PROJECT GRANT (B)",
-    "naics_code": null,
-    "naics_desc": null,
-    "keywords": [
-      "mining",
-      "mineral",
-      "critical minerals"
-    ],
-    "source": "usaspending.gov",
-    "scraped_at": "2026-03-01T10:32:18.004825"
-  },
-  {
-    "id": "usa-D25AP00251",
-    "title": "PROGRAM:  ABANDONED HARDROCK MINE RECLAMATION (AHMR) PROGRAMAWARD PURPOSE:  THE ABANDONED HARDROCK MINE RECLAMATION (AHMR) PROGRAM WILL PROVIDE FUNDING TO STATES AND U.S. TERRITORIES TO INVENTORY, ASS",
-    "funder": "Department of the Interior",
-    "funder_sub": "Departmental Offices",
-    "amount": 249952,
-    "winner": "DEPARTMENT OF NATURAL RESOURCES COLORADO",
-    "winner_location": "None, None",
-    "award_date": "2025-08-01",
-    "end_date": "2030-07-31",
-    "award_type": "PROJECT GRANT (B)",
-    "naics_code": null,
-    "naics_desc": null,
-    "keywords": [
-      "mining",
-      "mineral",
-      "critical minerals"
-    ],
-    "source": "usaspending.gov",
-    "scraped_at": "2026-03-01T10:32:18.004859"
-  },
-  {
-    "id": "usa-D25AP00310",
-    "title": "PROGRAM:  ABANDONED HARDROCK MINE RECLAMATION (AHMR) PROGRAMAWARD PURPOSE:  THE ABANDONED HARDROCK MINE RECLAMATION (AHMR) PROGRAM WILL PROVIDE FUNDING TO STATES AND U.S. TERRITORIES TO INVENTORY, ASS",
-    "funder": "Department of the Interior",
-    "funder_sub": "Departmental Offices",
-    "amount": 249890,
-    "winner": "THE VIRGINIA DEPARTMENT OF ENERGY",
-    "winner_location": "None, None",
-    "award_date": "2025-08-01",
-    "end_date": "2028-07-31",
-    "award_type": "PROJECT GRANT (B)",
-    "naics_code": null,
-    "naics_desc": null,
-    "keywords": [
-      "mining",
-      "mineral",
-      "critical minerals"
-    ],
-    "source": "usaspending.gov",
-    "scraped_at": "2026-03-01T10:32:18.004895"
-  },
-  {
-    "id": "usa-D25AP00269",
-    "title": "PROGRAM:  ABANDONED HARDROCK MINE RECLAMATION (AHMR) PROGRAMAWARD PURPOSE:  THE AHMR PROGRAM WILL PROVIDE RESOURCES TO STATES AND U.S. TERRITORIES IMPACTED BY ABANDONED NON-COAL MINING. THE GRANT PROG",
-    "funder": "Department of the Interior",
-    "funder_sub": "Departmental Offices",
-    "amount": 239950,
-    "winner": "WEST VIRGINIA DEPARTMENT OF ENVIRONMENTAL PROTECTION",
-    "winner_location": "None, None",
-    "award_date": "2025-08-01",
-    "end_date": "2028-07-31",
-    "award_type": "PROJECT GRANT (B)",
-    "naics_code": null,
-    "naics_desc": null,
-    "keywords": [
-      "mining",
-      "mineral",
-      "critical minerals"
-    ],
-    "source": "usaspending.gov",
-    "scraped_at": "2026-03-01T10:32:18.004932"
+    "scraped_at": "2026-03-08T10:32:34.017904"
   },
   {
     "id": "usa-G24AP00258",
@@ -783,7 +612,7 @@
       "geological"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-03-01T10:32:18.004967"
+    "scraped_at": "2026-03-08T10:32:34.017936"
   },
   {
     "id": "usa-G22AP00224",
@@ -806,7 +635,7 @@
       "drilling"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-03-01T10:32:18.004999"
+    "scraped_at": "2026-03-08T10:32:34.017965"
   },
   {
     "id": "usa-G23AC00443",
@@ -830,7 +659,7 @@
       "geological"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-03-01T10:32:18.005048"
+    "scraped_at": "2026-03-08T10:32:34.018006"
   },
   {
     "id": "usa-G22AC00509",
@@ -851,7 +680,7 @@
       "critical minerals"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-03-01T10:32:18.005084"
+    "scraped_at": "2026-03-08T10:32:34.018042"
   },
   {
     "id": "usa-G23AP00161",
@@ -872,28 +701,7 @@
       "critical minerals"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-03-01T10:32:18.005127"
-  },
-  {
-    "id": "usa-D25AP00302",
-    "title": "PROGRAM:  ABANDONED HARDROCK MINE RECLAMATION (AHMR) PROGRAMAWARD PURPOSE:  THE ABANDONED HARDROCK MINE RECLAMATION (AHMR) PROGRAM WILL PROVIDE FUNDING TO STATES AND U.S. TERRITORIES TO INVENTORY, ASS",
-    "funder": "Department of the Interior",
-    "funder_sub": "Departmental Offices",
-    "amount": 149967,
-    "winner": "CONSERVATION, CALIFORNIA DEPARTMENT OF",
-    "winner_location": "None, None",
-    "award_date": "2025-08-01",
-    "end_date": "2030-07-31",
-    "award_type": "PROJECT GRANT (B)",
-    "naics_code": null,
-    "naics_desc": null,
-    "keywords": [
-      "mining",
-      "mineral",
-      "critical minerals"
-    ],
-    "source": "usaspending.gov",
-    "scraped_at": "2026-03-01T10:32:18.005170"
+    "scraped_at": "2026-03-08T10:32:34.018081"
   },
   {
     "id": "usa-G23AC00423",
@@ -915,7 +723,26 @@
       "geological"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-03-01T10:32:18.005193"
+    "scraped_at": "2026-03-08T10:32:34.018101"
+  },
+  {
+    "id": "usa-W911NF261A076",
+    "title": "86218-BB-GRANT-PROPOSAL TITLE-FUNGAL WEATHERING MECHANISMS IN POROUS MEDIA: FROM PORE-SCALE PROCESSES TO CRITICAL MINERAL RECOVERY",
+    "funder": "Department of Defense",
+    "funder_sub": "Department of the Army",
+    "amount": 125000,
+    "winner": "REGENTS OF THE UNIVERSITY OF MINNESOTA",
+    "winner_location": "None, None",
+    "award_date": "2026-03-15",
+    "end_date": "2029-03-14",
+    "award_type": "PROJECT GRANT (B)",
+    "naics_code": null,
+    "naics_desc": null,
+    "keywords": [
+      "mineral"
+    ],
+    "source": "usaspending.gov",
+    "scraped_at": "2026-03-08T10:32:34.018108"
   },
   {
     "id": "usa-G26AC00018",
@@ -935,7 +762,7 @@
       "mineral"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-03-01T10:32:18.005212"
+    "scraped_at": "2026-03-08T10:32:34.018126"
   },
   {
     "id": "usa-G26AC00020",
@@ -960,7 +787,7 @@
       "geological"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-03-01T10:32:18.005251"
+    "scraped_at": "2026-03-08T10:32:34.018160"
   },
   {
     "id": "usa-G25AP00256",
@@ -983,7 +810,7 @@
       "geological"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-03-01T10:32:18.005270"
+    "scraped_at": "2026-03-08T10:32:34.018178"
   },
   {
     "id": "usa-G23AC00432",
@@ -1003,7 +830,7 @@
       "critical minerals"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-03-01T10:32:18.005281"
+    "scraped_at": "2026-03-08T10:32:34.018189"
   },
   {
     "id": "usa-G23AC00469",
@@ -1027,7 +854,7 @@
       "geological"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-03-01T10:32:18.005307"
+    "scraped_at": "2026-03-08T10:32:34.018213"
   },
   {
     "id": "usa-G23AC00470",
@@ -1055,176 +882,7 @@
       "remote sensing"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-03-01T10:32:18.005338"
-  },
-  {
-    "id": "usa-D25AP00313",
-    "title": "PROGRAM:  ABANDONED HARDROCK MINE RECLAMATION (AHMR) PROGRAMAWARD PURPOSE:  THE ABANDONED HARDROCK MINE RECLAMATION (AHMR) PROGRAM WILL PROVIDE FUNDING TO STATES AND U.S. TERRITORIES TO INVENTORY, ASS",
-    "funder": "Department of the Interior",
-    "funder_sub": "Departmental Offices",
-    "amount": 50000,
-    "winner": "SOUTH DAKOTA DEPARTMENT OF AGRICULTURE AND NATURAL RESOURCES, THE",
-    "winner_location": "None, None",
-    "award_date": "2025-07-01",
-    "end_date": "2030-06-30",
-    "award_type": "PROJECT GRANT (B)",
-    "naics_code": null,
-    "naics_desc": null,
-    "keywords": [
-      "mining",
-      "mineral",
-      "critical minerals"
-    ],
-    "source": "usaspending.gov",
-    "scraped_at": "2026-03-01T10:32:18.005375"
-  },
-  {
-    "id": "usa-D25AP00312",
-    "title": "PROGRAM:  ABANDONED HARDROCK MINE RECLAMATION (AHMR) PROGRAMAWARD PURPOSE:  THE ABANDONED HARDROCK MINE RECLAMATION (AHMR) PROGRAM WILL PROVIDE FUNDING TO STATES AND U.S. TERRITORIES TO INVENTORY, ASS",
-    "funder": "Department of the Interior",
-    "funder_sub": "Departmental Offices",
-    "amount": 50000,
-    "winner": "THE ENVIRONMENT MARYLAND DEPARTMENT OF",
-    "winner_location": "None, None",
-    "award_date": "2025-08-01",
-    "end_date": "2030-07-31",
-    "award_type": "PROJECT GRANT (B)",
-    "naics_code": null,
-    "naics_desc": null,
-    "keywords": [
-      "mining",
-      "mineral",
-      "critical minerals"
-    ],
-    "source": "usaspending.gov",
-    "scraped_at": "2026-03-01T10:32:18.005407"
-  },
-  {
-    "id": "usa-D25AP00311",
-    "title": "PROGRAM:  ABANDONED HARDROCK MINE RECLAMATION (AHMR) PROGRAMAWARD PURPOSE:  THE ABANDONED HARDROCK MINE RECLAMATION (AHMR) PROGRAM WILL PROVIDE FUNDING TO STATES AND U.S. TERRITORIES TO INVENTORY, ASS",
-    "funder": "Department of the Interior",
-    "funder_sub": "Departmental Offices",
-    "amount": 50000,
-    "winner": "ALABAMA DEPARTMENT OF WORKFORCE",
-    "winner_location": "None, None",
-    "award_date": "2025-10-01",
-    "end_date": "2030-09-30",
-    "award_type": "PROJECT GRANT (B)",
-    "naics_code": null,
-    "naics_desc": null,
-    "keywords": [
-      "mining",
-      "mineral",
-      "critical minerals"
-    ],
-    "source": "usaspending.gov",
-    "scraped_at": "2026-03-01T10:32:18.005438"
-  },
-  {
-    "id": "usa-D25AP00304",
-    "title": "PROGRAM:  ABANDONED HARDROCK MINE RECLAMATION (AHMR) PROGRAMAWARD PURPOSE:  THE ABANDONED HARDROCK MINE RECLAMATION (AHMR) PROGRAM WILL PROVIDE FUNDING TO STATES AND U.S. TERRITORIES TO INVENTORY, ASS",
-    "funder": "Department of the Interior",
-    "funder_sub": "Departmental Offices",
-    "amount": 50000,
-    "winner": "DEPARTMENT OF NATURAL RESOURCES",
-    "winner_location": "None, None",
-    "award_date": "2025-08-01",
-    "end_date": "2027-07-31",
-    "award_type": "PROJECT GRANT (B)",
-    "naics_code": null,
-    "naics_desc": null,
-    "keywords": [
-      "mining",
-      "mineral",
-      "critical minerals",
-      "geological"
-    ],
-    "source": "usaspending.gov",
-    "scraped_at": "2026-03-01T10:32:18.005472"
-  },
-  {
-    "id": "usa-D25AP00303",
-    "title": "PROGRAM:  ABANDONED HARDROCK MINE RECLAMATION (AHMR) PROGRAMAWARD PURPOSE:  THE ABANDONED HARDROCK MINE RECLAMATION (AHMR) PROGRAM WILL PROVIDE FUNDING TO STATES AND U.S. TERRITORIES TO INVENTORY, ASS",
-    "funder": "Department of the Interior",
-    "funder_sub": "Departmental Offices",
-    "amount": 50000,
-    "winner": "DEPARTMENT OF ENVIRONMENTAL CONSERVATION NEW YORK",
-    "winner_location": "None, None",
-    "award_date": "2025-08-01",
-    "end_date": "2030-07-31",
-    "award_type": "PROJECT GRANT (B)",
-    "naics_code": null,
-    "naics_desc": null,
-    "keywords": [
-      "mining",
-      "mineral",
-      "critical minerals"
-    ],
-    "source": "usaspending.gov",
-    "scraped_at": "2026-03-01T10:32:18.005506"
-  },
-  {
-    "id": "usa-D25AP00270",
-    "title": "PROGRAM:  ABANDONED HARDROCK MINE RECLAMATION (AHMR) PROGRAMAWARD PURPOSE:  THE ABANDONED HARDROCK MINE RECLAMATION (AHMR) PROGRAM WILL PROVIDE FUNDING TO STATES AND U.S. TERRITORIES TO INVENTORY, ASS",
-    "funder": "Department of the Interior",
-    "funder_sub": "Departmental Offices",
-    "amount": 50000,
-    "winner": "MICHIGAN DEPARTMENT OF ENVIRONMENT, GREAT LAKES, AND ENERGY",
-    "winner_location": "None, None",
-    "award_date": "2025-08-01",
-    "end_date": "2027-07-31",
-    "award_type": "PROJECT GRANT (B)",
-    "naics_code": null,
-    "naics_desc": null,
-    "keywords": [
-      "mining",
-      "mineral",
-      "critical minerals"
-    ],
-    "source": "usaspending.gov",
-    "scraped_at": "2026-03-01T10:32:18.005535"
-  },
-  {
-    "id": "usa-D25AP00301",
-    "title": "PROGRAM:  ABANDONED HARDROCK MINE RECLAMATION (AHMR) PROGRAMAWARD PURPOSE:  THE ABANDONED HARDROCK MINE RECLAMATION (AHMR) PROGRAM WILL PROVIDE FUNDING TO STATES AND U.S. TERRITORIES TO INVENTORY, ASS",
-    "funder": "Department of the Interior",
-    "funder_sub": "Departmental Offices",
-    "amount": 49980,
-    "winner": "NORTH CAROLINA DEPARTMENT OF ENVIRONMENTAL QUALITY",
-    "winner_location": "None, None",
-    "award_date": "2025-08-01",
-    "end_date": "2027-07-31",
-    "award_type": "PROJECT GRANT (B)",
-    "naics_code": null,
-    "naics_desc": null,
-    "keywords": [
-      "mining",
-      "mineral",
-      "critical minerals"
-    ],
-    "source": "usaspending.gov",
-    "scraped_at": "2026-03-01T10:32:18.005564"
-  },
-  {
-    "id": "usa-G25AC00337",
-    "title": "PROJECT TITLE: FY25 UTAH GEOLOGICAL SURVEY MINE WASTE TRAVEL ASSISTANCEPROJECT PERIOD: 7 15 2025 THROUGH 12 31 2025PROJECT PURPOSE: THE UTAH GEOLOGICAL SURVEY (UGS) PROVIDES TIMELY, OBJECTIVE SCIENTIF",
-    "funder": "Department of the Interior",
-    "funder_sub": "U.S. Geological Survey",
-    "amount": 7012,
-    "winner": "UTAH GEOLOGICAL SURVEY",
-    "winner_location": "None, None",
-    "award_date": "2025-07-15",
-    "end_date": "2026-12-31",
-    "award_type": "COOPERATIVE AGREEMENT (B)",
-    "naics_code": null,
-    "naics_desc": null,
-    "keywords": [
-      "mining",
-      "mineral",
-      "geological"
-    ],
-    "source": "usaspending.gov",
-    "scraped_at": "2026-03-01T10:32:18.005588"
+    "scraped_at": "2026-03-08T10:32:34.018243"
   },
   {
     "id": "usa-G25AC00413",
@@ -1247,48 +905,7 @@
       "geological"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-03-01T10:32:18.005611"
-  },
-  {
-    "id": "usa-G25AC00333",
-    "title": "PROJECT TITLE: 2025 EARTH MRI WORKSHOP TRAVEL FUNDSPROJECT PERIOD: 7 15 2025 THROUGH 12 31 2025AWARD PURPOSE: THE PURPOSE OF THE AWARD IS FOR TWO STAFF MEMBERS OF THE WISCONSIN GEOLOGICAL AND NATURAL ",
-    "funder": "Department of the Interior",
-    "funder_sub": "U.S. Geological Survey",
-    "amount": 5807,
-    "winner": "UNIVERSITY OF WISCONSIN SYSTEM",
-    "winner_location": "None, None",
-    "award_date": "2025-07-15",
-    "end_date": "2026-12-31",
-    "award_type": "COOPERATIVE AGREEMENT (B)",
-    "naics_code": null,
-    "naics_desc": null,
-    "keywords": [
-      "mineral",
-      "critical minerals",
-      "geological"
-    ],
-    "source": "usaspending.gov",
-    "scraped_at": "2026-03-01T10:32:18.005627"
-  },
-  {
-    "id": "usa-G25AC00336",
-    "title": "PROJECT TITLE: WSGS MINE WASTE FY2025PROJECT PERIOD: 7 15 2025 THROUGH 12 31 2025AWARD PURPOSE: THE WYOMING STATE GEOLOGICAL SURVEY WILL SEND TWO STAFF GEOLOGISTS TO ATTEND THE EARTH MAPPING RESOURCES",
-    "funder": "Department of the Interior",
-    "funder_sub": "U.S. Geological Survey",
-    "amount": 5065,
-    "winner": "WYOMING STATE GEOLOGICAL SURVEY",
-    "winner_location": "None, None",
-    "award_date": "2025-07-15",
-    "end_date": "2026-12-31",
-    "award_type": "COOPERATIVE AGREEMENT (B)",
-    "naics_code": null,
-    "naics_desc": null,
-    "keywords": [
-      "mineral",
-      "geological"
-    ],
-    "source": "usaspending.gov",
-    "scraped_at": "2026-03-01T10:32:18.005640"
+    "scraped_at": "2026-03-08T10:32:34.018265"
   },
   {
     "id": "usa-G25AC00338",
@@ -1310,7 +927,7 @@
       "geological"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-03-01T10:32:18.005665"
+    "scraped_at": "2026-03-08T10:32:34.018289"
   },
   {
     "id": "usa-G25AC00403",
@@ -1331,7 +948,7 @@
       "exploration"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-03-01T10:32:18.005679"
+    "scraped_at": "2026-03-08T10:32:34.018302"
   },
   {
     "id": "usa-G25AC00348",
@@ -1353,46 +970,6 @@
       "geological"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-03-01T10:32:18.005695"
-  },
-  {
-    "id": "usa-G26AC00004",
-    "title": "PROJECT TITLE: SURFACE & SUBSURFACE GEOLOGIC MAPPING, SOUTH LOUISIANA \nPROJECT PERIOD: 12/15/2025 - 12/14/2026\n\nPROJECT 1:\nPURPOSE ? PROJECT 1 IS SET TO PRODUCE TWO SURFACE GEOLOGY MAPS AT 1:24,000 SC",
-    "funder": "Department of the Interior",
-    "funder_sub": "U.S. Geological Survey",
-    "amount": 198154,
-    "winner": "LOUISIANA STATE UNIVERSITY",
-    "winner_location": "None, None",
-    "award_date": "2025-12-15",
-    "end_date": "2026-12-14",
-    "award_type": "COOPERATIVE AGREEMENT (B)",
-    "naics_code": null,
-    "naics_desc": null,
-    "keywords": [
-      "geology",
-      "exploration",
-      "subsurface"
-    ],
-    "source": "usaspending.gov",
-    "scraped_at": "2026-03-01T10:32:20.253493"
-  },
-  {
-    "id": "usa-2521631",
-    "title": "A STATISTICS-BASED GEOGRAPHIC BIAS QUANTIFICATION AND DEBIASING FRAMEWORK FOR GEOAI AND FOUNDATION MODELS -THIS PROPOSAL ADDRESSES GEOGRAPHIC BIAS FOUNDATION MODELS. GEOGRAPHIC BIAS REFERS TO A PHENOM",
-    "funder": "National Science Foundation",
-    "funder_sub": "National Science Foundation",
-    "amount": 299994,
-    "winner": "UNIVERSITY OF TEXAS AT AUSTIN",
-    "winner_location": "None, None",
-    "award_date": "2025-09-01",
-    "end_date": "2028-08-31",
-    "award_type": "PROJECT GRANT (B)",
-    "naics_code": null,
-    "naics_desc": null,
-    "keywords": [
-      "geospatial"
-    ],
-    "source": "usaspending.gov",
-    "scraped_at": "2026-03-01T10:32:20.662507"
+    "scraped_at": "2026-03-08T10:32:34.018319"
   }
 ]
