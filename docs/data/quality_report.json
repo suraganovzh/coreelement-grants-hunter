@@ -1,6 +1,6 @@
 {
-  "total": 20,
-  "valid": 20,
+  "total": 21,
+  "valid": 21,
   "invalid": 0,
   "quality_score": 100.0,
   "issues": [
@@ -102,6 +102,13 @@
       ]
     },
     {
+      "grant_id": "8be7f4e7a0e6",
+      "title": "EQT Foundation: Are you a scientist developing breakthrough ",
+      "issues": [
+        "Missing recommended field: deadline"
+      ]
+    },
+    {
       "grant_id": "c46b1c5de5f4",
       "title": "DOE Battery Materials Processing NOFO",
       "issues": [
@@ -155,5 +162,5 @@
       ]
     }
   ],
-  "checked_at": "2026-03-09T10:45:49.768210"
+  "checked_at": "2026-03-10T10:39:31.105416"
 }
