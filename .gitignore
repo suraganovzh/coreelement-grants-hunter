@@ -53,3 +53,14 @@ coverage.xml
 # Distribution
 *.tar.gz
 *.whl
+# Additional env files
+.env.*
+
+# Private keys & certificates
+*.pem
+*.key
+*.p12
+*.pfx
+
+# Node
+node_modules/
