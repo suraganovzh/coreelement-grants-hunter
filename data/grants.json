@@ -1,8 +1,8 @@
 {
   "metadata": {
-    "updated_at": "2026-03-09T10:07:58.949535",
-    "total_grants": 13,
-    "new_grants": 0
+    "updated_at": "2026-03-10T10:02:08.984344",
+    "total_grants": 14,
+    "new_grants": 1
   },
   "grants": [
     {
@@ -325,6 +325,32 @@
       "requirements": "",
       "focus_areas": [],
       "scraped_at": "2026-02-24T06:12:32.680989"
+    },
+    {
+      "id": "8be7f4e7a0e6",
+      "title": "EQT Foundation: Are you a scientist developing breakthrough technologies to overcome the blood-brain barrier and transform drug delivery to the central nervous system?",
+      "funder": "EQT Foundation",
+      "description": "Open call for applications: Blood-Brain Barrier Innovations",
+      "amount_min": 25000,
+      "amount_max": 100000,
+      "currency": "EUR",
+      "deadline": "",
+      "url": "https://eqtgroup.com/eqt-foundation/grant-submission",
+      "source": "eqt_foundation",
+      "grant_type": "private_foundation",
+      "industry_tags": [
+        "deeptech",
+        "climate",
+        "science"
+      ],
+      "eligibility": "",
+      "requirements": "",
+      "focus_areas": [
+        "deeptech",
+        "climate",
+        "science"
+      ],
+      "scraped_at": "2026-03-10T09:59:46.886547"
     }
   ]
 }
