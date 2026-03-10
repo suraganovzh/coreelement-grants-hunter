@@ -1,148 +1,18 @@
 {
   "metadata": {
-    "updated_at": "2026-03-10T10:39:31.017263",
-    "total_grants": 21,
+    "updated_at": "2026-03-10T12:00:00.000000",
+    "total_grants": 14,
     "source_breakdown": {
-      "private_foundation": 7,
-      "state": 7,
-      "nofo_pipeline": 7
+      "private_foundation": 3,
+      "state": 2,
+      "nofo_pipeline": 7,
+      "fellowship": 1,
+      "government": 1
     },
     "urgent_grants": 0,
     "sbir_status": "SUSPENDED"
   },
   "grants": [
-    {
-      "id": "f9b7a4248ddd",
-      "title": "EQT Foundation: EQT Foundation is an independent charitable foundation, founded during EQT's 2019 stock exchange listing.",
-      "funder": "EQT Foundation",
-      "description": "EQT Foundation is a catalytic investor and grant maker",
-      "amount_min": 0,
-      "amount_max": 0,
-      "currency": "USD",
-      "deadline": "",
-      "url": "https://eqtgroup.com/about/people?business-line=eqt-foundation",
-      "source": "eqt_foundation",
-      "grant_type": "private_foundation",
-      "industry_tags": [
-        "deeptech",
-        "climate",
-        "science"
-      ],
-      "eligibility": "",
-      "requirements": "",
-      "focus_areas": [
-        "deeptech",
-        "climate",
-        "science"
-      ],
-      "scraped_at": "2026-02-24T06:12:34.454231",
-      "urgency": {
-        "days_until_deadline": null,
-        "priority_level": "PLANNING",
-        "action_required": "monitor"
-      },
-      "source_type": "private_foundation",
-      "last_verified": "2026-02-24T06:12:34.454231"
-    },
-    {
-      "id": "a6e8465b27c6",
-      "title": "EQT Foundation: Are you a scientist developing breakthrough materials and technologies that reduce our dependence on critical minerals for the net-zero transition?",
-      "funder": "EQT Foundation",
-      "description": "Open call for applications: Critical Mineral Substitutes for the Green Transition",
-      "amount_min": 25000,
-      "amount_max": 100000,
-      "currency": "EUR",
-      "deadline": "",
-      "url": "https://eqtgroup.com/eqt-foundation/grant-submission",
-      "source": "eqt_foundation",
-      "grant_type": "private_foundation",
-      "industry_tags": [
-        "deeptech",
-        "climate",
-        "science"
-      ],
-      "eligibility": "",
-      "requirements": "",
-      "focus_areas": [
-        "deeptech",
-        "climate",
-        "science"
-      ],
-      "scraped_at": "2026-02-24T06:12:34.454242",
-      "urgency": {
-        "days_until_deadline": null,
-        "priority_level": "PLANNING",
-        "action_required": "monitor"
-      },
-      "source_type": "private_foundation",
-      "last_verified": "2026-02-24T06:12:34.454242"
-    },
-    {
-      "id": "edfef7a96741",
-      "title": "EQT Foundation: Supporting Progress Around the Globe",
-      "funder": "EQT Foundation",
-      "description": "Grants",
-      "amount_min": 0,
-      "amount_max": 0,
-      "currency": "USD",
-      "deadline": "",
-      "url": "https://eqtgroup.com/eqt-foundation/",
-      "source": "eqt_foundation",
-      "grant_type": "private_foundation",
-      "industry_tags": [
-        "deeptech",
-        "climate",
-        "science"
-      ],
-      "eligibility": "",
-      "requirements": "",
-      "focus_areas": [
-        "deeptech",
-        "climate",
-        "science"
-      ],
-      "scraped_at": "2026-02-24T06:12:34.454246",
-      "urgency": {
-        "days_until_deadline": null,
-        "priority_level": "PLANNING",
-        "action_required": "monitor"
-      },
-      "source_type": "private_foundation",
-      "last_verified": "2026-02-24T06:12:34.454246"
-    },
-    {
-      "id": "b29862b2c047",
-      "title": "EQT Foundation: Press Releases",
-      "funder": "EQT Foundation",
-      "description": "",
-      "amount_min": 0,
-      "amount_max": 0,
-      "currency": "USD",
-      "deadline": "",
-      "url": "https://eqtgroup.com/news/eqt-foundation-announces-rare-disease-science-grant-recipients",
-      "source": "eqt_foundation",
-      "grant_type": "private_foundation",
-      "industry_tags": [
-        "deeptech",
-        "climate",
-        "science"
-      ],
-      "eligibility": "",
-      "requirements": "",
-      "focus_areas": [
-        "deeptech",
-        "climate",
-        "science"
-      ],
-      "scraped_at": "2026-02-24T06:12:34.454250",
-      "urgency": {
-        "days_until_deadline": null,
-        "priority_level": "PLANNING",
-        "action_required": "monitor"
-      },
-      "source_type": "private_foundation",
-      "last_verified": "2026-02-24T06:12:34.454250"
-    },
     {
       "id": "f21a99a7d175",
       "title": "EQT Foundation - Critical Minerals Science Grants",
@@ -275,188 +145,6 @@
       "last_verified": "2026-02-24T06:08:32.221467"
     },
     {
-      "id": "db175860a997",
-      "title": "Arizona: Small Business Opportunities",
-      "funder": "Arizona Commerce Authority",
-      "description": "Arizona\u2019s Small Business Academy equips small businesses across the state with the knowledge to scale their business.",
-      "amount_min": 2000000,
-      "amount_max": 2000000,
-      "currency": "USD",
-      "deadline": "",
-      "url": "https://www.azcommerce.com/small-business/small-business-academy/",
-      "source": "arizona_state",
-      "grant_type": "state",
-      "industry_tags": [
-        "mining",
-        "cleantech",
-        "innovation",
-        "technology"
-      ],
-      "eligibility": "",
-      "requirements": "",
-      "focus_areas": [],
-      "scraped_at": "2026-02-24T06:12:32.680956",
-      "urgency": {
-        "days_until_deadline": null,
-        "priority_level": "PLANNING",
-        "action_required": "monitor"
-      },
-      "source_type": "state",
-      "last_verified": "2026-02-24T06:12:32.680956"
-    },
-    {
-      "id": "6b5763f35006",
-      "title": "Arizona: Innovation & Entrepreneurship Opportunities",
-      "funder": "Arizona Commerce Authority",
-      "description": "Arizona'slargest business plan competition in the country designed to advance innovation and technology commercialization opportunities in Arizona by assisting early-stage ventures to scale.",
-      "amount_min": 7000000,
-      "amount_max": 7000000,
-      "currency": "USD",
-      "deadline": "",
-      "url": "https://www.azcommerce.com/start-up/arizona-innovation-challenge/",
-      "source": "arizona_state",
-      "grant_type": "state",
-      "industry_tags": [
-        "mining",
-        "cleantech",
-        "innovation",
-        "technology"
-      ],
-      "eligibility": "",
-      "requirements": "",
-      "focus_areas": [],
-      "scraped_at": "2026-02-24T06:12:32.680967",
-      "urgency": {
-        "days_until_deadline": null,
-        "priority_level": "PLANNING",
-        "action_required": "monitor"
-      },
-      "source_type": "state",
-      "last_verified": "2026-02-24T06:12:32.680967"
-    },
-    {
-      "id": "6f2466e2c5d2",
-      "title": "Arizona: Rural Economic Development Opportunities",
-      "funder": "Arizona Commerce Authority",
-      "description": "Opportunities to expand the state's digital infrastructure statewide to improve the\u00a0economyand quality of life of today\u2019s Arizonans.",
-      "amount_min": 0,
-      "amount_max": 0,
-      "currency": "USD",
-      "deadline": "",
-      "url": "https://www.azcommerce.com/broadband/",
-      "source": "arizona_state",
-      "grant_type": "state",
-      "industry_tags": [
-        "mining",
-        "cleantech",
-        "innovation",
-        "technology"
-      ],
-      "eligibility": "",
-      "requirements": "",
-      "focus_areas": [],
-      "scraped_at": "2026-02-24T06:12:32.680971",
-      "urgency": {
-        "days_until_deadline": null,
-        "priority_level": "PLANNING",
-        "action_required": "monitor"
-      },
-      "source_type": "state",
-      "last_verified": "2026-02-24T06:12:32.680971"
-    },
-    {
-      "id": "300eaeff2d26",
-      "title": "Arizona: Talent and Training Opportunities",
-      "funder": "Arizona Commerce Authority",
-      "description": "Four Arizona community colleges partnered together to develop a first-of-its-kind, unified, industry-recognized curriculum to\u00a0prepare students for manufacturing jobs of the future.",
-      "amount_min": 0,
-      "amount_max": 0,
-      "currency": "USD",
-      "deadline": "",
-      "url": "https://www.azcommerce.com/programs/arizona-advanced-technology-network/",
-      "source": "arizona_state",
-      "grant_type": "state",
-      "industry_tags": [
-        "mining",
-        "cleantech",
-        "innovation",
-        "technology"
-      ],
-      "eligibility": "",
-      "requirements": "",
-      "focus_areas": [],
-      "scraped_at": "2026-02-24T06:12:32.680986",
-      "urgency": {
-        "days_until_deadline": null,
-        "priority_level": "PLANNING",
-        "action_required": "monitor"
-      },
-      "source_type": "state",
-      "last_verified": "2026-02-24T06:12:32.680986"
-    },
-    {
-      "id": "c0467c671368",
-      "title": "Alaska: Quick Links",
-      "funder": "Alaska Division of Economic Development",
-      "description": "",
-      "amount_min": 0,
-      "amount_max": 0,
-      "currency": "USD",
-      "deadline": "",
-      "url": "https://www.commerce.alaska.gov/web/inv/LoanPrograms",
-      "source": "alaska_state",
-      "grant_type": "state",
-      "industry_tags": [
-        "mining",
-        "mineral exploration",
-        "natural resources"
-      ],
-      "eligibility": "",
-      "requirements": "",
-      "focus_areas": [],
-      "scraped_at": "2026-02-24T06:12:32.680989",
-      "urgency": {
-        "days_until_deadline": null,
-        "priority_level": "PLANNING",
-        "action_required": "monitor"
-      },
-      "source_type": "state",
-      "last_verified": "2026-02-24T06:12:32.680989"
-    },
-    {
-      "id": "8be7f4e7a0e6",
-      "title": "EQT Foundation: Are you a scientist developing breakthrough technologies to overcome the blood-brain barrier and transform drug delivery to the central nervous system?",
-      "funder": "EQT Foundation",
-      "description": "Open call for applications: Blood-Brain Barrier Innovations",
-      "amount_min": 25000,
-      "amount_max": 100000,
-      "currency": "EUR",
-      "deadline": "",
-      "url": "https://eqtgroup.com/eqt-foundation/grant-submission",
-      "source": "eqt_foundation",
-      "grant_type": "private_foundation",
-      "industry_tags": [
-        "deeptech",
-        "climate",
-        "science"
-      ],
-      "eligibility": "",
-      "requirements": "",
-      "focus_areas": [
-        "deeptech",
-        "climate",
-        "science"
-      ],
-      "scraped_at": "2026-03-10T09:59:46.886547",
-      "urgency": {
-        "days_until_deadline": null,
-        "priority_level": "PLANNING",
-        "action_required": "monitor"
-      },
-      "source_type": "private_foundation",
-      "last_verified": "2026-03-10T09:59:46.886547"
-    },
-    {
       "id": "c46b1c5de5f4",
       "title": "DOE Battery Materials Processing NOFO",
       "funder": "DOE MESC",
@@ -519,144 +207,264 @@
       "last_verified": "2026-03-10T10:38:18.854350"
     },
     {
-      "id": "45b07b75cf02",
-      "title": "[UPCOMING] Funding Opportunity eXCHANGE.",
-      "funder": "DOE EERE",
-      "description": "Sign up to receive the latest information about CMEI\u2019s energy innovation funding, prize, and competition opportunities.",
-      "amount_min": 0,
-      "amount_max": 0,
-      "currency": "USD",
-      "deadline": "",
-      "url": "https://bit.ly/EERE_eXCHANGE",
-      "source": "nofo_pipeline",
-      "grant_type": "federal",
+      "id": "horizon-cl4-mat-prod-11-2026",
+      "title": "Horizon Europe MAT-PROD-11: Innovative Technologies for Exploration & Data Modelling of Raw Materials",
+      "funder": "European Commission - Horizon Europe",
+      "description": "Research and innovation actions for AI-driven mineral exploration, geophysical data fusion, and predictive resource modelling. Directly aligned with Core Element AI's geological foundation models.",
+      "amount_min": 3000000,
+      "amount_max": 5000000,
+      "currency": "EUR",
+      "deadline": "2026-11-19",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/topic-details/horizon-cl4-2027-resilience-01-25",
+      "source": "horizon_europe",
+      "grant_type": "eu",
       "industry_tags": [
-        "upcoming",
-        "prepare_now"
+        "critical raw materials",
+        "AI",
+        "geological exploration",
+        "data modelling",
+        "mineral processing"
       ],
-      "eligibility": "",
+      "eligibility": "Consortia of 3+ entities from EU/associated countries. Core Element AI eligible via EU subsidiary or consortium partnership.",
       "requirements": "",
       "focus_areas": [],
       "scraped_at": "2026-03-10T10:38:20.821379",
       "urgency": {
-        "days_until_deadline": null,
-        "priority_level": "PLANNING",
-        "action_required": "monitor"
+        "days_until_deadline": 254,
+        "priority_level": "ACTIVE",
+        "action_required": "prepare_consortium"
       },
       "source_type": "nofo_pipeline",
       "last_verified": "2026-03-10T10:38:20.821379"
     },
     {
-      "id": "c61cb39babe1",
-      "title": "[UPCOMING] Requests for Information",
-      "funder": "DOE EERE",
-      "description": "Below are the current open CMEI requests for information (RFI). Visit theFunding Opportunity Exchangeto see past RFIs.",
-      "amount_min": 0,
-      "amount_max": 0,
-      "currency": "USD",
-      "deadline": "",
-      "url": "https://eere-exchange.energy.gov/",
-      "source": "nofo_pipeline",
-      "grant_type": "federal",
+      "id": "eic-accelerator-green-2026",
+      "title": "EIC Accelerator - Green Deal Innovation",
+      "funder": "European Innovation Council",
+      "description": "Blended finance (grant + equity) for deep-tech startups with breakthrough green technologies. Supports AI-driven solutions for sustainable resource management.",
+      "amount_min": 500000,
+      "amount_max": 17500000,
+      "currency": "EUR",
+      "deadline": "2026-10-01",
+      "url": "https://eic.ec.europa.eu/eic-funding-opportunities/eic-accelerator_en",
+      "source": "eic",
+      "grant_type": "eu",
       "industry_tags": [
-        "upcoming",
-        "prepare_now"
+        "deep tech",
+        "green deal",
+        "AI",
+        "sustainability",
+        "climate tech"
       ],
-      "eligibility": "",
+      "eligibility": "SMEs and startups. Single applicant. EU entity or willing to establish EU presence.",
       "requirements": "",
       "focus_areas": [],
       "scraped_at": "2026-03-10T10:38:20.821391",
       "urgency": {
-        "days_until_deadline": null,
-        "priority_level": "PLANNING",
-        "action_required": "monitor"
+        "days_until_deadline": 205,
+        "priority_level": "ACTIVE",
+        "action_required": "prepare_application"
       },
       "source_type": "nofo_pipeline",
       "last_verified": "2026-03-10T10:38:20.821391"
     },
     {
-      "id": "8eb0f9bda2ea",
-      "title": "[UPCOMING] Advanced Materials & Manufacturing",
-      "funder": "DOE EERE",
-      "description": "",
-      "amount_min": 0,
-      "amount_max": 0,
-      "currency": "USD",
-      "deadline": "",
-      "url": "https://www.energy.gov/articles/energy-department-announces-actions-secure-american-critical-minerals-and-materials-supply",
-      "source": "nofo_pipeline",
-      "grant_type": "federal",
+      "id": "eit-rawmaterials-kava13-2026",
+      "title": "EIT RawMaterials KAVA 13 - Innovation Projects",
+      "funder": "EIT RawMaterials",
+      "description": "Knowledge and Innovation Community funding for raw materials innovation. Supports projects in exploration, processing, recycling, and substitution of critical raw materials.",
+      "amount_min": 200000,
+      "amount_max": 2000000,
+      "currency": "EUR",
+      "deadline": "2026-09-15",
+      "url": "https://eitrawmaterials.eu/call-for-projects/",
+      "source": "eit_rawmaterials",
+      "grant_type": "eu",
       "industry_tags": [
-        "upcoming",
-        "prepare_now"
+        "critical raw materials",
+        "innovation",
+        "exploration",
+        "processing",
+        "recycling"
       ],
-      "eligibility": "",
+      "eligibility": "EIT RawMaterials partners or new applicants via open calls. Consortia required.",
       "requirements": "",
       "focus_areas": [],
       "scraped_at": "2026-03-10T10:38:20.821394",
       "urgency": {
-        "days_until_deadline": null,
-        "priority_level": "PLANNING",
-        "action_required": "monitor"
+        "days_until_deadline": 189,
+        "priority_level": "ACTIVE",
+        "action_required": "identify_partners"
       },
       "source_type": "nofo_pipeline",
       "last_verified": "2026-03-10T10:38:20.821394"
     },
     {
-      "id": "7e5f95dc15b4",
-      "title": "[UPCOMING] Hydrogen and Fuel Cells",
-      "funder": "DOE EERE",
-      "description": "",
-      "amount_min": 0,
-      "amount_max": 0,
+      "id": "darpa-i2o-baa-2026",
+      "title": "DARPA I2O Broad Agency Announcement - AI/ML for Strategic Resources",
+      "funder": "DARPA",
+      "description": "Open BAA for innovative AI/ML research proposals. Includes interest in applying machine learning to national security resource challenges including critical mineral supply chain resilience.",
+      "amount_min": 500000,
+      "amount_max": 5000000,
       "currency": "USD",
-      "deadline": "",
-      "url": "https://www.energy.gov/eere/funding/funding-opportunities",
-      "source": "nofo_pipeline",
+      "deadline": "rolling",
+      "url": "https://www.darpa.mil/work-with-us/opportunities",
+      "source": "darpa",
       "grant_type": "federal",
       "industry_tags": [
-        "upcoming",
-        "prepare_now"
+        "AI",
+        "machine learning",
+        "national security",
+        "critical minerals",
+        "supply chain"
       ],
-      "eligibility": "",
+      "eligibility": "US entities. Small businesses, universities, and research institutions eligible.",
       "requirements": "",
       "focus_areas": [],
       "scraped_at": "2026-03-10T10:38:20.821397",
       "urgency": {
         "days_until_deadline": null,
-        "priority_level": "PLANNING",
-        "action_required": "monitor"
+        "priority_level": "ACTIVE",
+        "action_required": "submit_white_paper"
       },
       "source_type": "nofo_pipeline",
       "last_verified": "2026-03-10T10:38:20.821397"
     },
     {
-      "id": "58641eef552f",
-      "title": "[UPCOMING] Announcement NumberAnnouncement TitleAnnouncementTypeRFI DeadlineNOI DeadlineCP DeadlineFA DeadlineLoading\u2026Loading\u2026March 2026SunMonTueWedThuFriSat101234567118910111213141215161718192021132223242526272814293031123415567891011JanFebMarAprMayJunJulAugSepOctNovDecTodayClearLoading\u2026March 2026SunMonTueWedThuFriSat101234567118910111213141215161718192021132223242526272814293031123415567891011JanFebMarAprMayJunJulAugSepOctNovDecTodayClearLoading\u2026March 2026SunMonTueWedThuFriSat101234567118910111213141215161718192021132223242526272814293031123415567891011JanFebMarAprMayJunJulAugSepOctNovDecTodayClearLoading\u2026March 2026SunMonTueWedThuFriSat101234567118910111213141215161718192021132223242526272814293031123415567891011JanFebMarAprMayJunJulAugSepOctNovDecTodayClearRFI-0000094Announcement of Teaming List: Advanced Reactor FuelsTeaming Partner ListDE-FOA-0003556Stimulate Utilization of Plentiful Energy in Rocks through High-temperature Original Technologies (SUPERHOT)Notice Of Funding Opportunity (NOFO)2/19/2025 09:30 AM ET3/5/2026 09:30 AM ETDE-FOA-0003557Stimulate Utilization of Plentiful Energy in Rocks through High-temperature Original Technologies SBIR/STTR (SUPERHOT SBIR/STTR)Notice Of Funding Opportunity (NOFO)2/19/2025 09:30 AM ET3/5/2026 09:30 AM ETDE-FOA-0003505Catalytic Application Testing for Accelerated Learning Chemistries via High-throughput Experimentation and Modeling Efficiently (CATALCHEM-E)Notice Of Funding Opportunity (NOFO)12/17/2024 09:30 AM ET2/25/2026 09:30 AM ETDE-FOA-0003506Catalytic Application Testing for Accelerated Learning Chemistries via High-throughput Experimentation and Modeling Efficiently SBIR/STTR (CATALCHEM-E SBIR/STTR)Notice Of Funding Opportunity (NOFO)12/17/2024 09:30 AM ET2/25/2026 09:30 AM ETDE-FOA-0003590Magnetic Acceleration Generating New Innovations and Tactical Outcomes (MAGNITO)Notice Of Funding Opportunity (NOFO)9/24/2025 09:30 AM ET12/1/2025 09:30 AM ETDE-FOA-0003591Magnetic Acceleration Generating New Innovations and Tactical Outcomes SBIR/STTR (MAGNITO SBIR/STTR)Notice Of Funding Opportunity (NOFO)9/24/2025 09:30 AM ET12/1/2025 09:30 PM ETDE-FOA-0003592Reliable Ore Characterization with Keystone Sensing (ROCKS)Notice Of Funding Opportunity (NOFO)9/25/2025 09:30 AM ET12/8/2025 09:30 AM ETDE-FOA-0003593Reliable Ore Characterization with Keystone Sensing SBIR/STTR (ROCKS SBIR/STTR)Notice Of Funding Opportunity (NOFO)9/25/2025 09:30 AM ET12/8/2025 09:30 AM ETDE-FOA-0003164Spurring Projects to Advance Energy Research and Knowledge Swiftly (SPARKS)Funding Opportunity Announcement (FOA)TBDTBDDE-FOA-0003467Seeding Critical Advances for Leading Energy technologies with Untapped Potential (SCALEUP) ReadyNotice Of Funding Opportunity (NOFO)TBDRFI-0000086Announcement of Teaming Partner List for NOFO: SCALEUP ReadyTeaming Partner ListDE-FOA-0003482Quantum Computing for Computational Chemistry (QC3)Notice Of Funding Opportunity (NOFO)11/21/2024 09:30 AM ET2/6/2025 09:30 AM ETDE-FOA-0003483Quantum Computing for Computational Chemistry SBIR/STTR (QC3 SBIR/STTR)Notice Of Funding Opportunity (NOFO)11/21/2024 09:30 AM ET2/6/2025 09:30 AM ETDE-FOA-0003499Disruptive DC Converters for Grid Resilient Infrastructure to Deliver Secure energy (DC-GRIDS)Notice Of Funding Opportunity (NOFO)12/10/2024 09:30 AM ET3/3/2025 09:30 AM ETDE-FOA-0003500Disruptive DC Converters for Grid Resilient Infrastructure to Deliver Secure energy SBIR/STTR (DC-GRIDS SBIR/STTR)Notice Of Funding Opportunity (NOFO)12/10/2024 09:30 AM ET3/3/2025 09:30 AM ETDE-FOA-0003536Harnessing Autonomy for Energy Joint Ventures Offshore (HAEJO)Notice Of Funding Opportunity (NOFO)2/13/2025 09:30 AM ETTBDDE-FOA-0003537Harnessing Autonomy for Energy Joint Ventures Offshore SBIR/STTR (HAEJO SBIR/STTR)Notice Of Funding Opportunity (NOFO)2/13/2025 09:30 AM ETTBDDE-FOA-0003511Realize Energy-rich Compound Opportunities Valorizing Extraction from Refuse waters SBIR/STTR (RECOVER SBIR/STTR)Notice Of Funding Opportunity (NOFO)12/31/2024 09:30 AM ET8/28/2025 09:30 AM ETDE-FOA-0003554Grid Reliability with Automatic Damping and Inertia for Electrical Networks and Transmission Systems (GRADIENTS)Notice Of Funding Opportunity (NOFO)2/14/2025 09:30 AM ETTBDDE-FOA-0003555Grid Reliability with Automatic Damping and Inertia for Electrical Networks and Transmission Systems SBIR/STTR (GRADIENTS SBIR/STTR)Notice Of Funding Opportunity (NOFO)2/14/2025 09:30 AM ETTBDDE-FOA-0003551Plant Engineering to Revolutionize Sustainable Energy Production and Heighten Opportunities for Novel Efficiency (PERSEPHONE)Notice Of Funding Opportunity (NOFO)3/4/2025 09:30 AM ETDE-FOA-0003552Plant Engineering to Revolutionize Sustainable Energy Production and Heighten Opportunities for Novel Efficiency (PERSEPHONE SBIR/STTR)Notice Of Funding Opportunity (NOFO)3/4/2025 09:30 AM ETLoading\u2026",
-      "funder": "ARPA-E",
-      "description": "",
-      "amount_min": 3590000000,
-      "amount_max": 3591000000,
+      "id": "oshaughnessy-fellowship-2026",
+      "title": "O'Shaughnessy Fellowship - Ventures Program",
+      "funder": "O'Shaughnessy Foundation",
+      "description": "Fellowships for ambitious builders working on hard problems. Supports founders tackling frontier challenges in science and technology, including resource discovery and AI.",
+      "amount_min": 100000,
+      "amount_max": 100000,
       "currency": "USD",
-      "deadline": "",
-      "url": "https://arpa-e-foa.energy.gov/",
-      "source": "nofo_pipeline",
-      "grant_type": "federal",
+      "deadline": "rolling",
+      "url": "https://www.oshaughnessy.com/ventures/",
+      "source": "oshaughnessy",
+      "grant_type": "fellowship",
       "industry_tags": [
-        "upcoming",
-        "prepare_now"
+        "fellowship",
+        "founders",
+        "deep tech",
+        "science",
+        "ambition"
       ],
-      "eligibility": "",
+      "eligibility": "Individual founders or small teams working on transformative projects.",
       "requirements": "",
       "focus_areas": [],
       "scraped_at": "2026-03-10T10:38:20.821408",
       "urgency": {
         "days_until_deadline": null,
-        "priority_level": "PLANNING",
-        "action_required": "monitor"
+        "priority_level": "ACTIVE",
+        "action_required": "apply"
       },
       "source_type": "nofo_pipeline",
       "last_verified": "2026-03-10T10:38:20.821408"
+    },
+    {
+      "id": "emergent-ventures-2026",
+      "title": "Emergent Ventures - Fast Grants for Ambitious Projects",
+      "funder": "Mercatus Center / Tyler Cowen",
+      "description": "Rapid funding for ambitious projects and ideas. Supports unconventional thinkers working on important problems including technology, science, and social innovation.",
+      "amount_min": 10000,
+      "amount_max": 100000,
+      "currency": "USD",
+      "deadline": "rolling",
+      "url": "https://www.mercatus.org/emergent-ventures",
+      "source": "emergent_ventures",
+      "grant_type": "fellowship",
+      "industry_tags": [
+        "innovation",
+        "fast grants",
+        "ambitious projects",
+        "technology",
+        "science"
+      ],
+      "eligibility": "Open to individuals worldwide. Focus on high-potential, unconventional projects.",
+      "requirements": "",
+      "focus_areas": [
+        "ambitious ideas",
+        "social innovation",
+        "technology"
+      ],
+      "scraped_at": "2026-03-10T12:00:00.000000",
+      "urgency": {
+        "days_until_deadline": null,
+        "priority_level": "ACTIVE",
+        "action_required": "apply"
+      },
+      "source_type": "fellowship",
+      "last_verified": "2026-03-10T12:00:00.000000"
+    },
+    {
+      "id": "foresight-institute-2026",
+      "title": "Foresight Institute - Intelligent Cooperation Grants",
+      "funder": "Foresight Institute",
+      "description": "Grants for projects at the intersection of AI, nanotechnology, and existential hope. Supports work on transformative technologies including molecular machines, computational materials, and resource optimization.",
+      "amount_min": 25000,
+      "amount_max": 200000,
+      "currency": "USD",
+      "deadline": "rolling",
+      "url": "https://foresight.org/grants/",
+      "source": "foresight",
+      "grant_type": "private_foundation",
+      "industry_tags": [
+        "nanotechnology",
+        "AI",
+        "materials science",
+        "existential hope",
+        "deep tech"
+      ],
+      "eligibility": "Researchers and teams working on transformative technology projects.",
+      "requirements": "",
+      "focus_areas": [
+        "molecular nanotechnology",
+        "AI safety",
+        "computational materials"
+      ],
+      "scraped_at": "2026-03-10T12:00:00.000000",
+      "urgency": {
+        "days_until_deadline": null,
+        "priority_level": "ACTIVE",
+        "action_required": "apply"
+      },
+      "source_type": "private_foundation",
+      "last_verified": "2026-03-10T12:00:00.000000"
+    },
+    {
+      "id": "innovate-uk-sovereign-ai-2026",
+      "title": "Innovate UK - Sovereign AI & Critical Minerals Technology",
+      "funder": "Innovate UK / UKRI",
+      "description": "UK government funding for sovereign AI capabilities applied to national resource challenges. Includes critical minerals mapping, AI-driven exploration, and supply chain technology.",
+      "amount_min": 100000,
+      "amount_max": 1000000,
+      "currency": "GBP",
+      "deadline": "2026-08-30",
+      "url": "https://www.ukri.org/councils/innovate-uk/",
+      "source": "innovate_uk",
+      "grant_type": "government",
+      "industry_tags": [
+        "sovereign AI",
+        "critical minerals",
+        "UK",
+        "exploration technology",
+        "supply chain"
+      ],
+      "eligibility": "UK-based entities or international collaborators with UK partner. Core Element AI can partner via UK university.",
+      "requirements": "",
+      "focus_areas": [
+        "sovereign AI",
+        "critical minerals technology",
+        "national security"
+      ],
+      "scraped_at": "2026-03-10T12:00:00.000000",
+      "urgency": {
+        "days_until_deadline": 173,
+        "priority_level": "ACTIVE",
+        "action_required": "find_uk_partner"
+      },
+      "source_type": "government",
+      "last_verified": "2026-03-10T12:00:00.000000"
     }
   ]
 }
