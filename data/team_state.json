@@ -2,8 +2,8 @@
   "team_members": [
     {
       "id": "zhambyl",
-      "name": "Zhambyl",
-      "telegram_id": 688007848,
+      "name": "Team Lead",
+      "telegram_id": 0,
       "role": "Lead"
     }
   ],
