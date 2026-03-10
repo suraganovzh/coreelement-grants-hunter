@@ -204,6 +204,26 @@
     "scraped_at": "2026-03-04T12:00:00.000000"
   },
   {
+    "id": "google-ai-for-science-2026",
+    "title": "Google.org Impact Challenge: AI for Science",
+    "funder": "Google.org",
+    "description": "Google.org Impact Challenge funds researchers and institutions using AI to accelerate scientific breakthroughs. Supports AI applications across scientific disciplines including earth sciences, materials science, climate, and sustainability. Large-scale funding for transformative AI-driven research.",
+    "amount_min": 500000,
+    "amount_max": 5000000,
+    "currency": "USD",
+    "deadline": "2026-04-17T23:59:00-07:00",
+    "url": "https://www.google.org/impact-challenges/ai-science/",
+    "source": "manual_discovery",
+    "source_type": "private_foundation",
+    "grant_type": "private_foundation",
+    "industry_tags": ["AI for science", "machine learning", "scientific discovery", "earth science", "materials science", "Google"],
+    "eligibility": "Research institutions, universities, and organizations using AI for scientific discovery. International applicants welcome.",
+    "requirements": "Application via Google.org portal. Project proposal demonstrating AI application to scientific challenges.",
+    "focus_areas": ["AI for science", "scientific discovery", "earth sciences", "materials science"],
+    "status": "verified_active",
+    "scraped_at": "2026-03-10T12:00:00.000000"
+  },
+  {
     "id": "arpa-e-recover-2026",
     "title": "ARPA-E RECOVER - Rare Earth and Critical Mineral Recovery",
     "funder": "ARPA-E",

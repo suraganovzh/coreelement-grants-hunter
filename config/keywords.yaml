@@ -38,6 +38,15 @@ primary:
     - "satellite geological survey"
     - "GIS mineral exploration"
 
+  ai_for_science:
+    - "AI for science"
+    - "AI scientific discovery"
+    - "AI accelerate science"
+    - "machine learning scientific research"
+    - "AI earth science"
+    - "AI materials discovery"
+    - "AI climate science"
+
 secondary:
   green_transition:
     - "green transition minerals"

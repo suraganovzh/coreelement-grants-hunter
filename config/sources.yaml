@@ -127,6 +127,19 @@ private_foundations:
     enabled: true
     frequency: weekly
 
+  google_org_impact:
+    name: "Google.org Impact Challenges"
+    url: "https://www.google.org/impact-challenges/"
+    enabled: true
+    frequency: daily
+    priority: high
+    focus_areas:
+      - "AI for science"
+      - "AI for social impact"
+      - "climate"
+      - "sustainability"
+    notes: "Google.org runs large-scale AI challenges. AI for Science directly relevant to Core Element."
+
   microsoft_ai:
     name: "Microsoft AI for Earth"
     url: "https://www.microsoft.com/en-us/ai/ai-for-earth-grants"
