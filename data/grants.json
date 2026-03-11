@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "updated_at": "2026-03-10T10:02:08.984344",
-    "total_grants": 14,
+    "updated_at": "2026-03-11T00:57:09.315254",
+    "total_grants": 15,
     "new_grants": 1
   },
   "grants": [
@@ -351,6 +351,32 @@
         "science"
       ],
       "scraped_at": "2026-03-10T09:59:46.886547"
+    },
+    {
+      "id": "ee2199fd132a",
+      "title": "EQT Foundation: Press Releases",
+      "funder": "EQT Foundation",
+      "description": "",
+      "amount_min": 0,
+      "amount_max": 0,
+      "currency": "USD",
+      "deadline": "",
+      "url": "https://eqtgroup.com/news/eqt-foundation-opens-applications-for-science-grants-to-overcome-the-blood-brain-barrier-and-transform-cns-drug-delivery-2026-03-10",
+      "source": "eqt_foundation",
+      "grant_type": "private_foundation",
+      "industry_tags": [
+        "deeptech",
+        "climate",
+        "science"
+      ],
+      "eligibility": "",
+      "requirements": "",
+      "focus_areas": [
+        "deeptech",
+        "climate",
+        "science"
+      ],
+      "scraped_at": "2026-03-11T00:54:50.604028"
     }
   ]
 }
