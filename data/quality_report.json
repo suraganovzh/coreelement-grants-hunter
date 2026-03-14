@@ -1,6 +1,6 @@
 {
-  "total": 22,
-  "valid": 22,
+  "total": 23,
+  "valid": 23,
   "invalid": 0,
   "quality_score": 100.0,
   "issues": [
@@ -163,12 +163,20 @@
       ]
     },
     {
-      "grant_id": "58641eef552f",
+      "grant_id": "ad12fa2704ee",
       "title": "[UPCOMING] Announcement NumberAnnouncement TitleAnnouncement",
       "issues": [
         "Missing recommended field: deadline"
       ]
+    },
+    {
+      "grant_id": "29f9bb79f28a",
+      "title": "[UPCOMING] Upcoming Events",
+      "issues": [
+        "Missing recommended field: deadline",
+        "Missing recommended field: amount_max"
+      ]
     }
   ],
-  "checked_at": "2026-03-13T10:36:02.208632"
+  "checked_at": "2026-03-14T09:48:30.409781"
 }
