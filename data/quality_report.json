@@ -1,6 +1,6 @@
 {
-  "total": 23,
-  "valid": 23,
+  "total": 22,
+  "valid": 22,
   "invalid": 0,
   "quality_score": 100.0,
   "issues": [
@@ -163,13 +163,6 @@
       ]
     },
     {
-      "grant_id": "ad12fa2704ee",
-      "title": "[UPCOMING] Announcement NumberAnnouncement TitleAnnouncement",
-      "issues": [
-        "Missing recommended field: deadline"
-      ]
-    },
-    {
       "grant_id": "29f9bb79f28a",
       "title": "[UPCOMING] Upcoming Events",
       "issues": [
@@ -178,5 +171,5 @@
       ]
     }
   ],
-  "checked_at": "2026-03-15T10:30:01.151817"
+  "checked_at": "2026-03-16T10:20:28.880268"
 }
