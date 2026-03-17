@@ -19,7 +19,7 @@
       "technology"
     ],
     "eligibility_text": "Must be a Colorado-based company or partnered with a Colorado research institution. Small businesses encouraged. Core Element AI qualifies via Colorado School of Mines partnership.",
-    "scraped_at": "2026-03-16T10:48:55.880088"
+    "scraped_at": "2026-03-17T10:02:27.870170"
   },
   {
     "title": "Delaware EDGE Grant - STEM Track",
@@ -38,7 +38,7 @@
       "innovation"
     ],
     "eligibility_text": "Must be incorporated in Delaware. Small business. Core Element AI qualifies as Delaware S-Corp.",
-    "scraped_at": "2026-03-16T10:50:01.423878"
+    "scraped_at": "2026-03-17T10:03:32.910413"
   },
   {
     "title": "Arizona: Small Business Opportunities",
@@ -57,7 +57,7 @@
       "innovation",
       "technology"
     ],
-    "scraped_at": "2026-03-16T10:52:34.462971"
+    "scraped_at": "2026-03-17T10:06:05.366653"
   },
   {
     "title": "Arizona: Innovation & Entrepreneurship Opportunities",
@@ -76,7 +76,7 @@
       "innovation",
       "technology"
     ],
-    "scraped_at": "2026-03-16T10:52:34.462979"
+    "scraped_at": "2026-03-17T10:06:05.366662"
   },
   {
     "title": "Arizona: Rural Economic Development Opportunities",
@@ -95,7 +95,7 @@
       "innovation",
       "technology"
     ],
-    "scraped_at": "2026-03-16T10:52:34.462983"
+    "scraped_at": "2026-03-17T10:06:05.366666"
   },
   {
     "title": "Arizona: Talent and Training Opportunities",
@@ -114,24 +114,6 @@
       "innovation",
       "technology"
     ],
-    "scraped_at": "2026-03-16T10:52:34.462991"
-  },
-  {
-    "title": "Alaska: Quick Links",
-    "funder": "Alaska Division of Economic Development",
-    "description": "",
-    "amount_min": null,
-    "amount_max": null,
-    "currency": "USD",
-    "deadline": "",
-    "url": "https://www.commerce.alaska.gov/web/inv/LoanPrograms",
-    "source": "alaska_state",
-    "grant_type": "state",
-    "industry_tags": [
-      "mining",
-      "mineral exploration",
-      "natural resources"
-    ],
-    "scraped_at": "2026-03-16T10:52:34.462994"
+    "scraped_at": "2026-03-17T10:06:05.366672"
   }
 ]
