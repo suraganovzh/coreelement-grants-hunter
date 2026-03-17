@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "updated_at": "2026-03-17T10:08:29.068848",
+    "updated_at": "2026-03-17T10:50:07.020178",
     "total_grants": 23,
     "source_breakdown": {
       "private_foundation": 8,
@@ -511,14 +511,14 @@
       "eligibility": "Open to US entities. Small businesses, universities, national labs, and consortia eligible.",
       "requirements": "",
       "focus_areas": [],
-      "scraped_at": "2026-03-17T10:07:22.656961",
+      "scraped_at": "2026-03-17T10:48:52.526412",
       "urgency": {
         "days_until_deadline": null,
         "priority_level": "PLANNING",
         "action_required": "monitor"
       },
       "source_type": "nofo_pipeline",
-      "last_verified": "2026-03-17T10:07:22.656961"
+      "last_verified": "2026-03-17T10:48:52.526412"
     },
     {
       "id": "1054feef8fb6",
@@ -542,14 +542,14 @@
       "eligibility": "Open to US entities. High-risk high-reward research.",
       "requirements": "",
       "focus_areas": [],
-      "scraped_at": "2026-03-17T10:07:22.656968",
+      "scraped_at": "2026-03-17T10:48:52.526418",
       "urgency": {
         "days_until_deadline": null,
         "priority_level": "PLANNING",
         "action_required": "monitor"
       },
       "source_type": "nofo_pipeline",
-      "last_verified": "2026-03-17T10:07:22.656968"
+      "last_verified": "2026-03-17T10:48:52.526418"
     },
     {
       "id": "45b07b75cf02",
@@ -570,14 +570,14 @@
       "eligibility": "",
       "requirements": "",
       "focus_areas": [],
-      "scraped_at": "2026-03-17T10:07:28.601605",
+      "scraped_at": "2026-03-17T10:48:56.018552",
       "urgency": {
         "days_until_deadline": null,
         "priority_level": "PLANNING",
         "action_required": "monitor"
       },
       "source_type": "nofo_pipeline",
-      "last_verified": "2026-03-17T10:07:28.601605"
+      "last_verified": "2026-03-17T10:48:56.018552"
     },
     {
       "id": "c61cb39babe1",
@@ -598,14 +598,14 @@
       "eligibility": "",
       "requirements": "",
       "focus_areas": [],
-      "scraped_at": "2026-03-17T10:07:28.601616",
+      "scraped_at": "2026-03-17T10:48:56.018568",
       "urgency": {
         "days_until_deadline": null,
         "priority_level": "PLANNING",
         "action_required": "monitor"
       },
       "source_type": "nofo_pipeline",
-      "last_verified": "2026-03-17T10:07:28.601616"
+      "last_verified": "2026-03-17T10:48:56.018568"
     },
     {
       "id": "8eb0f9bda2ea",
@@ -626,14 +626,14 @@
       "eligibility": "",
       "requirements": "",
       "focus_areas": [],
-      "scraped_at": "2026-03-17T10:07:28.601618",
+      "scraped_at": "2026-03-17T10:48:56.018572",
       "urgency": {
         "days_until_deadline": null,
         "priority_level": "PLANNING",
         "action_required": "monitor"
       },
       "source_type": "nofo_pipeline",
-      "last_verified": "2026-03-17T10:07:28.601618"
+      "last_verified": "2026-03-17T10:48:56.018572"
     },
     {
       "id": "7e5f95dc15b4",
@@ -654,14 +654,14 @@
       "eligibility": "",
       "requirements": "",
       "focus_areas": [],
-      "scraped_at": "2026-03-17T10:07:28.601620",
+      "scraped_at": "2026-03-17T10:48:56.018575",
       "urgency": {
         "days_until_deadline": null,
         "priority_level": "PLANNING",
         "action_required": "monitor"
       },
       "source_type": "nofo_pipeline",
-      "last_verified": "2026-03-17T10:07:28.601620"
+      "last_verified": "2026-03-17T10:48:56.018575"
     },
     {
       "id": "ad12fa2704ee",
@@ -682,14 +682,14 @@
       "eligibility": "",
       "requirements": "",
       "focus_areas": [],
-      "scraped_at": "2026-03-17T10:07:28.601625",
+      "scraped_at": "2026-03-17T10:48:56.018581",
       "urgency": {
         "days_until_deadline": null,
         "priority_level": "PLANNING",
         "action_required": "monitor"
       },
       "source_type": "nofo_pipeline",
-      "last_verified": "2026-03-17T10:07:28.601625"
+      "last_verified": "2026-03-17T10:48:56.018581"
     },
     {
       "id": "29f9bb79f28a",
@@ -710,14 +710,14 @@
       "eligibility": "",
       "requirements": "",
       "focus_areas": [],
-      "scraped_at": "2026-03-17T10:07:28.601627",
+      "scraped_at": "2026-03-17T10:48:56.018584",
       "urgency": {
         "days_until_deadline": null,
         "priority_level": "PLANNING",
         "action_required": "monitor"
       },
       "source_type": "nofo_pipeline",
-      "last_verified": "2026-03-17T10:07:28.601627"
+      "last_verified": "2026-03-17T10:48:56.018584"
     }
   ]
 }
