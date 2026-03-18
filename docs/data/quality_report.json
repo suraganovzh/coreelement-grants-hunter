@@ -1,6 +1,6 @@
 {
-  "total": 23,
-  "valid": 23,
+  "total": 22,
+  "valid": 22,
   "invalid": 0,
   "quality_score": 100.0,
   "issues": [
@@ -168,15 +168,7 @@
       "issues": [
         "Missing recommended field: deadline"
       ]
-    },
-    {
-      "grant_id": "29f9bb79f28a",
-      "title": "[UPCOMING] Upcoming Events",
-      "issues": [
-        "Missing recommended field: deadline",
-        "Missing recommended field: amount_max"
-      ]
     }
   ],
-  "checked_at": "2026-03-17T10:50:07.106771"
+  "checked_at": "2026-03-18T10:51:07.865933"
 }
