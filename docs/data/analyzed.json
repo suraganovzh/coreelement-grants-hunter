@@ -1,11 +1,11 @@
 {
   "metadata": {
-    "updated_at": "2026-03-17T10:50:07.020178",
-    "total_grants": 23,
+    "updated_at": "2026-03-18T10:10:30.867972",
+    "total_grants": 22,
     "source_breakdown": {
       "private_foundation": 8,
       "state": 7,
-      "nofo_pipeline": 8
+      "nofo_pipeline": 7
     },
     "urgent_grants": 0,
     "sbir_status": "SUSPENDED"
@@ -511,14 +511,14 @@
       "eligibility": "Open to US entities. Small businesses, universities, national labs, and consortia eligible.",
       "requirements": "",
       "focus_areas": [],
-      "scraped_at": "2026-03-17T10:48:52.526412",
+      "scraped_at": "2026-03-18T10:09:19.490874",
       "urgency": {
         "days_until_deadline": null,
         "priority_level": "PLANNING",
         "action_required": "monitor"
       },
       "source_type": "nofo_pipeline",
-      "last_verified": "2026-03-17T10:48:52.526412"
+      "last_verified": "2026-03-18T10:09:19.490874"
     },
     {
       "id": "1054feef8fb6",
@@ -542,14 +542,14 @@
       "eligibility": "Open to US entities. High-risk high-reward research.",
       "requirements": "",
       "focus_areas": [],
-      "scraped_at": "2026-03-17T10:48:52.526418",
+      "scraped_at": "2026-03-18T10:09:19.490879",
       "urgency": {
         "days_until_deadline": null,
         "priority_level": "PLANNING",
         "action_required": "monitor"
       },
       "source_type": "nofo_pipeline",
-      "last_verified": "2026-03-17T10:48:52.526418"
+      "last_verified": "2026-03-18T10:09:19.490879"
     },
     {
       "id": "45b07b75cf02",
@@ -570,14 +570,14 @@
       "eligibility": "",
       "requirements": "",
       "focus_areas": [],
-      "scraped_at": "2026-03-17T10:48:56.018552",
+      "scraped_at": "2026-03-18T10:09:30.431228",
       "urgency": {
         "days_until_deadline": null,
         "priority_level": "PLANNING",
         "action_required": "monitor"
       },
       "source_type": "nofo_pipeline",
-      "last_verified": "2026-03-17T10:48:56.018552"
+      "last_verified": "2026-03-18T10:09:30.431228"
     },
     {
       "id": "c61cb39babe1",
@@ -598,14 +598,14 @@
       "eligibility": "",
       "requirements": "",
       "focus_areas": [],
-      "scraped_at": "2026-03-17T10:48:56.018568",
+      "scraped_at": "2026-03-18T10:09:30.431241",
       "urgency": {
         "days_until_deadline": null,
         "priority_level": "PLANNING",
         "action_required": "monitor"
       },
       "source_type": "nofo_pipeline",
-      "last_verified": "2026-03-17T10:48:56.018568"
+      "last_verified": "2026-03-18T10:09:30.431241"
     },
     {
       "id": "8eb0f9bda2ea",
@@ -626,14 +626,14 @@
       "eligibility": "",
       "requirements": "",
       "focus_areas": [],
-      "scraped_at": "2026-03-17T10:48:56.018572",
+      "scraped_at": "2026-03-18T10:09:30.431243",
       "urgency": {
         "days_until_deadline": null,
         "priority_level": "PLANNING",
         "action_required": "monitor"
       },
       "source_type": "nofo_pipeline",
-      "last_verified": "2026-03-17T10:48:56.018572"
+      "last_verified": "2026-03-18T10:09:30.431243"
     },
     {
       "id": "7e5f95dc15b4",
@@ -654,14 +654,14 @@
       "eligibility": "",
       "requirements": "",
       "focus_areas": [],
-      "scraped_at": "2026-03-17T10:48:56.018575",
+      "scraped_at": "2026-03-18T10:09:30.431246",
       "urgency": {
         "days_until_deadline": null,
         "priority_level": "PLANNING",
         "action_required": "monitor"
       },
       "source_type": "nofo_pipeline",
-      "last_verified": "2026-03-17T10:48:56.018575"
+      "last_verified": "2026-03-18T10:09:30.431246"
     },
     {
       "id": "ad12fa2704ee",
@@ -682,42 +682,14 @@
       "eligibility": "",
       "requirements": "",
       "focus_areas": [],
-      "scraped_at": "2026-03-17T10:48:56.018581",
+      "scraped_at": "2026-03-18T10:09:30.431251",
       "urgency": {
         "days_until_deadline": null,
         "priority_level": "PLANNING",
         "action_required": "monitor"
       },
       "source_type": "nofo_pipeline",
-      "last_verified": "2026-03-17T10:48:56.018581"
-    },
-    {
-      "id": "29f9bb79f28a",
-      "title": "[UPCOMING] Upcoming Events",
-      "funder": "DOE MESC",
-      "description": "",
-      "amount_min": 0,
-      "amount_max": 0,
-      "currency": "USD",
-      "deadline": "",
-      "url": "https://www.energy.gov/cmei/manufacturing/events/notice-funding-opportunity-battery-materials-processing-and-battery",
-      "source": "nofo_pipeline",
-      "grant_type": "federal",
-      "industry_tags": [
-        "upcoming",
-        "prepare_now"
-      ],
-      "eligibility": "",
-      "requirements": "",
-      "focus_areas": [],
-      "scraped_at": "2026-03-17T10:48:56.018584",
-      "urgency": {
-        "days_until_deadline": null,
-        "priority_level": "PLANNING",
-        "action_required": "monitor"
-      },
-      "source_type": "nofo_pipeline",
-      "last_verified": "2026-03-17T10:48:56.018584"
+      "last_verified": "2026-03-18T10:09:30.431251"
     }
   ]
 }

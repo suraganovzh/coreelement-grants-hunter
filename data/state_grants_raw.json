@@ -19,7 +19,7 @@
       "technology"
     ],
     "eligibility_text": "Must be a Colorado-based company or partnered with a Colorado research institution. Small businesses encouraged. Core Element AI qualifies via Colorado School of Mines partnership.",
-    "scraped_at": "2026-03-17T10:44:00.257199"
+    "scraped_at": "2026-03-18T10:04:25.355041"
   },
   {
     "title": "Delaware EDGE Grant - STEM Track",
@@ -38,7 +38,7 @@
       "innovation"
     ],
     "eligibility_text": "Must be incorporated in Delaware. Small business. Core Element AI qualifies as Delaware S-Corp.",
-    "scraped_at": "2026-03-17T10:45:05.687834"
+    "scraped_at": "2026-03-18T10:05:30.066223"
   },
   {
     "title": "Arizona: Small Business Opportunities",
@@ -57,7 +57,7 @@
       "innovation",
       "technology"
     ],
-    "scraped_at": "2026-03-17T10:47:38.476294"
+    "scraped_at": "2026-03-18T10:08:02.408246"
   },
   {
     "title": "Arizona: Innovation & Entrepreneurship Opportunities",
@@ -76,7 +76,7 @@
       "innovation",
       "technology"
     ],
-    "scraped_at": "2026-03-17T10:47:38.476302"
+    "scraped_at": "2026-03-18T10:08:02.408255"
   },
   {
     "title": "Arizona: Rural Economic Development Opportunities",
@@ -95,7 +95,7 @@
       "innovation",
       "technology"
     ],
-    "scraped_at": "2026-03-17T10:47:38.476305"
+    "scraped_at": "2026-03-18T10:08:02.408259"
   },
   {
     "title": "Arizona: Talent and Training Opportunities",
@@ -114,6 +114,24 @@
       "innovation",
       "technology"
     ],
-    "scraped_at": "2026-03-17T10:47:38.476310"
+    "scraped_at": "2026-03-18T10:08:02.408266"
+  },
+  {
+    "title": "Alaska: Quick Links",
+    "funder": "Alaska Division of Economic Development",
+    "description": "",
+    "amount_min": null,
+    "amount_max": null,
+    "currency": "USD",
+    "deadline": "",
+    "url": "https://www.commerce.alaska.gov/web/inv/LoanPrograms",
+    "source": "alaska_state",
+    "grant_type": "state",
+    "industry_tags": [
+      "mining",
+      "mineral exploration",
+      "natural resources"
+    ],
+    "scraped_at": "2026-03-18T10:08:02.408269"
   }
 ]
