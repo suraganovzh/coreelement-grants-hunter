@@ -18,7 +18,7 @@
       "rare earth"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-03-15T10:38:38.233330"
+    "scraped_at": "2026-03-22T10:35:38.943255"
   },
   {
     "id": "usa-26K75IL000024",
@@ -38,7 +38,7 @@
       "critical minerals"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-03-15T10:38:38.233397"
+    "scraped_at": "2026-03-22T10:35:38.943317"
   },
   {
     "id": "usa-26K75IL000025",
@@ -60,7 +60,49 @@
       "cobalt"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-03-15T10:38:38.233444"
+    "scraped_at": "2026-03-22T10:35:38.943364"
+  },
+  {
+    "id": "usa-2119551",
+    "title": "RII TRACK-2 FEC: CRITICAL RESOURCE AVAILABILITY FOR THE FUTURE OF THE RENEWABLE ENERGY INDUSTRY: CRITICAL MINERALS AND GROUND WATER RESOURCES IN IOWA AND KANSAS",
+    "funder": "National Science Foundation",
+    "funder_sub": "National Science Foundation",
+    "amount": 3992769,
+    "winner": "THE UNIVERSITY OF IOWA",
+    "winner_location": "None, None",
+    "award_date": "2021-10-01",
+    "end_date": "2026-09-30",
+    "award_type": "COOPERATIVE AGREEMENT (B)",
+    "naics_code": null,
+    "naics_desc": null,
+    "keywords": [
+      "mineral",
+      "critical minerals"
+    ],
+    "source": "usaspending.gov",
+    "scraped_at": "2026-03-22T10:35:38.943371"
+  },
+  {
+    "id": "usa-DEAR0002089",
+    "title": "UT AUSTIN, 3510-1536\nDE-FOA-0003510 \u2013 RECOVER\nBIOMIMETIC MEMBRANES FOR ELECTROCHEMICAL NUTRIENT AND MINERAL RECOVERY FROM WASTWATERS\n\nTHIS PROJECT AIMS TO DEVELOP A BIOINSPIRED MEMBRANE SYSTEM THAT CA",
+    "funder": "Department of Energy",
+    "funder_sub": "Department of Energy",
+    "amount": 2000000,
+    "winner": "UNIVERSITY OF TEXAS AT AUSTIN",
+    "winner_location": "None, None",
+    "award_date": "2026-03-12",
+    "end_date": "2028-03-11",
+    "award_type": "COOPERATIVE AGREEMENT (B)",
+    "naics_code": null,
+    "naics_desc": null,
+    "keywords": [
+      "mineral",
+      "critical minerals",
+      "lithium",
+      "cobalt"
+    ],
+    "source": "usaspending.gov",
+    "scraped_at": "2026-03-22T10:35:38.943412"
   },
   {
     "id": "usa-DEAR0002099",
@@ -81,7 +123,7 @@
       "rare earth"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-03-15T10:38:38.233470"
+    "scraped_at": "2026-03-22T10:35:38.943433"
   },
   {
     "id": "usa-2341956",
@@ -101,7 +143,7 @@
       "geological"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-03-15T10:38:38.233493"
+    "scraped_at": "2026-03-22T10:35:38.943456"
   },
   {
     "id": "usa-G26AC00029",
@@ -127,7 +169,7 @@
       "geological"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-03-15T10:38:38.233530"
+    "scraped_at": "2026-03-22T10:35:38.943493"
   },
   {
     "id": "usa-G23AC00093",
@@ -149,7 +191,7 @@
       "geological"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-03-15T10:38:38.233557"
+    "scraped_at": "2026-03-22T10:35:38.943520"
   },
   {
     "id": "usa-2320162",
@@ -170,7 +212,29 @@
       "critical minerals"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-03-15T10:38:38.233607"
+    "scraped_at": "2026-03-22T10:35:38.943565"
+  },
+  {
+    "id": "usa-2202640",
+    "title": "IMPACT OF UTILIZING IMMERSIVE VIRTUAL REALITY AND DYNAMIC ASSESSMENT ON MINING ENGINEERING EDUCATION FROM THE COMMUNITY OF INQUIRY PERSPECTIVE -A QUALIFIED WORKFORCE FOR DOMESTIC MINING PRODUCTION OF ",
+    "funder": "National Science Foundation",
+    "funder_sub": "National Science Foundation",
+    "amount": 849689,
+    "winner": "BOARD OF REGENTS OF NEVADA SYSTEM OF HIGHER EDUCATION",
+    "winner_location": "None, None",
+    "award_date": "2022-08-15",
+    "end_date": "2026-07-31",
+    "award_type": "PROJECT GRANT (B)",
+    "naics_code": null,
+    "naics_desc": null,
+    "keywords": [
+      "mining",
+      "mineral",
+      "critical minerals",
+      "clean energy"
+    ],
+    "source": "usaspending.gov",
+    "scraped_at": "2026-03-22T10:35:38.943600"
   },
   {
     "id": "usa-G26AC00006",
@@ -190,7 +254,7 @@
       "geological"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-03-15T10:38:38.233642"
+    "scraped_at": "2026-03-22T10:35:38.943634"
   },
   {
     "id": "usa-2543343",
@@ -212,7 +276,7 @@
       "lithium"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-03-15T10:38:38.233677"
+    "scraped_at": "2026-03-22T10:35:38.943670"
   },
   {
     "id": "usa-G26AC00009",
@@ -232,7 +296,7 @@
       "exploration"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-03-15T10:38:38.233714"
+    "scraped_at": "2026-03-22T10:35:38.943708"
   },
   {
     "id": "usa-G26AC00041",
@@ -254,7 +318,7 @@
       "geological"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-03-15T10:38:38.233729"
+    "scraped_at": "2026-03-22T10:35:38.943722"
   },
   {
     "id": "usa-G25AC00423",
@@ -277,7 +341,7 @@
       "geological"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-03-15T10:38:38.233769"
+    "scraped_at": "2026-03-22T10:35:38.943763"
   },
   {
     "id": "usa-G25AC00424",
@@ -302,7 +366,7 @@
       "subsurface"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-03-15T10:38:38.233804"
+    "scraped_at": "2026-03-22T10:35:38.943798"
   },
   {
     "id": "usa-G26AC00047",
@@ -324,7 +388,7 @@
       "critical minerals"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-03-15T10:38:38.233837"
+    "scraped_at": "2026-03-22T10:35:38.943834"
   },
   {
     "id": "usa-G26AC00039",
@@ -345,7 +409,7 @@
       "subsurface"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-03-15T10:38:38.233868"
+    "scraped_at": "2026-03-22T10:35:38.943864"
   },
   {
     "id": "usa-G26AC00034",
@@ -367,7 +431,7 @@
       "geological"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-03-15T10:38:38.233909"
+    "scraped_at": "2026-03-22T10:35:38.943904"
   },
   {
     "id": "usa-G26AC00033",
@@ -389,7 +453,7 @@
       "geological"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-03-15T10:38:38.233928"
+    "scraped_at": "2026-03-22T10:35:38.943923"
   },
   {
     "id": "usa-G26AC00046",
@@ -412,7 +476,7 @@
       "geological"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-03-15T10:38:38.233961"
+    "scraped_at": "2026-03-22T10:35:38.943974"
   },
   {
     "id": "usa-G26AC00038",
@@ -437,7 +501,7 @@
       "geological"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-03-15T10:38:38.234003"
+    "scraped_at": "2026-03-22T10:35:38.944016"
   },
   {
     "id": "usa-G26AC00036",
@@ -459,7 +523,7 @@
       "critical minerals"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-03-15T10:38:38.234039"
+    "scraped_at": "2026-03-22T10:35:38.944051"
   },
   {
     "id": "usa-G26AC00045",
@@ -484,7 +548,7 @@
       "geological"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-03-15T10:38:38.234091"
+    "scraped_at": "2026-03-22T10:35:38.944082"
   },
   {
     "id": "usa-G23AC00090",
@@ -505,7 +569,7 @@
       "geological"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-03-15T10:38:38.234128"
+    "scraped_at": "2026-03-22T10:35:38.944119"
   },
   {
     "id": "usa-G23AC00088",
@@ -526,30 +590,7 @@
       "geological"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-03-15T10:38:38.234143"
-  },
-  {
-    "id": "usa-G24AP00258",
-    "title": "PROJECT TITLE: FY 2024 PROJECTS FOR THE PHYSICAL AND DIGITAL PRESERVATION OF ARIZONA GEOLOGICAL SURVEY DATAPROJECT PERIOD: 6 6 2024 THROUGH 6 5 2025AWARD PURPOSE:  THE ARIZONA GEOLOGICAL SURVEY WILL C",
-    "funder": "Department of the Interior",
-    "funder_sub": "U.S. Geological Survey",
-    "amount": 230606,
-    "winner": "UNIVERSITY OF ARIZONA",
-    "winner_location": "None, None",
-    "award_date": "2024-06-06",
-    "end_date": "2025-12-05",
-    "award_type": "PROJECT GRANT (B)",
-    "naics_code": null,
-    "naics_desc": null,
-    "keywords": [
-      "mineral",
-      "exploration",
-      "critical minerals",
-      "copper",
-      "geological"
-    ],
-    "source": "usaspending.gov",
-    "scraped_at": "2026-03-15T10:38:38.234175"
+    "scraped_at": "2026-03-22T10:35:38.944133"
   },
   {
     "id": "usa-G22AP00224",
@@ -572,7 +613,7 @@
       "drilling"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-03-15T10:38:38.234207"
+    "scraped_at": "2026-03-22T10:35:38.944166"
   },
   {
     "id": "usa-G23AC00443",
@@ -596,7 +637,7 @@
       "geological"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-03-15T10:38:38.234245"
+    "scraped_at": "2026-03-22T10:35:38.944204"
   },
   {
     "id": "usa-G22AC00509",
@@ -617,7 +658,7 @@
       "critical minerals"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-03-15T10:38:38.234279"
+    "scraped_at": "2026-03-22T10:35:38.944238"
   },
   {
     "id": "usa-G23AP00161",
@@ -638,7 +679,7 @@
       "critical minerals"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-03-15T10:38:38.234319"
+    "scraped_at": "2026-03-22T10:35:38.944277"
   },
   {
     "id": "usa-G23AC00423",
@@ -660,7 +701,7 @@
       "geological"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-03-15T10:38:38.234340"
+    "scraped_at": "2026-03-22T10:35:38.944306"
   },
   {
     "id": "usa-W911NF261A076",
@@ -679,27 +720,7 @@
       "mineral"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-03-15T10:38:38.234347"
-  },
-  {
-    "id": "usa-G26AC00018",
-    "title": "PROPOSAL TITLE: TESTING EARLY PALEOPROTEROZOIC LINK BETWEEN THE SUPERIOR AND WYOMING\nCRATONS: IMPLICATIONS FOR CRITICAL MINERAL POTENTIAL OF THE SOUTHERN WYOMING CRATON\nPROJECT PERIOD: 01/01/2026 - 12",
-    "funder": "Department of the Interior",
-    "funder_sub": "U.S. Geological Survey",
-    "amount": 90000,
-    "winner": "REGENTS OF THE UNIVERSITY OF CALIFORNIA AT RIVERSIDE",
-    "winner_location": "None, None",
-    "award_date": "2026-01-01",
-    "end_date": "2028-12-31",
-    "award_type": "COOPERATIVE AGREEMENT (B)",
-    "naics_code": null,
-    "naics_desc": null,
-    "keywords": [
-      "mining",
-      "mineral"
-    ],
-    "source": "usaspending.gov",
-    "scraped_at": "2026-03-15T10:38:38.234367"
+    "scraped_at": "2026-03-22T10:35:38.944313"
   },
   {
     "id": "usa-G26AC00020",
@@ -724,30 +745,7 @@
       "geological"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-03-15T10:38:38.234403"
-  },
-  {
-    "id": "usa-G25AP00256",
-    "title": "PROJECT TITLE:  FY2025 ARIZONA DATA PRESERVATION PROJECTSPROJECT PERIOD: 07 01 2025 TO 06 30 2027PROJECT PURPOSE:  THE ARIZONA GEOLOGICAL SURVEY WILL CONDUCT TWO DATA PRESERVATION PROJECTS. FIRST, A P",
-    "funder": "Department of the Interior",
-    "funder_sub": "U.S. Geological Survey",
-    "amount": 64651,
-    "winner": "UNIVERSITY OF ARIZONA",
-    "winner_location": "None, None",
-    "award_date": "2025-07-01",
-    "end_date": "2027-06-30",
-    "award_type": "PROJECT GRANT (B)",
-    "naics_code": null,
-    "naics_desc": null,
-    "keywords": [
-      "mining",
-      "mineral",
-      "exploration",
-      "critical minerals",
-      "geological"
-    ],
-    "source": "usaspending.gov",
-    "scraped_at": "2026-03-15T10:38:38.234421"
+    "scraped_at": "2026-03-22T10:35:38.944348"
   },
   {
     "id": "usa-G23AC00432",
@@ -767,7 +765,7 @@
       "critical minerals"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-03-15T10:38:38.234432"
+    "scraped_at": "2026-03-22T10:35:38.944360"
   },
   {
     "id": "usa-G23AC00469",
@@ -791,7 +789,7 @@
       "geological"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-03-15T10:38:38.234458"
+    "scraped_at": "2026-03-22T10:35:38.944383"
   },
   {
     "id": "usa-G23AC00470",
@@ -819,27 +817,27 @@
       "remote sensing"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-03-15T10:38:38.234486"
+    "scraped_at": "2026-03-22T10:35:38.944411"
   },
   {
-    "id": "usa-G25AC00403",
-    "title": "PROJECT TITLE: EARTH MAPPING RESOURCE INITIATIVE, MINE WASTE COOPERATIVE AGREEMENT FY2025 - EMRI WORKSHOP PARTICIPATIONPROJECT PERIOD: 8 1 2025 THROUGH 12 31 2025AWARD PURPOSE: THE PROJECT PURPOSE IS ",
-    "funder": "Department of the Interior",
-    "funder_sub": "U.S. Geological Survey",
-    "amount": 4194,
-    "winner": "UNIVERSITY OF TEXAS AT AUSTIN",
+    "id": "usa-2617779",
+    "title": "CONFERENCE: GORDON RESEARCH CONFERENCE AND SEMINAR ON FLOW AND TRANSPORT IN PERMEABLE MEDIA -THE AWARD SUPPORTS U.S.-BASED SCIENTISTS ATTENDING THE 2026 GORDON RESEARCH CONFERENCE AND GORDON RESEARCH ",
+    "funder": "National Science Foundation",
+    "funder_sub": "National Science Foundation",
+    "amount": 25000,
+    "winner": "GORDON RESEARCH CONFERENCES",
     "winner_location": "None, None",
-    "award_date": "2025-08-01",
-    "end_date": "2026-12-31",
-    "award_type": "COOPERATIVE AGREEMENT (B)",
+    "award_date": "2026-04-01",
+    "end_date": "2027-03-31",
+    "award_type": "PROJECT GRANT (B)",
     "naics_code": null,
     "naics_desc": null,
     "keywords": [
-      "mining",
+      "artificial intelligence",
       "mineral",
-      "exploration"
+      "critical minerals"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-03-15T10:38:38.234499"
+    "scraped_at": "2026-03-22T10:35:38.944432"
   }
 ]
