@@ -163,12 +163,13 @@
       ]
     },
     {
-      "grant_id": "1943bad9b864",
+      "grant_id": "6571d7656e5d",
       "title": "[UPCOMING] Announcement NumberAnnouncement TitleAnnouncement",
       "issues": [
-        "Missing recommended field: deadline"
+        "Missing recommended field: deadline",
+        "Missing recommended field: amount_max"
       ]
     }
   ],
-  "checked_at": "2026-04-01T10:56:08.416850"
+  "checked_at": "2026-04-02T10:13:57.951399"
 }
