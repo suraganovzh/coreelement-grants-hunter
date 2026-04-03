@@ -1,6 +1,6 @@
 {
-  "total": 22,
-  "valid": 22,
+  "total": 23,
+  "valid": 23,
   "invalid": 0,
   "quality_score": 100.0,
   "issues": [
@@ -117,6 +117,13 @@
       ]
     },
     {
+      "grant_id": "0039773cd8e3",
+      "title": "EQT Foundation: Press Releases",
+      "issues": [
+        "Missing recommended field: deadline"
+      ]
+    },
+    {
       "grant_id": "c46b1c5de5f4",
       "title": "DOE Battery Materials Processing NOFO",
       "issues": [
@@ -171,5 +178,5 @@
       ]
     }
   ],
-  "checked_at": "2026-04-02T10:52:00.742865"
+  "checked_at": "2026-04-03T10:05:41.123736"
 }

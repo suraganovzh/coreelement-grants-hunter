@@ -21,7 +21,7 @@
       "climate",
       "science"
     ],
-    "scraped_at": "2026-04-02T10:49:28.283650"
+    "scraped_at": "2026-04-03T10:03:13.616935"
   },
   {
     "title": "EQT Foundation: Are you a scientist developing breakthrough technologies to overcome the blood-brain barrier and transform drug delivery to the central nervous system?",
@@ -45,7 +45,7 @@
       "climate",
       "science"
     ],
-    "scraped_at": "2026-04-02T10:49:28.283660"
+    "scraped_at": "2026-04-03T10:03:13.616944"
   },
   {
     "title": "EQT Foundation: Supporting Progress Around the Globe",
@@ -69,17 +69,17 @@
       "climate",
       "science"
     ],
-    "scraped_at": "2026-04-02T10:49:28.283663"
+    "scraped_at": "2026-04-03T10:03:13.616947"
   },
   {
     "title": "EQT Foundation: Press Releases",
     "funder": "EQT Foundation",
     "description": "",
-    "amount_min": null,
-    "amount_max": null,
-    "currency": "USD",
+    "amount_min": 500000,
+    "amount_max": 500000,
+    "currency": "EUR",
     "deadline": "",
-    "url": "https://eqtgroup.com/news/eqt-foundation-opens-applications-for-science-grants-to-overcome-the-blood-brain-barrier-and-transform-cns-drug-delivery-2026-03-10",
+    "url": "https://eqtgroup.com/news/eqt-foundation-grants-500-000-to-elemental-impact-accelerating-first-of-a-kind-climate-infrastructure-through-catalytic-financing-innovation",
     "source": "eqt_foundation",
     "grant_type": "private_foundation",
     "industry_tags": [
@@ -93,7 +93,7 @@
       "climate",
       "science"
     ],
-    "scraped_at": "2026-04-02T10:49:28.283666"
+    "scraped_at": "2026-04-03T10:03:13.616948"
   },
   {
     "title": "EQT Foundation - Critical Minerals Science Grants",
@@ -123,6 +123,6 @@
       "science",
       "sustainability"
     ],
-    "scraped_at": "2026-04-02T10:49:28.283669"
+    "scraped_at": "2026-04-03T10:03:13.616951"
   }
 ]

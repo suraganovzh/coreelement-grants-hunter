@@ -1,8 +1,8 @@
 {
   "metadata": {
-    "updated_at": "2026-04-02T10:13:57.777324",
-    "total_grants": 15,
-    "new_grants": 0
+    "updated_at": "2026-04-03T10:05:40.971211",
+    "total_grants": 16,
+    "new_grants": 1
   },
   "grants": [
     {
@@ -377,6 +377,32 @@
         "science"
       ],
       "scraped_at": "2026-03-11T00:54:50.604028"
+    },
+    {
+      "id": "0039773cd8e3",
+      "title": "EQT Foundation: Press Releases",
+      "funder": "EQT Foundation",
+      "description": "",
+      "amount_min": 500000,
+      "amount_max": 500000,
+      "currency": "EUR",
+      "deadline": "",
+      "url": "https://eqtgroup.com/news/eqt-foundation-grants-500-000-to-elemental-impact-accelerating-first-of-a-kind-climate-infrastructure-through-catalytic-financing-innovation",
+      "source": "eqt_foundation",
+      "grant_type": "private_foundation",
+      "industry_tags": [
+        "deeptech",
+        "climate",
+        "science"
+      ],
+      "eligibility": "",
+      "requirements": "",
+      "focus_areas": [
+        "deeptech",
+        "climate",
+        "science"
+      ],
+      "scraped_at": "2026-04-03T10:03:13.616948"
     }
   ]
 }
