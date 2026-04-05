@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "generated_at": "2026-03-29T10:42:15.214933",
-    "total_winners_analyzed": 220,
+    "generated_at": "2026-04-05T10:42:58.360381",
+    "total_winners_analyzed": 221,
     "date_range": {
       "earliest": "01/05/2026",
       "latest": "2026-09-01"
@@ -10,32 +10,26 @@
   "keyword_patterns": [
     {
       "keyword": "artificial intelligence",
-      "frequency": 0.364,
-      "count": 80,
+      "frequency": 0.38,
+      "count": 84,
       "pattern_type": "keyword"
     },
     {
       "keyword": "machine learning",
-      "frequency": 0.318,
-      "count": 70,
-      "pattern_type": "keyword"
-    },
-    {
-      "keyword": "mineral",
-      "frequency": 0.2,
-      "count": 44,
+      "frequency": 0.344,
+      "count": 76,
       "pattern_type": "keyword"
     },
     {
       "keyword": "exploration",
-      "frequency": 0.186,
-      "count": 41,
+      "frequency": 0.204,
+      "count": 45,
       "pattern_type": "keyword"
     },
     {
-      "keyword": "mining",
-      "frequency": 0.159,
-      "count": 35,
+      "keyword": "mineral",
+      "frequency": 0.204,
+      "count": 45,
       "pattern_type": "keyword"
     },
     {
@@ -45,9 +39,9 @@
       "pattern_type": "keyword"
     },
     {
-      "keyword": "battery",
-      "frequency": 0.1,
-      "count": 22,
+      "keyword": "mining",
+      "frequency": 0.14,
+      "count": 31,
       "pattern_type": "keyword"
     },
     {
@@ -57,14 +51,20 @@
       "pattern_type": "keyword"
     },
     {
+      "keyword": "battery",
+      "frequency": 0.068,
+      "count": 15,
+      "pattern_type": "keyword"
+    },
+    {
       "keyword": "lithium",
-      "frequency": 0.055,
+      "frequency": 0.054,
       "count": 12,
       "pattern_type": "keyword"
     },
     {
       "keyword": "geology",
-      "frequency": 0.055,
+      "frequency": 0.054,
       "count": 12,
       "pattern_type": "keyword"
     },
@@ -81,12 +81,6 @@
       "pattern_type": "keyword"
     },
     {
-      "keyword": "remote sensing",
-      "frequency": 0.032,
-      "count": 7,
-      "pattern_type": "keyword"
-    },
-    {
       "keyword": "geospatial",
       "frequency": 0.032,
       "count": 7,
@@ -99,6 +93,12 @@
       "pattern_type": "keyword"
     },
     {
+      "keyword": "remote sensing",
+      "frequency": 0.027,
+      "count": 6,
+      "pattern_type": "keyword"
+    },
+    {
       "keyword": "deep learning",
       "frequency": 0.023,
       "count": 5,
@@ -106,14 +106,14 @@
     },
     {
       "keyword": "clean energy",
-      "frequency": 0.023,
-      "count": 5,
+      "frequency": 0.018,
+      "count": 4,
       "pattern_type": "keyword"
     },
     {
       "keyword": "cobalt",
-      "frequency": 0.023,
-      "count": 5,
+      "frequency": 0.018,
+      "count": 4,
       "pattern_type": "keyword"
     },
     {
@@ -138,66 +138,66 @@
   "funder_patterns": [
     {
       "funder": "NSF",
-      "total_awards": 170,
-      "avg_amount": 555493,
+      "total_awards": 179,
+      "avg_amount": 544432,
       "top_keywords": [
         {
           "keyword": "artificial intelligence",
-          "count": 78
+          "count": 82
         },
         {
           "keyword": "machine learning",
-          "count": 68
+          "count": 74
         },
         {
           "keyword": "exploration",
-          "count": 28
+          "count": 32
         },
         {
           "keyword": "mining",
-          "count": 19
+          "count": 15
         },
         {
           "keyword": "battery",
-          "count": 10
+          "count": 11
+        },
+        {
+          "keyword": "mineral",
+          "count": 8
         },
         {
           "keyword": "lithium",
           "count": 8
         },
         {
-          "keyword": "mineral",
-          "count": 7
-        },
-        {
           "keyword": "subsurface",
-          "count": 6
-        },
-        {
-          "keyword": "remote sensing",
           "count": 6
         },
         {
           "keyword": "deep learning",
           "count": 5
+        },
+        {
+          "keyword": "remote sensing",
+          "count": 5
         }
       ],
       "sample_companies": [
+        "University of Oklahoma Norman Campus",
+        "University of Texas at Austin",
+        "Purdue University",
         "University of Pennsylvania",
         "University of Maryland, College Park",
-        "University of California-Los Angeles",
+        "University of Wisconsin-Madison",
+        "University of Oregon Eugene",
+        "Stanford University",
         "Utah State University",
         "SUNY at Buffalo",
-        "University of Wisconsin-Madison",
+        "University of California-Los Angeles",
         "Stevens Institute of Technology",
         "North Carolina State University",
-        "University of Washington",
-        "University of Illinois at Urbana-Champaign",
-        "University of Virginia Main Campus",
-        "University of Alabama Tuscaloosa",
-        "Purdue University",
-        "Arkansas Tech University",
-        "Regents of the University of Michigan - Ann Arbor"
+        "Johns Hopkins University",
+        "University of Illinois at Urbana-Champaign"
       ],
       "phases": {},
       "pattern_type": "funder"
@@ -269,20 +269,6 @@
       "pattern_type": "funder"
     },
     {
-      "funder": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.DLA LAND.DLA LAND COLUMBUS.DLA LAND AND MARITIME",
-      "total_awards": 8,
-      "avg_amount": 0,
-      "top_keywords": [
-        {
-          "keyword": "battery",
-          "count": 8
-        }
-      ],
-      "sample_companies": [],
-      "phases": {},
-      "pattern_type": "funder"
-    },
-    {
       "funder": "National Science Foundation",
       "total_awards": 6,
       "avg_amount": 1315339,
@@ -332,7 +318,7 @@
       "pattern_type": "funder"
     },
     {
-      "funder": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.TROOP SUPPORT CONSTRUCTION & EQUIPMENT.DLA TROOP SUPPORT",
+      "funder": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.DLA LAND.DLA LAND COLUMBUS.DLA LAND AND MARITIME",
       "total_awards": 4,
       "avg_amount": 0,
       "top_keywords": [
@@ -449,23 +435,23 @@
     {
       "size": "small",
       "label": "$0-$50K",
-      "count": 28,
+      "count": 36,
       "top_keywords": [
         {
           "keyword": "artificial intelligence",
-          "count": 20
+          "count": 23
         },
         {
           "keyword": "machine learning",
-          "count": 14
+          "count": 19
+        },
+        {
+          "keyword": "exploration",
+          "count": 5
         },
         {
           "keyword": "mineral",
           "count": 4
-        },
-        {
-          "keyword": "exploration",
-          "count": 3
         },
         {
           "keyword": "critical minerals",
@@ -474,6 +460,10 @@
         {
           "keyword": "subsurface",
           "count": 2
+        },
+        {
+          "keyword": "mining",
+          "count": 1
         },
         {
           "keyword": "geophysics",
@@ -491,7 +481,7 @@
       "top_funders": [
         {
           "funder": "NSF",
-          "count": 27
+          "count": 35
         },
         {
           "funder": "National Science Foundation",
@@ -503,11 +493,11 @@
     {
       "size": "medium",
       "label": "$50K-$250K",
-      "count": 29,
+      "count": 28,
       "top_keywords": [
         {
           "keyword": "mineral",
-          "count": 9
+          "count": 10
         },
         {
           "keyword": "critical minerals",
@@ -518,18 +508,6 @@
           "count": 7
         },
         {
-          "keyword": "machine learning",
-          "count": 7
-        },
-        {
-          "keyword": "remote sensing",
-          "count": 6
-        },
-        {
-          "keyword": "artificial intelligence",
-          "count": 6
-        },
-        {
           "keyword": "geology",
           "count": 6
         },
@@ -538,18 +516,30 @@
           "count": 6
         },
         {
+          "keyword": "remote sensing",
+          "count": 5
+        },
+        {
+          "keyword": "machine learning",
+          "count": 5
+        },
+        {
           "keyword": "mining",
           "count": 5
         },
         {
-          "keyword": "deep learning",
+          "keyword": "artificial intelligence",
+          "count": 2
+        },
+        {
+          "keyword": "geospatial",
           "count": 2
         }
       ],
       "top_funders": [
         {
           "funder": "NSF",
-          "count": 20
+          "count": 19
         },
         {
           "funder": "Department of the Interior",
@@ -565,23 +555,23 @@
     {
       "size": "large",
       "label": "$250K-$1M",
-      "count": 130,
+      "count": 133,
       "top_keywords": [
         {
           "keyword": "artificial intelligence",
-          "count": 48
+          "count": 54
         },
         {
           "keyword": "machine learning",
-          "count": 45
+          "count": 48
         },
         {
           "keyword": "exploration",
-          "count": 29
+          "count": 31
         },
         {
           "keyword": "mining",
-          "count": 28
+          "count": 23
         },
         {
           "keyword": "mineral",
@@ -601,7 +591,7 @@
         },
         {
           "keyword": "battery",
-          "count": 9
+          "count": 10
         },
         {
           "keyword": "copper",
@@ -611,7 +601,7 @@
       "top_funders": [
         {
           "funder": "NSF",
-          "count": 110
+          "count": 113
         },
         {
           "funder": "Department of the Interior",
@@ -631,7 +621,7 @@
     {
       "size": "xlarge",
       "label": "$1M+",
-      "count": 21,
+      "count": 20,
       "top_keywords": [
         {
           "keyword": "mineral",
@@ -643,7 +633,7 @@
         },
         {
           "keyword": "artificial intelligence",
-          "count": 6
+          "count": 5
         },
         {
           "keyword": "machine learning",
@@ -677,7 +667,7 @@
       "top_funders": [
         {
           "funder": "NSF",
-          "count": 13
+          "count": 12
         },
         {
           "funder": "Department of Energy",
@@ -701,38 +691,31 @@
   ],
   "company_patterns": [
     {
-      "company": "University of California-Los Angeles",
-      "total_wins": 7,
-      "total_amount": 4004950,
-      "avg_amount": 572136,
-      "pattern_type": "company"
-    },
-    {
       "company": "Regents of the University of Michigan - Ann Arbor",
-      "total_wins": 6,
-      "total_amount": 2390442,
-      "avg_amount": 398407,
-      "pattern_type": "company"
-    },
-    {
-      "company": "Purdue University",
-      "total_wins": 5,
-      "total_amount": 4422644,
-      "avg_amount": 884529,
-      "pattern_type": "company"
-    },
-    {
-      "company": "Virginia Polytechnic Institute and State University",
-      "total_wins": 5,
-      "total_amount": 1920778,
-      "avg_amount": 384156,
+      "total_wins": 7,
+      "total_amount": 2990442,
+      "avg_amount": 427206,
       "pattern_type": "company"
     },
     {
       "company": "Gordon Research Conferences",
+      "total_wins": 7,
+      "total_amount": 209552,
+      "avg_amount": 29936,
+      "pattern_type": "company"
+    },
+    {
+      "company": "Purdue University",
+      "total_wins": 6,
+      "total_amount": 4760722,
+      "avg_amount": 793454,
+      "pattern_type": "company"
+    },
+    {
+      "company": "University of California-Los Angeles",
       "total_wins": 5,
-      "total_amount": 149827,
-      "avg_amount": 29965,
+      "total_amount": 3279950,
+      "avg_amount": 655990,
       "pattern_type": "company"
     },
     {
@@ -743,17 +726,24 @@
       "pattern_type": "company"
     },
     {
-      "company": "University of Pennsylvania",
-      "total_wins": 3,
-      "total_amount": 1221732,
-      "avg_amount": 407244,
+      "company": "Virginia Polytechnic Institute and State University",
+      "total_wins": 4,
+      "total_amount": 1573590,
+      "avg_amount": 393398,
       "pattern_type": "company"
     },
     {
-      "company": "University of Maryland, College Park",
+      "company": "University of Texas at Austin",
       "total_wins": 3,
-      "total_amount": 1549030,
-      "avg_amount": 516343,
+      "total_amount": 2092781,
+      "avg_amount": 697594,
+      "pattern_type": "company"
+    },
+    {
+      "company": "University of Wisconsin-Madison",
+      "total_wins": 3,
+      "total_amount": 1758400,
+      "avg_amount": 586133,
       "pattern_type": "company"
     },
     {
@@ -764,13 +754,6 @@
       "pattern_type": "company"
     },
     {
-      "company": "University of Wisconsin-Madison",
-      "total_wins": 3,
-      "total_amount": 1090590,
-      "avg_amount": 363530,
-      "pattern_type": "company"
-    },
-    {
       "company": "Stevens Institute of Technology",
       "total_wins": 3,
       "total_amount": 1670310,
@@ -778,17 +761,24 @@
       "pattern_type": "company"
     },
     {
-      "company": "University of Alabama Tuscaloosa",
+      "company": "University of Illinois at Urbana-Champaign",
       "total_wins": 3,
-      "total_amount": 1274959,
-      "avg_amount": 424986,
+      "total_amount": 1741378,
+      "avg_amount": 580459,
+      "pattern_type": "company"
+    },
+    {
+      "company": "Brown University",
+      "total_wins": 3,
+      "total_amount": 1167468,
+      "avg_amount": 389156,
       "pattern_type": "company"
     },
     {
       "company": "Carnegie Mellon University",
       "total_wins": 3,
-      "total_amount": 1992764,
-      "avg_amount": 664255,
+      "total_amount": 2569403,
+      "avg_amount": 856468,
       "pattern_type": "company"
     },
     {
@@ -799,24 +789,17 @@
       "pattern_type": "company"
     },
     {
-      "company": "University of South Carolina at Columbia",
+      "company": "Columbia University",
       "total_wins": 3,
-      "total_amount": 1849584,
-      "avg_amount": 616528,
+      "total_amount": 860776,
+      "avg_amount": 286925,
       "pattern_type": "company"
     },
     {
-      "company": "Oklahoma State University",
+      "company": "University of North Carolina at Chapel Hill",
       "total_wins": 3,
-      "total_amount": 1459656,
-      "avg_amount": 486552,
-      "pattern_type": "company"
-    },
-    {
-      "company": "University of Georgia Research Foundation Inc",
-      "total_wins": 3,
-      "total_amount": 1155311,
-      "avg_amount": 385104,
+      "total_amount": 1201845,
+      "avg_amount": 400615,
       "pattern_type": "company"
     },
     {
@@ -827,17 +810,24 @@
       "pattern_type": "company"
     },
     {
-      "company": "University of Illinois at Urbana-Champaign",
+      "company": "University of Maryland, College Park",
       "total_wins": 2,
-      "total_amount": 1144355,
-      "avg_amount": 572178,
+      "total_amount": 1349030,
+      "avg_amount": 674515,
       "pattern_type": "company"
     },
     {
-      "company": "University of Arizona",
+      "company": "University of Oregon Eugene",
       "total_wins": 2,
-      "total_amount": 1451210,
-      "avg_amount": 725605,
+      "total_amount": 553628,
+      "avg_amount": 276814,
+      "pattern_type": "company"
+    },
+    {
+      "company": "Stanford University",
+      "total_wins": 2,
+      "total_amount": 1480000,
+      "avg_amount": 740000,
       "pattern_type": "company"
     }
   ]
