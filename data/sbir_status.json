@@ -1,5 +1,5 @@
 {
-  "last_checked": "2026-04-15T03:23:39.699913",
+  "last_checked": "2026-04-15T07:59:38.881556",
   "overall_status": "SUSPENDED",
   "reauthorized": false,
   "programs": {
@@ -9,7 +9,7 @@
       "reason": "Congressional authorization expired Sept 30, 2025",
       "accepting_apps": false,
       "url": "https://seedfund.nsf.gov/",
-      "last_checked": "2026-04-15T03:23:39.699919"
+      "last_checked": "2026-04-15T07:59:38.881563"
     },
     "DOE_SBIR": {
       "agency": "Department of Energy",
@@ -17,7 +17,7 @@
       "reason": "Authorization expired Oct 1, 2025",
       "accepting_apps": false,
       "url": "https://science.osti.gov/sbir",
-      "last_checked": "2026-04-15T03:23:39.699921"
+      "last_checked": "2026-04-15T07:59:38.881565"
     },
     "NIH_SBIR": {
       "agency": "National Institutes of Health",
@@ -25,7 +25,7 @@
       "reason": "Authorization expired",
       "accepting_apps": false,
       "url": "https://sbir.nih.gov/",
-      "last_checked": "2026-04-15T03:23:39.699923"
+      "last_checked": "2026-04-15T07:59:38.881566"
     },
     "DoD_SBIR": {
       "agency": "Department of Defense",
@@ -33,7 +33,7 @@
       "reason": "Some programs may continue under existing obligations",
       "accepting_apps": false,
       "url": "https://www.dodsbirsttr.mil/",
-      "last_checked": "2026-04-15T03:23:39.699924"
+      "last_checked": "2026-04-15T07:59:38.881568"
     }
   },
   "notes": [
