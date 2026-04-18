@@ -1,10 +1,10 @@
 {
   "metadata": {
-    "updated_at": "2026-04-17T10:55:14.399386",
-    "total_grants": 23,
+    "updated_at": "2026-04-18T10:02:15.455908",
+    "total_grants": 24,
     "source_breakdown": {
       "private_foundation": 9,
-      "state": 7,
+      "state": 8,
       "nofo_pipeline": 7
     },
     "urgent_grants": 0,
@@ -523,6 +523,36 @@
       "last_verified": "2026-04-03T10:03:13.616948"
     },
     {
+      "id": "36baa178f7c6",
+      "title": "Nevada: Nevada is a one-of-akind state!",
+      "funder": "Nevada Governor's Office of Economic Development",
+      "description": "Discover the advantages that make Nevada an ideal destination for doing business. From company incentives that encourage private sector firms to create jobs, invest in communities, and strengthen local industries to a pro-business culture, experience first-hand why Nevada stands out as a beacon for innovation, growth, and opportunity. We invite you to explore, thrive and elevate your business here in the Silver State!",
+      "amount_min": 0,
+      "amount_max": 0,
+      "currency": "USD",
+      "deadline": "",
+      "url": "https://goed.nv.gov/doing-business-nevada/",
+      "source": "nevada_state",
+      "grant_type": "state",
+      "industry_tags": [
+        "mining",
+        "critical minerals",
+        "lithium",
+        "cleantech"
+      ],
+      "eligibility": "",
+      "requirements": "",
+      "focus_areas": [],
+      "scraped_at": "2026-04-18T09:59:49.996813",
+      "urgency": {
+        "days_until_deadline": null,
+        "priority_level": "PLANNING",
+        "action_required": "monitor"
+      },
+      "source_type": "state",
+      "last_verified": "2026-04-18T09:59:49.996813"
+    },
+    {
       "id": "c46b1c5de5f4",
       "title": "DOE Battery Materials Processing NOFO",
       "funder": "DOE MESC",
@@ -544,14 +574,14 @@
       "eligibility": "Open to US entities. Small businesses, universities, national labs, and consortia eligible.",
       "requirements": "",
       "focus_areas": [],
-      "scraped_at": "2026-04-17T10:53:54.095787",
+      "scraped_at": "2026-04-18T10:01:03.794929",
       "urgency": {
         "days_until_deadline": null,
         "priority_level": "PLANNING",
         "action_required": "monitor"
       },
       "source_type": "nofo_pipeline",
-      "last_verified": "2026-04-17T10:53:54.095787"
+      "last_verified": "2026-04-18T10:01:03.794929"
     },
     {
       "id": "1054feef8fb6",
@@ -575,14 +605,14 @@
       "eligibility": "Open to US entities. High-risk high-reward research.",
       "requirements": "",
       "focus_areas": [],
-      "scraped_at": "2026-04-17T10:53:54.095793",
+      "scraped_at": "2026-04-18T10:01:03.794934",
       "urgency": {
         "days_until_deadline": null,
         "priority_level": "PLANNING",
         "action_required": "monitor"
       },
       "source_type": "nofo_pipeline",
-      "last_verified": "2026-04-17T10:53:54.095793"
+      "last_verified": "2026-04-18T10:01:03.794934"
     },
     {
       "id": "45b07b75cf02",
@@ -603,14 +633,14 @@
       "eligibility": "",
       "requirements": "",
       "focus_areas": [],
-      "scraped_at": "2026-04-17T10:54:04.100279",
+      "scraped_at": "2026-04-18T10:01:15.107320",
       "urgency": {
         "days_until_deadline": null,
         "priority_level": "PLANNING",
         "action_required": "monitor"
       },
       "source_type": "nofo_pipeline",
-      "last_verified": "2026-04-17T10:54:04.100279"
+      "last_verified": "2026-04-18T10:01:15.107320"
     },
     {
       "id": "c61cb39babe1",
@@ -631,14 +661,14 @@
       "eligibility": "",
       "requirements": "",
       "focus_areas": [],
-      "scraped_at": "2026-04-17T10:54:04.100293",
+      "scraped_at": "2026-04-18T10:01:15.107333",
       "urgency": {
         "days_until_deadline": null,
         "priority_level": "PLANNING",
         "action_required": "monitor"
       },
       "source_type": "nofo_pipeline",
-      "last_verified": "2026-04-17T10:54:04.100293"
+      "last_verified": "2026-04-18T10:01:15.107333"
     },
     {
       "id": "8eb0f9bda2ea",
@@ -659,14 +689,14 @@
       "eligibility": "",
       "requirements": "",
       "focus_areas": [],
-      "scraped_at": "2026-04-17T10:54:04.100297",
+      "scraped_at": "2026-04-18T10:01:15.107336",
       "urgency": {
         "days_until_deadline": null,
         "priority_level": "PLANNING",
         "action_required": "monitor"
       },
       "source_type": "nofo_pipeline",
-      "last_verified": "2026-04-17T10:54:04.100297"
+      "last_verified": "2026-04-18T10:01:15.107336"
     },
     {
       "id": "7e5f95dc15b4",
@@ -687,14 +717,14 @@
       "eligibility": "",
       "requirements": "",
       "focus_areas": [],
-      "scraped_at": "2026-04-17T10:54:04.100300",
+      "scraped_at": "2026-04-18T10:01:15.107338",
       "urgency": {
         "days_until_deadline": null,
         "priority_level": "PLANNING",
         "action_required": "monitor"
       },
       "source_type": "nofo_pipeline",
-      "last_verified": "2026-04-17T10:54:04.100300"
+      "last_verified": "2026-04-18T10:01:15.107338"
     },
     {
       "id": "7d0ab7a28db6",
@@ -715,14 +745,14 @@
       "eligibility": "",
       "requirements": "",
       "focus_areas": [],
-      "scraped_at": "2026-04-17T10:54:04.100307",
+      "scraped_at": "2026-04-18T10:01:15.107343",
       "urgency": {
         "days_until_deadline": null,
         "priority_level": "PLANNING",
         "action_required": "monitor"
       },
       "source_type": "nofo_pipeline",
-      "last_verified": "2026-04-17T10:54:04.100307"
+      "last_verified": "2026-04-18T10:01:15.107343"
     }
   ]
 }

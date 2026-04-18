@@ -19,7 +19,7 @@
       "technology"
     ],
     "eligibility_text": "Must be a Colorado-based company or partnered with a Colorado research institution. Small businesses encouraged. Core Element AI qualifies via Colorado School of Mines partnership.",
-    "scraped_at": "2026-04-17T10:49:02.303327"
+    "scraped_at": "2026-04-18T09:56:08.112786"
   },
   {
     "title": "Delaware EDGE Grant - STEM Track",
@@ -38,7 +38,7 @@
       "innovation"
     ],
     "eligibility_text": "Must be incorporated in Delaware. Small business. Core Element AI qualifies as Delaware S-Corp.",
-    "scraped_at": "2026-04-17T10:50:07.826677"
+    "scraped_at": "2026-04-18T09:57:12.845335"
   },
   {
     "title": "Arizona: Small Business Opportunities",
@@ -57,7 +57,7 @@
       "innovation",
       "technology"
     ],
-    "scraped_at": "2026-04-17T10:52:39.227303"
+    "scraped_at": "2026-04-18T09:59:49.996792"
   },
   {
     "title": "Arizona: Innovation & Entrepreneurship Opportunities",
@@ -76,7 +76,7 @@
       "innovation",
       "technology"
     ],
-    "scraped_at": "2026-04-17T10:52:39.227312"
+    "scraped_at": "2026-04-18T09:59:49.996802"
   },
   {
     "title": "Arizona: Rural Economic Development Opportunities",
@@ -95,7 +95,7 @@
       "innovation",
       "technology"
     ],
-    "scraped_at": "2026-04-17T10:52:39.227316"
+    "scraped_at": "2026-04-18T09:59:49.996805"
   },
   {
     "title": "Arizona: Talent and Training Opportunities",
@@ -114,7 +114,26 @@
       "innovation",
       "technology"
     ],
-    "scraped_at": "2026-04-17T10:52:39.227323"
+    "scraped_at": "2026-04-18T09:59:49.996810"
+  },
+  {
+    "title": "Nevada: Nevada is a one-of-akind state!",
+    "funder": "Nevada Governor's Office of Economic Development",
+    "description": "Discover the advantages that make Nevada an ideal destination for doing business. From company incentives that encourage private sector firms to create jobs, invest in communities, and strengthen local industries to a pro-business culture, experience first-hand why Nevada stands out as a beacon for innovation, growth, and opportunity. We invite you to explore, thrive and elevate your business here in the Silver State!",
+    "amount_min": null,
+    "amount_max": null,
+    "currency": "USD",
+    "deadline": "",
+    "url": "https://goed.nv.gov/doing-business-nevada/",
+    "source": "nevada_state",
+    "grant_type": "state",
+    "industry_tags": [
+      "mining",
+      "critical minerals",
+      "lithium",
+      "cleantech"
+    ],
+    "scraped_at": "2026-04-18T09:59:49.996813"
   },
   {
     "title": "Alaska: Quick Links",
@@ -132,6 +151,6 @@
       "mineral exploration",
       "natural resources"
     ],
-    "scraped_at": "2026-04-17T10:52:39.227326"
+    "scraped_at": "2026-04-18T09:59:49.996814"
   }
 ]

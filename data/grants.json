@@ -1,8 +1,8 @@
 {
   "metadata": {
-    "updated_at": "2026-04-17T10:26:00.135850",
-    "total_grants": 16,
-    "new_grants": 0
+    "updated_at": "2026-04-18T10:02:15.386242",
+    "total_grants": 17,
+    "new_grants": 1
   },
   "grants": [
     {
@@ -403,6 +403,29 @@
         "science"
       ],
       "scraped_at": "2026-04-03T10:03:13.616948"
+    },
+    {
+      "id": "36baa178f7c6",
+      "title": "Nevada: Nevada is a one-of-akind state!",
+      "funder": "Nevada Governor's Office of Economic Development",
+      "description": "Discover the advantages that make Nevada an ideal destination for doing business. From company incentives that encourage private sector firms to create jobs, invest in communities, and strengthen local industries to a pro-business culture, experience first-hand why Nevada stands out as a beacon for innovation, growth, and opportunity. We invite you to explore, thrive and elevate your business here in the Silver State!",
+      "amount_min": 0,
+      "amount_max": 0,
+      "currency": "USD",
+      "deadline": "",
+      "url": "https://goed.nv.gov/doing-business-nevada/",
+      "source": "nevada_state",
+      "grant_type": "state",
+      "industry_tags": [
+        "mining",
+        "critical minerals",
+        "lithium",
+        "cleantech"
+      ],
+      "eligibility": "",
+      "requirements": "",
+      "focus_areas": [],
+      "scraped_at": "2026-04-18T09:59:49.996813"
     }
   ]
 }
