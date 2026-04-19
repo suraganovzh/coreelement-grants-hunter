@@ -1,5 +1,26 @@
 [
   {
+    "id": "usa-DECD0000105",
+    "title": "THIS PROJECT, \u201cFACILITY TO REDUCE EMISSIONS FOR SOURCING PURE CRITICAL MINERALS AND METALS,\u201d \nINTENDS TO EXPAND THE CAPACITY AND CAPABILITIES OF A MODERN, FIRST-OF-A-KIND (FOAK) COPPER RECYCLING \nFACI",
+    "funder": "Department of Energy",
+    "funder_sub": "Department of Energy",
+    "amount": 270000000,
+    "winner": "WIELAND NORTH AMERICA RECYCLING LLC",
+    "winner_location": "None, None",
+    "award_date": "2025-01-01",
+    "end_date": "2034-12-31",
+    "award_type": "COOPERATIVE AGREEMENT (B)",
+    "naics_code": null,
+    "naics_desc": null,
+    "keywords": [
+      "mineral",
+      "critical minerals",
+      "copper"
+    ],
+    "source": "usaspending.gov",
+    "scraped_at": "2026-04-19T10:49:24.272593"
+  },
+  {
     "id": "usa-DEFE0032488",
     "title": "THE RECIPIENT WILL PERFORM A FRONT END ENGINEERING AND DESIGN (FEED) STUDY, BASED ON AN ASSOCIATION FOR ADVANCEMENT OF COST ENGINEERING (AACE) CLASS 3 COST STRATEGY, OF A 1-3 T MIXED RARE EARTH OXIDE ",
     "funder": "Department of Energy",
@@ -18,7 +39,7 @@
       "rare earth"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-04-12T10:47:20.892704"
+    "scraped_at": "2026-04-19T10:49:24.272617"
   },
   {
     "id": "usa-26K75IL000024",
@@ -38,7 +59,7 @@
       "critical minerals"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-04-12T10:47:20.892773"
+    "scraped_at": "2026-04-19T10:49:24.272666"
   },
   {
     "id": "usa-26K75IL000025",
@@ -60,7 +81,7 @@
       "cobalt"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-04-12T10:47:20.892820"
+    "scraped_at": "2026-04-19T10:49:24.272712"
   },
   {
     "id": "usa-2119551",
@@ -80,7 +101,50 @@
       "critical minerals"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-04-12T10:47:20.892827"
+    "scraped_at": "2026-04-19T10:49:24.272719"
+  },
+  {
+    "id": "usa-DEAR0002103",
+    "title": "PRINCETON CRITICAL MINERALS NEW RECOVER AWARD\nCONTROL NUMBER: 3510-1647\nTITLE: INTEGRATED LITHIUM AND MAGNESIUM RECOVERY FROM OIL AND GAS PRODUCED WATER\n\nTHIS COMPETITIVE COOPERATIVE AGREEMENT FOR A R",
+    "funder": "Department of Energy",
+    "funder_sub": "Department of Energy",
+    "amount": 2300000,
+    "winner": "PRINCETON CRITICAL MINERALS, INC.",
+    "winner_location": "None, None",
+    "award_date": "2026-04-03",
+    "end_date": "2029-04-02",
+    "award_type": "COOPERATIVE AGREEMENT (B)",
+    "naics_code": null,
+    "naics_desc": null,
+    "keywords": [
+      "mineral",
+      "critical minerals",
+      "lithium"
+    ],
+    "source": "usaspending.gov",
+    "scraped_at": "2026-04-19T10:49:24.272735"
+  },
+  {
+    "id": "usa-DEFE0032319",
+    "title": "ACIDIC WATER POLLUTION CLEANUP AND COMMUNITY ECONOMIC DEVELOPMENT THROUGH DOMESTIC PRODUCTION OF \nCRITICAL MINERALS FOR NATIONAL SECURITY. THE OBJECTIVE OF THIS EFFORT IS TO DESIGN AND INSTALL A MODUL",
+    "funder": "Department of Energy",
+    "funder_sub": "Department of Energy",
+    "amount": 2100000,
+    "winner": "THE PENNSYLVANIA STATE UNIVERSITY",
+    "winner_location": "None, None",
+    "award_date": "2024-03-01",
+    "end_date": "2026-07-31",
+    "award_type": "COOPERATIVE AGREEMENT (B)",
+    "naics_code": null,
+    "naics_desc": null,
+    "keywords": [
+      "mineral",
+      "critical minerals",
+      "cobalt",
+      "rare earth"
+    ],
+    "source": "usaspending.gov",
+    "scraped_at": "2026-04-19T10:49:24.272745"
   },
   {
     "id": "usa-DEAR0002089",
@@ -102,7 +166,7 @@
       "cobalt"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-04-12T10:47:20.892873"
+    "scraped_at": "2026-04-19T10:49:24.272787"
   },
   {
     "id": "usa-DEAR0002099",
@@ -123,27 +187,7 @@
       "rare earth"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-04-12T10:47:20.892894"
-  },
-  {
-    "id": "usa-2341956",
-    "title": "R/V KILO MOANA BOEM RESEARCH CRUISE -OCEANOGRAPHIC AND GEOLOGIC CRITERIA INDICATE THAT ABYSSAL MANGANESE NODULES MAY OCCUR IN THE ABYSSAL REGIONS OF THE SOUTHEASTERN PORTION OF THE EXCLUSIVE ECONOMIC ",
-    "funder": "National Science Foundation",
-    "funder_sub": "National Science Foundation",
-    "amount": 1575675,
-    "winner": "UNIVERSITY OF HAWAII",
-    "winner_location": "None, None",
-    "award_date": "2024-01-01",
-    "end_date": "2025-12-31",
-    "award_type": "COOPERATIVE AGREEMENT (B)",
-    "naics_code": null,
-    "naics_desc": null,
-    "keywords": [
-      "mineral",
-      "geological"
-    ],
-    "source": "usaspending.gov",
-    "scraped_at": "2026-04-12T10:47:20.892917"
+    "scraped_at": "2026-04-19T10:49:24.272807"
   },
   {
     "id": "usa-G26AC00029",
@@ -169,29 +213,27 @@
       "geological"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-04-12T10:47:20.892955"
+    "scraped_at": "2026-04-19T10:49:24.272840"
   },
   {
-    "id": "usa-G23AC00093",
-    "title": "CRITICAL MINERALS IN PENNSYLVANIAN BLACK SHALES OF THE US MIDCONTINENT PROJECT PERIOD  01 10 2023 THROUGH 01 09 2026  AWARD PURPOSE THE PURPOSE OF THIS PROJECT IS TO COLLECT MAJOR AND TRACE ELEMENTAL ",
-    "funder": "Department of the Interior",
-    "funder_sub": "U.S. Geological Survey",
-    "amount": 975000,
-    "winner": "UNIVERSITY OF KANSAS CENTER FOR RESEARCH INC",
+    "id": "usa-DEAR0001721",
+    "title": "NEW COMPETITIVE AGREEMENT WITH CORNELL UNIVERSITY UNDER FOA DE-FOA-0002707 (MINER) AND CONTROL NUMBER 2707-1502\nPROJECT TITLE: ''SUPERCRITICAL CO2 BASED MINING FOR CARBON-NEGATIVE CRITICAL MINERAL REC",
+    "funder": "Department of Energy",
+    "funder_sub": "Department of Energy",
+    "amount": 915000,
+    "winner": "CORNELL UNIVERSITY",
     "winner_location": "None, None",
-    "award_date": "2023-01-10",
-    "end_date": "2026-05-09",
+    "award_date": "2023-02-28",
+    "end_date": "2026-06-30",
     "award_type": "COOPERATIVE AGREEMENT (B)",
     "naics_code": null,
     "naics_desc": null,
     "keywords": [
-      "mineral",
-      "geospatial",
-      "critical minerals",
-      "geological"
+      "mining",
+      "mineral"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-04-12T10:47:20.892983"
+    "scraped_at": "2026-04-19T10:49:24.272853"
   },
   {
     "id": "usa-2320162",
@@ -212,7 +254,7 @@
       "critical minerals"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-04-12T10:47:20.893029"
+    "scraped_at": "2026-04-19T10:49:24.272897"
   },
   {
     "id": "usa-2202640",
@@ -234,27 +276,7 @@
       "clean energy"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-04-12T10:47:20.893064"
-  },
-  {
-    "id": "usa-G26AC00006",
-    "title": "PROJECT TITLE: NEW BEDROCK GEOLOGIC MAPPING ALONG THE INTERSTATE 49 CORRIDOR AND GEMS IMPLEMENTATION OF\nMGS-ARCHIVED GEOLOGIC MAPS\nPROJECT PERIOD: 12/01/2025 THROUGH 11/30/2026\n\nAWARD PURPOSE:\nTO COND",
-    "funder": "Department of the Interior",
-    "funder_sub": "U.S. Geological Survey",
-    "amount": 563081,
-    "winner": "MISSOURI DEPARTMENT OF NATURAL R",
-    "winner_location": "None, None",
-    "award_date": "2025-12-01",
-    "end_date": "2026-11-30",
-    "award_type": "COOPERATIVE AGREEMENT (B)",
-    "naics_code": null,
-    "naics_desc": null,
-    "keywords": [
-      "mineral",
-      "geological"
-    ],
-    "source": "usaspending.gov",
-    "scraped_at": "2026-04-12T10:47:20.893099"
+    "scraped_at": "2026-04-19T10:49:24.272932"
   },
   {
     "id": "usa-2543343",
@@ -276,27 +298,7 @@
       "lithium"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-04-12T10:47:20.893135"
-  },
-  {
-    "id": "usa-G26AC00009",
-    "title": "PROJECT TITLE: MAPPING AND DIGITIZATION OF COASTAL PLAIN (I-95 AND SANTEE AREA) AND PIEDMONT 7.5-MINUTE QUADRANGLES (GC 1), SOUTH CAROLINA, COMPILING I-73 CORRIDOR 1:24,000-SCALE MAPS (GC3), PUBLISHIN",
-    "funder": "Department of the Interior",
-    "funder_sub": "U.S. Geological Survey",
-    "amount": 421363,
-    "winner": "NATURAL RESOURCES SOUTH CAROLINA DEPARTMENT",
-    "winner_location": "None, None",
-    "award_date": "2026-03-01",
-    "end_date": "2027-09-30",
-    "award_type": "COOPERATIVE AGREEMENT (B)",
-    "naics_code": null,
-    "naics_desc": null,
-    "keywords": [
-      "mineral",
-      "exploration"
-    ],
-    "source": "usaspending.gov",
-    "scraped_at": "2026-04-12T10:47:20.893173"
+    "scraped_at": "2026-04-19T10:49:24.272967"
   },
   {
     "id": "usa-G26AC00041",
@@ -318,7 +320,7 @@
       "geological"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-04-12T10:47:20.893188"
+    "scraped_at": "2026-04-19T10:49:24.272982"
   },
   {
     "id": "usa-G25AC00423",
@@ -341,7 +343,7 @@
       "geological"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-04-12T10:47:20.893230"
+    "scraped_at": "2026-04-19T10:49:24.273022"
   },
   {
     "id": "usa-G25AC00424",
@@ -366,7 +368,7 @@
       "subsurface"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-04-12T10:47:20.893265"
+    "scraped_at": "2026-04-19T10:49:24.273058"
   },
   {
     "id": "usa-G26AC00047",
@@ -388,7 +390,7 @@
       "critical minerals"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-04-12T10:47:20.893297"
+    "scraped_at": "2026-04-19T10:49:24.273090"
   },
   {
     "id": "usa-G26AC00039",
@@ -409,7 +411,7 @@
       "subsurface"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-04-12T10:47:20.893362"
+    "scraped_at": "2026-04-19T10:49:24.273120"
   },
   {
     "id": "usa-G26AC00034",
@@ -431,7 +433,7 @@
       "geological"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-04-12T10:47:20.893414"
+    "scraped_at": "2026-04-19T10:49:24.273160"
   },
   {
     "id": "usa-G26AC00033",
@@ -453,7 +455,7 @@
       "geological"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-04-12T10:47:20.893435"
+    "scraped_at": "2026-04-19T10:49:24.273179"
   },
   {
     "id": "usa-G26AC00046",
@@ -476,7 +478,7 @@
       "geological"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-04-12T10:47:20.893468"
+    "scraped_at": "2026-04-19T10:49:24.273212"
   },
   {
     "id": "usa-G26AC00038",
@@ -501,7 +503,7 @@
       "geological"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-04-12T10:47:20.893509"
+    "scraped_at": "2026-04-19T10:49:24.273254"
   },
   {
     "id": "usa-G26AC00036",
@@ -523,7 +525,7 @@
       "critical minerals"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-04-12T10:47:20.893546"
+    "scraped_at": "2026-04-19T10:49:24.273293"
   },
   {
     "id": "usa-G26AC00045",
@@ -548,73 +550,28 @@
       "geological"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-04-12T10:47:20.893576"
+    "scraped_at": "2026-04-19T10:49:24.273324"
   },
   {
-    "id": "usa-G23AC00090",
-    "title": "GEOLOGIC MAPPING IN THE HAILE RIDGEWAY AND BREWER, SOUTH CAROLINA FOCUS AREASPROJECT PERIOD   01 23 2023 THROUGH 01 22 2026DESCRIPTION OF PROJECT  THE SOUTH CAROLINA DEPARTMENT OF NATURAL RESOURCES GE",
-    "funder": "Department of the Interior",
-    "funder_sub": "U.S. Geological Survey",
-    "amount": 300000,
-    "winner": "NATURAL RESOURCES SOUTH CAROLINA DEPARTMENT",
+    "id": "usa-DEFE0032121",
+    "title": "DE-FE0032121; NEW AWARD\n''TUNABLE ELECTROCHEMICAL PATHWAY FOR HIGH-PURITY RARE EARTH METALS (REM) AND CRITICAL MINERALS (CM)''",
+    "funder": "Department of Energy",
+    "funder_sub": "Department of Energy",
+    "amount": 199816,
+    "winner": "UNIVERSITY OF NORTH DAKOTA",
     "winner_location": "None, None",
-    "award_date": "2023-01-23",
-    "end_date": "2027-06-30",
+    "award_date": "2021-11-30",
+    "end_date": "2025-02-28",
     "award_type": "COOPERATIVE AGREEMENT (B)",
     "naics_code": null,
     "naics_desc": null,
     "keywords": [
       "mineral",
       "critical minerals",
-      "geological"
+      "rare earth"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-04-12T10:47:20.893613"
-  },
-  {
-    "id": "usa-G23AC00088",
-    "title": "PROJECT TITLE  WICHITA MOUNTAINS OF SOUTHERN OKLAHOMAPROJECT PERIOD   01 23 2023 THROUGH 01 22 2026DESCRIPTION OF PROJECT  THE PURPOSE OF THIS PROJECT IS TO USE GEOLOGIC AND GEOCHEMICAL MAPPING TO DET",
-    "funder": "Department of the Interior",
-    "funder_sub": "U.S. Geological Survey",
-    "amount": 297067,
-    "winner": "UNIVERSITY OF OKLAHOMA",
-    "winner_location": "None, None",
-    "award_date": "2023-01-23",
-    "end_date": "2027-01-22",
-    "award_type": "COOPERATIVE AGREEMENT (B)",
-    "naics_code": null,
-    "naics_desc": null,
-    "keywords": [
-      "mineral",
-      "critical minerals",
-      "geological"
-    ],
-    "source": "usaspending.gov",
-    "scraped_at": "2026-04-12T10:47:20.893627"
-  },
-  {
-    "id": "usa-G23AC00443",
-    "title": "PROJECT TITLE: CHARACTERIZATION OF REE-ENRICHED MINE WASTE AT THE BROWNS BOTTOM QUARRY IN DUBUQUE, IOWA, USAPROJECT PERIOD: 7 1 2023 THROUGH 6 30 2025PURPOSE:  THE RECIPIENT WILL DEVELOP A STATE MINE ",
-    "funder": "Department of the Interior",
-    "funder_sub": "U.S. Geological Survey",
-    "amount": 191439,
-    "winner": "THE UNIVERSITY OF IOWA",
-    "winner_location": "None, None",
-    "award_date": "2023-07-01",
-    "end_date": "2025-06-30",
-    "award_type": "COOPERATIVE AGREEMENT (B)",
-    "naics_code": null,
-    "naics_desc": null,
-    "keywords": [
-      "mining",
-      "mineral",
-      "geology",
-      "geospatial",
-      "critical minerals",
-      "geological"
-    ],
-    "source": "usaspending.gov",
-    "scraped_at": "2026-04-12T10:47:20.893665"
+    "scraped_at": "2026-04-19T10:49:24.273329"
   },
   {
     "id": "usa-G23AC00423",
@@ -636,7 +593,7 @@
       "geological"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-04-12T10:47:20.893686"
+    "scraped_at": "2026-04-19T10:49:24.273350"
   },
   {
     "id": "usa-W911NF261A076",
@@ -655,7 +612,7 @@
       "mineral"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-04-12T10:47:20.893693"
+    "scraped_at": "2026-04-19T10:49:24.273355"
   },
   {
     "id": "usa-G26AC00020",
@@ -680,51 +637,7 @@
       "geological"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-04-12T10:47:20.893729"
-  },
-  {
-    "id": "usa-G23AC00432",
-    "title": "PROJECT TITLE: EARTH MRI CRITICAL MINERALS INVENTORY AND SAMPLINGPROJECT PERIOD: 8 28 2023 THROUGH 4 25 2023PURPOSE: COMPILE AND INVENTORYING DATA ON MINE WASTE SITES.ACTIVITIES: THE RECIPIENT WILL EX",
-    "funder": "Department of the Interior",
-    "funder_sub": "U.S. Geological Survey",
-    "amount": 54000,
-    "winner": "WESTERN MICHIGAN UNIVERSITY",
-    "winner_location": "None, None",
-    "award_date": "2023-08-28",
-    "end_date": "2025-04-25",
-    "award_type": "COOPERATIVE AGREEMENT (B)",
-    "naics_code": null,
-    "naics_desc": null,
-    "keywords": [
-      "mineral",
-      "critical minerals"
-    ],
-    "source": "usaspending.gov",
-    "scraped_at": "2026-04-12T10:47:20.893741"
-  },
-  {
-    "id": "usa-G23AC00469",
-    "title": "PROJECT TITLE: INVENTORYING ARIZONA S MINE WASTEPROJECT PERIOD: 8 1 2023 THROUGH 7 31 2025AWARD PURPOSE: TO COMPILE MINE WASTE SITES IN NORTHWESTERN ARIZONA (COCONINO, MOHAVE, AND YAVAPAI COUNTIES). T",
-    "funder": "Department of the Interior",
-    "funder_sub": "U.S. Geological Survey",
-    "amount": 53964,
-    "winner": "UNIVERSITY OF ARIZONA",
-    "winner_location": "None, None",
-    "award_date": "2023-08-01",
-    "end_date": "2025-07-31",
-    "award_type": "COOPERATIVE AGREEMENT (B)",
-    "naics_code": null,
-    "naics_desc": null,
-    "keywords": [
-      "mining",
-      "mineral",
-      "geology",
-      "exploration",
-      "critical minerals",
-      "geological"
-    ],
-    "source": "usaspending.gov",
-    "scraped_at": "2026-04-12T10:47:20.893766"
+    "scraped_at": "2026-04-19T10:49:24.273390"
   },
   {
     "id": "usa-G23AC00470",
@@ -752,7 +665,7 @@
       "remote sensing"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-04-12T10:47:20.893795"
+    "scraped_at": "2026-04-19T10:49:24.273419"
   },
   {
     "id": "usa-2538354",
@@ -776,7 +689,7 @@
       "geological"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-04-12T10:47:20.893820"
+    "scraped_at": "2026-04-19T10:49:24.273443"
   },
   {
     "id": "usa-2617779",
@@ -797,6 +710,6 @@
       "critical minerals"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-04-12T10:47:20.893839"
+    "scraped_at": "2026-04-19T10:49:24.273462"
   }
 ]
