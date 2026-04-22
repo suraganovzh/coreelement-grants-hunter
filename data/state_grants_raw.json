@@ -19,7 +19,7 @@
       "technology"
     ],
     "eligibility_text": "Must be a Colorado-based company or partnered with a Colorado research institution. Small businesses encouraged. Core Element AI qualifies via Colorado School of Mines partnership.",
-    "scraped_at": "2026-04-21T11:01:26.171018"
+    "scraped_at": "2026-04-22T10:25:12.555979"
   },
   {
     "title": "Delaware EDGE Grant - STEM Track",
@@ -38,7 +38,7 @@
       "innovation"
     ],
     "eligibility_text": "Must be incorporated in Delaware. Small business. Core Element AI qualifies as Delaware S-Corp.",
-    "scraped_at": "2026-04-21T11:02:31.549173"
+    "scraped_at": "2026-04-22T10:30:09.384374"
   },
   {
     "title": "Arizona: Small Business Opportunities",
@@ -57,7 +57,7 @@
       "innovation",
       "technology"
     ],
-    "scraped_at": "2026-04-21T11:04:57.846009"
+    "scraped_at": "2026-04-22T10:35:05.076573"
   },
   {
     "title": "Arizona: Innovation & Entrepreneurship Opportunities",
@@ -76,7 +76,7 @@
       "innovation",
       "technology"
     ],
-    "scraped_at": "2026-04-21T11:04:57.846017"
+    "scraped_at": "2026-04-22T10:35:05.076582"
   },
   {
     "title": "Arizona: Rural Economic Development Opportunities",
@@ -95,7 +95,7 @@
       "innovation",
       "technology"
     ],
-    "scraped_at": "2026-04-21T11:04:57.846021"
+    "scraped_at": "2026-04-22T10:35:05.076586"
   },
   {
     "title": "Arizona: Talent and Training Opportunities",
@@ -114,7 +114,7 @@
       "innovation",
       "technology"
     ],
-    "scraped_at": "2026-04-21T11:04:57.846027"
+    "scraped_at": "2026-04-22T10:35:05.076593"
   },
   {
     "title": "Nevada: Nevada is a one-of-akind state!",
@@ -133,6 +133,24 @@
       "lithium",
       "cleantech"
     ],
-    "scraped_at": "2026-04-21T11:04:57.846029"
+    "scraped_at": "2026-04-22T10:35:05.076597"
+  },
+  {
+    "title": "Alaska: Quick Links",
+    "funder": "Alaska Division of Economic Development",
+    "description": "",
+    "amount_min": null,
+    "amount_max": null,
+    "currency": "USD",
+    "deadline": "",
+    "url": "https://www.commerce.alaska.gov/web/inv/LoanPrograms",
+    "source": "alaska_state",
+    "grant_type": "state",
+    "industry_tags": [
+      "mining",
+      "mineral exploration",
+      "natural resources"
+    ],
+    "scraped_at": "2026-04-22T10:35:05.076600"
   }
 ]
