@@ -18,7 +18,28 @@
       "copper"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-04-19T10:49:24.272593"
+    "scraped_at": "2026-04-26T10:52:26.385011"
+  },
+  {
+    "id": "usa-2315695",
+    "title": "NSF ENGINES: UPSTATE NEW YORK ENERGY STORAGE ENGINE -THIS NSF ENGINES AWARD TO THE UPSTATE NEW YORK ENERGY STORAGE ENGINE WILL ADDRESS THE ENTIRE BATTERY TECHNOLOGY VALUE CHAIN TO ESTABLISH A TECH-BAS",
+    "funder": "National Science Foundation",
+    "funder_sub": "National Science Foundation",
+    "amount": 15000000,
+    "winner": "THE RESEARCH FOUNDATION FOR THE STATE UNIVERSITY OF NEW YORK",
+    "winner_location": "None, None",
+    "award_date": "2024-03-01",
+    "end_date": "2027-02-28",
+    "award_type": "COOPERATIVE AGREEMENT (B)",
+    "naics_code": null,
+    "naics_desc": null,
+    "keywords": [
+      "mineral",
+      "critical minerals",
+      "lithium"
+    ],
+    "source": "usaspending.gov",
+    "scraped_at": "2026-04-26T10:52:26.385089"
   },
   {
     "id": "usa-DEFE0032488",
@@ -39,7 +60,7 @@
       "rare earth"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-04-19T10:49:24.272617"
+    "scraped_at": "2026-04-26T10:52:26.385104"
   },
   {
     "id": "usa-26K75IL000024",
@@ -59,29 +80,7 @@
       "critical minerals"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-04-19T10:49:24.272666"
-  },
-  {
-    "id": "usa-26K75IL000025",
-    "title": "WORLD VISION, INC. ? TRANSPARENT, RESPONSIBLE, ACCOUNTABLE CRITICAL MINERAL EXTRACTION (TRACE): A U.S.?DRC PARTNERSHIP TO ADDRESS CHILD AND FORCED LABOR IN SUPPLY CHAIN\nTRACE SEEKS TO ELIMINATE CHILD ",
-    "funder": "Department of Labor",
-    "funder_sub": "Office of the Assistant Secretary for Administration and Management",
-    "amount": 5000000,
-    "winner": "WORLD VISION INC.",
-    "winner_location": "None, None",
-    "award_date": "2025-12-31",
-    "end_date": "2030-06-30",
-    "award_type": "COOPERATIVE AGREEMENT (B)",
-    "naics_code": null,
-    "naics_desc": null,
-    "keywords": [
-      "mining",
-      "mineral",
-      "critical minerals",
-      "cobalt"
-    ],
-    "source": "usaspending.gov",
-    "scraped_at": "2026-04-19T10:49:24.272712"
+    "scraped_at": "2026-04-26T10:52:26.385152"
   },
   {
     "id": "usa-2119551",
@@ -101,7 +100,7 @@
       "critical minerals"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-04-19T10:49:24.272719"
+    "scraped_at": "2026-04-26T10:52:26.385159"
   },
   {
     "id": "usa-DEAR0002103",
@@ -122,7 +121,7 @@
       "lithium"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-04-19T10:49:24.272735"
+    "scraped_at": "2026-04-26T10:52:26.385176"
   },
   {
     "id": "usa-DEFE0032319",
@@ -144,7 +143,7 @@
       "rare earth"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-04-19T10:49:24.272745"
+    "scraped_at": "2026-04-26T10:52:26.385185"
   },
   {
     "id": "usa-DEAR0002089",
@@ -166,7 +165,7 @@
       "cobalt"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-04-19T10:49:24.272787"
+    "scraped_at": "2026-04-26T10:52:26.385228"
   },
   {
     "id": "usa-DEAR0002099",
@@ -187,7 +186,7 @@
       "rare earth"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-04-19T10:49:24.272807"
+    "scraped_at": "2026-04-26T10:52:26.385248"
   },
   {
     "id": "usa-G26AC00029",
@@ -213,7 +212,7 @@
       "geological"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-04-19T10:49:24.272840"
+    "scraped_at": "2026-04-26T10:52:26.385281"
   },
   {
     "id": "usa-DEAR0001721",
@@ -233,7 +232,7 @@
       "mineral"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-04-19T10:49:24.272853"
+    "scraped_at": "2026-04-26T10:52:26.385293"
   },
   {
     "id": "usa-2320162",
@@ -254,7 +253,7 @@
       "critical minerals"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-04-19T10:49:24.272897"
+    "scraped_at": "2026-04-26T10:52:26.385337"
   },
   {
     "id": "usa-2202640",
@@ -276,7 +275,7 @@
       "clean energy"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-04-19T10:49:24.272932"
+    "scraped_at": "2026-04-26T10:52:26.385372"
   },
   {
     "id": "usa-2543343",
@@ -298,7 +297,7 @@
       "lithium"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-04-19T10:49:24.272967"
+    "scraped_at": "2026-04-26T10:52:26.385407"
   },
   {
     "id": "usa-G26AC00041",
@@ -320,7 +319,7 @@
       "geological"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-04-19T10:49:24.272982"
+    "scraped_at": "2026-04-26T10:52:26.385422"
   },
   {
     "id": "usa-G25AC00423",
@@ -343,7 +342,7 @@
       "geological"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-04-19T10:49:24.273022"
+    "scraped_at": "2026-04-26T10:52:26.385463"
   },
   {
     "id": "usa-G25AC00424",
@@ -368,7 +367,7 @@
       "subsurface"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-04-19T10:49:24.273058"
+    "scraped_at": "2026-04-26T10:52:26.385498"
   },
   {
     "id": "usa-G26AC00047",
@@ -390,7 +389,7 @@
       "critical minerals"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-04-19T10:49:24.273090"
+    "scraped_at": "2026-04-26T10:52:26.385531"
   },
   {
     "id": "usa-G26AC00039",
@@ -411,7 +410,7 @@
       "subsurface"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-04-19T10:49:24.273120"
+    "scraped_at": "2026-04-26T10:52:26.385561"
   },
   {
     "id": "usa-G26AC00034",
@@ -433,7 +432,7 @@
       "geological"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-04-19T10:49:24.273160"
+    "scraped_at": "2026-04-26T10:52:26.385601"
   },
   {
     "id": "usa-G26AC00033",
@@ -455,7 +454,7 @@
       "geological"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-04-19T10:49:24.273179"
+    "scraped_at": "2026-04-26T10:52:26.385624"
   },
   {
     "id": "usa-G26AC00046",
@@ -478,7 +477,7 @@
       "geological"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-04-19T10:49:24.273212"
+    "scraped_at": "2026-04-26T10:52:26.385657"
   },
   {
     "id": "usa-G26AC00038",
@@ -503,7 +502,7 @@
       "geological"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-04-19T10:49:24.273254"
+    "scraped_at": "2026-04-26T10:52:26.385716"
   },
   {
     "id": "usa-G26AC00036",
@@ -525,7 +524,7 @@
       "critical minerals"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-04-19T10:49:24.273293"
+    "scraped_at": "2026-04-26T10:52:26.385756"
   },
   {
     "id": "usa-G26AC00045",
@@ -550,7 +549,7 @@
       "geological"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-04-19T10:49:24.273324"
+    "scraped_at": "2026-04-26T10:52:26.385787"
   },
   {
     "id": "usa-DEFE0032121",
@@ -571,7 +570,7 @@
       "rare earth"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-04-19T10:49:24.273329"
+    "scraped_at": "2026-04-26T10:52:26.385792"
   },
   {
     "id": "usa-G23AC00423",
@@ -593,7 +592,7 @@
       "geological"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-04-19T10:49:24.273350"
+    "scraped_at": "2026-04-26T10:52:26.385813"
   },
   {
     "id": "usa-W911NF261A076",
@@ -612,32 +611,7 @@
       "mineral"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-04-19T10:49:24.273355"
-  },
-  {
-    "id": "usa-G26AC00020",
-    "title": "PROPOSAL TITLE: MAPPING IGNEOUS BEDROCK OF THE DESERT MOUNTAIN INTRUSIVE COMPLEX, JUAB COUNTY, UTAH: A GEOCHEMICAL AND GEOCHRONOLOGICAL PERSPECTIVEPROJECT PERIOD: 06 01 2026  08 31 2028PURPOSETHIS EDM",
-    "funder": "Department of the Interior",
-    "funder_sub": "U.S. Geological Survey",
-    "amount": 72788,
-    "winner": "UNIVERSITY OF MISSOURI SYSTEM",
-    "winner_location": "None, None",
-    "award_date": "2026-06-01",
-    "end_date": "2028-08-31",
-    "award_type": "COOPERATIVE AGREEMENT (B)",
-    "naics_code": null,
-    "naics_desc": null,
-    "keywords": [
-      "mining",
-      "mineral",
-      "geology",
-      "exploration",
-      "critical minerals",
-      "copper",
-      "geological"
-    ],
-    "source": "usaspending.gov",
-    "scraped_at": "2026-04-19T10:49:24.273390"
+    "scraped_at": "2026-04-26T10:52:26.385819"
   },
   {
     "id": "usa-G23AC00470",
@@ -665,7 +639,7 @@
       "remote sensing"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-04-19T10:49:24.273419"
+    "scraped_at": "2026-04-26T10:52:26.385847"
   },
   {
     "id": "usa-2538354",
@@ -689,7 +663,7 @@
       "geological"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-04-19T10:49:24.273443"
+    "scraped_at": "2026-04-26T10:52:26.385871"
   },
   {
     "id": "usa-2617779",
@@ -710,6 +684,6 @@
       "critical minerals"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-04-19T10:49:24.273462"
+    "scraped_at": "2026-04-26T10:52:26.385890"
   }
 ]
