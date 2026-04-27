@@ -1,11 +1,11 @@
 {
   "metadata": {
-    "updated_at": "2026-04-26T10:47:14.925283",
-    "total_grants": 23,
+    "updated_at": "2026-04-27T11:17:23.541171",
+    "total_grants": 24,
     "source_breakdown": {
       "private_foundation": 9,
       "state": 8,
-      "nofo_pipeline": 6
+      "nofo_pipeline": 7
     },
     "urgent_grants": 0,
     "sbir_status": "SUSPENDED"
@@ -574,14 +574,14 @@
       "eligibility": "Open to US entities. Small businesses, universities, national labs, and consortia eligible.",
       "requirements": "",
       "focus_areas": [],
-      "scraped_at": "2026-04-26T10:44:31.621763",
+      "scraped_at": "2026-04-27T11:16:12.359794",
       "urgency": {
         "days_until_deadline": null,
         "priority_level": "PLANNING",
         "action_required": "monitor"
       },
       "source_type": "nofo_pipeline",
-      "last_verified": "2026-04-26T10:44:31.621763"
+      "last_verified": "2026-04-27T11:16:12.359794"
     },
     {
       "id": "1054feef8fb6",
@@ -605,14 +605,14 @@
       "eligibility": "Open to US entities. High-risk high-reward research.",
       "requirements": "",
       "focus_areas": [],
-      "scraped_at": "2026-04-26T10:44:31.621769",
+      "scraped_at": "2026-04-27T11:16:12.359800",
       "urgency": {
         "days_until_deadline": null,
         "priority_level": "PLANNING",
         "action_required": "monitor"
       },
       "source_type": "nofo_pipeline",
-      "last_verified": "2026-04-26T10:44:31.621769"
+      "last_verified": "2026-04-27T11:16:12.359800"
     },
     {
       "id": "45b07b75cf02",
@@ -633,14 +633,14 @@
       "eligibility": "",
       "requirements": "",
       "focus_areas": [],
-      "scraped_at": "2026-04-26T10:46:05.169934",
+      "scraped_at": "2026-04-27T11:16:23.110295",
       "urgency": {
         "days_until_deadline": null,
         "priority_level": "PLANNING",
         "action_required": "monitor"
       },
       "source_type": "nofo_pipeline",
-      "last_verified": "2026-04-26T10:46:05.169934"
+      "last_verified": "2026-04-27T11:16:23.110295"
     },
     {
       "id": "c61cb39babe1",
@@ -661,14 +661,14 @@
       "eligibility": "",
       "requirements": "",
       "focus_areas": [],
-      "scraped_at": "2026-04-26T10:46:05.169950",
+      "scraped_at": "2026-04-27T11:16:23.110309",
       "urgency": {
         "days_until_deadline": null,
         "priority_level": "PLANNING",
         "action_required": "monitor"
       },
       "source_type": "nofo_pipeline",
-      "last_verified": "2026-04-26T10:46:05.169950"
+      "last_verified": "2026-04-27T11:16:23.110309"
     },
     {
       "id": "8eb0f9bda2ea",
@@ -689,14 +689,14 @@
       "eligibility": "",
       "requirements": "",
       "focus_areas": [],
-      "scraped_at": "2026-04-26T10:46:05.169953",
+      "scraped_at": "2026-04-27T11:16:23.110312",
       "urgency": {
         "days_until_deadline": null,
         "priority_level": "PLANNING",
         "action_required": "monitor"
       },
       "source_type": "nofo_pipeline",
-      "last_verified": "2026-04-26T10:46:05.169953"
+      "last_verified": "2026-04-27T11:16:23.110312"
     },
     {
       "id": "7e5f95dc15b4",
@@ -717,14 +717,42 @@
       "eligibility": "",
       "requirements": "",
       "focus_areas": [],
-      "scraped_at": "2026-04-26T10:46:05.169956",
+      "scraped_at": "2026-04-27T11:16:23.110316",
       "urgency": {
         "days_until_deadline": null,
         "priority_level": "PLANNING",
         "action_required": "monitor"
       },
       "source_type": "nofo_pipeline",
-      "last_verified": "2026-04-26T10:46:05.169956"
+      "last_verified": "2026-04-27T11:16:23.110316"
+    },
+    {
+      "id": "6fe8df9f63b2",
+      "title": "[UPCOMING] Announcement NumberAnnouncement TitleAnnouncementTypeRFI DeadlineNOI DeadlineCP DeadlineFA DeadlineLoading\u2026Loading\u2026April 2026SunMonTueWedThuFriSat142930311234155678910111612131415161718171920212223242518262728293012193456789JanFebMarAprMayJunJulAugSepOctNovDecTodayClearLoading\u2026April 2026SunMonTueWedThuFriSat142930311234155678910111612131415161718171920212223242518262728293012193456789JanFebMarAprMayJunJulAugSepOctNovDecTodayClearLoading\u2026April 2026SunMonTueWedThuFriSat142930311234155678910111612131415161718171920212223242518262728293012193456789JanFebMarAprMayJunJulAugSepOctNovDecTodayClearLoading\u2026April 2026SunMonTueWedThuFriSat142930311234155678910111612131415161718171920212223242518262728293012193456789JanFebMarAprMayJunJulAugSepOctNovDecTodayClearRFI-0000094Announcement of Teaming List: Advanced Reactor FuelsTeaming Partner ListRFI-0000095Announcement of Teaming List: Advanced Stimulation and Enhanced Recovery TechnologiesTeaming Partner ListDE-FOA-0003467Seeding Critical Advances for Leading Energy technologies with Untapped Potential (SCALEUP) ReadyNotice Of Funding Opportunity (NOFO)TBDRFI-0000086Announcement of Teaming Partner List for NOFO: SCALEUP ReadyTeaming Partner ListDE-FOA-0003623High-performance Optimized Recycled Nuclear Isotopes for Gen IV reactors (HORNIG)Notice Of Funding Opportunity (NOFO)5/28/2026 09:30 AM ETTBDDE-FOA-0003624Inspiring Generations of New Innovators to Impact Technologies in Energy 2026 (IGNIITE 2026)Notice Of Funding Opportunity (NOFO)5/29/2026 09:30 AM ETTBDDE-FOA-0003556Stimulate Utilization of Plentiful Energy in Rocks through High-temperature Original Technologies (SUPERHOT)Notice Of Funding Opportunity (NOFO)2/19/2025 09:30 AM ET3/5/2026 09:30 AM ETDE-FOA-0003557Stimulate Utilization of Plentiful Energy in Rocks through High-temperature Original Technologies SBIR/STTR (SUPERHOT SBIR/STTR)Notice Of Funding Opportunity (NOFO)2/19/2025 09:30 AM ET3/5/2026 09:30 AM ETDE-FOA-0003164Spurring Projects to Advance Energy Research and Knowledge Swiftly (SPARKS)Funding Opportunity Announcement (FOA)TBDTBDDE-FOA-0003536Harnessing Autonomy for Energy Joint Ventures Offshore (HAEJO)Notice Of Funding Opportunity (NOFO)2/13/2025 09:30 AM ETTBDDE-FOA-0003537Harnessing Autonomy for Energy Joint Ventures Offshore SBIR/STTR (HAEJO SBIR/STTR)Notice Of Funding Opportunity (NOFO)2/13/2025 09:30 AM ETTBDDE-FOA-0003554Grid Reliability with Automatic Damping and Inertia for Electrical Networks and Transmission Systems (GRADIENTS)Notice Of Funding Opportunity (NOFO)2/14/2025 09:30 AM ETTBDDE-FOA-0003552Plant Engineering to Revolutionize Sustainable Energy Production and Heighten Opportunities for Novel Efficiency (PERSEPHONE SBIR/STTR)Notice Of Funding Opportunity (NOFO)3/4/2025 09:30 AM ETDE-FOA-0003555Grid Reliability with Automatic Damping and Inertia for Electrical Networks and Transmission Systems SBIR/STTR (GRADIENTS SBIR/STTR)Notice Of Funding Opportunity (NOFO)2/14/2025 09:30 AM ETTBDDE-FOA-0003551Plant Engineering to Revolutionize Sustainable Energy Production and Heighten Opportunities for Novel Efficiency (PERSEPHONE)Notice Of Funding Opportunity (NOFO)3/4/2025 09:30 AM ETLoading\u2026",
+      "funder": "ARPA-E",
+      "description": "",
+      "amount_min": 0,
+      "amount_max": 0,
+      "currency": "USD",
+      "deadline": "",
+      "url": "https://arpa-e-foa.energy.gov/",
+      "source": "nofo_pipeline",
+      "grant_type": "federal",
+      "industry_tags": [
+        "upcoming",
+        "prepare_now"
+      ],
+      "eligibility": "",
+      "requirements": "",
+      "focus_areas": [],
+      "scraped_at": "2026-04-27T11:16:23.110323",
+      "urgency": {
+        "days_until_deadline": null,
+        "priority_level": "PLANNING",
+        "action_required": "monitor"
+      },
+      "source_type": "nofo_pipeline",
+      "last_verified": "2026-04-27T11:16:23.110323"
     }
   ]
 }
