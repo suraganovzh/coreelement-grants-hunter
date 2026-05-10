@@ -18,7 +18,7 @@
       "copper"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-05-03T10:58:56.654707"
+    "scraped_at": "2026-05-10T11:03:35.578131"
   },
   {
     "id": "usa-2315695",
@@ -39,7 +39,7 @@
       "lithium"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-05-03T10:58:56.654795"
+    "scraped_at": "2026-05-10T11:03:35.578218"
   },
   {
     "id": "usa-DEFE0032488",
@@ -60,7 +60,7 @@
       "rare earth"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-05-03T10:58:56.654811"
+    "scraped_at": "2026-05-10T11:03:35.578234"
   },
   {
     "id": "usa-26K75IL000024",
@@ -80,7 +80,7 @@
       "critical minerals"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-05-03T10:58:56.654864"
+    "scraped_at": "2026-05-10T11:03:35.578288"
   },
   {
     "id": "usa-2119551",
@@ -100,7 +100,28 @@
       "critical minerals"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-05-03T10:58:56.654872"
+    "scraped_at": "2026-05-10T11:03:35.578296"
+  },
+  {
+    "id": "usa-84068102",
+    "title": "DESCRIPTION:EPA IS SOLICITING APPLICATIONS FROM QUALIFIED (NON-PROFIT) ENTITIES THAT HAVE AN INTEREST AND EXPERIENCE IN CONDUCTING ASSESSMENTS OR TESTS OF NEW OR EXISTING ENVIRONMENTAL MONITORING AND ",
+    "funder": "Environmental Protection Agency",
+    "funder_sub": "Environmental Protection Agency",
+    "amount": 2938673,
+    "winner": "BATTELLE MEMORIAL INSTITUTE",
+    "winner_location": "None, None",
+    "award_date": "2024-03-01",
+    "end_date": "2027-02-28",
+    "award_type": "COOPERATIVE AGREEMENT (B)",
+    "naics_code": null,
+    "naics_desc": null,
+    "keywords": [
+      "mining",
+      "mineral",
+      "critical minerals"
+    ],
+    "source": "usaspending.gov",
+    "scraped_at": "2026-05-10T11:03:35.578349"
   },
   {
     "id": "usa-DEAR0002103",
@@ -121,7 +142,7 @@
       "lithium"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-05-03T10:58:56.654890"
+    "scraped_at": "2026-05-10T11:03:35.578367"
   },
   {
     "id": "usa-DEFE0032319",
@@ -143,7 +164,7 @@
       "rare earth"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-05-03T10:58:56.654900"
+    "scraped_at": "2026-05-10T11:03:35.578382"
   },
   {
     "id": "usa-DEAR0002089",
@@ -165,7 +186,7 @@
       "cobalt"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-05-03T10:58:56.654946"
+    "scraped_at": "2026-05-10T11:03:35.578423"
   },
   {
     "id": "usa-DEAR0002099",
@@ -186,7 +207,7 @@
       "rare earth"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-05-03T10:58:56.654973"
+    "scraped_at": "2026-05-10T11:03:35.578445"
   },
   {
     "id": "usa-G26AC00029",
@@ -212,7 +233,7 @@
       "geological"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-05-03T10:58:56.655009"
+    "scraped_at": "2026-05-10T11:03:35.578481"
   },
   {
     "id": "usa-DEAR0001721",
@@ -232,28 +253,7 @@
       "mineral"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-05-03T10:58:56.655023"
-  },
-  {
-    "id": "usa-2320162",
-    "title": "MRI: TRACK 1 ACQUISITION OF A HIGH-PERFORMANCE COMPUTING SYSTEM AT NEW MEXICO TECH -PROGRESS IN MODERN SCIENCE AND EDUCATION HAS BECOME INCREASINGLY RELIANT ON ADVANCED SOFTWARE AND COMPUTER SYSTEMS T",
-    "funder": "National Science Foundation",
-    "funder_sub": "National Science Foundation",
-    "amount": 900002,
-    "winner": "NEW MEXICO INSTITUTE OF MINING AND TECHNOLOGY",
-    "winner_location": "None, None",
-    "award_date": "2024-01-01",
-    "end_date": "2026-12-31",
-    "award_type": "PROJECT GRANT (B)",
-    "naics_code": null,
-    "naics_desc": null,
-    "keywords": [
-      "mining",
-      "mineral",
-      "critical minerals"
-    ],
-    "source": "usaspending.gov",
-    "scraped_at": "2026-05-03T10:58:56.655071"
+    "scraped_at": "2026-05-10T11:03:35.578495"
   },
   {
     "id": "usa-2202640",
@@ -275,7 +275,55 @@
       "clean energy"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-05-03T10:58:56.655109"
+    "scraped_at": "2026-05-10T11:03:35.578563"
+  },
+  {
+    "id": "usa-2541666",
+    "title": "CAREER: MATERIALS, ELECTROLYTE, AND INTERPHASE DESIGN FOR RECHARGEABLE FLUORIDE-ION BATTERIES -FLUORIDE ION BATTERIES ARE A PROMISING CLASS OF ENERGY STORAGE DEVICES THAT USE EARTH-ABUNDANT ELEMENTS S",
+    "funder": "National Science Foundation",
+    "funder_sub": "National Science Foundation",
+    "amount": 660000,
+    "winner": "REGENTS OF THE UNIVERSITY OF CALIFORNIA AT RIVERSIDE",
+    "winner_location": "None, None",
+    "award_date": "2026-07-01",
+    "end_date": "2031-06-30",
+    "award_type": "PROJECT GRANT (B)",
+    "naics_code": null,
+    "naics_desc": null,
+    "keywords": [
+      "artificial intelligence",
+      "mineral",
+      "critical minerals",
+      "lithium",
+      "copper",
+      "cobalt"
+    ],
+    "source": "usaspending.gov",
+    "scraped_at": "2026-05-10T11:03:35.578600"
+  },
+  {
+    "id": "usa-2542231",
+    "title": "CAREER: FROM SINGLE NANOPORES TO SCALABLE MEMBRANES: ENGINEERING ION SELECTIVITY THROUGH CONFINEMENT AND CHEMICAL PATTERNING -RELIABLE ACCESS TO CRITICAL MINERALS LIKE LITHIUM AND COBALT IS CRUCIAL TO",
+    "funder": "National Science Foundation",
+    "funder_sub": "National Science Foundation",
+    "amount": 593325,
+    "winner": "UNIVERSITY OF SOUTHERN CALIFORNIA",
+    "winner_location": "None, None",
+    "award_date": "2026-07-01",
+    "end_date": "2031-06-30",
+    "award_type": "PROJECT GRANT (B)",
+    "naics_code": null,
+    "naics_desc": null,
+    "keywords": [
+      "mining",
+      "mineral",
+      "critical minerals",
+      "lithium",
+      "cobalt",
+      "drilling"
+    ],
+    "source": "usaspending.gov",
+    "scraped_at": "2026-05-10T11:03:35.578634"
   },
   {
     "id": "usa-2543343",
@@ -297,7 +345,7 @@
       "lithium"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-05-03T10:58:56.655147"
+    "scraped_at": "2026-05-10T11:03:35.578672"
   },
   {
     "id": "usa-G25AC00424",
@@ -322,7 +370,28 @@
       "subsurface"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-05-03T10:58:56.655187"
+    "scraped_at": "2026-05-10T11:03:35.578711"
+  },
+  {
+    "id": "usa-2546570",
+    "title": "COLLABORATIVE RESEARCH: UNDERSTANDING MAGMA SOURCES AND FORMATION THROUGH EXPERIMENTS AND MODELING -THIS PROJECT WILL USE HIGH-PRESSURE AND HIGH-TEMPERATURE LABORATORY EXPERIMENTS TO SIMULATE PROCESSE",
+    "funder": "National Science Foundation",
+    "funder_sub": "National Science Foundation",
+    "amount": 354472,
+    "winner": "SMITHSONIAN INSTITUTION",
+    "winner_location": "None, None",
+    "award_date": "2026-08-01",
+    "end_date": "2029-07-31",
+    "award_type": "PROJECT GRANT (B)",
+    "naics_code": null,
+    "naics_desc": null,
+    "keywords": [
+      "mining",
+      "mineral",
+      "critical minerals"
+    ],
+    "source": "usaspending.gov",
+    "scraped_at": "2026-05-10T11:03:35.578748"
   },
   {
     "id": "usa-G26AC00047",
@@ -344,7 +413,7 @@
       "critical minerals"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-05-03T10:58:56.655223"
+    "scraped_at": "2026-05-10T11:03:35.578784"
   },
   {
     "id": "usa-G26AC00039",
@@ -365,7 +434,7 @@
       "subsurface"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-05-03T10:58:56.655255"
+    "scraped_at": "2026-05-10T11:03:35.578817"
   },
   {
     "id": "usa-G26AC00034",
@@ -387,7 +456,7 @@
       "geological"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-05-03T10:58:56.655300"
+    "scraped_at": "2026-05-10T11:03:35.578865"
   },
   {
     "id": "usa-G26AC00046",
@@ -410,54 +479,7 @@
       "geological"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-05-03T10:58:56.655337"
-  },
-  {
-    "id": "usa-G26AC00038",
-    "title": "PROJECT TITLE: NEVADA REGIONAL INTRUSION LITHOGEOCHEMISTRY, ZIRCON U-PB GEOCHRONOLOGY, AND ZIRCON TRACE AND RAREEARTH ELEMENT CHEMISTRYPROJECT PERIOD: 02 16 2026- 02 15 2029PURPOSETHE TIMING, COMPOSIT",
-    "funder": "Department of the Interior",
-    "funder_sub": "U.S. Geological Survey",
-    "amount": 329620,
-    "winner": "BOARD OF REGENTS OF NEVADA SYSTEM OF HIGHER EDUCATION",
-    "winner_location": "None, None",
-    "award_date": "2026-02-16",
-    "end_date": "2029-02-15",
-    "award_type": "COOPERATIVE AGREEMENT (B)",
-    "naics_code": null,
-    "naics_desc": null,
-    "keywords": [
-      "mining",
-      "mineral",
-      "exploration",
-      "critical minerals",
-      "copper",
-      "rare earth",
-      "geological"
-    ],
-    "source": "usaspending.gov",
-    "scraped_at": "2026-05-03T10:58:56.655383"
-  },
-  {
-    "id": "usa-G26AC00036",
-    "title": "PROJECT TITLE: GEOLOGIC MAPPING AND CRITICAL MINERALS EVALUATION OF THE EASTERN PIONEER MOUNTAINS,SOUTHWESTERN MONTANAPROJECT PERIOD: SEPTEMBER 2025  SEPTEMBER 2028PURPOSE:THE PRIMARY OBJECTIVE OF THI",
-    "funder": "Department of the Interior",
-    "funder_sub": "U.S. Geological Survey",
-    "amount": 329575,
-    "winner": "MONTANA TECHNOLOGICAL UNIVERSITY",
-    "winner_location": "None, None",
-    "award_date": "2026-02-16",
-    "end_date": "2029-02-15",
-    "award_type": "COOPERATIVE AGREEMENT (B)",
-    "naics_code": null,
-    "naics_desc": null,
-    "keywords": [
-      "mining",
-      "mineral",
-      "exploration",
-      "critical minerals"
-    ],
-    "source": "usaspending.gov",
-    "scraped_at": "2026-05-03T10:58:56.655423"
+    "scraped_at": "2026-05-10T11:03:35.578902"
   },
   {
     "id": "usa-G26AC00045",
@@ -482,7 +504,7 @@
       "geological"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-05-03T10:58:56.655458"
+    "scraped_at": "2026-05-10T11:03:35.578937"
   },
   {
     "id": "usa-DEFE0032121",
@@ -503,7 +525,28 @@
       "rare earth"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-05-03T10:58:56.655464"
+    "scraped_at": "2026-05-10T11:03:35.578944"
+  },
+  {
+    "id": "usa-2546569",
+    "title": "COLLABORATIVE RESEARCH: UNDERSTANDING MAGMA SOURCES AND FORMATION THROUGH EXPERIMENTS AND MODELING -THIS PROJECT WILL USE HIGH-PRESSURE AND HIGH-TEMPERATURE LABORATORY EXPERIMENTS TO SIMULATE PROCESSE",
+    "funder": "National Science Foundation",
+    "funder_sub": "National Science Foundation",
+    "amount": 166527,
+    "winner": "REGENTS OF THE UNIVERSITY OF MINNESOTA",
+    "winner_location": "None, None",
+    "award_date": "2026-08-01",
+    "end_date": "2029-07-31",
+    "award_type": "PROJECT GRANT (B)",
+    "naics_code": null,
+    "naics_desc": null,
+    "keywords": [
+      "mining",
+      "mineral",
+      "critical minerals"
+    ],
+    "source": "usaspending.gov",
+    "scraped_at": "2026-05-10T11:03:35.578976"
   },
   {
     "id": "usa-W911NF261A076",
@@ -522,7 +565,7 @@
       "mineral"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-05-03T10:58:56.655469"
+    "scraped_at": "2026-05-10T11:03:35.578984"
   },
   {
     "id": "usa-2538354",
@@ -546,7 +589,28 @@
       "geological"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-05-03T10:58:56.655496"
+    "scraped_at": "2026-05-10T11:03:35.579012"
+  },
+  {
+    "id": "usa-2546571",
+    "title": "COLLABORATIVE RESEARCH: UNDERSTANDING MAGMA SOURCES AND FORMATION THROUGH EXPERIMENTS AND MODELING -THIS PROJECT WILL USE HIGH-PRESSURE AND HIGH-TEMPERATURE LABORATORY EXPERIMENTS TO SIMULATE PROCESSE",
+    "funder": "National Science Foundation",
+    "funder_sub": "National Science Foundation",
+    "amount": 29981,
+    "winner": "BEREA COLLEGE",
+    "winner_location": "None, None",
+    "award_date": "2026-08-01",
+    "end_date": "2029-07-31",
+    "award_type": "PROJECT GRANT (B)",
+    "naics_code": null,
+    "naics_desc": null,
+    "keywords": [
+      "mining",
+      "mineral",
+      "critical minerals"
+    ],
+    "source": "usaspending.gov",
+    "scraped_at": "2026-05-10T11:03:35.579030"
   },
   {
     "id": "usa-2617779",
@@ -567,6 +631,6 @@
       "critical minerals"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-05-03T10:58:56.655518"
+    "scraped_at": "2026-05-10T11:03:35.579051"
   }
 ]

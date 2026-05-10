@@ -1,5 +1,25 @@
 [
   {
+    "id": "nih-5R01HL173186-02",
+    "title": "Radiomics-based risk prediction of heart failure using CT calcium score exam",
+    "funder": "NIH National Heart Lung and Blood Institute",
+    "funder_program": "R01",
+    "amount": 692323,
+    "winner": "CASE WESTERN RESERVE UNIVERSITY",
+    "winner_location": "CLEVELAND, OH",
+    "pi": "Sadeer Al-Kindi",
+    "abstract": "Radiomics-based risk prediction of heart failure using CT calcium score exam\nProject Summary\nHeart failure (HF) is a major cause of morbidity and mortality in the United States. There is a compelling need\nfor personalized pre-emptive HF risk prediction to facilitate precise preventive strategies to alleviate the\npopulation burden. However, currently, there are no widely validated models for HF risk prediction, which hinders\nthe timely identification of a pre-emptive initiation of therapies in at-risk patients. Non-contrast low-dose CT scans\nfor coronary artery calcium scoring (CT calcium scoring, CTCS), already widely utilized for risk assessment in\natherosclerotic cardiovascular disease, offer an opportunity to identify key pathophysiologic pathways causally\nor consequentially linked with HF risk. The central premise of this transformative proposal is that a reliable\nand reproducible CTCS-based HF-specific clinico-radiomic risk model (CTCSHF) will enable the precision\nidentification of patients at risk for HF.\nWe will leverage the University Hospitals CLARIFY program, the world\u2019s largest free CTCS program (>100k\nunique participants with ~15K increase per year and > 3000 HF events) and our Houston Methodist HeartScan\nCTCS program (> 50k unique participants with ~10K increase per year and ~2k HF events) in addition to 2\nexternal prospective NIH-funded cohorts (CARDIA and CRIC), that together will provide a robust opportunity for\nmodel derivation and validation. Together with institutional expertise in computational image analysis and\ncardiovascular imaging, we will develop and validate a comprehensive machine learning based analysis of CTCS\nto identify key image-based biomarkers (radiomics) corresponding to 5 pathophysiologic domains linked with HF\nrisk. They include cardiac remodeling (size/shape), atherosclerosis (coronary/vascular calcification),\nhemodynamics (aorta/pulmonary artery, size/valvular calcium), visceral adiposity (liver and epicardial adipose\ntissue),",
+    "award_date": "2026-04-27T00:00:00",
+    "start_date": "2024-12-12T00:00:00",
+    "end_date": "2028-11-30T00:00:00",
+    "fiscal_year": 2026,
+    "keywords": [
+      "machine learning"
+    ],
+    "source": "nih_reporter",
+    "scraped_at": "2026-05-10T11:03:34.415435"
+  },
+  {
     "id": "nih-1R01AG097779-01",
     "title": "Improving Hormone Therapy Use in Patients with Premature or Early Menopause",
     "funder": "NIH National Institute on Aging",
@@ -18,6 +38,47 @@
       "machine learning"
     ],
     "source": "nih_reporter",
-    "scraped_at": "2026-05-03T10:58:54.996723"
+    "scraped_at": "2026-05-10T11:03:34.415656"
+  },
+  {
+    "id": "nih-1R35GM161796-01",
+    "title": "Context-specific cellular networks in bacterial pathogens",
+    "funder": "NIH National Institute of General Medical Sciences",
+    "funder_program": "R35",
+    "amount": 426539,
+    "winner": "UNIVERSITY OF MICHIGAN AT ANN ARBOR",
+    "winner_location": "ANN ARBOR, MI",
+    "pi": "Paul Jensen",
+    "abstract": "Project Summary/Abstract\n The microbiome revolution created a combinatorial explosion in microbiology. There are thousands of species\nof bacteria that impact our health, and each microbe responds differently to an exponential number of environ-\nments and stressors. Human scientists alone cannot study the response of every bacterium in all possible\nenvironments. Instead, the Jensen Lab develops AI-driven robotic scientists that plan, execute, and interpret\nthousands of scientific experiments each day. Our robot scientists have performed over one million automated\nexperiments to map the phenotypic landscape of human-associated bacteria and identify novel quorum sensing\npathways that mediate intercellular communication.\n Our lab\u2019s previous research made two key discoveries about the streptococci, a genus replete with species\nthat impact human health. First, we learned that each species has a unique and complex pattern of auxotrophies.\nThese different nutrient preferences are surprising since many streptococci live exclusively in the same niche\nand share an evolutionary history of co-adaptation. Our second discovery is that streptococci possess multiple\nquorum sensing pathways that interact within and across species. Our genome mining has uncovered several\nnovel classes of quorum sensing systems that streptococci use to communicate, interact, and colonize humans.\n Our future research will integrate metabolism and quorum sensing into a comprehensive, quantitative view of\na pathogen\u2019s global context. We will transition from studying metabolism and quorum sensing in isolation to a\nsystems-level view that explains how environmental and genetic factors rewire individual pathways. This ambi-\ntious goal will require us to train our robot scientist to perform genetic perturbations on demand and incorporate\nour newly developed expertise in automated fluorescence microscopy.\n Bringing together imaging, combinatorial phenotyping, and high-throughput genetics will automate the dis-",
+    "award_date": "2026-03-27T00:00:00",
+    "start_date": "2026-05-01T00:00:00",
+    "end_date": "2031-02-28T00:00:00",
+    "fiscal_year": 2026,
+    "keywords": [
+      "mining"
+    ],
+    "source": "nih_reporter",
+    "scraped_at": "2026-05-10T11:03:34.591932"
+  },
+  {
+    "id": "nih-5R13AG087672-03",
+    "title": "Exposomics and Alzheimer's disease Across the Life Course",
+    "funder": "NIH National Institute on Aging",
+    "funder_program": "R13",
+    "amount": 50000,
+    "winner": "ICAHN SCHOOL OF MEDICINE AT MOUNT SINAI",
+    "winner_location": "NEW YORK, NY",
+    "pi": "R. Morrison",
+    "abstract": "Mount Sinai\u2019s Institute for Exposomic Research requests support for an annually held\ninternational series of 5 symposia focused on Exposomics, Aging, and Alzheimer\u2019s Disease\nAcross the Life Course. The exposome is the study of all the health relevant environmental\nfactors encountered across life. Exposomics is a complex \u201cbig data\u201d science with branches that\ninclude untargeted chemical assays, satellite remote sensing, wearable devices, and social\nmedia mining among other measures. Mount Sinai has been hosting Exposome symposia\nannually since 2018 and our team has successfully hosted meetings internationally in Europe\nand Latin America already. Our goals are to advance exposomic science globally in order to\naccelerate such research in Alzheimer\u2019s Disease and Related Dementias (ADRD). These\nsymposia will foster new research collaborations and catalyze a critical mass of researchers\nworking in Aging and Exposomics. Many of the attendees, including junior faculty, are or will\nbecome, future leaders in the exposomics of aging. These conferences will also target important\nhealth issues around ADRD, such as promoting policy and research initiatives designed to\naddress solutions. Our R13 proposal has multiple highly committed partners already. Our\nmeetings will be held in 5 locations-Japan, Mexico, France, Rwanda and Nashville TN. Our\nprogram will promote international research in ADRD Exposomic Research and to address the\nrole of environment in aging processes globally. By doing so, we maximize its impact. Each\nsymposium is preceded by a \u00bd day workshop. We will invite prominent speakers from major\nresearch institutions. For example, several NIH Institute directors as well as the NIH ECHO\ndirector have been past presenters. Local experts from the host countries will be prioritized as\npresenters, and we will include U.S. leaders in exposomic science and leaders in ADRD\nresearch from across America based solely on merit. Our poster sessions will bring together\njunior scientis",
+    "award_date": "2026-04-17T00:00:00",
+    "start_date": "2024-05-15T00:00:00",
+    "end_date": "2029-04-30T00:00:00",
+    "fiscal_year": 2026,
+    "keywords": [
+      "mining",
+      "remote sensing"
+    ],
+    "source": "nih_reporter",
+    "scraped_at": "2026-05-10T11:03:34.591991"
   }
 ]
