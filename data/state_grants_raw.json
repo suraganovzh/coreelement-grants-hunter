@@ -19,7 +19,7 @@
       "technology"
     ],
     "eligibility_text": "Must be a Colorado-based company or partnered with a Colorado research institution. Small businesses encouraged. Core Element AI qualifies via Colorado School of Mines partnership.",
-    "scraped_at": "2026-05-11T12:36:15.351771"
+    "scraped_at": "2026-05-12T11:26:53.668745"
   },
   {
     "title": "Delaware EDGE Grant - STEM Track",
@@ -38,83 +38,7 @@
       "innovation"
     ],
     "eligibility_text": "Must be incorporated in Delaware. Small business. Core Element AI qualifies as Delaware S-Corp.",
-    "scraped_at": "2026-05-11T12:37:20.972063"
-  },
-  {
-    "title": "Arizona: Small Business Opportunities",
-    "funder": "Arizona Commerce Authority",
-    "description": "Arizona\u2019s Small Business Academy equips small businesses across the state with the knowledge to scale their business.",
-    "amount_min": 2000000,
-    "amount_max": 2000000,
-    "currency": "USD",
-    "deadline": "",
-    "url": "https://www.azcommerce.com/small-business/small-business-academy/",
-    "source": "arizona_state",
-    "grant_type": "state",
-    "industry_tags": [
-      "mining",
-      "cleantech",
-      "innovation",
-      "technology"
-    ],
-    "scraped_at": "2026-05-11T12:39:55.174226"
-  },
-  {
-    "title": "Arizona: Innovation & Entrepreneurship Opportunities",
-    "funder": "Arizona Commerce Authority",
-    "description": "Arizona'slargest business plan competition in the country designed to advance innovation and technology commercialization opportunities in Arizona by assisting early-stage ventures to scale.",
-    "amount_min": 7000000,
-    "amount_max": 7000000,
-    "currency": "USD",
-    "deadline": "",
-    "url": "https://www.azcommerce.com/start-up/arizona-innovation-challenge/",
-    "source": "arizona_state",
-    "grant_type": "state",
-    "industry_tags": [
-      "mining",
-      "cleantech",
-      "innovation",
-      "technology"
-    ],
-    "scraped_at": "2026-05-11T12:39:55.174238"
-  },
-  {
-    "title": "Arizona: Rural Economic Development Opportunities",
-    "funder": "Arizona Commerce Authority",
-    "description": "Opportunities to expand the state's digital infrastructure statewide to improve the\u00a0economyand quality of life of today\u2019s Arizonans.",
-    "amount_min": null,
-    "amount_max": null,
-    "currency": "USD",
-    "deadline": "",
-    "url": "https://www.azcommerce.com/broadband/",
-    "source": "arizona_state",
-    "grant_type": "state",
-    "industry_tags": [
-      "mining",
-      "cleantech",
-      "innovation",
-      "technology"
-    ],
-    "scraped_at": "2026-05-11T12:39:55.174243"
-  },
-  {
-    "title": "Arizona: Talent and Training Opportunities",
-    "funder": "Arizona Commerce Authority",
-    "description": "Four Arizona community colleges partnered together to develop a first-of-its-kind, unified, industry-recognized curriculum to\u00a0prepare students for manufacturing jobs of the future.",
-    "amount_min": null,
-    "amount_max": null,
-    "currency": "USD",
-    "deadline": "",
-    "url": "https://www.azcommerce.com/programs/arizona-advanced-technology-network/",
-    "source": "arizona_state",
-    "grant_type": "state",
-    "industry_tags": [
-      "mining",
-      "cleantech",
-      "innovation",
-      "technology"
-    ],
-    "scraped_at": "2026-05-11T12:39:55.174252"
+    "scraped_at": "2026-05-12T11:27:59.075086"
   },
   {
     "title": "Nevada: Nevada is a one-of-akind state!",
@@ -133,6 +57,6 @@
       "lithium",
       "cleantech"
     ],
-    "scraped_at": "2026-05-11T12:39:55.174256"
+    "scraped_at": "2026-05-12T11:31:03.909114"
   }
 ]
