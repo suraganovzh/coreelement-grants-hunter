@@ -18,7 +18,7 @@
       "copper"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-05-10T11:03:35.578131"
+    "scraped_at": "2026-05-17T11:14:45.853341"
   },
   {
     "id": "usa-2315695",
@@ -39,28 +39,7 @@
       "lithium"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-05-10T11:03:35.578218"
-  },
-  {
-    "id": "usa-DEFE0032488",
-    "title": "THE RECIPIENT WILL PERFORM A FRONT END ENGINEERING AND DESIGN (FEED) STUDY, BASED ON AN ASSOCIATION FOR ADVANCEMENT OF COST ENGINEERING (AACE) CLASS 3 COST STRATEGY, OF A 1-3 T MIXED RARE EARTH OXIDE ",
-    "funder": "Department of Energy",
-    "funder_sub": "Department of Energy",
-    "amount": 7993082,
-    "winner": "WINNER WATER SERVICES INC",
-    "winner_location": "None, None",
-    "award_date": "2024-07-09",
-    "end_date": "2026-10-08",
-    "award_type": "COOPERATIVE AGREEMENT (B)",
-    "naics_code": null,
-    "naics_desc": null,
-    "keywords": [
-      "mineral",
-      "critical minerals",
-      "rare earth"
-    ],
-    "source": "usaspending.gov",
-    "scraped_at": "2026-05-10T11:03:35.578234"
+    "scraped_at": "2026-05-17T11:14:45.853409"
   },
   {
     "id": "usa-26K75IL000024",
@@ -80,7 +59,7 @@
       "critical minerals"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-05-10T11:03:35.578288"
+    "scraped_at": "2026-05-17T11:14:45.853490"
   },
   {
     "id": "usa-2119551",
@@ -100,7 +79,7 @@
       "critical minerals"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-05-10T11:03:35.578296"
+    "scraped_at": "2026-05-17T11:14:45.853500"
   },
   {
     "id": "usa-84068102",
@@ -121,7 +100,7 @@
       "critical minerals"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-05-10T11:03:35.578349"
+    "scraped_at": "2026-05-17T11:14:45.853543"
   },
   {
     "id": "usa-DEAR0002103",
@@ -142,7 +121,7 @@
       "lithium"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-05-10T11:03:35.578367"
+    "scraped_at": "2026-05-17T11:14:45.853558"
   },
   {
     "id": "usa-DEFE0032319",
@@ -164,7 +143,7 @@
       "rare earth"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-05-10T11:03:35.578382"
+    "scraped_at": "2026-05-17T11:14:45.853568"
   },
   {
     "id": "usa-DEAR0002089",
@@ -186,7 +165,7 @@
       "cobalt"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-05-10T11:03:35.578423"
+    "scraped_at": "2026-05-17T11:14:45.853607"
   },
   {
     "id": "usa-DEAR0002099",
@@ -207,7 +186,7 @@
       "rare earth"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-05-10T11:03:35.578445"
+    "scraped_at": "2026-05-17T11:14:45.853629"
   },
   {
     "id": "usa-G26AC00029",
@@ -233,7 +212,27 @@
       "geological"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-05-10T11:03:35.578481"
+    "scraped_at": "2026-05-17T11:14:45.853660"
+  },
+  {
+    "id": "usa-DEFE0032641",
+    "title": "THE DEPARTMENT OF ENERGY (DOE), OFFICE OF FOSSIL ENERGY AND CARBON MANAGMENT INTENDS TO HELP BUILD OFF \nOF PRIOR DOE AND PRIVATE INDUSTRY INVESTMENTS ACROSS THE CRITICAL MATERIALS SUPPLY CHAIN, FROM \n",
+    "funder": "Department of Energy",
+    "funder_sub": "Department of Energy",
+    "amount": 1000000,
+    "winner": "WORCESTER POLYTECHNIC INSTITUTE",
+    "winner_location": "None, None",
+    "award_date": "2026-05-01",
+    "end_date": "2028-04-30",
+    "award_type": "COOPERATIVE AGREEMENT (B)",
+    "naics_code": null,
+    "naics_desc": null,
+    "keywords": [
+      "mineral",
+      "critical minerals"
+    ],
+    "source": "usaspending.gov",
+    "scraped_at": "2026-05-17T11:14:45.853673"
   },
   {
     "id": "usa-DEAR0001721",
@@ -253,7 +252,7 @@
       "mineral"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-05-10T11:03:35.578495"
+    "scraped_at": "2026-05-17T11:14:45.853684"
   },
   {
     "id": "usa-2202640",
@@ -275,7 +274,7 @@
       "clean energy"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-05-10T11:03:35.578563"
+    "scraped_at": "2026-05-17T11:14:45.853716"
   },
   {
     "id": "usa-2541666",
@@ -299,7 +298,7 @@
       "cobalt"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-05-10T11:03:35.578600"
+    "scraped_at": "2026-05-17T11:14:45.853742"
   },
   {
     "id": "usa-2542231",
@@ -323,54 +322,7 @@
       "drilling"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-05-10T11:03:35.578634"
-  },
-  {
-    "id": "usa-2543343",
-    "title": "CAREER: ATOMISTIC-SCALE INVESTIGATION OF HOW CHEMICAL AND PHYSICAL HETEROGENEITIES GOVERN ION-SELECTIVE TRANSPORT IN METAL-ORGANIC FRAMEWORK MEMBRANES -MODERN TECHNOLOGIES LIKE LITHIUM-ION BATTERIES, ",
-    "funder": "National Science Foundation",
-    "funder_sub": "National Science Foundation",
-    "amount": 548900,
-    "winner": "NORTH CAROLINA STATE UNIVERSITY",
-    "winner_location": "None, None",
-    "award_date": "2026-09-01",
-    "end_date": "2031-08-31",
-    "award_type": "PROJECT GRANT (B)",
-    "naics_code": null,
-    "naics_desc": null,
-    "keywords": [
-      "mineral",
-      "exploration",
-      "critical minerals",
-      "lithium"
-    ],
-    "source": "usaspending.gov",
-    "scraped_at": "2026-05-10T11:03:35.578672"
-  },
-  {
-    "id": "usa-G25AC00424",
-    "title": "PROJECT TITLE: NEW MEXICO ARIZONA BORDERLANDS CRD MAPPING AND COPPER ISOTOPE MAPPINGPROJECT PERIOD: 02 18 2026 - 02 17 2029PURPOSETHE PURPOSE OF THIS PROPOSED PROJECT IS TO (1) EXAMINE THE METALLOGENY",
-    "funder": "Department of the Interior",
-    "funder_sub": "U.S. Geological Survey",
-    "amount": 385000,
-    "winner": "NEW MEXICO INSTITUTE OF MINING AND TECHNOLOGY",
-    "winner_location": "None, None",
-    "award_date": "2026-02-18",
-    "end_date": "2029-02-17",
-    "award_type": "COOPERATIVE AGREEMENT (B)",
-    "naics_code": null,
-    "naics_desc": null,
-    "keywords": [
-      "mining",
-      "mineral",
-      "exploration",
-      "geospatial",
-      "critical minerals",
-      "copper",
-      "subsurface"
-    ],
-    "source": "usaspending.gov",
-    "scraped_at": "2026-05-10T11:03:35.578711"
+    "scraped_at": "2026-05-17T11:14:45.853769"
   },
   {
     "id": "usa-2546570",
@@ -391,7 +343,7 @@
       "critical minerals"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-05-10T11:03:35.578748"
+    "scraped_at": "2026-05-17T11:14:45.853799"
   },
   {
     "id": "usa-G26AC00047",
@@ -413,7 +365,7 @@
       "critical minerals"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-05-10T11:03:35.578784"
+    "scraped_at": "2026-05-17T11:14:45.853828"
   },
   {
     "id": "usa-G26AC00039",
@@ -434,29 +386,7 @@
       "subsurface"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-05-10T11:03:35.578817"
-  },
-  {
-    "id": "usa-G26AC00034",
-    "title": "PROJECT TITLE: GEOCHEMICAL AND GEOCHRONOLOGICAL MAPPING OF THE WESTERN SPIRIT LAKE TECTONIC ZONEIN NORTHWEST IOWAPROJECT PERIOD: 02 18 2026 THROUGH 02 17 2029THE PURPOSE OF THIS AWARD IS TO REFINE THE",
-    "funder": "Department of the Interior",
-    "funder_sub": "U.S. Geological Survey",
-    "amount": 330000,
-    "winner": "THE UNIVERSITY OF IOWA",
-    "winner_location": "None, None",
-    "award_date": "2026-02-18",
-    "end_date": "2029-02-17",
-    "award_type": "COOPERATIVE AGREEMENT (B)",
-    "naics_code": null,
-    "naics_desc": null,
-    "keywords": [
-      "mineral",
-      "geology",
-      "critical minerals",
-      "geological"
-    ],
-    "source": "usaspending.gov",
-    "scraped_at": "2026-05-10T11:03:35.578865"
+    "scraped_at": "2026-05-17T11:14:45.853855"
   },
   {
     "id": "usa-G26AC00046",
@@ -479,7 +409,7 @@
       "geological"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-05-10T11:03:35.578902"
+    "scraped_at": "2026-05-17T11:14:45.853886"
   },
   {
     "id": "usa-G26AC00045",
@@ -504,7 +434,26 @@
       "geological"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-05-10T11:03:35.578937"
+    "scraped_at": "2026-05-17T11:14:45.853914"
+  },
+  {
+    "id": "usa-DEFE0032526",
+    "title": "HYDROGEN AND CRITICAL MINERAL EXTRACTION FROM FOSSIL FUELS\n\nTHIS PROJECT\u2019S PURPOSE IS TO EXPLORE THE POTENTIAL FOR THE PRODUCTION OF LI-ION BATTERY GRADE GRAPHITE AND HYDROGEN FROM COAL, AND IDENTIFY ",
+    "funder": "Department of Energy",
+    "funder_sub": "Department of Energy",
+    "amount": 270000,
+    "winner": "WEST VIRGINIA OFFICE OF ENERGY",
+    "winner_location": "None, None",
+    "award_date": "2025-09-01",
+    "end_date": "2026-08-31",
+    "award_type": "FORMULA GRANT (A)",
+    "naics_code": null,
+    "naics_desc": null,
+    "keywords": [
+      "mineral"
+    ],
+    "source": "usaspending.gov",
+    "scraped_at": "2026-05-17T11:14:45.853923"
   },
   {
     "id": "usa-DEFE0032121",
@@ -525,7 +474,7 @@
       "rare earth"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-05-10T11:03:35.578944"
+    "scraped_at": "2026-05-17T11:14:45.853928"
   },
   {
     "id": "usa-2546569",
@@ -546,7 +495,7 @@
       "critical minerals"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-05-10T11:03:35.578976"
+    "scraped_at": "2026-05-17T11:14:45.853956"
   },
   {
     "id": "usa-W911NF261A076",
@@ -565,7 +514,7 @@
       "mineral"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-05-10T11:03:35.578984"
+    "scraped_at": "2026-05-17T11:14:45.853963"
   },
   {
     "id": "usa-2538354",
@@ -589,7 +538,7 @@
       "geological"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-05-10T11:03:35.579012"
+    "scraped_at": "2026-05-17T11:14:45.853986"
   },
   {
     "id": "usa-2546571",
@@ -610,7 +559,7 @@
       "critical minerals"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-05-10T11:03:35.579030"
+    "scraped_at": "2026-05-17T11:14:45.854006"
   },
   {
     "id": "usa-2617779",
@@ -631,6 +580,6 @@
       "critical minerals"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-05-10T11:03:35.579051"
+    "scraped_at": "2026-05-17T11:14:45.854024"
   }
 ]
