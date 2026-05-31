@@ -18,7 +18,7 @@
       "copper"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-05-24T11:20:55.515404"
+    "scraped_at": "2026-05-31T11:43:01.671988"
   },
   {
     "id": "usa-2315695",
@@ -39,7 +39,7 @@
       "lithium"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-05-24T11:20:55.515487"
+    "scraped_at": "2026-05-31T11:43:01.672075"
   },
   {
     "id": "usa-2119551",
@@ -59,7 +59,7 @@
       "critical minerals"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-05-24T11:20:55.515496"
+    "scraped_at": "2026-05-31T11:43:01.672083"
   },
   {
     "id": "usa-84068102",
@@ -80,7 +80,7 @@
       "critical minerals"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-05-24T11:20:55.515545"
+    "scraped_at": "2026-05-31T11:43:01.672133"
   },
   {
     "id": "usa-DEAR0002103",
@@ -101,7 +101,7 @@
       "lithium"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-05-24T11:20:55.515564"
+    "scraped_at": "2026-05-31T11:43:01.672151"
   },
   {
     "id": "usa-DEFE0032319",
@@ -123,7 +123,7 @@
       "rare earth"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-05-24T11:20:55.515575"
+    "scraped_at": "2026-05-31T11:43:01.672162"
   },
   {
     "id": "usa-DEAR0002089",
@@ -145,7 +145,7 @@
       "cobalt"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-05-24T11:20:55.515614"
+    "scraped_at": "2026-05-31T11:43:01.672203"
   },
   {
     "id": "usa-DEAR0002099",
@@ -166,33 +166,7 @@
       "rare earth"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-05-24T11:20:55.515640"
-  },
-  {
-    "id": "usa-G26AC00029",
-    "title": "PROJECT TITLE: TOLOVANA GEOLOGIC MAPPING PROJECTPROJECT PERIOD: 03 01 2026 - 02 28 2029PURPOSETHIS PROJECT BUILDS UNDERSTANDING OF THE UNITED STATES POTENTIAL TO HOST YET-TO-BE-DISCOVEREDDEPOSITS OF C",
-    "funder": "Department of the Interior",
-    "funder_sub": "U.S. Geological Survey",
-    "amount": 1575000,
-    "winner": "ALASKA DEPARTMENT OF NATURAL RESOURCES",
-    "winner_location": "None, None",
-    "award_date": "2026-03-01",
-    "end_date": "2029-02-28",
-    "award_type": "COOPERATIVE AGREEMENT (B)",
-    "naics_code": null,
-    "naics_desc": null,
-    "keywords": [
-      "mining",
-      "mineral",
-      "geology",
-      "exploration",
-      "critical minerals",
-      "copper",
-      "cobalt",
-      "geological"
-    ],
-    "source": "usaspending.gov",
-    "scraped_at": "2026-05-24T11:20:55.515677"
+    "scraped_at": "2026-05-31T11:43:01.672229"
   },
   {
     "id": "usa-DEFE0032641",
@@ -212,7 +186,7 @@
       "critical minerals"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-05-24T11:20:55.515697"
+    "scraped_at": "2026-05-31T11:43:01.672246"
   },
   {
     "id": "usa-DEAR0001721",
@@ -232,7 +206,28 @@
       "mineral"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-05-24T11:20:55.515725"
+    "scraped_at": "2026-05-31T11:43:01.672260"
+  },
+  {
+    "id": "usa-84071101",
+    "title": "DESCRIPTION:THIS INFRASTRUCTURE INVESTMENT AND JOBS ACT (IIJA) ASSISTANCE AGREEMENT WILL PROVIDE TECHNICAL ASSISTANCE (E.G., INFORMATION, TRAINING, EXPERT ADVICE) USING P2 PRACTICES TO ADDRESS ENVIRON",
+    "funder": "Environmental Protection Agency",
+    "funder_sub": "Environmental Protection Agency",
+    "amount": 857744,
+    "winner": "UNIVERSITY OF MISSOURI SYSTEM",
+    "winner_location": "None, None",
+    "award_date": "2024-07-01",
+    "end_date": "2027-06-30",
+    "award_type": "PROJECT GRANT (B)",
+    "naics_code": null,
+    "naics_desc": null,
+    "keywords": [
+      "mining",
+      "mineral",
+      "critical minerals"
+    ],
+    "source": "usaspending.gov",
+    "scraped_at": "2026-05-31T11:43:01.672296"
   },
   {
     "id": "usa-2202640",
@@ -254,7 +249,7 @@
       "clean energy"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-05-24T11:20:55.515763"
+    "scraped_at": "2026-05-31T11:43:01.672334"
   },
   {
     "id": "usa-2541666",
@@ -278,7 +273,7 @@
       "cobalt"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-05-24T11:20:55.515794"
+    "scraped_at": "2026-05-31T11:43:01.672365"
   },
   {
     "id": "usa-2542231",
@@ -302,7 +297,7 @@
       "drilling"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-05-24T11:20:55.515826"
+    "scraped_at": "2026-05-31T11:43:01.672399"
   },
   {
     "id": "usa-2546570",
@@ -323,98 +318,7 @@
       "critical minerals"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-05-24T11:20:55.515859"
-  },
-  {
-    "id": "usa-G26AC00047",
-    "title": "PROJECT TITLE: GEOLOGIC MAPPING OF RESOURCES IN THE EAGLE MOUNTAINS FLUORITE DISTRICT OF TRANS-PECOS, TEXASPROJECT PERIOD: 03 01 2026 - 02 28 2029PROJECT ABSTRACT SUMMARY: THE BUREAU OF ECONOMIC GEOLO",
-    "funder": "Department of the Interior",
-    "funder_sub": "U.S. Geological Survey",
-    "amount": 330867,
-    "winner": "UNIVERSITY OF TEXAS AT AUSTIN",
-    "winner_location": "None, None",
-    "award_date": "2026-03-01",
-    "end_date": "2029-02-28",
-    "award_type": "COOPERATIVE AGREEMENT (B)",
-    "naics_code": null,
-    "naics_desc": null,
-    "keywords": [
-      "mineral",
-      "geology",
-      "exploration",
-      "critical minerals"
-    ],
-    "source": "usaspending.gov",
-    "scraped_at": "2026-05-24T11:20:55.515894"
-  },
-  {
-    "id": "usa-G26AC00039",
-    "title": "PROJECT TITLE: GEOLOGIC MAPPING OF THE CORNUCOPIA AND DEADMAN POINT 7.5 QUADRANGLE,CORNUCOPIA MINING DISTRICT, NE OREGON.PROJECT PERIOD: JULY 1ST, 2026, TO JUNE 30TH, 2029PURPOSE: TO COLLABORATE WITH ",
-    "funder": "Department of the Interior",
-    "funder_sub": "U.S. Geological Survey",
-    "amount": 330000,
-    "winner": "DEPARTMENT OF GEOLOGY AND MINERAL INDUSTRIES",
-    "winner_location": "None, None",
-    "award_date": "2026-07-01",
-    "end_date": "2029-06-30",
-    "award_type": "COOPERATIVE AGREEMENT (B)",
-    "naics_code": null,
-    "naics_desc": null,
-    "keywords": [
-      "mining",
-      "mineral",
-      "subsurface"
-    ],
-    "source": "usaspending.gov",
-    "scraped_at": "2026-05-24T11:20:55.515924"
-  },
-  {
-    "id": "usa-G26AC00046",
-    "title": "PROPOSAL TITLE: EVAPORITES IN WESTERN OKLAHOMAPROJECT PERIOD: 03 01 2026  02 28 2029AWARD PURPOSE:THE OKLAHOMA GEOLOGICAL SURVEY (OGS) PROPOSES AN EARTHMRI-FUNDED GEOCHEMICAL SURVEY OF THE EVAPORITE D",
-    "funder": "Department of the Interior",
-    "funder_sub": "U.S. Geological Survey",
-    "amount": 329996,
-    "winner": "UNIVERSITY OF OKLAHOMA",
-    "winner_location": "None, None",
-    "award_date": "2026-03-01",
-    "end_date": "2029-02-28",
-    "award_type": "COOPERATIVE AGREEMENT (B)",
-    "naics_code": null,
-    "naics_desc": null,
-    "keywords": [
-      "mineral",
-      "geospatial",
-      "critical minerals",
-      "lithium",
-      "geological"
-    ],
-    "source": "usaspending.gov",
-    "scraped_at": "2026-05-24T11:20:55.515959"
-  },
-  {
-    "id": "usa-G26AC00045",
-    "title": "PROJECT TITLE: GEOLOGIC MAPPING, GEOCHEMISTRY, AND GEOCHRONOLOGY IN THE QUETICO SUBPROVINCE ANDADJACENT BOUNDARY ZONESPROJECT PERIOD: 03 01 2026 - 02 28 2029PURPOSE: THE MINNESOTA GEOLOGICAL SURVEY (M",
-    "funder": "Department of the Interior",
-    "funder_sub": "U.S. Geological Survey",
-    "amount": 318464,
-    "winner": "REGENTS OF THE UNIVERSITY OF MINNESOTA",
-    "winner_location": "None, None",
-    "award_date": "2026-03-01",
-    "end_date": "2029-02-28",
-    "award_type": "COOPERATIVE AGREEMENT (B)",
-    "naics_code": null,
-    "naics_desc": null,
-    "keywords": [
-      "mineral",
-      "exploration",
-      "critical minerals",
-      "lithium",
-      "copper",
-      "rare earth",
-      "geological"
-    ],
-    "source": "usaspending.gov",
-    "scraped_at": "2026-05-24T11:20:55.515992"
+    "scraped_at": "2026-05-31T11:43:01.672439"
   },
   {
     "id": "usa-DEFE0032526",
@@ -433,7 +337,7 @@
       "mineral"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-05-24T11:20:55.516002"
+    "scraped_at": "2026-05-31T11:43:01.672450"
   },
   {
     "id": "usa-DEFE0032121",
@@ -454,7 +358,7 @@
       "rare earth"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-05-24T11:20:55.516007"
+    "scraped_at": "2026-05-31T11:43:01.672477"
   },
   {
     "id": "usa-2546569",
@@ -475,26 +379,7 @@
       "critical minerals"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-05-24T11:20:55.516041"
-  },
-  {
-    "id": "usa-W911NF261A076",
-    "title": "86218-BB-GRANT-PROPOSAL TITLE-FUNGAL WEATHERING MECHANISMS IN POROUS MEDIA: FROM PORE-SCALE PROCESSES TO CRITICAL MINERAL RECOVERY",
-    "funder": "Department of Defense",
-    "funder_sub": "Department of the Army",
-    "amount": 125000,
-    "winner": "REGENTS OF THE UNIVERSITY OF MINNESOTA",
-    "winner_location": "None, None",
-    "award_date": "2026-03-15",
-    "end_date": "2029-03-14",
-    "award_type": "PROJECT GRANT (B)",
-    "naics_code": null,
-    "naics_desc": null,
-    "keywords": [
-      "mineral"
-    ],
-    "source": "usaspending.gov",
-    "scraped_at": "2026-05-24T11:20:55.516046"
+    "scraped_at": "2026-05-31T11:43:01.672495"
   },
   {
     "id": "usa-2538354",
@@ -518,7 +403,7 @@
       "geological"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-05-24T11:20:55.516073"
+    "scraped_at": "2026-05-31T11:43:01.672524"
   },
   {
     "id": "usa-2546571",
@@ -539,7 +424,7 @@
       "critical minerals"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-05-24T11:20:55.516103"
+    "scraped_at": "2026-05-31T11:43:01.672541"
   },
   {
     "id": "usa-2617779",
@@ -560,6 +445,6 @@
       "critical minerals"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-05-24T11:20:55.516125"
+    "scraped_at": "2026-05-31T11:43:01.672561"
   }
 ]
