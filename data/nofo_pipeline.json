@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "updated_at": "2026-05-31T11:10:43.063864",
+    "updated_at": "2026-05-31T11:35:38.611626",
     "total_imminent": 7,
     "description": "Upcoming NOFOs and NOIs \u2014 prepare now opportunities"
   },
@@ -33,8 +33,8 @@
         "Prepare budget for $5-20M sub-award",
         "Align with DOE critical minerals priority list"
       ],
-      "scraped_at": "2026-05-31T11:10:32.406223",
-      "last_verified": "2026-05-31T11:10:32.406227"
+      "scraped_at": "2026-05-31T11:35:28.343394",
+      "last_verified": "2026-05-31T11:35:28.343398"
     },
     {
       "title": "ARPA-E Critical Minerals Discovery Program",
@@ -62,8 +62,8 @@
         "Quantify technology performance metrics",
         "Document TRL advancement pathway"
       ],
-      "scraped_at": "2026-05-31T11:10:32.406229",
-      "last_verified": "2026-05-31T11:10:32.406230"
+      "scraped_at": "2026-05-31T11:35:28.343400",
+      "last_verified": "2026-05-31T11:35:28.343401"
     },
     {
       "title": "[UPCOMING] Funding Opportunity eXCHANGE.",
@@ -82,7 +82,7 @@
       ],
       "status": "ANTICIPATED",
       "prepare_now": true,
-      "scraped_at": "2026-05-31T11:10:43.063694"
+      "scraped_at": "2026-05-31T11:35:38.611499"
     },
     {
       "title": "[UPCOMING] Funding Opportunity eXCHANGE.",
@@ -101,7 +101,7 @@
       ],
       "status": "ANTICIPATED",
       "prepare_now": true,
-      "scraped_at": "2026-05-31T11:10:43.063708"
+      "scraped_at": "2026-05-31T11:35:38.611510"
     },
     {
       "title": "[UPCOMING] Requests for Information",
@@ -120,7 +120,7 @@
       ],
       "status": "ANTICIPATED",
       "prepare_now": true,
-      "scraped_at": "2026-05-31T11:10:43.063713"
+      "scraped_at": "2026-05-31T11:35:38.611514"
     },
     {
       "title": "[UPCOMING] Advanced Materials & Manufacturing",
@@ -139,7 +139,7 @@
       ],
       "status": "ANTICIPATED",
       "prepare_now": true,
-      "scraped_at": "2026-05-31T11:10:43.063716"
+      "scraped_at": "2026-05-31T11:35:38.611518"
     },
     {
       "title": "[UPCOMING] Hydrogen and Fuel Cells",
@@ -158,7 +158,7 @@
       ],
       "status": "ANTICIPATED",
       "prepare_now": true,
-      "scraped_at": "2026-05-31T11:10:43.063719"
+      "scraped_at": "2026-05-31T11:35:38.611521"
     }
   ]
 }
