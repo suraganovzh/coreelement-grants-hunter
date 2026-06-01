@@ -1,6 +1,6 @@
 {
-  "total": 23,
-  "valid": 23,
+  "total": 24,
+  "valid": 24,
   "invalid": 0,
   "quality_score": 100.0,
   "issues": [
@@ -176,7 +176,15 @@
         "Missing recommended field: deadline",
         "Missing recommended field: amount_max"
       ]
+    },
+    {
+      "grant_id": "f810f2400720",
+      "title": "[UPCOMING] Announcement NumberAnnouncement TitleAnnouncement",
+      "issues": [
+        "Missing recommended field: deadline",
+        "Missing recommended field: amount_max"
+      ]
     }
   ],
-  "checked_at": "2026-05-31T11:36:48.191334"
+  "checked_at": "2026-06-01T15:59:05.444362"
 }

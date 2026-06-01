@@ -1,4 +1,60 @@
 {
-  "winners": [],
-  "updated_at": "2026-05-31T11:36:47.999385"
+  "winners": [
+    {
+      "company": "Founders and Grantees",
+      "funder": "EQT Foundation",
+      "title": "Founders and Grantees",
+      "description": "",
+      "amount": null,
+      "currency": "USD",
+      "source": "foundation",
+      "source_url": "https://eqtgroup.com/eqt-foundation/",
+      "scraped_at": "2026-06-01T15:58:57.152705"
+    },
+    {
+      "company": "April 2, 2026EQT Foundation grants \u20ac500,000 to Elemental Impact, accelerating first-of-a-kind climate infrastructure through catalytic financing innovation",
+      "funder": "EQT Foundation",
+      "title": "April 2, 2026EQT Foundation grants \u20ac500,000 to Elemental Impact, accelerating first-of-a-kind climate infrastructure through catalytic financing innovation",
+      "description": "",
+      "amount": 500000,
+      "currency": "EUR",
+      "source": "foundation",
+      "source_url": "https://eqtgroup.com/eqt-foundation/",
+      "scraped_at": "2026-06-01T15:58:57.152882"
+    },
+    {
+      "company": "March 10, 2026EQT Foundation opens applications for science grants to overcome the blood-brain barrier and transform CNS drug delivery",
+      "funder": "EQT Foundation",
+      "title": "March 10, 2026EQT Foundation opens applications for science grants to overcome the blood-brain barrier and transform CNS drug delivery",
+      "description": "",
+      "amount": null,
+      "currency": "USD",
+      "source": "foundation",
+      "source_url": "https://eqtgroup.com/eqt-foundation/",
+      "scraped_at": "2026-06-01T15:58:57.152962"
+    },
+    {
+      "company": "February 11, 2026EQT Foundation announces Rare Disease Science Grant recipients",
+      "funder": "EQT Foundation",
+      "title": "February 11, 2026EQT Foundation announces Rare Disease Science Grant recipients",
+      "description": "",
+      "amount": null,
+      "currency": "USD",
+      "source": "foundation",
+      "source_url": "https://eqtgroup.com/eqt-foundation/",
+      "scraped_at": "2026-06-01T15:58:57.153034"
+    },
+    {
+      "company": "January 27, 2026EQT Foundation opens applications for breakthrough science grants to reduce dependence on critical minerals for the green transition",
+      "funder": "EQT Foundation",
+      "title": "January 27, 2026EQT Foundation opens applications for breakthrough science grants to reduce dependence on critical minerals for the green transition",
+      "description": "",
+      "amount": null,
+      "currency": "USD",
+      "source": "foundation",
+      "source_url": "https://eqtgroup.com/eqt-foundation/",
+      "scraped_at": "2026-06-01T15:58:57.153110"
+    }
+  ],
+  "updated_at": "2026-06-01T15:59:05.311921"
 }
