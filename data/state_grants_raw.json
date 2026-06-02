@@ -19,7 +19,7 @@
       "technology"
     ],
     "eligibility_text": "Must be a Colorado-based company or partnered with a Colorado research institution. Small businesses encouraged. Core Element AI qualifies via Colorado School of Mines partnership.",
-    "scraped_at": "2026-06-02T12:49:25.836123"
+    "scraped_at": "2026-06-02T13:54:43.352498"
   },
   {
     "title": "Delaware EDGE Grant - STEM Track",
@@ -38,6 +38,25 @@
       "innovation"
     ],
     "eligibility_text": "Must be incorporated in Delaware. Small business. Core Element AI qualifies as Delaware S-Corp.",
-    "scraped_at": "2026-06-02T12:49:27.438330"
+    "scraped_at": "2026-06-02T13:59:39.508723"
+  },
+  {
+    "title": "Nevada: Nevada is a one-of-akind state!",
+    "funder": "Nevada Governor's Office of Economic Development",
+    "description": "Discover the advantages that make Nevada an ideal destination for doing business. From company incentives that encourage private sector firms to create jobs, invest in communities, and strengthen local industries to a pro-business culture, experience first-hand why Nevada stands out as a beacon for innovation, growth, and opportunity. We invite you to explore, thrive and elevate your business here in the Silver State!",
+    "amount_min": null,
+    "amount_max": null,
+    "currency": "USD",
+    "deadline": "",
+    "url": "https://goed.nv.gov/doing-business-nevada/",
+    "source": "nevada_state",
+    "grant_type": "state",
+    "industry_tags": [
+      "mining",
+      "critical minerals",
+      "lithium",
+      "cleantech"
+    ],
+    "scraped_at": "2026-06-02T14:05:18.781226"
   }
 ]

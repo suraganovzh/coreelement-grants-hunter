@@ -21,7 +21,7 @@
       "climate",
       "science"
     ],
-    "scraped_at": "2026-06-02T12:56:10.443693"
+    "scraped_at": "2026-06-02T14:05:24.743014"
   },
   {
     "title": "EQT Foundation: Are you a scientist developing breakthrough technologies to overcome the blood-brain barrier and transform drug delivery to the central nervous system?",
@@ -45,7 +45,7 @@
       "climate",
       "science"
     ],
-    "scraped_at": "2026-06-02T12:56:10.443703"
+    "scraped_at": "2026-06-02T14:05:24.743032"
   },
   {
     "title": "EQT Foundation: Supporting Progress Around the Globe",
@@ -69,31 +69,7 @@
       "climate",
       "science"
     ],
-    "scraped_at": "2026-06-02T12:56:10.443705"
-  },
-  {
-    "title": "EQT Foundation: Press Releases",
-    "funder": "EQT Foundation",
-    "description": "",
-    "amount_min": 500000,
-    "amount_max": 500000,
-    "currency": "EUR",
-    "deadline": "",
-    "url": "https://eqtgroup.com/news/eqt-foundation-grants-500-000-to-elemental-impact-accelerating-first-of-a-kind-climate-infrastructure-through-catalytic-financing-innovation",
-    "source": "eqt_foundation",
-    "grant_type": "private_foundation",
-    "industry_tags": [
-      "deeptech",
-      "climate",
-      "science"
-    ],
-    "eligibility_text": "",
-    "focus_areas": [
-      "deeptech",
-      "climate",
-      "science"
-    ],
-    "scraped_at": "2026-06-02T12:56:10.443708"
+    "scraped_at": "2026-06-02T14:05:24.743036"
   },
   {
     "title": "EQT Foundation - Critical Minerals Science Grants",
@@ -123,6 +99,6 @@
       "science",
       "sustainability"
     ],
-    "scraped_at": "2026-06-02T12:56:10.443709"
+    "scraped_at": "2026-06-02T14:05:24.743039"
   }
 ]
