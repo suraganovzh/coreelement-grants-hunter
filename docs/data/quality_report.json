@@ -1,6 +1,6 @@
 {
-  "total": 24,
-  "valid": 24,
+  "total": 20,
+  "valid": 20,
   "invalid": 0,
   "quality_score": 100.0,
   "issues": [
@@ -146,38 +146,6 @@
       ]
     },
     {
-      "grant_id": "45b07b75cf02",
-      "title": "[UPCOMING] Funding Opportunity eXCHANGE.",
-      "issues": [
-        "Missing recommended field: deadline",
-        "Missing recommended field: amount_max"
-      ]
-    },
-    {
-      "grant_id": "c61cb39babe1",
-      "title": "[UPCOMING] Requests for Information",
-      "issues": [
-        "Missing recommended field: deadline",
-        "Missing recommended field: amount_max"
-      ]
-    },
-    {
-      "grant_id": "8eb0f9bda2ea",
-      "title": "[UPCOMING] Advanced Materials & Manufacturing",
-      "issues": [
-        "Missing recommended field: deadline",
-        "Missing recommended field: amount_max"
-      ]
-    },
-    {
-      "grant_id": "7e5f95dc15b4",
-      "title": "[UPCOMING] Hydrogen and Fuel Cells",
-      "issues": [
-        "Missing recommended field: deadline",
-        "Missing recommended field: amount_max"
-      ]
-    },
-    {
       "grant_id": "f810f2400720",
       "title": "[UPCOMING] Announcement NumberAnnouncement TitleAnnouncement",
       "issues": [
@@ -186,5 +154,5 @@
       ]
     }
   ],
-  "checked_at": "2026-06-03T14:38:19.635483"
+  "checked_at": "2026-06-04T12:54:44.926292"
 }

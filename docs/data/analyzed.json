@@ -1,11 +1,11 @@
 {
   "metadata": {
-    "updated_at": "2026-06-04T12:14:02.259747",
-    "total_grants": 24,
+    "updated_at": "2026-06-04T12:54:44.842593",
+    "total_grants": 20,
     "source_breakdown": {
       "private_foundation": 9,
       "state": 8,
-      "nofo_pipeline": 7
+      "nofo_pipeline": 3
     },
     "urgent_grants": 0,
     "sbir_status": "REAUTHORIZED"
@@ -574,14 +574,14 @@
       "eligibility": "Open to US entities. Small businesses, universities, national labs, and consortia eligible.",
       "requirements": "",
       "focus_areas": [],
-      "scraped_at": "2026-06-04T12:12:50.844949",
+      "scraped_at": "2026-06-04T12:51:43.568864",
       "urgency": {
         "days_until_deadline": null,
         "priority_level": "PLANNING",
         "action_required": "monitor"
       },
       "source_type": "nofo_pipeline",
-      "last_verified": "2026-06-04T12:12:50.844949"
+      "last_verified": "2026-06-04T12:51:43.568864"
     },
     {
       "id": "1054feef8fb6",
@@ -605,126 +605,14 @@
       "eligibility": "Open to US entities. High-risk high-reward research.",
       "requirements": "",
       "focus_areas": [],
-      "scraped_at": "2026-06-04T12:12:50.844955",
+      "scraped_at": "2026-06-04T12:51:43.568870",
       "urgency": {
         "days_until_deadline": null,
         "priority_level": "PLANNING",
         "action_required": "monitor"
       },
       "source_type": "nofo_pipeline",
-      "last_verified": "2026-06-04T12:12:50.844955"
-    },
-    {
-      "id": "45b07b75cf02",
-      "title": "[UPCOMING] Funding Opportunity eXCHANGE.",
-      "funder": "DOE EERE",
-      "description": "Sign up to receive the latest information about CMEI\u2019s energy innovation funding, prize, and competition opportunities.",
-      "amount_min": 0,
-      "amount_max": 0,
-      "currency": "USD",
-      "deadline": "",
-      "url": "https://bit.ly/EERE_eXCHANGE",
-      "source": "nofo_pipeline",
-      "grant_type": "federal",
-      "industry_tags": [
-        "upcoming",
-        "prepare_now"
-      ],
-      "eligibility": "",
-      "requirements": "",
-      "focus_areas": [],
-      "scraped_at": "2026-06-04T12:13:01.845523",
-      "urgency": {
-        "days_until_deadline": null,
-        "priority_level": "PLANNING",
-        "action_required": "monitor"
-      },
-      "source_type": "nofo_pipeline",
-      "last_verified": "2026-06-04T12:13:01.845523"
-    },
-    {
-      "id": "c61cb39babe1",
-      "title": "[UPCOMING] Requests for Information",
-      "funder": "DOE EERE",
-      "description": "Below are the current open CMEI requests for information (RFI). Visit theFunding Opportunity Exchangeto see past RFIs.",
-      "amount_min": 0,
-      "amount_max": 0,
-      "currency": "USD",
-      "deadline": "",
-      "url": "https://eere-exchange.energy.gov/",
-      "source": "nofo_pipeline",
-      "grant_type": "federal",
-      "industry_tags": [
-        "upcoming",
-        "prepare_now"
-      ],
-      "eligibility": "",
-      "requirements": "",
-      "focus_areas": [],
-      "scraped_at": "2026-06-04T12:13:01.845537",
-      "urgency": {
-        "days_until_deadline": null,
-        "priority_level": "PLANNING",
-        "action_required": "monitor"
-      },
-      "source_type": "nofo_pipeline",
-      "last_verified": "2026-06-04T12:13:01.845537"
-    },
-    {
-      "id": "8eb0f9bda2ea",
-      "title": "[UPCOMING] Advanced Materials & Manufacturing",
-      "funder": "DOE EERE",
-      "description": "",
-      "amount_min": 0,
-      "amount_max": 0,
-      "currency": "USD",
-      "deadline": "",
-      "url": "https://www.energy.gov/articles/energy-department-announces-actions-secure-american-critical-minerals-and-materials-supply",
-      "source": "nofo_pipeline",
-      "grant_type": "federal",
-      "industry_tags": [
-        "upcoming",
-        "prepare_now"
-      ],
-      "eligibility": "",
-      "requirements": "",
-      "focus_areas": [],
-      "scraped_at": "2026-06-04T12:13:01.845541",
-      "urgency": {
-        "days_until_deadline": null,
-        "priority_level": "PLANNING",
-        "action_required": "monitor"
-      },
-      "source_type": "nofo_pipeline",
-      "last_verified": "2026-06-04T12:13:01.845541"
-    },
-    {
-      "id": "7e5f95dc15b4",
-      "title": "[UPCOMING] Hydrogen and Fuel Cells",
-      "funder": "DOE EERE",
-      "description": "",
-      "amount_min": 0,
-      "amount_max": 0,
-      "currency": "USD",
-      "deadline": "",
-      "url": "https://www.energy.gov/eere/funding/funding-opportunities",
-      "source": "nofo_pipeline",
-      "grant_type": "federal",
-      "industry_tags": [
-        "upcoming",
-        "prepare_now"
-      ],
-      "eligibility": "",
-      "requirements": "",
-      "focus_areas": [],
-      "scraped_at": "2026-06-04T12:13:01.845545",
-      "urgency": {
-        "days_until_deadline": null,
-        "priority_level": "PLANNING",
-        "action_required": "monitor"
-      },
-      "source_type": "nofo_pipeline",
-      "last_verified": "2026-06-04T12:13:01.845545"
+      "last_verified": "2026-06-04T12:51:43.568870"
     },
     {
       "id": "f810f2400720",
@@ -745,14 +633,14 @@
       "eligibility": "",
       "requirements": "",
       "focus_areas": [],
-      "scraped_at": "2026-06-04T12:13:01.845551",
+      "scraped_at": "2026-06-04T12:52:47.834141",
       "urgency": {
         "days_until_deadline": null,
         "priority_level": "PLANNING",
         "action_required": "monitor"
       },
       "source_type": "nofo_pipeline",
-      "last_verified": "2026-06-04T12:13:01.845551"
+      "last_verified": "2026-06-04T12:52:47.834141"
     }
   ]
 }
