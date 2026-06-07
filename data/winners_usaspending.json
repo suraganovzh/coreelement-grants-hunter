@@ -18,18 +18,41 @@
       "copper"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-05-31T11:43:01.671988"
+    "scraped_at": "2026-06-07T11:53:38.599603"
+  },
+  {
+    "id": "usa-DEMS0000104",
+    "title": "BIPARTISAN INFRASTRUCTURE LAW (BIL) - COMMERCIAL SCALE BATTERY RECYCLING FACILITY FOR THE MANUFACTURING OF DOMESTIC CRITICAL MINERALS \n\nTHE OBJECTIVE OF THIS PROJECT IS TO CONSTRUCT A COMMERCIAL SCALE",
+    "funder": "Department of Energy",
+    "funder_sub": "Department of Energy",
+    "amount": 122993645,
+    "winner": "AMERICAN BATTERY TECHNOLOGY COMPANY",
+    "winner_location": "None, None",
+    "award_date": "2025-01-01",
+    "end_date": "2026-12-31",
+    "award_type": "PROJECT GRANT (B)",
+    "naics_code": null,
+    "naics_desc": null,
+    "keywords": [
+      "mineral",
+      "critical minerals",
+      "lithium",
+      "copper",
+      "cobalt"
+    ],
+    "source": "usaspending.gov",
+    "scraped_at": "2026-06-07T11:53:38.599633"
   },
   {
     "id": "usa-2315695",
     "title": "NSF ENGINES: UPSTATE NEW YORK ENERGY STORAGE ENGINE -THIS NSF ENGINES AWARD TO THE UPSTATE NEW YORK ENERGY STORAGE ENGINE WILL ADDRESS THE ENTIRE BATTERY TECHNOLOGY VALUE CHAIN TO ESTABLISH A TECH-BAS",
     "funder": "National Science Foundation",
     "funder_sub": "National Science Foundation",
-    "amount": 15000000,
+    "amount": 29869465,
     "winner": "THE RESEARCH FOUNDATION FOR THE STATE UNIVERSITY OF NEW YORK",
     "winner_location": "None, None",
     "award_date": "2024-03-01",
-    "end_date": "2027-02-28",
+    "end_date": "2029-02-28",
     "award_type": "COOPERATIVE AGREEMENT (B)",
     "naics_code": null,
     "naics_desc": null,
@@ -39,7 +62,27 @@
       "lithium"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-05-31T11:43:01.672075"
+    "scraped_at": "2026-06-07T11:53:38.599714"
+  },
+  {
+    "id": "usa-2315268",
+    "title": "NSF ENGINES: GREAT LAKES WATER INNOVATION ENGINE -THIS NSF ENGINES AWARD TO THE GREAT LAKES WATER INNOVATION ENGINE WILL ADVANCE OUR NATION?S CAPACITY FOR INNOVATIONS IN THE CIRCULAR WATER ECONOMY THR",
+    "funder": "National Science Foundation",
+    "funder_sub": "National Science Foundation",
+    "amount": 27448182,
+    "winner": "CURRENT INNOVATION NFP",
+    "winner_location": "None, None",
+    "award_date": "2024-03-01",
+    "end_date": "2029-02-28",
+    "award_type": "COOPERATIVE AGREEMENT (B)",
+    "naics_code": null,
+    "naics_desc": null,
+    "keywords": [
+      "mineral",
+      "critical minerals"
+    ],
+    "source": "usaspending.gov",
+    "scraped_at": "2026-06-07T11:53:38.599792"
   },
   {
     "id": "usa-2119551",
@@ -59,7 +102,7 @@
       "critical minerals"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-05-31T11:43:01.672083"
+    "scraped_at": "2026-06-07T11:53:38.599807"
   },
   {
     "id": "usa-84068102",
@@ -80,7 +123,28 @@
       "critical minerals"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-05-31T11:43:01.672133"
+    "scraped_at": "2026-06-07T11:53:38.599859"
+  },
+  {
+    "id": "usa-DEEE0011722",
+    "title": "THE CRITICAL MATERIALS ACCELERATOR AIMS TO VALIDATE AND PROTOTYPE TECHNOLOGIES AND PROCESSES THAT ADDRESS CRITICAL MATERIALS CHALLENGES BY DEVELOPING ALTERNATIVES, DIVERSIFYING AND EXPANDING SUPPLY, I",
+    "funder": "Department of Energy",
+    "funder_sub": "Department of Energy",
+    "amount": 2349810,
+    "winner": "NIRON MAGNETICS INC",
+    "winner_location": "None, None",
+    "award_date": "2025-10-01",
+    "end_date": "2027-03-31",
+    "award_type": "COOPERATIVE AGREEMENT (B)",
+    "naics_code": null,
+    "naics_desc": null,
+    "keywords": [
+      "mineral",
+      "critical minerals",
+      "clean energy"
+    ],
+    "source": "usaspending.gov",
+    "scraped_at": "2026-06-07T11:53:38.599933"
   },
   {
     "id": "usa-DEAR0002103",
@@ -101,7 +165,7 @@
       "lithium"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-05-31T11:43:01.672151"
+    "scraped_at": "2026-06-07T11:53:38.599963"
   },
   {
     "id": "usa-DEFE0032319",
@@ -123,7 +187,7 @@
       "rare earth"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-05-31T11:43:01.672162"
+    "scraped_at": "2026-06-07T11:53:38.599978"
   },
   {
     "id": "usa-DEAR0002089",
@@ -145,7 +209,7 @@
       "cobalt"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-05-31T11:43:01.672203"
+    "scraped_at": "2026-06-07T11:53:38.600028"
   },
   {
     "id": "usa-DEAR0002099",
@@ -166,7 +230,7 @@
       "rare earth"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-05-31T11:43:01.672229"
+    "scraped_at": "2026-06-07T11:53:38.600059"
   },
   {
     "id": "usa-DEFE0032641",
@@ -186,7 +250,7 @@
       "critical minerals"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-05-31T11:43:01.672246"
+    "scraped_at": "2026-06-07T11:53:38.600075"
   },
   {
     "id": "usa-DEAR0001721",
@@ -206,7 +270,7 @@
       "mineral"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-05-31T11:43:01.672260"
+    "scraped_at": "2026-06-07T11:53:38.600092"
   },
   {
     "id": "usa-84071101",
@@ -227,7 +291,7 @@
       "critical minerals"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-05-31T11:43:01.672296"
+    "scraped_at": "2026-06-07T11:53:38.600132"
   },
   {
     "id": "usa-2202640",
@@ -249,7 +313,7 @@
       "clean energy"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-05-31T11:43:01.672334"
+    "scraped_at": "2026-06-07T11:53:38.600174"
   },
   {
     "id": "usa-2541666",
@@ -273,7 +337,28 @@
       "cobalt"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-05-31T11:43:01.672365"
+    "scraped_at": "2026-06-07T11:53:38.600207"
+  },
+  {
+    "id": "usa-2542570",
+    "title": "CAREER: BEYOND SIZE AND CHARGE: LEVERAGING ELECTRONIC STRUCTURE PROPERTIES TOWARDS PRECISE, PROGRAMMABLE ION SEPARATIONS -WATER OFTEN CONTAINS DISSOLVED IONS. THEY ARE ATOMS OR MOLECULES THAT BEAR ELE",
+    "funder": "National Science Foundation",
+    "funder_sub": "National Science Foundation",
+    "amount": 650000,
+    "winner": "THE TRUSTEES OF PRINCETON UNIVERSITY",
+    "winner_location": "None, None",
+    "award_date": "2026-06-01",
+    "end_date": "2031-05-31",
+    "award_type": "PROJECT GRANT (B)",
+    "naics_code": null,
+    "naics_desc": null,
+    "keywords": [
+      "mineral",
+      "critical minerals",
+      "rare earth"
+    ],
+    "source": "usaspending.gov",
+    "scraped_at": "2026-06-07T11:53:38.600251"
   },
   {
     "id": "usa-2542231",
@@ -297,7 +382,7 @@
       "drilling"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-05-31T11:43:01.672399"
+    "scraped_at": "2026-06-07T11:53:38.600307"
   },
   {
     "id": "usa-2546570",
@@ -318,7 +403,7 @@
       "critical minerals"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-05-31T11:43:01.672439"
+    "scraped_at": "2026-06-07T11:53:38.600350"
   },
   {
     "id": "usa-DEFE0032526",
@@ -337,7 +422,7 @@
       "mineral"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-05-31T11:43:01.672450"
+    "scraped_at": "2026-06-07T11:53:38.600368"
   },
   {
     "id": "usa-DEFE0032121",
@@ -358,7 +443,7 @@
       "rare earth"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-05-31T11:43:01.672477"
+    "scraped_at": "2026-06-07T11:53:38.600380"
   },
   {
     "id": "usa-2546569",
@@ -379,7 +464,7 @@
       "critical minerals"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-05-31T11:43:01.672495"
+    "scraped_at": "2026-06-07T11:53:38.600410"
   },
   {
     "id": "usa-2538354",
@@ -403,7 +488,7 @@
       "geological"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-05-31T11:43:01.672524"
+    "scraped_at": "2026-06-07T11:53:38.600441"
   },
   {
     "id": "usa-2546571",
@@ -424,7 +509,7 @@
       "critical minerals"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-05-31T11:43:01.672541"
+    "scraped_at": "2026-06-07T11:53:38.600462"
   },
   {
     "id": "usa-2617779",
@@ -445,6 +530,6 @@
       "critical minerals"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-05-31T11:43:01.672561"
+    "scraped_at": "2026-06-07T11:53:38.600489"
   }
 ]
