@@ -18,7 +18,7 @@
       "copper"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-06-07T11:53:38.599603"
+    "scraped_at": "2026-06-14T12:03:25.226978"
   },
   {
     "id": "usa-DEMS0000104",
@@ -41,7 +41,7 @@
       "cobalt"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-06-07T11:53:38.599633"
+    "scraped_at": "2026-06-14T12:03:25.227002"
   },
   {
     "id": "usa-2315695",
@@ -62,7 +62,7 @@
       "lithium"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-06-07T11:53:38.599714"
+    "scraped_at": "2026-06-14T12:03:25.227071"
   },
   {
     "id": "usa-2315268",
@@ -82,27 +82,7 @@
       "critical minerals"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-06-07T11:53:38.599792"
-  },
-  {
-    "id": "usa-2119551",
-    "title": "RII TRACK-2 FEC: CRITICAL RESOURCE AVAILABILITY FOR THE FUTURE OF THE RENEWABLE ENERGY INDUSTRY: CRITICAL MINERALS AND GROUND WATER RESOURCES IN IOWA AND KANSAS",
-    "funder": "National Science Foundation",
-    "funder_sub": "National Science Foundation",
-    "amount": 3992769,
-    "winner": "THE UNIVERSITY OF IOWA",
-    "winner_location": "None, None",
-    "award_date": "2021-10-01",
-    "end_date": "2026-09-30",
-    "award_type": "COOPERATIVE AGREEMENT (B)",
-    "naics_code": null,
-    "naics_desc": null,
-    "keywords": [
-      "mineral",
-      "critical minerals"
-    ],
-    "source": "usaspending.gov",
-    "scraped_at": "2026-06-07T11:53:38.599807"
+    "scraped_at": "2026-06-14T12:03:25.227134"
   },
   {
     "id": "usa-84068102",
@@ -123,7 +103,7 @@
       "critical minerals"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-06-07T11:53:38.599859"
+    "scraped_at": "2026-06-14T12:03:25.227181"
   },
   {
     "id": "usa-DEEE0011722",
@@ -144,7 +124,7 @@
       "clean energy"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-06-07T11:53:38.599933"
+    "scraped_at": "2026-06-14T12:03:25.227238"
   },
   {
     "id": "usa-DEAR0002103",
@@ -165,7 +145,7 @@
       "lithium"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-06-07T11:53:38.599963"
+    "scraped_at": "2026-06-14T12:03:25.227254"
   },
   {
     "id": "usa-DEFE0032319",
@@ -187,29 +167,7 @@
       "rare earth"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-06-07T11:53:38.599978"
-  },
-  {
-    "id": "usa-DEAR0002089",
-    "title": "UT AUSTIN, 3510-1536\nDE-FOA-0003510 \u2013 RECOVER\nBIOMIMETIC MEMBRANES FOR ELECTROCHEMICAL NUTRIENT AND MINERAL RECOVERY FROM WASTWATERS\n\nTHIS PROJECT AIMS TO DEVELOP A BIOINSPIRED MEMBRANE SYSTEM THAT CA",
-    "funder": "Department of Energy",
-    "funder_sub": "Department of Energy",
-    "amount": 2000000,
-    "winner": "UNIVERSITY OF TEXAS AT AUSTIN",
-    "winner_location": "None, None",
-    "award_date": "2026-03-12",
-    "end_date": "2028-03-11",
-    "award_type": "COOPERATIVE AGREEMENT (B)",
-    "naics_code": null,
-    "naics_desc": null,
-    "keywords": [
-      "mineral",
-      "critical minerals",
-      "lithium",
-      "cobalt"
-    ],
-    "source": "usaspending.gov",
-    "scraped_at": "2026-06-07T11:53:38.600028"
+    "scraped_at": "2026-06-14T12:03:25.227294"
   },
   {
     "id": "usa-DEAR0002099",
@@ -230,7 +188,7 @@
       "rare earth"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-06-07T11:53:38.600059"
+    "scraped_at": "2026-06-14T12:03:25.227317"
   },
   {
     "id": "usa-DEFE0032641",
@@ -250,7 +208,7 @@
       "critical minerals"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-06-07T11:53:38.600075"
+    "scraped_at": "2026-06-14T12:03:25.227332"
   },
   {
     "id": "usa-DEAR0001721",
@@ -270,7 +228,7 @@
       "mineral"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-06-07T11:53:38.600092"
+    "scraped_at": "2026-06-14T12:03:25.227344"
   },
   {
     "id": "usa-84071101",
@@ -291,29 +249,7 @@
       "critical minerals"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-06-07T11:53:38.600132"
-  },
-  {
-    "id": "usa-2202640",
-    "title": "IMPACT OF UTILIZING IMMERSIVE VIRTUAL REALITY AND DYNAMIC ASSESSMENT ON MINING ENGINEERING EDUCATION FROM THE COMMUNITY OF INQUIRY PERSPECTIVE -A QUALIFIED WORKFORCE FOR DOMESTIC MINING PRODUCTION OF ",
-    "funder": "National Science Foundation",
-    "funder_sub": "National Science Foundation",
-    "amount": 849689,
-    "winner": "BOARD OF REGENTS OF NEVADA SYSTEM OF HIGHER EDUCATION",
-    "winner_location": "None, None",
-    "award_date": "2022-08-15",
-    "end_date": "2026-07-31",
-    "award_type": "PROJECT GRANT (B)",
-    "naics_code": null,
-    "naics_desc": null,
-    "keywords": [
-      "mining",
-      "mineral",
-      "critical minerals",
-      "clean energy"
-    ],
-    "source": "usaspending.gov",
-    "scraped_at": "2026-06-07T11:53:38.600174"
+    "scraped_at": "2026-06-14T12:03:25.227376"
   },
   {
     "id": "usa-2541666",
@@ -337,7 +273,7 @@
       "cobalt"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-06-07T11:53:38.600207"
+    "scraped_at": "2026-06-14T12:03:25.227405"
   },
   {
     "id": "usa-2542570",
@@ -358,7 +294,7 @@
       "rare earth"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-06-07T11:53:38.600251"
+    "scraped_at": "2026-06-14T12:03:25.227442"
   },
   {
     "id": "usa-2542231",
@@ -382,7 +318,7 @@
       "drilling"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-06-07T11:53:38.600307"
+    "scraped_at": "2026-06-14T12:03:25.227476"
   },
   {
     "id": "usa-2546570",
@@ -403,7 +339,7 @@
       "critical minerals"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-06-07T11:53:38.600350"
+    "scraped_at": "2026-06-14T12:03:25.227508"
   },
   {
     "id": "usa-DEFE0032526",
@@ -422,7 +358,7 @@
       "mineral"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-06-07T11:53:38.600368"
+    "scraped_at": "2026-06-14T12:03:25.227518"
   },
   {
     "id": "usa-DEFE0032121",
@@ -443,7 +379,7 @@
       "rare earth"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-06-07T11:53:38.600380"
+    "scraped_at": "2026-06-14T12:03:25.227523"
   },
   {
     "id": "usa-2546569",
@@ -464,7 +400,7 @@
       "critical minerals"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-06-07T11:53:38.600410"
+    "scraped_at": "2026-06-14T12:03:25.227544"
   },
   {
     "id": "usa-2538354",
@@ -488,7 +424,7 @@
       "geological"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-06-07T11:53:38.600441"
+    "scraped_at": "2026-06-14T12:03:25.227569"
   },
   {
     "id": "usa-2546571",
@@ -509,27 +445,6 @@
       "critical minerals"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-06-07T11:53:38.600462"
-  },
-  {
-    "id": "usa-2617779",
-    "title": "CONFERENCE: GORDON RESEARCH CONFERENCE AND SEMINAR ON FLOW AND TRANSPORT IN PERMEABLE MEDIA -THE AWARD SUPPORTS U.S.-BASED SCIENTISTS ATTENDING THE 2026 GORDON RESEARCH CONFERENCE AND GORDON RESEARCH ",
-    "funder": "National Science Foundation",
-    "funder_sub": "National Science Foundation",
-    "amount": 25000,
-    "winner": "GORDON RESEARCH CONFERENCES",
-    "winner_location": "None, None",
-    "award_date": "2026-04-01",
-    "end_date": "2027-03-31",
-    "award_type": "PROJECT GRANT (B)",
-    "naics_code": null,
-    "naics_desc": null,
-    "keywords": [
-      "artificial intelligence",
-      "mineral",
-      "critical minerals"
-    ],
-    "source": "usaspending.gov",
-    "scraped_at": "2026-06-07T11:53:38.600489"
+    "scraped_at": "2026-06-14T12:03:25.227587"
   }
 ]

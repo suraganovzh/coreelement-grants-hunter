@@ -17,7 +17,7 @@
       "machine learning"
     ],
     "source": "nih_reporter",
-    "scraped_at": "2026-06-07T11:53:36.703779"
+    "scraped_at": "2026-06-14T12:03:23.601905"
   },
   {
     "id": "nih-1R01AG097779-01",
@@ -38,7 +38,27 @@
       "machine learning"
     ],
     "source": "nih_reporter",
-    "scraped_at": "2026-06-07T11:53:36.703951"
+    "scraped_at": "2026-06-14T12:03:23.602071"
+  },
+  {
+    "id": "nih-5R61DA058397-04",
+    "title": "Innovative In-Situ Imaging Techniques for the Visualization of CNS associated HIV reservoirs in the Context of Substance Abuse",
+    "funder": "NIH National Institute on Drug Abuse",
+    "funder_program": "R61",
+    "amount": 541407,
+    "winner": "UNIVERSITY OF FLORIDA",
+    "winner_location": "GAINESVILLE, FL",
+    "pi": "Allison Andrews",
+    "abstract": "Despite advances in our understanding of HIV pathogenesis, a knowledge gap remains concerning HIV viral\nreservoirs. Unknowns include, their various locations, size of the reservoir and the spatial/temporal kinetics for\nreservoir establishment. The difficulty in quantifying and mapping HIV using common histological techniques\nhas limited progress towards answering these questions. These challenges are recognized under RFA-DA-23-\n001 in a call to action to \u201cdevelop or exploit in situ imaging technologies to investigate HIV infection, or latent\nHIV/SIV reservoirs\u201d whilst also in the context of substance abuse. Here we address the above by leveraging\nthe latest in optical tissue clearing and volumetric imaging to resolve single cell information while maintaining\nthe 3D structural arrangement in whole tissue. These techniques provide high spatial resolution that in-vivo\nimaging cannot match, affecting the ability to identify reservoirs that are sparse throughout the entire tissue.\nImportantly, this application will focus on novel CNS associated reservoirs including the calvarial bone marrow\nenvironment and CSF draining superior lymph nodes. Comparisons will be made to brain viral reservoirs within\nthe basal ganglia and hypothalamus. The overall hypothesis is: Volumetric deep tissue microscopy and\nmachine learning image analysis reveals the level of HIV present, spatial distribution and cells infected\nwithin novel CNS-associated sanctuary/reservoir sites. In the R61 development phase, Clarity will be\nperformed to eliminate cellular lipids and generate a physical structural support via transparent acrylamide\nhydrogels that allows light to penetrate deeply for 3D reconstruction. Due to the inherent variability of organs\nand species-specific tissue composition, no universal protocol is appropriate. Thus, hydrogel formulations,\nmechanisms for lipid removal, and analytical determinations for optical clearing will be evaluated. The goal is to\nanalytically determine parameters i",
+    "award_date": "2026-06-03T00:00:00",
+    "start_date": "2024-06-01T00:00:00",
+    "end_date": "2027-05-31T00:00:00",
+    "fiscal_year": 2026,
+    "keywords": [
+      "machine learning"
+    ],
+    "source": "nih_reporter",
+    "scraped_at": "2026-06-14T12:03:23.602127"
   },
   {
     "id": "nih-1R35GM161796-01",
@@ -58,7 +78,7 @@
       "mining"
     ],
     "source": "nih_reporter",
-    "scraped_at": "2026-06-07T11:53:37.412735"
+    "scraped_at": "2026-06-14T12:03:24.101835"
   },
   {
     "id": "nih-5R13AG087672-03",
@@ -79,6 +99,6 @@
       "remote sensing"
     ],
     "source": "nih_reporter",
-    "scraped_at": "2026-06-07T11:53:37.412801"
+    "scraped_at": "2026-06-14T12:03:24.101902"
   }
 ]
