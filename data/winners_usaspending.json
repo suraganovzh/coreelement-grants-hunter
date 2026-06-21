@@ -18,7 +18,7 @@
       "copper"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-06-14T12:03:25.226978"
+    "scraped_at": "2026-06-21T12:13:17.565447"
   },
   {
     "id": "usa-DEMS0000104",
@@ -41,7 +41,7 @@
       "cobalt"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-06-14T12:03:25.227002"
+    "scraped_at": "2026-06-21T12:13:17.565474"
   },
   {
     "id": "usa-2315695",
@@ -62,7 +62,7 @@
       "lithium"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-06-14T12:03:25.227071"
+    "scraped_at": "2026-06-21T12:13:17.565564"
   },
   {
     "id": "usa-2315268",
@@ -82,7 +82,7 @@
       "critical minerals"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-06-14T12:03:25.227134"
+    "scraped_at": "2026-06-21T12:13:17.565647"
   },
   {
     "id": "usa-84068102",
@@ -103,7 +103,7 @@
       "critical minerals"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-06-14T12:03:25.227181"
+    "scraped_at": "2026-06-21T12:13:17.565707"
   },
   {
     "id": "usa-DEEE0011722",
@@ -124,7 +124,7 @@
       "clean energy"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-06-14T12:03:25.227238"
+    "scraped_at": "2026-06-21T12:13:17.565779"
   },
   {
     "id": "usa-DEAR0002103",
@@ -145,7 +145,7 @@
       "lithium"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-06-14T12:03:25.227254"
+    "scraped_at": "2026-06-21T12:13:17.565799"
   },
   {
     "id": "usa-DEFE0032319",
@@ -167,7 +167,7 @@
       "rare earth"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-06-14T12:03:25.227294"
+    "scraped_at": "2026-06-21T12:13:17.565818"
   },
   {
     "id": "usa-DEAR0002099",
@@ -188,7 +188,7 @@
       "rare earth"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-06-14T12:03:25.227317"
+    "scraped_at": "2026-06-21T12:13:17.565846"
   },
   {
     "id": "usa-DEFE0032641",
@@ -208,7 +208,7 @@
       "critical minerals"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-06-14T12:03:25.227332"
+    "scraped_at": "2026-06-21T12:13:17.565865"
   },
   {
     "id": "usa-DEAR0001721",
@@ -228,7 +228,7 @@
       "mineral"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-06-14T12:03:25.227344"
+    "scraped_at": "2026-06-21T12:13:17.565881"
   },
   {
     "id": "usa-84071101",
@@ -249,7 +249,7 @@
       "critical minerals"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-06-14T12:03:25.227376"
+    "scraped_at": "2026-06-21T12:13:17.565923"
   },
   {
     "id": "usa-2541666",
@@ -273,7 +273,7 @@
       "cobalt"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-06-14T12:03:25.227405"
+    "scraped_at": "2026-06-21T12:13:17.565959"
   },
   {
     "id": "usa-2542570",
@@ -294,7 +294,7 @@
       "rare earth"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-06-14T12:03:25.227442"
+    "scraped_at": "2026-06-21T12:13:17.566008"
   },
   {
     "id": "usa-2542231",
@@ -318,7 +318,7 @@
       "drilling"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-06-14T12:03:25.227476"
+    "scraped_at": "2026-06-21T12:13:17.566050"
   },
   {
     "id": "usa-2546570",
@@ -339,7 +339,7 @@
       "critical minerals"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-06-14T12:03:25.227508"
+    "scraped_at": "2026-06-21T12:13:17.566092"
   },
   {
     "id": "usa-DEFE0032526",
@@ -358,7 +358,7 @@
       "mineral"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-06-14T12:03:25.227518"
+    "scraped_at": "2026-06-21T12:13:17.566103"
   },
   {
     "id": "usa-DEFE0032121",
@@ -379,7 +379,7 @@
       "rare earth"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-06-14T12:03:25.227523"
+    "scraped_at": "2026-06-21T12:13:17.566110"
   },
   {
     "id": "usa-2546569",
@@ -400,7 +400,7 @@
       "critical minerals"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-06-14T12:03:25.227544"
+    "scraped_at": "2026-06-21T12:13:17.566147"
   },
   {
     "id": "usa-2538354",
@@ -424,7 +424,7 @@
       "geological"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-06-14T12:03:25.227569"
+    "scraped_at": "2026-06-21T12:13:17.566180"
   },
   {
     "id": "usa-2546571",
@@ -445,6 +445,6 @@
       "critical minerals"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-06-14T12:03:25.227587"
+    "scraped_at": "2026-06-21T12:13:17.566239"
   }
 ]
