@@ -1,5 +1,5 @@
 {
-  "last_checked": "2026-06-26T11:55:36.106296",
+  "last_checked": "2026-06-26T14:38:17.167682",
   "overall_status": "REAUTHORIZED",
   "reauthorized": true,
   "programs": {
@@ -9,7 +9,7 @@
       "reason": "Program reauthorized",
       "accepting_apps": true,
       "url": "https://seedfund.nsf.gov/",
-      "last_checked": "2026-06-26T11:55:36.106304"
+      "last_checked": "2026-06-26T14:38:17.167689"
     },
     "DOE_SBIR": {
       "agency": "Department of Energy",
@@ -17,7 +17,7 @@
       "reason": "Program reauthorized",
       "accepting_apps": true,
       "url": "https://science.osti.gov/sbir",
-      "last_checked": "2026-06-26T11:55:36.106306"
+      "last_checked": "2026-06-26T14:38:17.167691"
     },
     "NIH_SBIR": {
       "agency": "National Institutes of Health",
@@ -25,7 +25,7 @@
       "reason": "Program reauthorized",
       "accepting_apps": true,
       "url": "https://sbir.nih.gov/",
-      "last_checked": "2026-06-26T11:55:36.106307"
+      "last_checked": "2026-06-26T14:38:17.167697"
     },
     "DoD_SBIR": {
       "agency": "Department of Defense",
@@ -33,7 +33,7 @@
       "reason": "Program reauthorized",
       "accepting_apps": true,
       "url": "https://www.dodsbirsttr.mil/",
-      "last_checked": "2026-06-26T11:55:36.106309"
+      "last_checked": "2026-06-26T14:38:17.167699"
     }
   },
   "notes": [
