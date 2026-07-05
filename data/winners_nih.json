@@ -17,7 +17,7 @@
       "machine learning"
     ],
     "source": "nih_reporter",
-    "scraped_at": "2026-06-21T12:13:15.875969"
+    "scraped_at": "2026-07-05T11:38:55.178586"
   },
   {
     "id": "nih-1R01AG097779-01",
@@ -38,7 +38,7 @@
       "machine learning"
     ],
     "source": "nih_reporter",
-    "scraped_at": "2026-06-21T12:13:15.876139"
+    "scraped_at": "2026-07-05T11:38:55.178746"
   },
   {
     "id": "nih-5R61DA058397-04",
@@ -58,7 +58,27 @@
       "machine learning"
     ],
     "source": "nih_reporter",
-    "scraped_at": "2026-06-21T12:13:15.876198"
+    "scraped_at": "2026-07-05T11:38:55.178815"
+  },
+  {
+    "id": "nih-5K08AG088493-02",
+    "title": "Mechanistic association of epigenetic bone age and frailty measures with bone imaging studies using novel artificial intelligence approaches",
+    "funder": "NIH National Institute on Aging",
+    "funder_program": "K08",
+    "amount": 149889,
+    "winner": "VANDERBILT UNIVERSITY MEDICAL CENTER",
+    "winner_location": "NASHVILLE, TN",
+    "pi": "Katherine Van Schaik",
+    "abstract": "Abstract\n Aging is the biggest risk factor for the development of chronic disease and disability, including development of\nosteoporosis (OP) and osteopenia. These conditions affect more than 60 million Americans and are associated\nwith great morbidity and mortality in the setting of fragility fractures. The number of people affected by these\nconditions will only increase as the population ages. Screening for OP and osteopenia is limited, facilitating\nintervention only in more advanced stages of bone loss. Limited studies have identified the potential of artificial\nintelligence (AI) and deep learning (DL) tools, as applied to opportunistically-acquired imaging, for the early\nidentification of changes in bone structure that may herald the onset of OP. In addition, the growing field of\nepigenetics has facilitated assessment of aging and its comorbidities at a molecular and genetic level. Although\none study suggested that bone mineral density (BMD)-associated loci discovered by genome-wide association\nstudies could only explain up to 6% of BMD variation (Nat Genet 2012; 44:491-501), recent research has shown\nthat methylation levels at five CpGs that differ significantly between healthy and osteoporotic women could\nexplain 14% of BMD variation (Epigenetics 2017;12:674-687). Despite these promising findings, there is a lack\nof understanding of the connection between epigenetic modification of genes and imaged bone findings. This\nresearch area represents a crucial gap in existing knowledge that this project seeks to fill. This proposal aims to\ncarry out a discovery-focused effort to identify epigenetic factors that cause early OP associated with imaging\nfindings on CTs. The first aim of the study is to refine and to validate, in an American sample, DL approaches to\nmeasure BMD from opportunistically-acquired CT scans with a corresponding comprehensive electronic health\nrecord. The second and third aims are to identify quantitative markers of OP in CT scans that are associa",
+    "award_date": "2026-06-23T00:00:00",
+    "start_date": "2025-09-01T00:00:00",
+    "end_date": "2030-05-31T00:00:00",
+    "fiscal_year": 2026,
+    "keywords": [
+      "artificial intelligence"
+    ],
+    "source": "nih_reporter",
+    "scraped_at": "2026-07-05T11:38:55.178850"
   },
   {
     "id": "nih-1R35GM161796-01",
@@ -78,7 +98,7 @@
       "mining"
     ],
     "source": "nih_reporter",
-    "scraped_at": "2026-06-21T12:13:16.491088"
+    "scraped_at": "2026-07-05T11:38:55.383538"
   },
   {
     "id": "nih-5R13AG087672-03",
@@ -99,6 +119,6 @@
       "remote sensing"
     ],
     "source": "nih_reporter",
-    "scraped_at": "2026-06-21T12:13:16.491156"
+    "scraped_at": "2026-07-05T11:38:55.383588"
   }
 ]

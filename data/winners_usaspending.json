@@ -1,26 +1,5 @@
 [
   {
-    "id": "usa-DECD0000105",
-    "title": "THIS PROJECT, \u201cFACILITY TO REDUCE EMISSIONS FOR SOURCING PURE CRITICAL MINERALS AND METALS,\u201d \nINTENDS TO EXPAND THE CAPACITY AND CAPABILITIES OF A MODERN, FIRST-OF-A-KIND (FOAK) COPPER RECYCLING \nFACI",
-    "funder": "Department of Energy",
-    "funder_sub": "Department of Energy",
-    "amount": 270000000,
-    "winner": "WIELAND NORTH AMERICA RECYCLING LLC",
-    "winner_location": "None, None",
-    "award_date": "2025-01-01",
-    "end_date": "2034-12-31",
-    "award_type": "COOPERATIVE AGREEMENT (B)",
-    "naics_code": null,
-    "naics_desc": null,
-    "keywords": [
-      "mineral",
-      "critical minerals",
-      "copper"
-    ],
-    "source": "usaspending.gov",
-    "scraped_at": "2026-06-21T12:13:17.565447"
-  },
-  {
     "id": "usa-DEMS0000104",
     "title": "BIPARTISAN INFRASTRUCTURE LAW (BIL) - COMMERCIAL SCALE BATTERY RECYCLING FACILITY FOR THE MANUFACTURING OF DOMESTIC CRITICAL MINERALS \n\nTHE OBJECTIVE OF THIS PROJECT IS TO CONSTRUCT A COMMERCIAL SCALE",
     "funder": "Department of Energy",
@@ -41,7 +20,7 @@
       "cobalt"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-06-21T12:13:17.565474"
+    "scraped_at": "2026-07-05T11:38:58.689553"
   },
   {
     "id": "usa-2315695",
@@ -62,7 +41,7 @@
       "lithium"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-06-21T12:13:17.565564"
+    "scraped_at": "2026-07-05T11:38:58.689638"
   },
   {
     "id": "usa-2315268",
@@ -82,7 +61,30 @@
       "critical minerals"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-06-21T12:13:17.565647"
+    "scraped_at": "2026-07-05T11:38:58.689702"
+  },
+  {
+    "id": "usa-DEFE0032489",
+    "title": "BIPARTISAN INFRASTRUCTURE LAW (BIL) - ILLINOIS RARE EARTH NOVEL EXTRACTION AND SUPPLY (IRENES)\n\nTHE ILLINOIS RARE EARTH NOVEL EXTRACTION AND SUPPLY (IRENES) PROJECT SEEKS TO PERFORM THE FRONT END ENGI",
+    "funder": "Department of Energy",
+    "funder_sub": "Department of Energy",
+    "amount": 4000000,
+    "winner": "UNIVERSITY OF ILLINOIS",
+    "winner_location": "None, None",
+    "award_date": "2024-08-01",
+    "end_date": "2027-12-31",
+    "award_type": "COOPERATIVE AGREEMENT (B)",
+    "naics_code": null,
+    "naics_desc": null,
+    "keywords": [
+      "mineral",
+      "critical minerals",
+      "lithium",
+      "cobalt",
+      "rare earth"
+    ],
+    "source": "usaspending.gov",
+    "scraped_at": "2026-07-05T11:38:58.689726"
   },
   {
     "id": "usa-84068102",
@@ -103,7 +105,27 @@
       "critical minerals"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-06-21T12:13:17.565707"
+    "scraped_at": "2026-07-05T11:38:58.689772"
+  },
+  {
+    "id": "usa-DEAR0001702",
+    "title": "MICHIGAN TECHNOLOGICAL UNIVERSITY, NEW COMPETITIVE AGREEMENT, UNDER FOA NUMBER DE-FOA-0002707 (MINER) WITH CONTROL NUMBER 2707-1510 WITH PROJECT TITLE 'ENERGY REDUCTION AND IMPROVED CRITICAL MINERAL R",
+    "funder": "Department of Energy",
+    "funder_sub": "Department of Energy",
+    "amount": 2467817,
+    "winner": "MICHIGAN TECHNOLOGICAL UNIVERSITY",
+    "winner_location": "None, None",
+    "award_date": "2023-01-31",
+    "end_date": "2026-07-30",
+    "award_type": "COOPERATIVE AGREEMENT (B)",
+    "naics_code": null,
+    "naics_desc": null,
+    "keywords": [
+      "mineral",
+      "cobalt"
+    ],
+    "source": "usaspending.gov",
+    "scraped_at": "2026-07-05T11:38:58.689794"
   },
   {
     "id": "usa-DEEE0011722",
@@ -124,7 +146,7 @@
       "clean energy"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-06-21T12:13:17.565779"
+    "scraped_at": "2026-07-05T11:38:58.689856"
   },
   {
     "id": "usa-DEAR0002103",
@@ -145,29 +167,29 @@
       "lithium"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-06-21T12:13:17.565799"
+    "scraped_at": "2026-07-05T11:38:58.689877"
   },
   {
-    "id": "usa-DEFE0032319",
-    "title": "ACIDIC WATER POLLUTION CLEANUP AND COMMUNITY ECONOMIC DEVELOPMENT THROUGH DOMESTIC PRODUCTION OF \nCRITICAL MINERALS FOR NATIONAL SECURITY. THE OBJECTIVE OF THIS EFFORT IS TO DESIGN AND INSTALL A MODUL",
+    "id": "usa-DEAR0002089",
+    "title": "UT AUSTIN, 3510-1536\nDE-FOA-0003510 \u2013 RECOVER\nBIOMIMETIC MEMBRANES FOR ELECTROCHEMICAL NUTRIENT AND MINERAL RECOVERY FROM WASTWATERS\n\nTHIS PROJECT AIMS TO DEVELOP A BIOINSPIRED MEMBRANE SYSTEM THAT CA",
     "funder": "Department of Energy",
     "funder_sub": "Department of Energy",
-    "amount": 2100000,
-    "winner": "THE PENNSYLVANIA STATE UNIVERSITY",
+    "amount": 2000000,
+    "winner": "UNIVERSITY OF TEXAS AT AUSTIN",
     "winner_location": "None, None",
-    "award_date": "2024-03-01",
-    "end_date": "2026-07-31",
+    "award_date": "2026-03-12",
+    "end_date": "2028-03-11",
     "award_type": "COOPERATIVE AGREEMENT (B)",
     "naics_code": null,
     "naics_desc": null,
     "keywords": [
       "mineral",
       "critical minerals",
-      "cobalt",
-      "rare earth"
+      "lithium",
+      "cobalt"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-06-21T12:13:17.565818"
+    "scraped_at": "2026-07-05T11:38:58.689915"
   },
   {
     "id": "usa-DEAR0002099",
@@ -188,7 +210,7 @@
       "rare earth"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-06-21T12:13:17.565846"
+    "scraped_at": "2026-07-05T11:38:58.689934"
   },
   {
     "id": "usa-DEFE0032641",
@@ -208,7 +230,7 @@
       "critical minerals"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-06-21T12:13:17.565865"
+    "scraped_at": "2026-07-05T11:38:58.689949"
   },
   {
     "id": "usa-DEAR0001721",
@@ -228,7 +250,7 @@
       "mineral"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-06-21T12:13:17.565881"
+    "scraped_at": "2026-07-05T11:38:58.689961"
   },
   {
     "id": "usa-84071101",
@@ -249,7 +271,7 @@
       "critical minerals"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-06-21T12:13:17.565923"
+    "scraped_at": "2026-07-05T11:38:58.689993"
   },
   {
     "id": "usa-2541666",
@@ -273,7 +295,7 @@
       "cobalt"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-06-21T12:13:17.565959"
+    "scraped_at": "2026-07-05T11:38:58.690021"
   },
   {
     "id": "usa-2542570",
@@ -294,7 +316,7 @@
       "rare earth"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-06-21T12:13:17.566008"
+    "scraped_at": "2026-07-05T11:38:58.690058"
   },
   {
     "id": "usa-2542231",
@@ -318,7 +340,7 @@
       "drilling"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-06-21T12:13:17.566050"
+    "scraped_at": "2026-07-05T11:38:58.690091"
   },
   {
     "id": "usa-2546570",
@@ -339,7 +361,7 @@
       "critical minerals"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-06-21T12:13:17.566092"
+    "scraped_at": "2026-07-05T11:38:58.690124"
   },
   {
     "id": "usa-DEFE0032526",
@@ -358,28 +380,7 @@
       "mineral"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-06-21T12:13:17.566103"
-  },
-  {
-    "id": "usa-DEFE0032121",
-    "title": "DE-FE0032121; NEW AWARD\n''TUNABLE ELECTROCHEMICAL PATHWAY FOR HIGH-PURITY RARE EARTH METALS (REM) AND CRITICAL MINERALS (CM)''",
-    "funder": "Department of Energy",
-    "funder_sub": "Department of Energy",
-    "amount": 199816,
-    "winner": "UNIVERSITY OF NORTH DAKOTA",
-    "winner_location": "None, None",
-    "award_date": "2021-11-30",
-    "end_date": "2025-02-28",
-    "award_type": "COOPERATIVE AGREEMENT (B)",
-    "naics_code": null,
-    "naics_desc": null,
-    "keywords": [
-      "mineral",
-      "critical minerals",
-      "rare earth"
-    ],
-    "source": "usaspending.gov",
-    "scraped_at": "2026-06-21T12:13:17.566110"
+    "scraped_at": "2026-07-05T11:38:58.690134"
   },
   {
     "id": "usa-2546569",
@@ -400,31 +401,7 @@
       "critical minerals"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-06-21T12:13:17.566147"
-  },
-  {
-    "id": "usa-2538354",
-    "title": "INNOVATION FOR CRITICAL MINERALS: U.S. SRI LANKA WORKSHOP ON GRAPHITE RESEARCH AND DEVELOPMENT -THIS PROJECT WILL SUPPORT A FIVE-DAY GRAPHITE-FOCUSED WORKSHOP IN SRI LANKA IN APRIL 2026, INCLUDING THR",
-    "funder": "National Science Foundation",
-    "funder_sub": "National Science Foundation",
-    "amount": 49999,
-    "winner": "AUSTIN COMMUNITY COLLEGE DISTRICT",
-    "winner_location": "None, None",
-    "award_date": "2026-01-01",
-    "end_date": "2026-08-31",
-    "award_type": "PROJECT GRANT (B)",
-    "naics_code": null,
-    "naics_desc": null,
-    "keywords": [
-      "mineral",
-      "geology",
-      "exploration",
-      "critical minerals",
-      "lithium",
-      "geological"
-    ],
-    "source": "usaspending.gov",
-    "scraped_at": "2026-06-21T12:13:17.566180"
+    "scraped_at": "2026-07-05T11:38:58.690154"
   },
   {
     "id": "usa-2546571",
@@ -445,6 +422,6 @@
       "critical minerals"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-06-21T12:13:17.566239"
+    "scraped_at": "2026-07-05T11:38:58.690167"
   }
 ]
