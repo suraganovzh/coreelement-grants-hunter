@@ -1,5 +1,26 @@
 [
   {
+    "id": "usa-DECD0000105",
+    "title": "THIS PROJECT, \u201cFACILITY TO REDUCE EMISSIONS FOR SOURCING PURE CRITICAL MINERALS AND METALS,\u201d \nINTENDS TO EXPAND THE CAPACITY AND CAPABILITIES OF A MODERN, FIRST-OF-A-KIND (FOAK) COPPER RECYCLING \nFACI",
+    "funder": "Department of Energy",
+    "funder_sub": "Department of Energy",
+    "amount": 270000000,
+    "winner": "WIELAND NORTH AMERICA RECYCLING LLC",
+    "winner_location": "None, None",
+    "award_date": "2025-01-01",
+    "end_date": "2034-12-31",
+    "award_type": "COOPERATIVE AGREEMENT (B)",
+    "naics_code": null,
+    "naics_desc": null,
+    "keywords": [
+      "mineral",
+      "critical minerals",
+      "copper"
+    ],
+    "source": "usaspending.gov",
+    "scraped_at": "2026-07-12T11:18:15.142555"
+  },
+  {
     "id": "usa-DEMS0000104",
     "title": "BIPARTISAN INFRASTRUCTURE LAW (BIL) - COMMERCIAL SCALE BATTERY RECYCLING FACILITY FOR THE MANUFACTURING OF DOMESTIC CRITICAL MINERALS \n\nTHE OBJECTIVE OF THIS PROJECT IS TO CONSTRUCT A COMMERCIAL SCALE",
     "funder": "Department of Energy",
@@ -20,7 +41,7 @@
       "cobalt"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-07-05T11:38:58.689553"
+    "scraped_at": "2026-07-12T11:18:15.142578"
   },
   {
     "id": "usa-2315695",
@@ -41,7 +62,7 @@
       "lithium"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-07-05T11:38:58.689638"
+    "scraped_at": "2026-07-12T11:18:15.142681"
   },
   {
     "id": "usa-2315268",
@@ -61,7 +82,7 @@
       "critical minerals"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-07-05T11:38:58.689702"
+    "scraped_at": "2026-07-12T11:18:15.142777"
   },
   {
     "id": "usa-DEFE0032489",
@@ -84,7 +105,7 @@
       "rare earth"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-07-05T11:38:58.689726"
+    "scraped_at": "2026-07-12T11:18:15.142813"
   },
   {
     "id": "usa-84068102",
@@ -105,7 +126,7 @@
       "critical minerals"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-07-05T11:38:58.689772"
+    "scraped_at": "2026-07-12T11:18:15.142881"
   },
   {
     "id": "usa-DEAR0001702",
@@ -125,7 +146,7 @@
       "cobalt"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-07-05T11:38:58.689794"
+    "scraped_at": "2026-07-12T11:18:15.142907"
   },
   {
     "id": "usa-DEEE0011722",
@@ -146,7 +167,7 @@
       "clean energy"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-07-05T11:38:58.689856"
+    "scraped_at": "2026-07-12T11:18:15.142996"
   },
   {
     "id": "usa-DEAR0002103",
@@ -167,7 +188,7 @@
       "lithium"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-07-05T11:38:58.689877"
+    "scraped_at": "2026-07-12T11:18:15.143020"
   },
   {
     "id": "usa-DEAR0002089",
@@ -189,7 +210,7 @@
       "cobalt"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-07-05T11:38:58.689915"
+    "scraped_at": "2026-07-12T11:18:15.143080"
   },
   {
     "id": "usa-DEAR0002099",
@@ -210,7 +231,51 @@
       "rare earth"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-07-05T11:38:58.689934"
+    "scraped_at": "2026-07-12T11:18:15.143108"
+  },
+  {
+    "id": "usa-2622322",
+    "title": "HOW DOES SPATIAL DIFFERENTIATION OF ECOTYPES ENHANCE MICROBIAL MUTUALISM? -THIS PROJECT WILL INVESTIGATE HOW COOPERATION AMONG MICROBIAL SPECIES BECOME MORE STABLE AND PRODUCTIVE OVER TIME. MICROBES A",
+    "funder": "National Science Foundation",
+    "funder_sub": "National Science Foundation",
+    "amount": 1585262,
+    "winner": "INSTITUTE FOR SYSTEMS BIOLOGY",
+    "winner_location": "None, None",
+    "award_date": "2026-09-01",
+    "end_date": "2029-08-31",
+    "award_type": "PROJECT GRANT (B)",
+    "naics_code": null,
+    "naics_desc": null,
+    "keywords": [
+      "artificial intelligence",
+      "mineral",
+      "rare earth"
+    ],
+    "source": "usaspending.gov",
+    "scraped_at": "2026-07-12T11:18:15.143181"
+  },
+  {
+    "id": "usa-2529953",
+    "title": "ADVANCING RE-AND CO-USE IN ARCTIC INDUSTRIAL DEVELOPMENT (ARCAID) -THE ARCTIC SUPPLIES MANY OF THE CRITICAL MINERALS THAT MODERN ECONOMIES DEPEND ON FOR DEFENSE, ADVANCED TECHNOLOGY, CLEAN ENERGY, AND",
+    "funder": "National Science Foundation",
+    "funder_sub": "National Science Foundation",
+    "amount": 1300516,
+    "winner": "MICHIGAN TECHNOLOGICAL UNIVERSITY",
+    "winner_location": "None, None",
+    "award_date": "2026-07-01",
+    "end_date": "2029-06-30",
+    "award_type": "PROJECT GRANT (B)",
+    "naics_code": null,
+    "naics_desc": null,
+    "keywords": [
+      "mining",
+      "mineral",
+      "geology",
+      "critical minerals",
+      "clean energy"
+    ],
+    "source": "usaspending.gov",
+    "scraped_at": "2026-07-12T11:18:15.143237"
   },
   {
     "id": "usa-DEFE0032641",
@@ -230,7 +295,7 @@
       "critical minerals"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-07-05T11:38:58.689949"
+    "scraped_at": "2026-07-12T11:18:15.143258"
   },
   {
     "id": "usa-DEAR0001721",
@@ -250,7 +315,7 @@
       "mineral"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-07-05T11:38:58.689961"
+    "scraped_at": "2026-07-12T11:18:15.143276"
   },
   {
     "id": "usa-84071101",
@@ -271,7 +336,29 @@
       "critical minerals"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-07-05T11:38:58.689993"
+    "scraped_at": "2026-07-12T11:18:15.143340"
+  },
+  {
+    "id": "usa-DEAR0001936",
+    "title": "CHEMFINITY TECHNOLOGIES INC.- NEW AWARD UNDER FOA NUMBER DE-FOA-0003224 (IGNIITE) WITH CONTROL NUMBER \n3224-1785 TITLED ''TUNABLE POROUS POLYMER NETWORKS WITH UNPRECEDENTED EFFICIENCY IN RECOVERING CR",
+    "funder": "Department of Energy",
+    "funder_sub": "Department of Energy",
+    "amount": 750000,
+    "winner": "CHEMFINITY TECHNOLOGIES, INC.",
+    "winner_location": "None, None",
+    "award_date": "2024-07-17",
+    "end_date": "2027-07-16",
+    "award_type": "PROJECT GRANT (B)",
+    "naics_code": null,
+    "naics_desc": null,
+    "keywords": [
+      "mineral",
+      "critical minerals",
+      "copper",
+      "rare earth"
+    ],
+    "source": "usaspending.gov",
+    "scraped_at": "2026-07-12T11:18:15.143376"
   },
   {
     "id": "usa-2541666",
@@ -295,7 +382,7 @@
       "cobalt"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-07-05T11:38:58.690021"
+    "scraped_at": "2026-07-12T11:18:15.143418"
   },
   {
     "id": "usa-2542570",
@@ -316,7 +403,7 @@
       "rare earth"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-07-05T11:38:58.690058"
+    "scraped_at": "2026-07-12T11:18:15.143473"
   },
   {
     "id": "usa-2542231",
@@ -340,7 +427,129 @@
       "drilling"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-07-05T11:38:58.690091"
+    "scraped_at": "2026-07-12T11:18:15.143517"
+  },
+  {
+    "id": "usa-2543030",
+    "title": "CAREER: RARE EARTH ELEMENT TRANSPORT IN CARBONATITE SYSTEMS -RARE EARTH ELEMENTS (REE) ARE ESSENTIAL FOR MODERN TECHNOLOGIES LIKE SMARTPHONES, ELECTRIC VEHICLES, AND WIND TURBINES. HOWEVER, IT REMAINS",
+    "funder": "National Science Foundation",
+    "funder_sub": "National Science Foundation",
+    "amount": 583449,
+    "winner": "UNIVERSITY OF TEXAS AT AUSTIN",
+    "winner_location": "None, None",
+    "award_date": "2026-08-01",
+    "end_date": "2031-07-31",
+    "award_type": "PROJECT GRANT (B)",
+    "naics_code": null,
+    "naics_desc": null,
+    "keywords": [
+      "mineral",
+      "rare earth",
+      "geological"
+    ],
+    "source": "usaspending.gov",
+    "scraped_at": "2026-07-12T11:18:15.143563"
+  },
+  {
+    "id": "usa-2545852",
+    "title": "TRACING THE IMPACTS AND IMPRINTS OF SULFIDE PRECIPITATION ON IRON EXPORT IN HYDROTHERMAL PLUMES -HYDROTHERMAL VENTING AT OCEAN SPREADING CENTERS RELEASES IRON AND OTHER METALS TO THE GLOBAL OCEANS AND",
+    "funder": "National Science Foundation",
+    "funder_sub": "National Science Foundation",
+    "amount": 483437,
+    "winner": "WOODS HOLE OCEANOGRAPHIC INSTITUTION",
+    "winner_location": "None, None",
+    "award_date": "2026-09-01",
+    "end_date": "2029-08-31",
+    "award_type": "PROJECT GRANT (B)",
+    "naics_code": null,
+    "naics_desc": null,
+    "keywords": [
+      "mining",
+      "mineral"
+    ],
+    "source": "usaspending.gov",
+    "scraped_at": "2026-07-12T11:18:15.143621"
+  },
+  {
+    "id": "usa-2539103",
+    "title": "CAREER: AN INTEGRATED APPROACH TO MACROGEOMORPHIC RECONSTRUCTION OF TECTONIC MARGINS: EXPLORING LINKS BETWEEN LANDSCAPE EVOLUTION AND CRITICAL MINERAL PROVENANCE -THIS PROJECT ADDRESSES THE CRITICAL S",
+    "funder": "National Science Foundation",
+    "funder_sub": "National Science Foundation",
+    "amount": 469380,
+    "winner": "NORTH CAROLINA STATE UNIVERSITY",
+    "winner_location": "None, None",
+    "award_date": "2026-08-01",
+    "end_date": "2031-07-31",
+    "award_type": "PROJECT GRANT (B)",
+    "naics_code": null,
+    "naics_desc": null,
+    "keywords": [
+      "mineral"
+    ],
+    "source": "usaspending.gov",
+    "scraped_at": "2026-07-12T11:18:15.143660"
+  },
+  {
+    "id": "usa-SAQMIP24CA5127",
+    "title": "REDUCE PROLIFERATION RISKS ASSOCIATED WITH MALIGN FOREIGN ACTOR DOMINATION OF MALAYSIA'S CRITICAL MINERALS AND RARE EARTHS INDUSTRY.",
+    "funder": "Department of State",
+    "funder_sub": "Department of State",
+    "amount": 443906,
+    "winner": "RESEARCH FOUNDATION FOR THE STATE UNIVERSITY OF NEW YORK, THE",
+    "winner_location": "None, None",
+    "award_date": "2024-09-30",
+    "end_date": "2026-09-29",
+    "award_type": "COOPERATIVE AGREEMENT (B)",
+    "naics_code": null,
+    "naics_desc": null,
+    "keywords": [
+      "mineral",
+      "critical minerals",
+      "rare earth"
+    ],
+    "source": "usaspending.gov",
+    "scraped_at": "2026-07-12T11:18:15.143668"
+  },
+  {
+    "id": "usa-2608685",
+    "title": "IRON ISOTOPE FRACTIONATION OF SEAFLOOR HYDROTHERMAL FLUIDS AND MINERALS -SEAFLOOR HYDROTHERMAL FLUIDS TRANSPORT METALS FROM THE CRUST TO THE OCEAN WHERE THEY CAN FORM MARINE MINERAL DEPOSITS. THIS PRO",
+    "funder": "National Science Foundation",
+    "funder_sub": "National Science Foundation",
+    "amount": 403841,
+    "winner": "REGENTS OF THE UNIVERSITY OF MINNESOTA",
+    "winner_location": "None, None",
+    "award_date": "2026-07-01",
+    "end_date": "2028-06-30",
+    "award_type": "PROJECT GRANT (B)",
+    "naics_code": null,
+    "naics_desc": null,
+    "keywords": [
+      "mining",
+      "mineral"
+    ],
+    "source": "usaspending.gov",
+    "scraped_at": "2026-07-12T11:18:15.143701"
+  },
+  {
+    "id": "usa-2542680",
+    "title": "CAREER: SURFACE-CONTROLLED CARBONATE NUCLEATION: FROM CRITICAL ZONE TO CRITICAL MINERALS -CARBONATE MINERALS TYPICALLY FORM AT THE INTERFACE OF WATER AND ROCK. THIS PROJECT WILL EXPLORE THE PROCESS TH",
+    "funder": "National Science Foundation",
+    "funder_sub": "National Science Foundation",
+    "amount": 361237,
+    "winner": "THE RESEARCH FOUNDATION FOR THE STATE UNIVERSITY OF NEW YORK",
+    "winner_location": "None, None",
+    "award_date": "2026-09-01",
+    "end_date": "2031-08-31",
+    "award_type": "PROJECT GRANT (B)",
+    "naics_code": null,
+    "naics_desc": null,
+    "keywords": [
+      "mineral",
+      "critical minerals",
+      "lithium"
+    ],
+    "source": "usaspending.gov",
+    "scraped_at": "2026-07-12T11:18:15.143718"
   },
   {
     "id": "usa-2546570",
@@ -361,7 +570,29 @@
       "critical minerals"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-07-05T11:38:58.690124"
+    "scraped_at": "2026-07-12T11:18:15.143751"
+  },
+  {
+    "id": "usa-2523863",
+    "title": "TECTONIC EVOLUTION OF THE ANCESTRAL ROCKY MOUNTAIN SYSTEM -THE ANCESTRAL ROCKY MOUNTAIN (ARM) SYSTEM EXTENDING FROM UTAH TO OKLAHOMA CONSISTS OF ERODED MOUNTAINS AND ADJACENT SEDIMENTARY BASINS THAT F",
+    "funder": "National Science Foundation",
+    "funder_sub": "National Science Foundation",
+    "amount": 299919,
+    "winner": "COLORADO STATE UNIVERSITY",
+    "winner_location": "None, None",
+    "award_date": "2026-07-01",
+    "end_date": "2029-06-30",
+    "award_type": "PROJECT GRANT (B)",
+    "naics_code": null,
+    "naics_desc": null,
+    "keywords": [
+      "mineral",
+      "geology",
+      "subsurface",
+      "geological"
+    ],
+    "source": "usaspending.gov",
+    "scraped_at": "2026-07-12T11:18:15.143782"
   },
   {
     "id": "usa-DEFE0032526",
@@ -372,7 +603,7 @@
     "winner": "WEST VIRGINIA OFFICE OF ENERGY",
     "winner_location": "None, None",
     "award_date": "2025-09-01",
-    "end_date": "2026-08-31",
+    "end_date": "2027-02-28",
     "award_type": "FORMULA GRANT (A)",
     "naics_code": null,
     "naics_desc": null,
@@ -380,7 +611,7 @@
       "mineral"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-07-05T11:38:58.690134"
+    "scraped_at": "2026-07-12T11:18:15.143792"
   },
   {
     "id": "usa-2546569",
@@ -401,7 +632,7 @@
       "critical minerals"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-07-05T11:38:58.690154"
+    "scraped_at": "2026-07-12T11:18:15.143818"
   },
   {
     "id": "usa-2546571",
@@ -422,6 +653,6 @@
       "critical minerals"
     ],
     "source": "usaspending.gov",
-    "scraped_at": "2026-07-05T11:38:58.690167"
+    "scraped_at": "2026-07-12T11:18:15.143834"
   }
 ]

@@ -17,7 +17,7 @@
       "machine learning"
     ],
     "source": "nih_reporter",
-    "scraped_at": "2026-07-05T11:38:55.178586"
+    "scraped_at": "2026-07-12T11:18:13.982771"
   },
   {
     "id": "nih-1R01AG097779-01",
@@ -38,7 +38,7 @@
       "machine learning"
     ],
     "source": "nih_reporter",
-    "scraped_at": "2026-07-05T11:38:55.178746"
+    "scraped_at": "2026-07-12T11:18:13.982982"
   },
   {
     "id": "nih-5R61DA058397-04",
@@ -58,7 +58,28 @@
       "machine learning"
     ],
     "source": "nih_reporter",
-    "scraped_at": "2026-07-05T11:38:55.178815"
+    "scraped_at": "2026-07-12T11:18:13.983058"
+  },
+  {
+    "id": "nih-2K24AR070892-06",
+    "title": "Intra-articular calcification in osteoarthritis: characterization of a clinically relevant phenotype",
+    "funder": "NIH National Institute of Arthritis and Musculoskeletal and Skin Diseases",
+    "funder_program": "K24",
+    "amount": 180168,
+    "winner": "BOSTON UNIVERSITY MEDICAL CAMPUS",
+    "winner_location": "BOSTON, MA",
+    "pi": "TUHINA NEOGI",
+    "abstract": "Osteoarthritis (OA) affects >600 million worldwide and is a leading cause of disability, yet no treatments are\navailable to halt its progression or prevent its onset. While numerous treatment targets have been evaluated,\ntrials have been largely negative to date, partly because trials have not tailored enrollment to specific phenotypes\nmost likely to respond to the particular treatment target. Calcium crystals within the knee joint can cause intense\npain due to inflammation, but their role in OA has not been well-understood to date. In the first cycle of this grant,\nthe applicant demonstrated that calcium crystal deposition, visualized as calcification within the knee joint on CT,\ncontributed to knee pain worsening and new joint damage to occur over two years. Such data have begun to\nestablish the clinical relevance of calcification in OA as a potentially important phenotype to target as a means\nto improve symptoms and halt or delay progression in people with OA who have this abnormality. In this proposed\nrenewal, the candidate proposes studying genomic and proteomic data in a multimodal data integration effort to\nidentify targetable pathways and biomarkers that could yield promising new treatments. In addition, calcification\nwithin the joint has been linked to increased bone fractures, suggesting the possibility of a systemic disorder of\nbone and mineral metabolism. The applicant proposes to leverage extensive characterization of bone mineral\ndensity in the body and within the knee joint to clarify the degree to which calcification within the joint is a\nreflection of bone mineral abnormalities; such insights would support the testing of bone-active drugs in people\nwith OA who also have calcification in their knees. Beyond bone mineral density, there may be other bone and\njoint tissue abnormalities that cause worsening of OA when calcification is present. Elucidating such differences\nof bone and tissue changes between knees with and without calcification may help id",
+    "award_date": "2026-06-11T00:00:00",
+    "start_date": "2017-02-01T00:00:00",
+    "end_date": "2031-06-30T00:00:00",
+    "fiscal_year": 2026,
+    "keywords": [
+      "artificial intelligence",
+      "machine learning"
+    ],
+    "source": "nih_reporter",
+    "scraped_at": "2026-07-12T11:18:13.983103"
   },
   {
     "id": "nih-5K08AG088493-02",
@@ -78,7 +99,7 @@
       "artificial intelligence"
     ],
     "source": "nih_reporter",
-    "scraped_at": "2026-07-05T11:38:55.178850"
+    "scraped_at": "2026-07-12T11:18:13.983149"
   },
   {
     "id": "nih-1R35GM161796-01",
@@ -98,7 +119,7 @@
       "mining"
     ],
     "source": "nih_reporter",
-    "scraped_at": "2026-07-05T11:38:55.383538"
+    "scraped_at": "2026-07-12T11:18:14.180931"
   },
   {
     "id": "nih-5R13AG087672-03",
@@ -119,6 +140,6 @@
       "remote sensing"
     ],
     "source": "nih_reporter",
-    "scraped_at": "2026-07-05T11:38:55.383588"
+    "scraped_at": "2026-07-12T11:18:14.181003"
   }
 ]
